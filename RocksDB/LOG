@@ -1,0 +1,185 @@
+2021/12/24-11:38:23.421266 2d10 RocksDB version: 5.9.2
+2021/12/24-11:38:23.421321 2d10 Git sha rocksdb_build_git_sha:@004237e62790320d8e630456cbeb6f4a1f3579c2@
+2021/12/24-11:38:23.421337 2d10 Compile date Jan  3 2018
+2021/12/24-11:38:23.421352 2d10 DB SUMMARY
+2021/12/24-11:38:23.421541 2d10 CURRENT file:  CURRENT
+2021/12/24-11:38:23.421555 2d10 IDENTITY file:  IDENTITY
+2021/12/24-11:38:23.421574 2d10 MANIFEST file:  MANIFEST-000008 size: 401 Bytes
+2021/12/24-11:38:23.421591 2d10 SST files in RocksDB dir, Total Num: 2, files: 000004.sst 000007.sst 
+2021/12/24-11:38:23.421601 2d10 Write Ahead Log file in RocksDB: 000009.log size: 1034 ; 
+2021/12/24-11:38:23.421611 2d10                         Options.error_if_exists: 0
+2021/12/24-11:38:23.421626 2d10                       Options.create_if_missing: 1
+2021/12/24-11:38:23.422104 2d10                         Options.paranoid_checks: 1
+2021/12/24-11:38:23.422116 2d10                                     Options.env: 00000245948C05A0
+2021/12/24-11:38:23.422120 2d10                                Options.info_log: 0000024595C3F380
+2021/12/24-11:38:23.422123 2d10                Options.max_file_opening_threads: 16
+2021/12/24-11:38:23.422127 2d10                              Options.statistics: 0000000000000000
+2021/12/24-11:38:23.422130 2d10                               Options.use_fsync: 0
+2021/12/24-11:38:23.422134 2d10                       Options.max_log_file_size: 0
+2021/12/24-11:38:23.422137 2d10                  Options.max_manifest_file_size: 18446744073709551615
+2021/12/24-11:38:23.422141 2d10                   Options.log_file_time_to_roll: 0
+2021/12/24-11:38:23.422145 2d10                       Options.keep_log_file_num: 1000
+2021/12/24-11:38:23.422148 2d10                    Options.recycle_log_file_num: 0
+2021/12/24-11:38:23.422151 2d10                         Options.allow_fallocate: 1
+2021/12/24-11:38:23.422155 2d10                        Options.allow_mmap_reads: 0
+2021/12/24-11:38:23.422158 2d10                       Options.allow_mmap_writes: 0
+2021/12/24-11:38:23.422161 2d10                        Options.use_direct_reads: 0
+2021/12/24-11:38:23.422165 2d10                        Options.use_direct_io_for_flush_and_compaction: 0
+2021/12/24-11:38:23.422168 2d10          Options.create_missing_column_families: 0
+2021/12/24-11:38:23.422172 2d10                              Options.db_log_dir: 
+2021/12/24-11:38:23.422175 2d10                                 Options.wal_dir: RocksDB
+2021/12/24-11:38:23.422178 2d10                Options.table_cache_numshardbits: 6
+2021/12/24-11:38:23.422182 2d10                      Options.max_subcompactions: 1
+2021/12/24-11:38:23.422185 2d10                  Options.max_background_flushes: -1
+2021/12/24-11:38:23.422188 2d10                         Options.WAL_ttl_seconds: 0
+2021/12/24-11:38:23.422192 2d10                       Options.WAL_size_limit_MB: 0
+2021/12/24-11:38:23.422195 2d10             Options.manifest_preallocation_size: 4194304
+2021/12/24-11:38:23.422199 2d10                     Options.is_fd_close_on_exec: 1
+2021/12/24-11:38:23.422202 2d10                   Options.advise_random_on_open: 1
+2021/12/24-11:38:23.422205 2d10                    Options.db_write_buffer_size: 0
+2021/12/24-11:38:23.422209 2d10                    Options.write_buffer_manager: 0000024595C4F050
+2021/12/24-11:38:23.422212 2d10         Options.access_hint_on_compaction_start: 1
+2021/12/24-11:38:23.422216 2d10  Options.new_table_reader_for_compaction_inputs: 0
+2021/12/24-11:38:23.422219 2d10               Options.compaction_readahead_size: 0
+2021/12/24-11:38:23.422222 2d10           Options.random_access_max_buffer_size: 1048576
+2021/12/24-11:38:23.422226 2d10                      Options.use_adaptive_mutex: 0
+2021/12/24-11:38:23.422229 2d10                            Options.rate_limiter: 0000000000000000
+2021/12/24-11:38:23.422233 2d10     Options.sst_file_manager.rate_bytes_per_sec: 0
+2021/12/24-11:38:23.422236 2d10                       Options.wal_recovery_mode: 2
+2021/12/24-11:38:23.422240 2d10                  Options.enable_thread_tracking: 0
+2021/12/24-11:38:23.422270 2d10                  Options.enable_pipelined_write: 0
+2021/12/24-11:38:23.422276 2d10         Options.allow_concurrent_memtable_write: 1
+2021/12/24-11:38:23.422279 2d10      Options.enable_write_thread_adaptive_yield: 1
+2021/12/24-11:38:23.422283 2d10             Options.write_thread_max_yield_usec: 100
+2021/12/24-11:38:23.422286 2d10            Options.write_thread_slow_yield_usec: 3
+2021/12/24-11:38:23.422289 2d10                               Options.row_cache: None
+2021/12/24-11:38:23.422293 2d10                              Options.wal_filter: None
+2021/12/24-11:38:23.422296 2d10             Options.avoid_flush_during_recovery: 0
+2021/12/24-11:38:23.422300 2d10             Options.allow_ingest_behind: 0
+2021/12/24-11:38:23.422303 2d10             Options.preserve_deletes: 0
+2021/12/24-11:38:23.422306 2d10             Options.concurrent_prepare: 0
+2021/12/24-11:38:23.422309 2d10             Options.manual_wal_flush: 0
+2021/12/24-11:38:23.422313 2d10             Options.seq_per_batch: 0
+2021/12/24-11:38:23.422329 2d10             Options.max_background_jobs: 2
+2021/12/24-11:38:23.422333 2d10             Options.max_background_compactions: -1
+2021/12/24-11:38:23.422337 2d10             Options.avoid_flush_during_shutdown: 0
+2021/12/24-11:38:23.422340 2d10           Options.writable_file_max_buffer_size: 1048576
+2021/12/24-11:38:23.422343 2d10             Options.delayed_write_rate : 16777216
+2021/12/24-11:38:23.422347 2d10             Options.max_total_wal_size: 0
+2021/12/24-11:38:23.422350 2d10             Options.delete_obsolete_files_period_micros: 21600000000
+2021/12/24-11:38:23.422354 2d10                   Options.stats_dump_period_sec: 600
+2021/12/24-11:38:23.422357 2d10                          Options.max_open_files: -1
+2021/12/24-11:38:23.422361 2d10                          Options.bytes_per_sync: 0
+2021/12/24-11:38:23.422364 2d10                      Options.wal_bytes_per_sync: 0
+2021/12/24-11:38:23.422368 2d10 Compression algorithms supported:
+2021/12/24-11:38:23.422390 2d10 	Snappy supported: 0
+2021/12/24-11:38:23.422395 2d10 	Zlib supported: 0
+2021/12/24-11:38:23.422399 2d10 	Bzip supported: 0
+2021/12/24-11:38:23.422402 2d10 	LZ4 supported: 0
+2021/12/24-11:38:23.422406 2d10 	ZSTDNotFinal supported: 0
+2021/12/24-11:38:23.422409 2d10 	ZSTD supported: 0
+2021/12/24-11:38:23.422416 2d10 Fast CRC32 supported: Supported on x86Not supported on x86
+2021/12/24-11:38:23.422695 2d10 [c:\users\aretter\code\rocksdb\db\version_set.cc:2835] Recovering from manifest file: MANIFEST-000008
+2021/12/24-11:38:23.422840 2d10 [c:\users\aretter\code\rocksdb\db\column_family.cc:413] --------------- Options for column family [default]:
+2021/12/24-11:38:23.422848 2d10               Options.comparator: leveldb.BytewiseComparator
+2021/12/24-11:38:23.422852 2d10           Options.merge_operator: None
+2021/12/24-11:38:23.422855 2d10        Options.compaction_filter: None
+2021/12/24-11:38:23.422863 2d10        Options.compaction_filter_factory: None
+2021/12/24-11:38:23.422866 2d10         Options.memtable_factory: SkipListFactory
+2021/12/24-11:38:23.422870 2d10            Options.table_factory: BlockBasedTable
+2021/12/24-11:38:23.422903 2d10            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (00000245950C76A0)
+  cache_index_and_filter_blocks: 0
+  cache_index_and_filter_blocks_with_high_priority: 0
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  index_type: 0
+  hash_index_allow_collision: 1
+  checksum: 1
+  no_block_cache: 0
+  block_cache: 0000024595199C60
+  block_cache_name: LRUCache
+  block_cache_options:
+    capacity : 8388608
+    num_shard_bits : 4
+    strict_capacity_limit : 0
+    high_pri_pool_ratio: 0.000
+  block_cache_compressed: 0000000000000000
+  persistent_cache: 0000000000000000
+  block_size: 4096
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  metadata_block_size: 4096
+  partition_filters: 0
+  use_delta_encoding: 1
+  filter_policy: nullptr
+  whole_key_filtering: 1
+  verify_compression: 0
+  read_amp_bytes_per_bit: 0
+  format_version: 2
+2021/12/24-11:38:23.422965 2d10        Options.write_buffer_size: 67108864
+2021/12/24-11:38:23.422975 2d10  Options.max_write_buffer_number: 2
+2021/12/24-11:38:23.422980 2d10          Options.compression: NoCompression
+2021/12/24-11:38:23.422983 2d10                  Options.bottommost_compression: Disabled
+2021/12/24-11:38:23.422987 2d10       Options.prefix_extractor: nullptr
+2021/12/24-11:38:23.422990 2d10   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+2021/12/24-11:38:23.422993 2d10             Options.num_levels: 7
+2021/12/24-11:38:23.422997 2d10        Options.min_write_buffer_number_to_merge: 1
+2021/12/24-11:38:23.423000 2d10     Options.max_write_buffer_number_to_maintain: 0
+2021/12/24-11:38:23.423004 2d10            Options.compression_opts.window_bits: -14
+2021/12/24-11:38:23.423007 2d10                  Options.compression_opts.level: -1
+2021/12/24-11:38:23.423011 2d10               Options.compression_opts.strategy: 0
+2021/12/24-11:38:23.423014 2d10         Options.compression_opts.max_dict_bytes: 0
+2021/12/24-11:38:23.423017 2d10      Options.level0_file_num_compaction_trigger: 4
+2021/12/24-11:38:23.423021 2d10          Options.level0_slowdown_writes_trigger: 20
+2021/12/24-11:38:23.423024 2d10              Options.level0_stop_writes_trigger: 36
+2021/12/24-11:38:23.423027 2d10                   Options.target_file_size_base: 67108864
+2021/12/24-11:38:23.423031 2d10             Options.target_file_size_multiplier: 1
+2021/12/24-11:38:23.423034 2d10                Options.max_bytes_for_level_base: 268435456
+2021/12/24-11:38:23.423038 2d10 Options.level_compaction_dynamic_level_bytes: 0
+2021/12/24-11:38:23.423041 2d10          Options.max_bytes_for_level_multiplier: 10.000000
+2021/12/24-11:38:23.423047 2d10 Options.max_bytes_for_level_multiplier_addtl[0]: 1
+2021/12/24-11:38:23.423051 2d10 Options.max_bytes_for_level_multiplier_addtl[1]: 1
+2021/12/24-11:38:23.423054 2d10 Options.max_bytes_for_level_multiplier_addtl[2]: 1
+2021/12/24-11:38:23.423058 2d10 Options.max_bytes_for_level_multiplier_addtl[3]: 1
+2021/12/24-11:38:23.423062 2d10 Options.max_bytes_for_level_multiplier_addtl[4]: 1
+2021/12/24-11:38:23.423065 2d10 Options.max_bytes_for_level_multiplier_addtl[5]: 1
+2021/12/24-11:38:23.423068 2d10 Options.max_bytes_for_level_multiplier_addtl[6]: 1
+2021/12/24-11:38:23.423072 2d10       Options.max_sequential_skip_in_iterations: 8
+2021/12/24-11:38:23.423075 2d10                    Options.max_compaction_bytes: 1677721600
+2021/12/24-11:38:23.423079 2d10                        Options.arena_block_size: 8388608
+2021/12/24-11:38:23.423082 2d10   Options.soft_pending_compaction_bytes_limit: 68719476736
+2021/12/24-11:38:23.423101 2d10   Options.hard_pending_compaction_bytes_limit: 274877906944
+2021/12/24-11:38:23.423107 2d10       Options.rate_limit_delay_max_milliseconds: 100
+2021/12/24-11:38:23.423111 2d10                Options.disable_auto_compactions: 0
+2021/12/24-11:38:23.423116 2d10                        Options.compaction_style: kCompactionStyleLevel
+2021/12/24-11:38:23.423121 2d10                          Options.compaction_pri: kByCompensatedSize
+2021/12/24-11:38:23.423124 2d10 Options.compaction_options_universal.size_ratio: 1
+2021/12/24-11:38:23.423128 2d10 Options.compaction_options_universal.min_merge_width: 2
+2021/12/24-11:38:23.423132 2d10 Options.compaction_options_universal.max_merge_width: 4294967295
+2021/12/24-11:38:23.423135 2d10 Options.compaction_options_universal.max_size_amplification_percent: 200
+2021/12/24-11:38:23.423139 2d10 Options.compaction_options_universal.compression_size_percent: -1
+2021/12/24-11:38:23.423143 2d10 Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+2021/12/24-11:38:23.423146 2d10 Options.compaction_options_fifo.max_table_files_size: 1073741824
+2021/12/24-11:38:23.423150 2d10 Options.compaction_options_fifo.allow_compaction: 0
+2021/12/24-11:38:23.423154 2d10 Options.compaction_options_fifo.ttl: 0
+2021/12/24-11:38:23.423157 2d10                   Options.table_properties_collectors: 
+2021/12/24-11:38:23.423160 2d10                   Options.inplace_update_support: 0
+2021/12/24-11:38:23.423166 2d10                 Options.inplace_update_num_locks: 10000
+2021/12/24-11:38:23.423171 2d10               Options.memtable_prefix_bloom_size_ratio: 0.000000
+2021/12/24-11:38:23.423198 2d10   Options.memtable_huge_page_size: 0
+2021/12/24-11:38:23.423202 2d10                           Options.bloom_locality: 0
+2021/12/24-11:38:23.423206 2d10                    Options.max_successive_merges: 0
+2021/12/24-11:38:23.423209 2d10                Options.optimize_filters_for_hits: 0
+2021/12/24-11:38:23.423213 2d10                Options.paranoid_file_checks: 0
+2021/12/24-11:38:23.423216 2d10                Options.force_consistency_checks: 0
+2021/12/24-11:38:23.423219 2d10                Options.report_bg_io_stats: 0
+2021/12/24-11:38:23.425159 2d10 [c:\users\aretter\code\rocksdb\db\version_set.cc:3100] Recovered from manifest file:RocksDB/MANIFEST-000008 succeeded,manifest_file_number is 8, next_file_number is 10, last_sequence is 2, log_number is 0,prev_log_number is 0,max_column_family is 0
+2021/12/24-11:38:23.425175 2d10 [c:\users\aretter\code\rocksdb\db\version_set.cc:3108] Column family [default] (ID 0), log number is 7
+2021/12/24-11:38:23.425532 2d10 EVENT_LOG_v1 {"time_micros": 1640317103425423, "job": 1, "event": "recovery_started", "log_files": [9]}
+2021/12/24-11:38:23.425647 2d10 [c:\users\aretter\code\rocksdb\db\db_impl_open.cc:518] Recovering log #9 mode 2
+2021/12/24-11:38:23.458092 2d10 EVENT_LOG_v1 {"time_micros": 1640317103458066, "cf_name": "default", "job": 1, "event": "table_file_creation", "file_number": 10, "file_size": 1971, "table_properties": {"data_size": 1036, "index_size": 28, "filter_size": 0, "raw_key_size": 81, "raw_average_key_size": 81, "raw_value_size": 938, "raw_average_value_size": 938, "num_data_blocks": 1, "num_entries": 1, "filter_policy_name": "", "kDeletedKeys": "0", "kMergeOperands": "0"}}
+2021/12/24-11:38:23.458151 2d10 [c:\users\aretter\code\rocksdb\db\version_set.cc:2608] Creating manifest 11
+2021/12/24-11:38:23.494840 2d10 EVENT_LOG_v1 {"time_micros": 1640317103494830, "job": 1, "event": "recovery_finished"}
+2021/12/24-11:38:23.513132 2d10 [c:\users\aretter\code\rocksdb\db\db_impl_open.cc:1150] DB pointer 00000245958E3080
+2021/12/24-11:38:23.545376 2d10 [c:\users\aretter\code\rocksdb\db\db_impl.cc:234] Shutdown: canceling all background work
+2021/12/24-11:38:23.567260 2d10 [c:\users\aretter\code\rocksdb\db\db_impl.cc:364] Shutdown complete

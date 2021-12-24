@@ -1,0 +1,68 @@
+package com.blockchain.mcsblockchain.pojo.core;
+
+import com.blockchain.mcsblockchain.pojo.Time;
+
+import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
+///区块链中区块的结构
+ public class Block implements Serializable {
+
+    private static final long serialVersionUID=1L;
+
+    private BlockBody body;
+    private BlockHeader header;
+
+    public Block() {
+    }
+
+    public Block(BlockBody body, BlockHeader header) {
+        this.body = body;
+        this.header = header;
+    }
+
+    public BlockBody getBody() {
+        return body;
+    }
+
+    public void setBody(BlockBody body) {
+        this.body = body;
+    }
+
+    public BlockHeader getHeader() {
+        return header;
+    }
+
+    public void setHeader(BlockHeader header) {
+        this.header = header;
+    }
+    /*
+    the space for other parameters of block
+
+     */
+
+    @Override
+    public String toString() {
+        return "Block{" +
+                "body=" + body +
+                ", header=" + header +
+                '}';
+    }
+
+    //serialize() 序列化 deserialize()反序列化
+     public String serialize() throws IOException {
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+        ObjectOutputStream objectOS = new ObjectOutputStream(out);
+        objectOS.writeObject(this);
+        String res = out.toString("ISO-8859-1");
+        return res;
+    }
+
+    public Block deserialize(String str) throws IOException, ClassNotFoundException {
+        ByteArrayInputStream byteIn = new ByteArrayInputStream(str.getBytes("ISO-8859-1"));
+        ObjectInputStream objIn = new ObjectInputStream(byteIn);
+        Block res =(Block) objIn.readObject();
+        return res;
+    }
+
+}
