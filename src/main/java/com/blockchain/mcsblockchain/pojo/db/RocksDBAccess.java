@@ -3,6 +3,7 @@ package com.blockchain.mcsblockchain.pojo.db;
 import com.blockchain.mcsblockchain.Utils.SerializeUtils;
 import com.blockchain.mcsblockchain.pojo.account.Account;
 import com.blockchain.mcsblockchain.pojo.core.Block;
+import com.blockchain.mcsblockchain.pojo.core.TransactionPool;
 import com.blockchain.mcsblockchain.pojo.net.base.Node;
 import com.blockchain.mcsblockchain.pojo.core.Transaction;
 import org.rocksdb.*;
@@ -78,6 +79,35 @@ public class RocksDBAccess implements DBAccess{
         Optional<Object> object = this.get(WALLETS_BUCKET_PREFIX + address);
         if (object.isPresent()) {
             return Optional.of((Account) object.get());
+        }
+        return Optional.absent();
+    }
+
+    @Override
+    public boolean putTx(Transaction tx) {
+        return this.put(TX_POOL+tx.getTransactionHash(),tx);
+    }
+
+    @Override
+    public boolean deleteTransaction(String txHash) {
+        return this.delete(TX_POOL+txHash);
+    }
+
+    @Override
+    public TransactionPool getAllTxs() throws IOException, ClassNotFoundException {
+        TransactionPool txPool=new TransactionPool();
+        List<Object> objects=seekByKey(TX_POOL);
+        for(Object o:objects){
+            txPool.addTransaction((Transaction) o);
+        }
+        return txPool;
+    }
+
+    @Override
+    public Optional<Transaction> getTx(String txHash) throws IOException, ClassNotFoundException {
+        Optional<Object> object=this.get(TX_POOL+txHash);
+        if(object.isPresent()){
+            return Optional.of((Transaction) object.get());
         }
         return Optional.absent();
     }

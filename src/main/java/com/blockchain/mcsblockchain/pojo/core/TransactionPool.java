@@ -1,13 +1,20 @@
 package com.blockchain.mcsblockchain.pojo.core;
 
+import com.blockchain.mcsblockchain.Utils.Cryptography;
+
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Objects;
 //交易池
-public class TransactionPool {
-
+public class TransactionPool implements Serializable {
+    private static final long serializeVersionUID=1L;
     private List<Transaction> transactions=new ArrayList<>();
+
+    public TransactionPool() {
+        this.transactions=new ArrayList<>();
+    }
     //添加交易
     public void addTransaction(Transaction transaction){
         boolean exist=false;
@@ -19,6 +26,7 @@ public class TransactionPool {
 
         }
         if(!exist){
+
             transactions.add(transaction);
         }
     }

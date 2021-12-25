@@ -10,10 +10,11 @@ import java.security.NoSuchAlgorithmException;
 
 @RestController
 public class AccountController {
-@RequestMapping("/account")
+@RequestMapping("/login")
     public String newAccount() throws NoSuchAlgorithmException {
     Cryptography.init();
     Account account = new Account();
+    account=Account.generateAccount();
     return account.toString();
 }
 

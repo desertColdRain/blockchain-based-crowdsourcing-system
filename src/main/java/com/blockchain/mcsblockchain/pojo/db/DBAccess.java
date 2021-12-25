@@ -2,6 +2,7 @@ package com.blockchain.mcsblockchain.pojo.db;
 
 import com.blockchain.mcsblockchain.pojo.account.Account;
 import com.blockchain.mcsblockchain.pojo.core.Block;
+import com.blockchain.mcsblockchain.pojo.core.TransactionPool;
 import com.blockchain.mcsblockchain.pojo.net.base.Node;
 import com.blockchain.mcsblockchain.pojo.core.Transaction;
 
@@ -16,10 +17,20 @@ public interface DBAccess {
     String WALLETS_BUCKET_PREFIX = "wallets_";
     //挖矿账户
     String MINER_ACCOUNT = "miner_account";
+    //交易池
+    String TX_POOL = "transaction_pool_";
     //最后一个区块的区块高度
     String LAST_BLOCK_INDEX = BLOCKS_BUCKET_PREFIX+"last_block";
     //客户端节点列表存储 key
     String CLIENT_NODES_LIST_KEY = "client-node-list";
+    //向交易池中加入交易
+    boolean putTx(Transaction tx);
+    //获取交易池中所有的交易
+    TransactionPool getAllTxs() throws IOException, ClassNotFoundException;
+    //根据交易的哈希值删除交易池中的某笔交易
+    boolean deleteTransaction(String txHash);
+    //获取交易哈希值数据库的交易池中交易
+    Optional<Transaction> getTx(String txHash) throws IOException, ClassNotFoundException;
     //更新最新一个区块的hash值
     boolean putLastBlockIndex(Object lastBlock);
     //获取最新区块的hash值

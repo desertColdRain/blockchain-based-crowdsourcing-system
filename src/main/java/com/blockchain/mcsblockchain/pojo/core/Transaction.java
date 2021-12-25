@@ -2,6 +2,7 @@ package com.blockchain.mcsblockchain.pojo.core;
 
 import com.blockchain.mcsblockchain.Utils.Cryptography;
 import com.blockchain.mcsblockchain.pojo.crypto.PKType;
+import com.blockchain.mcsblockchain.pojo.crypto.SKType;
 import com.blockchain.mcsblockchain.pojo.crypto.Signature;
 
 import java.math.BigDecimal;
@@ -55,6 +56,17 @@ public class Transaction {
         this.senderSign = senderSign;
     }
 
+    public Signature genSenderSign(SKType sk) throws NoSuchAlgorithmException {
+        String msg=    "senderPk=" + senderPk +
+                ", receiverPk=" + receiverPk +
+                ", transactionType=" + transactionType +
+                ", content='" + content + '\'' +
+                ", receiverAddr='" + receiverAddr + '\'' +
+                ", amount=" + amount +
+                ", blockNum=" + blockNum +
+                '}';
+        return Cryptography.SignAlgorithm(msg, sk);
+    }
     public PKType getSenderPk() {
         return senderPk;
     }
