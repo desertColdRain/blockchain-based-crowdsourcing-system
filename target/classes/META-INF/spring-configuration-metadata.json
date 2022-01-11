@@ -1,0 +1,67 @@
+{
+  "groups": [
+    {
+      "name": "app",
+      "type": "com.blockchain.mcsblockchain.conf.AppConfig",
+      "sourceType": "com.blockchain.mcsblockchain.conf.AppConfig"
+    },
+    {
+      "name": "tio",
+      "type": "com.blockchain.mcsblockchain.net.conf.TioProps",
+      "sourceType": "com.blockchain.mcsblockchain.net.conf.TioProps"
+    }
+  ],
+  "properties": [
+    {
+      "name": "app.auto-mining",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.blockchain.mcsblockchain.conf.AppConfig"
+    },
+    {
+      "name": "app.data-dir",
+      "type": "java.lang.String",
+      "sourceType": "com.blockchain.mcsblockchain.conf.AppConfig"
+    },
+    {
+      "name": "app.min-confirm-num",
+      "type": "java.lang.Integer",
+      "sourceType": "com.blockchain.mcsblockchain.conf.AppConfig"
+    },
+    {
+      "name": "app.node-discover",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.blockchain.mcsblockchain.conf.AppConfig"
+    },
+    {
+      "name": "tio.client-group-name",
+      "type": "java.lang.String",
+      "sourceType": "com.blockchain.mcsblockchain.net.conf.TioProps"
+    },
+    {
+      "name": "tio.heart-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "com.blockchain.mcsblockchain.net.conf.TioProps"
+    },
+    {
+      "name": "tio.listen-port",
+      "type": "java.lang.Integer",
+      "sourceType": "com.blockchain.mcsblockchain.net.conf.TioProps"
+    },
+    {
+      "name": "tio.nodes",
+      "type": "java.util.List<com.blockchain.mcsblockchain.net.base.Node>",
+      "sourceType": "com.blockchain.mcsblockchain.net.conf.TioProps"
+    },
+    {
+      "name": "tio.server-group-context-name",
+      "type": "java.lang.String",
+      "sourceType": "com.blockchain.mcsblockchain.net.conf.TioProps"
+    },
+    {
+      "name": "tio.server-ip",
+      "type": "java.lang.String",
+      "sourceType": "com.blockchain.mcsblockchain.net.conf.TioProps"
+    }
+  ],
+  "hints": []
+}
