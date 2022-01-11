@@ -1,7 +1,7 @@
 package com.blockchain.mcsblockchain.pojo.core;
 
 import com.blockchain.mcsblockchain.Utils.Cryptography;
-import com.blockchain.mcsblockchain.pojo.Time;
+import com.blockchain.mcsblockchain.Utils.Time;
 
 import java.io.*;
 import java.security.NoSuchAlgorithmException;

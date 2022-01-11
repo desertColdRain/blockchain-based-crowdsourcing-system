@@ -17,6 +17,8 @@ public class Account implements Serializable {
     private String accountAddr;         //账户地址，即公钥的哈希值
     private int accountType;            //账户类型：0代表miner， 1代表worker
 
+
+
     public void setPublicKey(PKType publicKey) {
         this.publicKey = publicKey;
     }
@@ -38,6 +40,7 @@ public class Account implements Serializable {
     }
     public static Account generateAccount() throws NoSuchAlgorithmException {   //新建一个账户
         Account account = new Account();
+        Cryptography.init();
         SKType sk = new SKType();
         PKType pk = new PKType();
         pk.value.set(Cryptography.P);

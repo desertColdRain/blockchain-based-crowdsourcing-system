@@ -20,6 +20,15 @@ public class Transaction {
     private String receiverAddr;    //收款人地址
     private BigDecimal amount;          //交易金额
     private int blockNum;               //所属区块高度
+    private int status;                 //交易状态 0：success  1：failed
+
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
+    }
 
     public String getTransactionHash() {
         return transactionHash;

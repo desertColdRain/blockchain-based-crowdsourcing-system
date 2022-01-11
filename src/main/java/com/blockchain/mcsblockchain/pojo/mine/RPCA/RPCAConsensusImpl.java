@@ -2,17 +2,21 @@ package com.blockchain.mcsblockchain.pojo.mine.RPCA;
 
 import com.blockchain.mcsblockchain.Utils.Constants;
 import com.blockchain.mcsblockchain.Utils.Cryptography;
+import com.blockchain.mcsblockchain.net.base.Node;
 import com.blockchain.mcsblockchain.pojo.account.Account;
 import com.blockchain.mcsblockchain.pojo.core.*;
 import com.blockchain.mcsblockchain.pojo.db.DBAccess;
-import com.blockchain.mcsblockchain.pojo.net.base.Node;
 import com.google.common.base.Optional;
+import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
+@Component
 public class RPCAConsensusImpl implements RPCAConsensus{
 
     private Account account;
@@ -43,21 +47,26 @@ public class RPCAConsensusImpl implements RPCAConsensus{
     }
 
     @Override
-    public void unionTxCandidate(List<Node> nodes,TxCandidateSet txCandidateSet) {
-        for(Node node:nodes){
-            TxCandidateSet nodeTxSet=node.getTxCandidateSet();
-            txCandidateSet.getCandidateSet().removeAll(nodeTxSet.getCandidateSet());
-            txCandidateSet.getCandidateSet().addAll(nodeTxSet.getCandidateSet());
+    public void unionTxCandidate(TxCandidateSet txCandidateSet) {
+        Optional<List<Node>> nodeList = dbAccess.getNodeList();
+        if(nodeList.isPresent()){
+            if(nodeList.get().size()==0) return ;
+            for(Node node:nodeList.get()){
+                TxCandidateSet nodeTxSet=node.getTxCandidateSet();
+                txCandidateSet.getCandidateSet().removeAll(nodeTxSet.getCandidateSet());
+                txCandidateSet.getCandidateSet().addAll(nodeTxSet.getCandidateSet());
+            }
         }
+
     }
 
-
    @Override
-    public Block generateBlock(Optional<Block> block) throws Exception {
+    public void generateBlock() throws Exception {
         Block newBlock = new Block();
         Account account=new Account();
         Optional<Account> minerAccount = dbAccess.getMinerAccount();
-        if (!minerAccount.isPresent()) {            //没有挖矿账户
+       Optional<Block> block = dbAccess.getLastBlock();
+       if (!minerAccount.isPresent()) {            //没有挖矿账户
             throw new RuntimeException("没有找到挖矿账户，请先创建挖矿账户.");
         }
         if(!block.isPresent()){             //创建创世区块
@@ -69,7 +78,9 @@ public class RPCAConsensusImpl implements RPCAConsensus{
                     block.get().getHeader().getPreHash(),minerAccount.get().getAccountAddr());
             blockHeader.setHash(blockHeader.headerHash());
             BlockBody blockBody = new BlockBody();
-
+            TxCandidateSet txCandidateSet = genTxCandidate();
+            unionTxCandidate(txCandidateSet);
+            blockBody.setTransactionList(txCandidateSet.getCandidateSet());
             newBlock.setHeader(blockHeader);
             newBlock.setBody(blockBody);
         }
@@ -80,7 +91,49 @@ public class RPCAConsensusImpl implements RPCAConsensus{
         transaction.setAmount(Constants.mineBonus);
         transaction.setReceiverAddr(account.getAccountAddr());
 
+
         if(block.isPresent()){          //不是创世区块，则进行RPCA共识
+            Optional<List<Node>> nodeList = dbAccess.getNodeList();
+            if(nodeList.isPresent()){
+                if(nodeList.get().size()==0) {      //单机模式，直接将自己生成的区块加入到区块链中
+                    dbAccess.putLastBlockIndex(newBlock.getHeader().getIndex());
+                    dbAccess.putBlock(newBlock);
+                }
+                else{   //获取节点生成的区块，并为每一个区块计算一个比例，比例超过阈值的时候便共识成功
+                    StringBuilder finalHash=new StringBuilder();            //最终比例最高的区块的哈希
+                    List<String> consensusBlockHash = new ArrayList<>();    //存储区块哈希的列表
+                    consensusBlockHash.add(newBlock.getHeader().getHash()); //加入本机产生的新区块的哈希
+                    for (Node node:nodeList.get()){                         //将UNL中节点产生的区块的哈希加入到列表
+                       consensusBlockHash.add(node.getConsensusBlock().getHeader().getHash());
+                    }
+                    Collections.sort(consensusBlockHash);                   //对列表进行排序
+                    int max=0;                                              //区块哈希值相同的数的最大值
+                    int count=1;
+                    for(int i=0;i<consensusBlockHash.size()-1;i++){
+                        if(consensusBlockHash.get(i).equals(consensusBlockHash.get(i+1))){
+                            count++;
+                        }
+                        else{
+                            if(count>max){
+                                finalHash.deleteCharAt(0);
+                                finalHash.append(consensusBlockHash.get(i));
+                                max=count;
+                            }
+                            count=1;
+                        }
+                    }
+                    double maxRate=max/consensusBlockHash.size();       //比例最高的区块哈希值在所有区块中占比
+                    if(maxRate>=Constants.blockConsensusThreshold){     //高于阈值，将此区块作为新产生的区块
+                        System.out.println("共识成功，新产生的区块的hash是"+finalHash.toString());
+                    }
+                    for (Node node:nodeList.get()){                     //利用区块哈希值找出相应的区块
+                        if(Objects.equals(node.getConsensusBlock().getHeader().headerHash(), finalHash.toString())){
+                            dbAccess.putBlock(node.getConsensusBlock());        //区块上链
+                            dbAccess.putLastBlockIndex(node.getConsensusBlock().getHeader().getIndex());
+                        }
+                    }
+                }
+            }
             /*
             广播得出的区块的哈希，收到区块哈希之后，  结合自己生成的区块哈希，对每个区块哈希计算一个比例，
              某个哈希值比例超过阈值，则认为这个区块是共识通过的哈希
@@ -95,8 +148,7 @@ public class RPCAConsensusImpl implements RPCAConsensus{
 
 
         }
-        dbAccess.putLastBlockIndex(newBlock.getHeader().getIndex());
-        return newBlock;
+
     }
 
 

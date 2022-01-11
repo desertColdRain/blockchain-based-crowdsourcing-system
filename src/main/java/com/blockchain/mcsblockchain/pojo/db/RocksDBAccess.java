@@ -1,37 +1,53 @@
 package com.blockchain.mcsblockchain.pojo.db;
 
+import com.blockchain.mcsblockchain.Utils.FastJson;
 import com.blockchain.mcsblockchain.Utils.SerializeUtils;
+import com.blockchain.mcsblockchain.conf.AppConfig;
+import com.blockchain.mcsblockchain.net.base.Node;
+import com.blockchain.mcsblockchain.net.conf.TioProps;
 import com.blockchain.mcsblockchain.pojo.account.Account;
 import com.blockchain.mcsblockchain.pojo.core.Block;
-import com.blockchain.mcsblockchain.pojo.core.TransactionPool;
-import com.blockchain.mcsblockchain.pojo.net.base.Node;
 import com.blockchain.mcsblockchain.pojo.core.Transaction;
+import com.blockchain.mcsblockchain.pojo.core.TransactionPool;
+import com.google.common.base.Optional;
 import org.rocksdb.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
 import java.io.File;
 import java.io.IOException;
-import java.util.*;
-
-import com.google.common.base.Optional;
+import java.security.NoSuchAlgorithmException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 //RocksDB 操作封装
+@Component
 public class RocksDBAccess implements DBAccess{
 
-    String dataDir="RocksDB";
+    @Autowired
+    AppConfig appConfig;
+
     static Logger logger= LoggerFactory.getLogger(RocksDBAccess.class);
+
     private RocksDB rocksDB;
+
+    @Autowired
+    private TioProps tioProps;
 
     public RocksDBAccess() {
     }
 
+    @PostConstruct
     public void initRocksDB() throws RocksDBException {
-        File directory = new File(System.getProperty("user.dir") + "/" + dataDir);
+        File directory = new File(System.getProperty("user.dir") + "/" + appConfig.getDataDir());
         if(!directory.exists()){
             directory.mkdirs();
         }
-        rocksDB=RocksDB.open(new Options().setCreateIfMissing(true),dataDir);
+        rocksDB=RocksDB.open(new Options().setCreateIfMissing(true),appConfig.getDataDir());
     }
 
     @Override
@@ -51,6 +67,7 @@ public class RocksDBAccess implements DBAccess{
 
     @Override
     public Optional<Block> getBlock(Object blockIndex) {
+
 
         Optional<Object> object = this.get(BLOCKS_BUCKET_PREFIX + String.valueOf(blockIndex));
         if (object.isPresent()) {
@@ -74,7 +91,7 @@ public class RocksDBAccess implements DBAccess{
     }
 
     @Override
-    public Optional<Account> getAccount(String address) {
+    public Optional<Account> getAccount(String address) throws NoSuchAlgorithmException {
 
         Optional<Object> object = this.get(WALLETS_BUCKET_PREFIX + address);
         if (object.isPresent()) {
@@ -105,6 +122,7 @@ public class RocksDBAccess implements DBAccess{
 
     @Override
     public Optional<Transaction> getTx(String txHash) throws IOException, ClassNotFoundException {
+
         Optional<Object> object=this.get(TX_POOL+txHash);
         if(object.isPresent()){
             return Optional.of((Transaction) object.get());
@@ -121,17 +139,30 @@ public class RocksDBAccess implements DBAccess{
         }
         return accounts;
     }
+
     public void getAll() throws IOException, ClassNotFoundException, RocksDBException {
         RocksIterator iterator = rocksDB.newIterator(new ReadOptions());
 
         for (iterator.seekToFirst(); iterator.isValid(); iterator.next()) {
-            System.out.println(iterator.key()+"  "+iterator.value());
+            System.out.println(Arrays.toString(iterator.key()) +"  "+ Arrays.toString(iterator.value()));
         }
         iterator.status();
 
     }
+
     @Override
-    public Optional<Account> getMinerAccount() {
+    public List<Node> getNode() throws IOException, ClassNotFoundException {
+        List<Object> objects = seekByKey(CLIENT_NODES_LIST_KEY);
+        List<Node> nodes = new ArrayList<>();
+        for (Object o : objects) {
+            nodes.add((Node) o);
+        }
+        return nodes;
+    }
+
+    @Override
+    public Optional<Account> getMinerAccount() throws NoSuchAlgorithmException {
+
         Optional<Object> object = get(MINER_ACCOUNT);
         if (object.isPresent()) {
             String minerAddress = (String) object.get();
@@ -152,19 +183,38 @@ public class RocksDBAccess implements DBAccess{
 
     @Override
     public Optional<List<Node>> getNodeList() {
-        Optional<Object> nodes = this.get(CLIENT_NODES_LIST_KEY);
-        if (nodes.isPresent()) {
-            return Optional.of((List<Node>) nodes.get());
+        try {
+            byte[] bytes = rocksDB.get(CLIENT_NODES_LIST_KEY.getBytes());
+            String s=new String(bytes);
+            return Optional.of(FastJson.deserialize(s));
+        } catch (Exception e) {
+            //System.out.println(e);
+            if (logger.isDebugEnabled()) {
+                logger.error("ERROR for RocksDB : {}", e);
+            }
+            return Optional.absent();
         }
-        return Optional.absent();
+
     }
 
+    @Override
     public boolean putNodeList(List<Node> nodes) {
-        return this.put(CLIENT_NODES_LIST_KEY, nodes);
+        try {
+            rocksDB.put(CLIENT_NODES_LIST_KEY.getBytes(), FastJson.serialize(nodes).getBytes());
+            System.out.println("数据已经存放");
+            return true;
+        }
+        catch (Exception e) {
+            if (logger.isDebugEnabled()) {
+                logger.error("ERROR for RocksDB : {}", e);
+            }
+            return false;
+        }
+        //return this.put(CLIENT_NODES_LIST_KEY, nodes);
     }
 
-    //@Override
-    /*  public synchronized boolean addNode(Node node)
+    @Override
+     public synchronized boolean addNode(Node node)
     {
         Optional<List<Node>> nodeList = getNodeList();
         if (nodeList.isPresent()) {
@@ -173,25 +223,28 @@ public class RocksDBAccess implements DBAccess{
                 return false;
             }
             //跳过自身节点
-            Node self = new Node(tioProps.getServerIp(), tioProps.getServerPort());
+            Node self = new Node(tioProps.getServerIp(), tioProps.getListenPort());
             if (self.equals(node)) {
                 return false;
             }
             nodeList.get().add(node);
             return putNodeList(nodeList.get());
-        } else {
+        }
+        else {
             ArrayList<Node> nodes = new ArrayList<>();
             nodes.add(node);
             return putNodeList(nodes);
         }
     }
-*/
+
     @Override
     public boolean put(String key, Object value) {
         try {
             rocksDB.put(key.getBytes(), SerializeUtils.serialize(value));
+            System.out.println("数据已经存放");
             return true;
-        } catch (Exception e) {
+        }
+        catch (Exception e) {
             if (logger.isDebugEnabled()) {
                 logger.error("ERROR for RocksDB : {}", e);
             }
@@ -201,6 +254,7 @@ public class RocksDBAccess implements DBAccess{
 
     @Override
     public Optional<Object> get(String key) {
+
         try {
             return Optional.of(SerializeUtils.deserialize(rocksDB.get(key.getBytes())));
         } catch (Exception e) {
@@ -237,6 +291,7 @@ public class RocksDBAccess implements DBAccess{
     @Override
     public Transaction getTransactionByTxHash(String txHash)
     {
+
         Optional<Object> objectOptional = get(txHash);
         if (objectOptional.isPresent()) {
             Integer blockIndex = (Integer) objectOptional.get();

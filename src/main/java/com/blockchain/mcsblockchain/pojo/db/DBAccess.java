@@ -1,14 +1,17 @@
 package com.blockchain.mcsblockchain.pojo.db;
 
+import com.blockchain.mcsblockchain.net.base.Node;
 import com.blockchain.mcsblockchain.pojo.account.Account;
 import com.blockchain.mcsblockchain.pojo.core.Block;
-import com.blockchain.mcsblockchain.pojo.core.TransactionPool;
-import com.blockchain.mcsblockchain.pojo.net.base.Node;
 import com.blockchain.mcsblockchain.pojo.core.Transaction;
+import com.blockchain.mcsblockchain.pojo.core.TransactionPool;
+import com.google.common.base.Optional;
+import org.rocksdb.RocksDBException;
 
 import java.io.IOException;
+import java.security.NoSuchAlgorithmException;
 import java.util.List;
-import com.google.common.base.Optional;
+
 
 public interface DBAccess {
     //区块数据存储 hash 桶前缀
@@ -29,6 +32,12 @@ public interface DBAccess {
     TransactionPool getAllTxs() throws IOException, ClassNotFoundException;
     //根据交易的哈希值删除交易池中的某笔交易
     boolean deleteTransaction(String txHash);
+
+    void getAll() throws IOException, ClassNotFoundException, RocksDBException;
+
+    List<Node> getNode() throws IOException, ClassNotFoundException;
+
+    boolean putNodeList(List<Node> nodes);
     //获取交易哈希值数据库的交易池中交易
     Optional<Transaction> getTx(String txHash) throws IOException, ClassNotFoundException;
     //更新最新一个区块的hash值
@@ -44,17 +53,17 @@ public interface DBAccess {
     //添加一个账户钱包
     boolean putAccount(Account account);
     //获取指定的账户
-    Optional<Account> getAccount(String address);
+    Optional<Account> getAccount(String address) throws NoSuchAlgorithmException;
     //获取所有账户列表
     List<Account> getAllAccounts() throws IOException, ClassNotFoundException;
     //获取挖矿账户
-    Optional<Account> getMinerAccount();
+    Optional<Account> getMinerAccount() throws NoSuchAlgorithmException;
     //设置挖矿账户
     boolean setMinerAccount(Account account);
     //获取客户端节点列表
     Optional<List<Node>> getNodeList();
     //添加一个客户端节点
-    //boolean addNode(Node node);
+    boolean addNode(Node node);
     //往数据库添加一条数据
     boolean put(String key, Object value);
     //获取某一条指定的数据

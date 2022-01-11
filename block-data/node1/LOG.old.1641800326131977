@@ -1,0 +1,247 @@
+2022/01/10-15:38:15.146099 1f14 RocksDB version: 5.9.2
+2022/01/10-15:38:15.146153 1f14 Git sha rocksdb_build_git_sha:@004237e62790320d8e630456cbeb6f4a1f3579c2@
+2022/01/10-15:38:15.146167 1f14 Compile date Jan  3 2018
+2022/01/10-15:38:15.146183 1f14 DB SUMMARY
+2022/01/10-15:38:15.146413 1f14 CURRENT file:  CURRENT
+2022/01/10-15:38:15.146442 1f14 IDENTITY file:  IDENTITY
+2022/01/10-15:38:15.146468 1f14 MANIFEST file:  MANIFEST-000059 size: 458 Bytes
+2022/01/10-15:38:15.146487 1f14 SST files in block-data/node1 dir, Total Num: 7, files: 000004.sst 000007.sst 000010.sst 000013.sst 000019.sst 000022.sst 000025.sst 
+2022/01/10-15:38:15.146497 1f14 Write Ahead Log file in block-data/node1: 000060.log size: 53 ; 
+2022/01/10-15:38:15.146509 1f14                         Options.error_if_exists: 0
+2022/01/10-15:38:15.146734 1f14                       Options.create_if_missing: 1
+2022/01/10-15:38:15.146741 1f14                         Options.paranoid_checks: 1
+2022/01/10-15:38:15.146745 1f14                                     Options.env: 000001DE4DACDF50
+2022/01/10-15:38:15.146749 1f14                                Options.info_log: 000001DE4E78C010
+2022/01/10-15:38:15.146753 1f14                Options.max_file_opening_threads: 16
+2022/01/10-15:38:15.146758 1f14                              Options.statistics: 0000000000000000
+2022/01/10-15:38:15.146762 1f14                               Options.use_fsync: 0
+2022/01/10-15:38:15.146765 1f14                       Options.max_log_file_size: 0
+2022/01/10-15:38:15.146812 1f14                  Options.max_manifest_file_size: 18446744073709551615
+2022/01/10-15:38:15.146816 1f14                   Options.log_file_time_to_roll: 0
+2022/01/10-15:38:15.146820 1f14                       Options.keep_log_file_num: 1000
+2022/01/10-15:38:15.146823 1f14                    Options.recycle_log_file_num: 0
+2022/01/10-15:38:15.146826 1f14                         Options.allow_fallocate: 1
+2022/01/10-15:38:15.146830 1f14                        Options.allow_mmap_reads: 0
+2022/01/10-15:38:15.146833 1f14                       Options.allow_mmap_writes: 0
+2022/01/10-15:38:15.146836 1f14                        Options.use_direct_reads: 0
+2022/01/10-15:38:15.146840 1f14                        Options.use_direct_io_for_flush_and_compaction: 0
+2022/01/10-15:38:15.146843 1f14          Options.create_missing_column_families: 0
+2022/01/10-15:38:15.146846 1f14                              Options.db_log_dir: 
+2022/01/10-15:38:15.146850 1f14                                 Options.wal_dir: block-data/node1
+2022/01/10-15:38:15.146853 1f14                Options.table_cache_numshardbits: 6
+2022/01/10-15:38:15.146857 1f14                      Options.max_subcompactions: 1
+2022/01/10-15:38:15.146863 1f14                  Options.max_background_flushes: -1
+2022/01/10-15:38:15.146868 1f14                         Options.WAL_ttl_seconds: 0
+2022/01/10-15:38:15.146871 1f14                       Options.WAL_size_limit_MB: 0
+2022/01/10-15:38:15.146874 1f14             Options.manifest_preallocation_size: 4194304
+2022/01/10-15:38:15.146878 1f14                     Options.is_fd_close_on_exec: 1
+2022/01/10-15:38:15.146881 1f14                   Options.advise_random_on_open: 1
+2022/01/10-15:38:15.146885 1f14                    Options.db_write_buffer_size: 0
+2022/01/10-15:38:15.146888 1f14                    Options.write_buffer_manager: 000001DE4F895980
+2022/01/10-15:38:15.146891 1f14         Options.access_hint_on_compaction_start: 1
+2022/01/10-15:38:15.146895 1f14  Options.new_table_reader_for_compaction_inputs: 0
+2022/01/10-15:38:15.146898 1f14               Options.compaction_readahead_size: 0
+2022/01/10-15:38:15.146901 1f14           Options.random_access_max_buffer_size: 1048576
+2022/01/10-15:38:15.146905 1f14                      Options.use_adaptive_mutex: 0
+2022/01/10-15:38:15.146908 1f14                            Options.rate_limiter: 0000000000000000
+2022/01/10-15:38:15.146912 1f14     Options.sst_file_manager.rate_bytes_per_sec: 0
+2022/01/10-15:38:15.146915 1f14                       Options.wal_recovery_mode: 2
+2022/01/10-15:38:15.146948 1f14                  Options.enable_thread_tracking: 0
+2022/01/10-15:38:15.146954 1f14                  Options.enable_pipelined_write: 0
+2022/01/10-15:38:15.146958 1f14         Options.allow_concurrent_memtable_write: 1
+2022/01/10-15:38:15.146961 1f14      Options.enable_write_thread_adaptive_yield: 1
+2022/01/10-15:38:15.146964 1f14             Options.write_thread_max_yield_usec: 100
+2022/01/10-15:38:15.146968 1f14            Options.write_thread_slow_yield_usec: 3
+2022/01/10-15:38:15.146971 1f14                               Options.row_cache: None
+2022/01/10-15:38:15.146974 1f14                              Options.wal_filter: None
+2022/01/10-15:38:15.146978 1f14             Options.avoid_flush_during_recovery: 0
+2022/01/10-15:38:15.146981 1f14             Options.allow_ingest_behind: 0
+2022/01/10-15:38:15.146985 1f14             Options.preserve_deletes: 0
+2022/01/10-15:38:15.146988 1f14             Options.concurrent_prepare: 0
+2022/01/10-15:38:15.146991 1f14             Options.manual_wal_flush: 0
+2022/01/10-15:38:15.146994 1f14             Options.seq_per_batch: 0
+2022/01/10-15:38:15.147007 1f14             Options.max_background_jobs: 2
+2022/01/10-15:38:15.147010 1f14             Options.max_background_compactions: -1
+2022/01/10-15:38:15.147014 1f14             Options.avoid_flush_during_shutdown: 0
+2022/01/10-15:38:15.147017 1f14           Options.writable_file_max_buffer_size: 1048576
+2022/01/10-15:38:15.147022 1f14             Options.delayed_write_rate : 16777216
+2022/01/10-15:38:15.147027 1f14             Options.max_total_wal_size: 0
+2022/01/10-15:38:15.147031 1f14             Options.delete_obsolete_files_period_micros: 21600000000
+2022/01/10-15:38:15.147034 1f14                   Options.stats_dump_period_sec: 600
+2022/01/10-15:38:15.147037 1f14                          Options.max_open_files: -1
+2022/01/10-15:38:15.147041 1f14                          Options.bytes_per_sync: 0
+2022/01/10-15:38:15.147044 1f14                      Options.wal_bytes_per_sync: 0
+2022/01/10-15:38:15.147048 1f14 Compression algorithms supported:
+2022/01/10-15:38:15.147056 1f14 	Snappy supported: 0
+2022/01/10-15:38:15.147059 1f14 	Zlib supported: 0
+2022/01/10-15:38:15.147063 1f14 	Bzip supported: 0
+2022/01/10-15:38:15.147066 1f14 	LZ4 supported: 0
+2022/01/10-15:38:15.147069 1f14 	ZSTDNotFinal supported: 0
+2022/01/10-15:38:15.147072 1f14 	ZSTD supported: 0
+2022/01/10-15:38:15.147078 1f14 Fast CRC32 supported: Supported on x86Not supported on x86
+2022/01/10-15:38:15.147323 1f14 [c:\users\aretter\code\rocksdb\db\version_set.cc:2835] Recovering from manifest file: MANIFEST-000059
+2022/01/10-15:38:15.147450 1f14 [c:\users\aretter\code\rocksdb\db\column_family.cc:413] --------------- Options for column family [default]:
+2022/01/10-15:38:15.147459 1f14               Options.comparator: leveldb.BytewiseComparator
+2022/01/10-15:38:15.147463 1f14           Options.merge_operator: None
+2022/01/10-15:38:15.147466 1f14        Options.compaction_filter: None
+2022/01/10-15:38:15.147474 1f14        Options.compaction_filter_factory: None
+2022/01/10-15:38:15.147478 1f14         Options.memtable_factory: SkipListFactory
+2022/01/10-15:38:15.147481 1f14            Options.table_factory: BlockBasedTable
+2022/01/10-15:38:15.147504 1f14            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (000001DE4E119C10)
+  cache_index_and_filter_blocks: 0
+  cache_index_and_filter_blocks_with_high_priority: 0
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  index_type: 0
+  hash_index_allow_collision: 1
+  checksum: 1
+  no_block_cache: 0
+  block_cache: 000001DE4DC74140
+  block_cache_name: LRUCache
+  block_cache_options:
+    capacity : 8388608
+    num_shard_bits : 4
+    strict_capacity_limit : 0
+    high_pri_pool_ratio: 0.000
+  block_cache_compressed: 0000000000000000
+  persistent_cache: 0000000000000000
+  block_size: 4096
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  metadata_block_size: 4096
+  partition_filters: 0
+  use_delta_encoding: 1
+  filter_policy: nullptr
+  whole_key_filtering: 1
+  verify_compression: 0
+  read_amp_bytes_per_bit: 0
+  format_version: 2
+2022/01/10-15:38:15.147534 1f14        Options.write_buffer_size: 67108864
+2022/01/10-15:38:15.147539 1f14  Options.max_write_buffer_number: 2
+2022/01/10-15:38:15.147543 1f14          Options.compression: NoCompression
+2022/01/10-15:38:15.147547 1f14                  Options.bottommost_compression: Disabled
+2022/01/10-15:38:15.147550 1f14       Options.prefix_extractor: nullptr
+2022/01/10-15:38:15.147553 1f14   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+2022/01/10-15:38:15.147557 1f14             Options.num_levels: 7
+2022/01/10-15:38:15.147560 1f14        Options.min_write_buffer_number_to_merge: 1
+2022/01/10-15:38:15.147564 1f14     Options.max_write_buffer_number_to_maintain: 0
+2022/01/10-15:38:15.147568 1f14            Options.compression_opts.window_bits: -14
+2022/01/10-15:38:15.147571 1f14                  Options.compression_opts.level: -1
+2022/01/10-15:38:15.147575 1f14               Options.compression_opts.strategy: 0
+2022/01/10-15:38:15.147578 1f14         Options.compression_opts.max_dict_bytes: 0
+2022/01/10-15:38:15.147581 1f14      Options.level0_file_num_compaction_trigger: 4
+2022/01/10-15:38:15.147585 1f14          Options.level0_slowdown_writes_trigger: 20
+2022/01/10-15:38:15.147588 1f14              Options.level0_stop_writes_trigger: 36
+2022/01/10-15:38:15.147592 1f14                   Options.target_file_size_base: 67108864
+2022/01/10-15:38:15.147595 1f14             Options.target_file_size_multiplier: 1
+2022/01/10-15:38:15.147598 1f14                Options.max_bytes_for_level_base: 268435456
+2022/01/10-15:38:15.147602 1f14 Options.level_compaction_dynamic_level_bytes: 0
+2022/01/10-15:38:15.147605 1f14          Options.max_bytes_for_level_multiplier: 10.000000
+2022/01/10-15:38:15.147610 1f14 Options.max_bytes_for_level_multiplier_addtl[0]: 1
+2022/01/10-15:38:15.147614 1f14 Options.max_bytes_for_level_multiplier_addtl[1]: 1
+2022/01/10-15:38:15.147617 1f14 Options.max_bytes_for_level_multiplier_addtl[2]: 1
+2022/01/10-15:38:15.147620 1f14 Options.max_bytes_for_level_multiplier_addtl[3]: 1
+2022/01/10-15:38:15.147624 1f14 Options.max_bytes_for_level_multiplier_addtl[4]: 1
+2022/01/10-15:38:15.147627 1f14 Options.max_bytes_for_level_multiplier_addtl[5]: 1
+2022/01/10-15:38:15.147631 1f14 Options.max_bytes_for_level_multiplier_addtl[6]: 1
+2022/01/10-15:38:15.147634 1f14       Options.max_sequential_skip_in_iterations: 8
+2022/01/10-15:38:15.147637 1f14                    Options.max_compaction_bytes: 1677721600
+2022/01/10-15:38:15.147641 1f14                        Options.arena_block_size: 8388608
+2022/01/10-15:38:15.147644 1f14   Options.soft_pending_compaction_bytes_limit: 68719476736
+2022/01/10-15:38:15.147648 1f14   Options.hard_pending_compaction_bytes_limit: 274877906944
+2022/01/10-15:38:15.147651 1f14       Options.rate_limit_delay_max_milliseconds: 100
+2022/01/10-15:38:15.147655 1f14                Options.disable_auto_compactions: 0
+2022/01/10-15:38:15.147659 1f14                        Options.compaction_style: kCompactionStyleLevel
+2022/01/10-15:38:15.147663 1f14                          Options.compaction_pri: kByCompensatedSize
+2022/01/10-15:38:15.147666 1f14 Options.compaction_options_universal.size_ratio: 1
+2022/01/10-15:38:15.147670 1f14 Options.compaction_options_universal.min_merge_width: 2
+2022/01/10-15:38:15.147673 1f14 Options.compaction_options_universal.max_merge_width: 4294967295
+2022/01/10-15:38:15.147677 1f14 Options.compaction_options_universal.max_size_amplification_percent: 200
+2022/01/10-15:38:15.147680 1f14 Options.compaction_options_universal.compression_size_percent: -1
+2022/01/10-15:38:15.147684 1f14 Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+2022/01/10-15:38:15.147688 1f14 Options.compaction_options_fifo.max_table_files_size: 1073741824
+2022/01/10-15:38:15.147691 1f14 Options.compaction_options_fifo.allow_compaction: 0
+2022/01/10-15:38:15.147694 1f14 Options.compaction_options_fifo.ttl: 0
+2022/01/10-15:38:15.147698 1f14                   Options.table_properties_collectors: 
+2022/01/10-15:38:15.147703 1f14                   Options.inplace_update_support: 0
+2022/01/10-15:38:15.147707 1f14                 Options.inplace_update_num_locks: 10000
+2022/01/10-15:38:15.147710 1f14               Options.memtable_prefix_bloom_size_ratio: 0.000000
+2022/01/10-15:38:15.147714 1f14   Options.memtable_huge_page_size: 0
+2022/01/10-15:38:15.147717 1f14                           Options.bloom_locality: 0
+2022/01/10-15:38:15.147721 1f14                    Options.max_successive_merges: 0
+2022/01/10-15:38:15.147724 1f14                Options.optimize_filters_for_hits: 0
+2022/01/10-15:38:15.147727 1f14                Options.paranoid_file_checks: 0
+2022/01/10-15:38:15.147731 1f14                Options.force_consistency_checks: 0
+2022/01/10-15:38:15.147734 1f14                Options.report_bg_io_stats: 0
+2022/01/10-15:38:15.150210 1f14 [c:\users\aretter\code\rocksdb\db\version_set.cc:3100] Recovered from manifest file:block-data/node1/MANIFEST-000059 succeeded,manifest_file_number is 59, next_file_number is 61, last_sequence is 7, log_number is 0,prev_log_number is 0,max_column_family is 0
+2022/01/10-15:38:15.150223 1f14 [c:\users\aretter\code\rocksdb\db\version_set.cc:3108] Column family [default] (ID 0), log number is 58
+2022/01/10-15:38:15.150536 1f14 EVENT_LOG_v1 {"time_micros": 1641800295150493, "job": 1, "event": "recovery_started", "log_files": [60]}
+2022/01/10-15:38:15.150549 1f14 [c:\users\aretter\code\rocksdb\db\db_impl_open.cc:518] Recovering log #60 mode 2
+2022/01/10-15:38:15.180399 1f14 EVENT_LOG_v1 {"time_micros": 1641800295180369, "cf_name": "default", "job": 1, "event": "table_file_creation", "file_number": 61, "file_size": 986, "table_properties": {"data_size": 55, "index_size": 27, "filter_size": 0, "raw_key_size": 24, "raw_average_key_size": 24, "raw_value_size": 15, "raw_average_value_size": 15, "num_data_blocks": 1, "num_entries": 1, "filter_policy_name": "", "kDeletedKeys": "0", "kMergeOperands": "0"}}
+2022/01/10-15:38:15.180453 1f14 [c:\users\aretter\code\rocksdb\db\version_set.cc:2608] Creating manifest 62
+2022/01/10-15:38:15.224417 1f14 EVENT_LOG_v1 {"time_micros": 1641800295224407, "job": 1, "event": "recovery_finished"}
+2022/01/10-15:38:15.243919 1f14 [c:\users\aretter\code\rocksdb\db\db_impl_open.cc:1150] DB pointer 000001DE4E6A52C0
+2022/01/10-15:38:15.244099 19b8 [WARN] [c:\users\aretter\code\rocksdb\db\db_impl.cc:440] ------- DUMPING STATS -------
+2022/01/10-15:38:15.244114 19b8 [WARN] [c:\users\aretter\code\rocksdb\db\db_impl.cc:441] 
+** DB Stats **
+Uptime(secs): 0.1 total, 0.1 interval
+Cumulative writes: 0 writes, 0 keys, 0 commit groups, 0.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 0 writes, 0 syncs, 0.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 0 writes, 0 keys, 0 commit groups, 0.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 0 writes, 0 syncs, 0.00 writes per sync, written: 0.00 MB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+
+** Compaction Stats [default] **
+Level    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+  L0      4/0    4.81 KB   1.0      0.0     0.0      0.0       0.0      0.0       0.0   1.0      0.0      0.0         0         1    0.030       0      0
+  L1      4/0    4.99 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0         0         0    0.000       0      0
+ Sum      8/0    9.80 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   1.0      0.0      0.0         0         1    0.030       0      0
+ Int      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   1.0      0.0      0.0         0         1    0.030       0      0
+Uptime(secs): 0.1 total, 0.1 interval
+Flush(GB): cumulative 0.000, interval 0.000
+AddFile(GB): cumulative 0.000, interval 0.000
+AddFile(Total Files): cumulative 0, interval 0
+AddFile(L0 Files): cumulative 0, interval 0
+AddFile(Keys): cumulative 0, interval 0
+Cumulative compaction: 0.00 GB write, 0.01 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Interval compaction: 0.00 GB write, 0.01 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Stalls(count): 0 level0_slowdown, 0 level0_slowdown_with_compaction, 0 level0_numfiles, 0 level0_numfiles_with_compaction, 0 stop for pending_compaction_bytes, 0 slowdown for pending_compaction_bytes, 0 memtable_compaction, 0 memtable_slowdown, interval 0 total count
+
+** File Read Latency Histogram By Level [default] **
+
+** Compaction Stats [default] **
+Level    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+  L0      4/0    4.81 KB   1.0      0.0     0.0      0.0       0.0      0.0       0.0   1.0      0.0      0.0         0         1    0.030       0      0
+  L1      4/0    4.99 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0         0         0    0.000       0      0
+ Sum      8/0    9.80 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   1.0      0.0      0.0         0         1    0.030       0      0
+ Int      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0         0         0    0.000       0      0
+Uptime(secs): 0.1 total, 0.0 interval
+Flush(GB): cumulative 0.000, interval 0.000
+AddFile(GB): cumulative 0.000, interval 0.000
+AddFile(Total Files): cumulative 0, interval 0
+AddFile(L0 Files): cumulative 0, interval 0
+AddFile(Keys): cumulative 0, interval 0
+Cumulative compaction: 0.00 GB write, 0.01 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Stalls(count): 0 level0_slowdown, 0 level0_slowdown_with_compaction, 0 level0_numfiles, 0 level0_numfiles_with_compaction, 0 stop for pending_compaction_bytes, 0 slowdown for pending_compaction_bytes, 0 memtable_compaction, 0 memtable_slowdown, interval 0 total count
+
+** File Read Latency Histogram By Level [default] **
+2022/01/10-15:38:15.244228 19b8 [c:\users\aretter\code\rocksdb\db\compaction_job.cc:1466] [default] [JOB 3] Compacting 4@0 + 4@1 files to L1, score 1.00
+2022/01/10-15:38:15.244247 19b8 [c:\users\aretter\code\rocksdb\db\compaction_job.cc:1470] [default] Compaction start summary: Base version 2 Base level 0, inputs: [61(986B) 25(1314B) 22(1314B) 19(1314B)], [13(1314B) 10(1314B) 7(1314B) 4(1164B)]
+2022/01/10-15:38:15.244271 19b8 EVENT_LOG_v1 {"time_micros": 1641800295244256, "job": 3, "event": "compaction_started", "files_L0": [61, 25, 22, 19], "files_L1": [13, 10, 7, 4], "score": 1, "input_data_size": 10034}
+2022/01/10-15:38:15.266477 19b8 [c:\users\aretter\code\rocksdb\db\compaction_job.cc:1153] [default] [JOB 3] Generated table #66: 1 keys, 986 bytes
+2022/01/10-15:38:15.266514 19b8 EVENT_LOG_v1 {"time_micros": 1641800295266496, "cf_name": "default", "job": 3, "event": "table_file_creation", "file_number": 66, "file_size": 986, "table_properties": {"data_size": 55, "index_size": 27, "filter_size": 0, "raw_key_size": 24, "raw_average_key_size": 24, "raw_value_size": 15, "raw_average_value_size": 15, "num_data_blocks": 1, "num_entries": 1, "filter_policy_name": "", "kDeletedKeys": "0", "kMergeOperands": "0"}}
+2022/01/10-15:38:15.266552 19b8 [c:\users\aretter\code\rocksdb\db\compaction_job.cc:1227] [default] [JOB 3] Compacted 4@0 + 4@1 files to L1 => 986 bytes
+2022/01/10-15:38:15.286330 19b8 (Original Log Time 2022/01/10-15:38:15.286252) [c:\users\aretter\code\rocksdb\db\compaction_job.cc:632] [default] compacted to: base level 1 max bytes base 268435456 files[0 1 0 0 0 0 0] max score 0.00, MB/sec: 0.5 rd, 0.0 wr, level 1, files in(4, 4) out(1) MB in(0.0, 0.0) out(0.0), read-write-amplify(2.2) write-amplify(0.2) OK, records in: 8, records dropped: 7
+2022/01/10-15:38:15.286352 19b8 (Original Log Time 2022/01/10-15:38:15.286285) EVENT_LOG_v1 {"time_micros": 1641800295286264, "job": 3, "event": "compaction_finished", "compaction_time_micros": 22257, "output_level": 1, "num_output_files": 1, "total_output_size": 986, "num_input_records": 8, "num_output_records": 1, "num_subcompactions": 1, "num_single_delete_mismatches": 0, "num_single_delete_fallthrough": 0, "lsm_state": [0, 1, 0, 0, 0, 0, 0]}
+2022/01/10-15:38:15.286532 19b8 EVENT_LOG_v1 {"time_micros": 1641800295286527, "job": 3, "event": "table_file_deletion", "file_number": 61}
+2022/01/10-15:38:15.286639 19b8 EVENT_LOG_v1 {"time_micros": 1641800295286635, "job": 3, "event": "table_file_deletion", "file_number": 25}
+2022/01/10-15:38:15.286735 19b8 EVENT_LOG_v1 {"time_micros": 1641800295286731, "job": 3, "event": "table_file_deletion", "file_number": 22}
+2022/01/10-15:38:15.286829 19b8 EVENT_LOG_v1 {"time_micros": 1641800295286825, "job": 3, "event": "table_file_deletion", "file_number": 19}
+2022/01/10-15:38:15.286916 19b8 EVENT_LOG_v1 {"time_micros": 1641800295286912, "job": 3, "event": "table_file_deletion", "file_number": 13}
+2022/01/10-15:38:15.287004 19b8 EVENT_LOG_v1 {"time_micros": 1641800295287000, "job": 3, "event": "table_file_deletion", "file_number": 10}
+2022/01/10-15:38:15.287088 19b8 EVENT_LOG_v1 {"time_micros": 1641800295287084, "job": 3, "event": "table_file_deletion", "file_number": 7}
+2022/01/10-15:38:15.287177 19b8 EVENT_LOG_v1 {"time_micros": 1641800295287174, "job": 3, "event": "table_file_deletion", "file_number": 4}

@@ -1,0 +1,176 @@
+2022/01/10-19:42:56.137486 46ec RocksDB version: 5.9.2
+2022/01/10-19:42:56.137568 46ec Git sha rocksdb_build_git_sha:@004237e62790320d8e630456cbeb6f4a1f3579c2@
+2022/01/10-19:42:56.137588 46ec Compile date Jan  3 2018
+2022/01/10-19:42:56.137610 46ec DB SUMMARY
+2022/01/10-19:42:56.137739 46ec SST files in block-data/node3 dir, Total Num: 0, files: 
+2022/01/10-19:42:56.137756 46ec Write Ahead Log file in block-data/node3: 
+2022/01/10-19:42:56.137768 46ec                         Options.error_if_exists: 0
+2022/01/10-19:42:56.137778 46ec                       Options.create_if_missing: 1
+2022/01/10-19:42:56.137789 46ec                         Options.paranoid_checks: 1
+2022/01/10-19:42:56.137799 46ec                                     Options.env: 0000022AF016BB20
+2022/01/10-19:42:56.138126 46ec                                Options.info_log: 0000022AF0BAB8E0
+2022/01/10-19:42:56.138137 46ec                Options.max_file_opening_threads: 16
+2022/01/10-19:42:56.138142 46ec                              Options.statistics: 0000000000000000
+2022/01/10-19:42:56.138147 46ec                               Options.use_fsync: 0
+2022/01/10-19:42:56.138152 46ec                       Options.max_log_file_size: 0
+2022/01/10-19:42:56.138156 46ec                  Options.max_manifest_file_size: 18446744073709551615
+2022/01/10-19:42:56.138161 46ec                   Options.log_file_time_to_roll: 0
+2022/01/10-19:42:56.138197 46ec                       Options.keep_log_file_num: 1000
+2022/01/10-19:42:56.138207 46ec                    Options.recycle_log_file_num: 0
+2022/01/10-19:42:56.138212 46ec                         Options.allow_fallocate: 1
+2022/01/10-19:42:56.138216 46ec                        Options.allow_mmap_reads: 0
+2022/01/10-19:42:56.138220 46ec                       Options.allow_mmap_writes: 0
+2022/01/10-19:42:56.138224 46ec                        Options.use_direct_reads: 0
+2022/01/10-19:42:56.138228 46ec                        Options.use_direct_io_for_flush_and_compaction: 0
+2022/01/10-19:42:56.138233 46ec          Options.create_missing_column_families: 0
+2022/01/10-19:42:56.138237 46ec                              Options.db_log_dir: 
+2022/01/10-19:42:56.138241 46ec                                 Options.wal_dir: block-data/node3
+2022/01/10-19:42:56.138246 46ec                Options.table_cache_numshardbits: 6
+2022/01/10-19:42:56.138250 46ec                      Options.max_subcompactions: 1
+2022/01/10-19:42:56.138254 46ec                  Options.max_background_flushes: -1
+2022/01/10-19:42:56.138258 46ec                         Options.WAL_ttl_seconds: 0
+2022/01/10-19:42:56.138263 46ec                       Options.WAL_size_limit_MB: 0
+2022/01/10-19:42:56.138267 46ec             Options.manifest_preallocation_size: 4194304
+2022/01/10-19:42:56.138271 46ec                     Options.is_fd_close_on_exec: 1
+2022/01/10-19:42:56.138275 46ec                   Options.advise_random_on_open: 1
+2022/01/10-19:42:56.138279 46ec                    Options.db_write_buffer_size: 0
+2022/01/10-19:42:56.138284 46ec                    Options.write_buffer_manager: 0000022AF0BE8DB0
+2022/01/10-19:42:56.138288 46ec         Options.access_hint_on_compaction_start: 1
+2022/01/10-19:42:56.138292 46ec  Options.new_table_reader_for_compaction_inputs: 0
+2022/01/10-19:42:56.138296 46ec               Options.compaction_readahead_size: 0
+2022/01/10-19:42:56.138301 46ec           Options.random_access_max_buffer_size: 1048576
+2022/01/10-19:42:56.138305 46ec                      Options.use_adaptive_mutex: 0
+2022/01/10-19:42:56.138309 46ec                            Options.rate_limiter: 0000000000000000
+2022/01/10-19:42:56.138313 46ec     Options.sst_file_manager.rate_bytes_per_sec: 0
+2022/01/10-19:42:56.138318 46ec                       Options.wal_recovery_mode: 2
+2022/01/10-19:42:56.138322 46ec                  Options.enable_thread_tracking: 0
+2022/01/10-19:42:56.138326 46ec                  Options.enable_pipelined_write: 0
+2022/01/10-19:42:56.138330 46ec         Options.allow_concurrent_memtable_write: 1
+2022/01/10-19:42:56.138334 46ec      Options.enable_write_thread_adaptive_yield: 1
+2022/01/10-19:42:56.138366 46ec             Options.write_thread_max_yield_usec: 100
+2022/01/10-19:42:56.138373 46ec            Options.write_thread_slow_yield_usec: 3
+2022/01/10-19:42:56.138378 46ec                               Options.row_cache: None
+2022/01/10-19:42:56.138382 46ec                              Options.wal_filter: None
+2022/01/10-19:42:56.138386 46ec             Options.avoid_flush_during_recovery: 0
+2022/01/10-19:42:56.138390 46ec             Options.allow_ingest_behind: 0
+2022/01/10-19:42:56.138394 46ec             Options.preserve_deletes: 0
+2022/01/10-19:42:56.138399 46ec             Options.concurrent_prepare: 0
+2022/01/10-19:42:56.138403 46ec             Options.manual_wal_flush: 0
+2022/01/10-19:42:56.138407 46ec             Options.seq_per_batch: 0
+2022/01/10-19:42:56.138422 46ec             Options.max_background_jobs: 2
+2022/01/10-19:42:56.138427 46ec             Options.max_background_compactions: -1
+2022/01/10-19:42:56.138460 46ec             Options.avoid_flush_during_shutdown: 0
+2022/01/10-19:42:56.138513 46ec           Options.writable_file_max_buffer_size: 1048576
+2022/01/10-19:42:56.138585 46ec             Options.delayed_write_rate : 16777216
+2022/01/10-19:42:56.138594 46ec             Options.max_total_wal_size: 0
+2022/01/10-19:42:56.138599 46ec             Options.delete_obsolete_files_period_micros: 21600000000
+2022/01/10-19:42:56.138604 46ec                   Options.stats_dump_period_sec: 600
+2022/01/10-19:42:56.138608 46ec                          Options.max_open_files: -1
+2022/01/10-19:42:56.138612 46ec                          Options.bytes_per_sync: 0
+2022/01/10-19:42:56.138617 46ec                      Options.wal_bytes_per_sync: 0
+2022/01/10-19:42:56.138621 46ec Compression algorithms supported:
+2022/01/10-19:42:56.138637 46ec 	Snappy supported: 0
+2022/01/10-19:42:56.138641 46ec 	Zlib supported: 0
+2022/01/10-19:42:56.138645 46ec 	Bzip supported: 0
+2022/01/10-19:42:56.138649 46ec 	LZ4 supported: 0
+2022/01/10-19:42:56.138653 46ec 	ZSTDNotFinal supported: 0
+2022/01/10-19:42:56.138657 46ec 	ZSTD supported: 0
+2022/01/10-19:42:56.138665 46ec Fast CRC32 supported: Supported on x86Not supported on x86
+2022/01/10-19:42:56.139009 46ec [c:\users\aretter\code\rocksdb\db\db_impl_open.cc:227] Creating manifest 1 
+2022/01/10-19:42:56.222899 46ec [c:\users\aretter\code\rocksdb\db\version_set.cc:2835] Recovering from manifest file: MANIFEST-000001
+2022/01/10-19:42:56.223886 46ec [c:\users\aretter\code\rocksdb\db\column_family.cc:413] --------------- Options for column family [default]:
+2022/01/10-19:42:56.223905 46ec               Options.comparator: leveldb.BytewiseComparator
+2022/01/10-19:42:56.223913 46ec           Options.merge_operator: None
+2022/01/10-19:42:56.223920 46ec        Options.compaction_filter: None
+2022/01/10-19:42:56.223935 46ec        Options.compaction_filter_factory: None
+2022/01/10-19:42:56.223942 46ec         Options.memtable_factory: SkipListFactory
+2022/01/10-19:42:56.223949 46ec            Options.table_factory: BlockBasedTable
+2022/01/10-19:42:56.223998 46ec            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (0000022AF06B3E90)
+  cache_index_and_filter_blocks: 0
+  cache_index_and_filter_blocks_with_high_priority: 0
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  index_type: 0
+  hash_index_allow_collision: 1
+  checksum: 1
+  no_block_cache: 0
+  block_cache: 0000022AF0830670
+  block_cache_name: LRUCache
+  block_cache_options:
+    capacity : 8388608
+    num_shard_bits : 4
+    strict_capacity_limit : 0
+    high_pri_pool_ratio: 0.000
+  block_cache_compressed: 0000000000000000
+  persistent_cache: 0000000000000000
+  block_size: 4096
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  metadata_block_size: 4096
+  partition_filters: 0
+  use_delta_encoding: 1
+  filter_policy: nullptr
+  whole_key_filtering: 1
+  verify_compression: 0
+  read_amp_bytes_per_bit: 0
+  format_version: 2
+2022/01/10-19:42:56.224008 46ec        Options.write_buffer_size: 67108864
+2022/01/10-19:42:56.224101 46ec  Options.max_write_buffer_number: 2
+2022/01/10-19:42:56.224120 46ec          Options.compression: NoCompression
+2022/01/10-19:42:56.224129 46ec                  Options.bottommost_compression: Disabled
+2022/01/10-19:42:56.224136 46ec       Options.prefix_extractor: nullptr
+2022/01/10-19:42:56.224143 46ec   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+2022/01/10-19:42:56.224150 46ec             Options.num_levels: 7
+2022/01/10-19:42:56.224156 46ec        Options.min_write_buffer_number_to_merge: 1
+2022/01/10-19:42:56.224163 46ec     Options.max_write_buffer_number_to_maintain: 0
+2022/01/10-19:42:56.224170 46ec            Options.compression_opts.window_bits: -14
+2022/01/10-19:42:56.224178 46ec                  Options.compression_opts.level: -1
+2022/01/10-19:42:56.224185 46ec               Options.compression_opts.strategy: 0
+2022/01/10-19:42:56.224194 46ec         Options.compression_opts.max_dict_bytes: 0
+2022/01/10-19:42:56.224288 46ec      Options.level0_file_num_compaction_trigger: 4
+2022/01/10-19:42:56.224303 46ec          Options.level0_slowdown_writes_trigger: 20
+2022/01/10-19:42:56.224311 46ec              Options.level0_stop_writes_trigger: 36
+2022/01/10-19:42:56.224318 46ec                   Options.target_file_size_base: 67108864
+2022/01/10-19:42:56.224325 46ec             Options.target_file_size_multiplier: 1
+2022/01/10-19:42:56.224332 46ec                Options.max_bytes_for_level_base: 268435456
+2022/01/10-19:42:56.224339 46ec Options.level_compaction_dynamic_level_bytes: 0
+2022/01/10-19:42:56.224346 46ec          Options.max_bytes_for_level_multiplier: 10.000000
+2022/01/10-19:42:56.224356 46ec Options.max_bytes_for_level_multiplier_addtl[0]: 1
+2022/01/10-19:42:56.224363 46ec Options.max_bytes_for_level_multiplier_addtl[1]: 1
+2022/01/10-19:42:56.224370 46ec Options.max_bytes_for_level_multiplier_addtl[2]: 1
+2022/01/10-19:42:56.224377 46ec Options.max_bytes_for_level_multiplier_addtl[3]: 1
+2022/01/10-19:42:56.224384 46ec Options.max_bytes_for_level_multiplier_addtl[4]: 1
+2022/01/10-19:42:56.224390 46ec Options.max_bytes_for_level_multiplier_addtl[5]: 1
+2022/01/10-19:42:56.224397 46ec Options.max_bytes_for_level_multiplier_addtl[6]: 1
+2022/01/10-19:42:56.224404 46ec       Options.max_sequential_skip_in_iterations: 8
+2022/01/10-19:42:56.224411 46ec                    Options.max_compaction_bytes: 1677721600
+2022/01/10-19:42:56.224418 46ec                        Options.arena_block_size: 8388608
+2022/01/10-19:42:56.224425 46ec   Options.soft_pending_compaction_bytes_limit: 68719476736
+2022/01/10-19:42:56.224432 46ec   Options.hard_pending_compaction_bytes_limit: 274877906944
+2022/01/10-19:42:56.224439 46ec       Options.rate_limit_delay_max_milliseconds: 100
+2022/01/10-19:42:56.224445 46ec                Options.disable_auto_compactions: 0
+2022/01/10-19:42:56.224454 46ec                        Options.compaction_style: kCompactionStyleLevel
+2022/01/10-19:42:56.224462 46ec                          Options.compaction_pri: kByCompensatedSize
+2022/01/10-19:42:56.224469 46ec Options.compaction_options_universal.size_ratio: 1
+2022/01/10-19:42:56.224476 46ec Options.compaction_options_universal.min_merge_width: 2
+2022/01/10-19:42:56.224483 46ec Options.compaction_options_universal.max_merge_width: 4294967295
+2022/01/10-19:42:56.224490 46ec Options.compaction_options_universal.max_size_amplification_percent: 200
+2022/01/10-19:42:56.224497 46ec Options.compaction_options_universal.compression_size_percent: -1
+2022/01/10-19:42:56.224504 46ec Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+2022/01/10-19:42:56.224511 46ec Options.compaction_options_fifo.max_table_files_size: 1073741824
+2022/01/10-19:42:56.224518 46ec Options.compaction_options_fifo.allow_compaction: 0
+2022/01/10-19:42:56.224525 46ec Options.compaction_options_fifo.ttl: 0
+2022/01/10-19:42:56.224532 46ec                   Options.table_properties_collectors: 
+2022/01/10-19:42:56.224538 46ec                   Options.inplace_update_support: 0
+2022/01/10-19:42:56.224545 46ec                 Options.inplace_update_num_locks: 10000
+2022/01/10-19:42:56.224560 46ec               Options.memtable_prefix_bloom_size_ratio: 0.000000
+2022/01/10-19:42:56.224571 46ec   Options.memtable_huge_page_size: 0
+2022/01/10-19:42:56.224578 46ec                           Options.bloom_locality: 0
+2022/01/10-19:42:56.224584 46ec                    Options.max_successive_merges: 0
+2022/01/10-19:42:56.224591 46ec                Options.optimize_filters_for_hits: 0
+2022/01/10-19:42:56.224598 46ec                Options.paranoid_file_checks: 0
+2022/01/10-19:42:56.224605 46ec                Options.force_consistency_checks: 0
+2022/01/10-19:42:56.224611 46ec                Options.report_bg_io_stats: 0
+2022/01/10-19:42:56.227229 46ec [c:\users\aretter\code\rocksdb\db\version_set.cc:3100] Recovered from manifest file:block-data/node3/MANIFEST-000001 succeeded,manifest_file_number is 1, next_file_number is 3, last_sequence is 0, log_number is 0,prev_log_number is 0,max_column_family is 0
+2022/01/10-19:42:56.227253 46ec [c:\users\aretter\code\rocksdb\db\version_set.cc:3108] Column family [default] (ID 0), log number is 0
+2022/01/10-19:42:56.253530 46ec [c:\users\aretter\code\rocksdb\db\db_impl_open.cc:1150] DB pointer 0000022AF09D65E0

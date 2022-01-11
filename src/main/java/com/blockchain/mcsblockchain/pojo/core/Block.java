@@ -1,10 +1,7 @@
 package com.blockchain.mcsblockchain.pojo.core;
 
-import com.blockchain.mcsblockchain.pojo.Time;
-
 import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
+
 ///区块链中区块的结构
  public class Block implements Serializable {
 
@@ -12,6 +9,16 @@ import java.util.List;
 
     private BlockBody body;
     private BlockHeader header;
+    //确认数
+    private int confirmNum = 0;
+
+    public int getConfirmNum() {
+        return confirmNum;
+    }
+
+    public void setConfirmNum(int confirmNum) {
+        this.confirmNum = confirmNum;
+    }
 
     public Block() {
     }

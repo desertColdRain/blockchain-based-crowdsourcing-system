@@ -10,7 +10,7 @@ import java.security.NoSuchAlgorithmException;
 
 @RestController
 public class AccountController {
-@RequestMapping("/login")
+@RequestMapping("/create account")
     public String newAccount() throws NoSuchAlgorithmException {
     Cryptography.init();
     Account account = new Account();
