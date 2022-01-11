@@ -1,2 +1,2 @@
 # mcsChain
-This is an anonymous authentication on trust in blockchain-based mobile crowdsourcing
+This is an Anonymous Authentication on Trust in Blockchain-Based Mobile Crowdsourcing system
