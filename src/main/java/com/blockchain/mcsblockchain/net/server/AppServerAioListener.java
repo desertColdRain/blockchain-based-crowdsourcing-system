@@ -14,7 +14,7 @@ import org.tio.server.intf.ServerAioListener;
 @Component
 public class AppServerAioListener implements ServerAioListener {
 
-    private static Logger log = LoggerFactory.getLogger(AppServerAioListener.class);
+    private static final Logger log = LoggerFactory.getLogger(AppServerAioListener.class);
 
     @Override
     public void onAfterClose(ChannelContext channelContext, Throwable throwable, String remark, boolean isRemove) {

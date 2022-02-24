@@ -1,12 +1,14 @@
 package com.blockchain.mcsblockchain.pojo.crypto;
 
 import com.blockchain.mcsblockchain.Utils.Cryptography;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import it.unisa.dia.gas.jpbc.Element;
 
 import java.io.*;
 //私钥类
 public class SKType implements Serializable {
     private static final long serialVersionUID = /*4878039769420589901L;*/1L;
+
     public transient Element value;
 
     public SKType()

@@ -40,4 +40,10 @@ public interface MessagePacketType {
 
     //响应获取节点列表
     byte RES_NODE_LIST = -6;
+
+    //请求获取节点的交易集
+    byte REQ_NODE_TRANSACTION_POOL = 7;
+
+    //响应获取节点交易集
+    byte RES_NODE_TRANSACTION_POOL = -7;
 }

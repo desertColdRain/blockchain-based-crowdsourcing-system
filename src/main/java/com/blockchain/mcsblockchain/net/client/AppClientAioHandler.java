@@ -62,6 +62,11 @@ public class AppClientAioHandler extends BaseAioHandler implements ClientAioHand
                     logger.info("收到服务端确认消息："+str);
                     break;
 
+                //获取节点交易池回复
+                case MessagePacketType.RES_NODE_TRANSACTION_POOL:
+                    this.getTransactionPool(body);
+                    break;
+
                 //确认交易回复
                 case MessagePacketType.RES_CONFIRM_TRANSACTION:
                     this.confirmTransaction(body);
@@ -81,6 +86,8 @@ public class AppClientAioHandler extends BaseAioHandler implements ClientAioHand
                 case MessagePacketType.RES_NODE_LIST:
                     this.getNodeList(body);
                     break;
+
+
 
             } //end of switch
 
@@ -139,7 +146,6 @@ public class AppClientAioHandler extends BaseAioHandler implements ClientAioHand
 
             // 执行区块中的交易
             executor.run(block);
-
             //继续同步下一个区块
             ApplicationContextProvider.publishEvent(new FetchNextBlockEvent(block.getHeader().getIndex()+1));
         } else {
@@ -200,6 +206,20 @@ public class AppClientAioHandler extends BaseAioHandler implements ClientAioHand
 
     }
 
+    public void getTransactionPool(byte[] body) throws IOException, ClassNotFoundException {
+
+        ServerResponseVo responseVo = (ServerResponseVo) SerializeUtils.deserialize(body);
+        if(!responseVo.isSuccess()){
+            return;
+        }
+        //对收到的交易池做一个并集
+        TransactionPool txPool=(TransactionPool) responseVo.getItem();
+        TransactionPool thisTxPool = dbAccess.getTxPool();
+        txPool.getTransactions().removeAll(thisTxPool.getTransactions());
+        txPool.getTransactions().addAll(thisTxPool.getTransactions());
+        dbAccess.putTxPool(txPool);
+
+    }
     /**
      * 此方法如果返回 null，框架层面则不会发心跳；如果返回非null，框架层面会定时发本方法返回的消息包
      */
@@ -207,4 +227,6 @@ public class AppClientAioHandler extends BaseAioHandler implements ClientAioHand
     public MessagePacket heartbeatPacket() {
         return heartbeatPacket;
     }
+
+
 }

@@ -63,8 +63,8 @@ public class GroupContextConfig {
                 serverAioHandler,
                 serverAioListener);
         serverGroupContext.setHeartbeatTimeout(tioProps.getHeartTimeout());
-
         return serverGroupContext;
+
     }
 
 }

@@ -4,7 +4,7 @@ package com.blockchain.mcsblockchain.net.base;
 import com.blockchain.mcsblockchain.pojo.core.Block;
 import com.blockchain.mcsblockchain.pojo.db.DBAccess;
 
-import com.blockchain.mcsblockchain.pojo.mine.RPCA.RPCAConsensusImpl;
+import com.blockchain.mcsblockchain.pojo.mine.PoW.ProofOfWork;
 import com.google.common.base.Objects;
 import com.google.common.base.Optional;
 import org.tio.core.ChannelContext;
@@ -17,8 +17,6 @@ import java.security.NoSuchAlgorithmException;
 
 /**
  * 抽象的  AioHandler, 消息编码，解码的通用实现
- * @author yangjian
- * @since 18-4-17
  */
 public abstract class BaseAioHandler {
 
@@ -109,26 +107,30 @@ public abstract class BaseAioHandler {
 
         //创世区块
         if (block.getHeader().getIndex() == 1) {
+            //检验区块的哈希是否等于计算的哈希
+            System.out.println("++++++++++++++++校验创世区块++++++++++++++");
+            System.out.println("block header hash: "+block.getHeader().getHash());
+            System.out.println("compute the hash of block hash"+block.getHeader().headerHash());
             return Objects.equal(block.getHeader().getHash(), block.getHeader().headerHash());
         }
 
         boolean blockValidate = false;
+        //非创世区块
         if (block.getHeader().getIndex() > 1) {
+            System.out.println("+++++++++++++++++检验非创世区块++++++++++++");
             Optional<Block> prevBlock = dbAccess.getBlock(block.getHeader().getIndex()-1);
             if (prevBlock.isPresent()
                     && prevBlock.get().getHeader().getHash().equals(block.getHeader().getPreHash())) {
                 blockValidate = true;
             }
         }
-        //检查是否符合工作量证明
-        /*ProofOfWork proofOfWork = ProofOfWork.newProofOfWork(block);
+        System.out.println("校验前一个区块的哈希值结果："+blockValidate);
+        ProofOfWork proofOfWork = ProofOfWork.newProofOfWork(block);
+        System.out.println(block);
         if (!proofOfWork.validate()) {
             blockValidate = false;
-        }*/
-        RPCAConsensusImpl rpcaConsensus = new RPCAConsensusImpl();
-        if(!rpcaConsensus.validateBlock(block))
-            blockValidate=false;
-
+        }
+        System.out.println("校验是否满足难度值结果："+blockValidate);
         return blockValidate;
     }
 

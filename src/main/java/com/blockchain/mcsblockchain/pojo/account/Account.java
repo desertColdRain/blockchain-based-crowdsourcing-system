@@ -3,11 +3,13 @@ package com.blockchain.mcsblockchain.pojo.account;
 import com.blockchain.mcsblockchain.Utils.Cryptography;
 import com.blockchain.mcsblockchain.pojo.crypto.PKType;
 import com.blockchain.mcsblockchain.pojo.crypto.SKType;
+import org.springframework.stereotype.Component;
 
 import java.io.*;
 import java.math.BigDecimal;
 import java.security.NoSuchAlgorithmException;
 
+@Component
 public class Account implements Serializable {
 
     private static final long serializeVersionUID=1L;
@@ -16,8 +18,25 @@ public class Account implements Serializable {
     private BigDecimal balance;         //账户余额
     private String accountAddr;         //账户地址，即公钥的哈希值
     private int accountType;            //账户类型：0代表miner， 1代表worker
+    private String userName;
+    private String password;
 
 
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
     public void setPublicKey(PKType publicKey) {
         this.publicKey = publicKey;
@@ -47,8 +66,10 @@ public class Account implements Serializable {
         pk.value.powZn(sk.value);
         account.setPublicKey(pk);
         account.setSecretKey(sk);
+        account.setUserName(null);
+        account.setPassword(null);
         account.setAccountAddr(Cryptography.myHash(pk.value.toString()));
-        account.setBalance(new BigDecimal(0.0));
+        account.setBalance(new BigDecimal("0.0"));
         return account;
     }
 
@@ -81,23 +102,25 @@ public class Account implements Serializable {
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         ObjectOutputStream objectOS = new ObjectOutputStream(out);
         objectOS.writeObject(this);
-        String res = out.toString("ISO-8859-1");
-        return res;
+        return out.toString("ISO-8859-1");
     }
 
     public Account deserialize(String str) throws IOException, ClassNotFoundException {
         ByteArrayInputStream byteIn = new ByteArrayInputStream(str.getBytes("ISO-8859-1"));
         ObjectInputStream objIn = new ObjectInputStream(byteIn);
-        Account res =(Account) objIn.readObject();
-        return res;
+        return (Account) objIn.readObject();
     }
+
     @Override
     public String toString() {
         return "Account{" +
                 "publicKey=" + publicKey.value +
                 ", secretKey=" + secretKey.value +
                 ", balance=" + balance +
-                ",accountAddr='" + accountAddr + '\'' +
+                ", accountAddr='" + accountAddr + '\'' +
+                ", accountType=" + accountType +
+                ", userName='" + userName + '\'' +
+                ", password='" + password + '\'' +
                 '}';
     }
 }

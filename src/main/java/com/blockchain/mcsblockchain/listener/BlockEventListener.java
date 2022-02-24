@@ -28,10 +28,11 @@ public class BlockEventListener {
     AppClient appClient;
     private static Logger logger = LoggerFactory.getLogger(BlockEventListener.class);
 
-    @EventListener(NewBlockEvent.class)
     //新区块产生事件
+    @EventListener(NewBlockEvent.class)
     public void newBlock(NewBlockEvent event) throws IOException {
-        logger.info("--------开始广播新区块----------");
+        logger.info("++++++++++++++++++开始广播新区块+++++++++++++++++++");
+        //source 为事件最初发生的对象身上
         Block block = (Block) event.getSource();
         MessagePacket messagePacket = new MessagePacket();
         messagePacket.setType(MessagePacketType.REQ_NEW_BLOCK);
@@ -43,7 +44,7 @@ public class BlockEventListener {
     //同步下一个区块
     @EventListener(FetchNextBlockEvent.class)
     public void fetchNextBlock(FetchNextBlockEvent event) throws IOException {
-        logger.info("-----------开始同步下一个区块--------------");
+        logger.info("+++++++++++++++++开始同步下一个区块++++++++++++++++++++++");
         Integer blockIndex = (Integer) event.getSource();
         if(blockIndex==0){
             Optional<Object> lastBlockIndex = dbAccess.getLastBlockIndex();

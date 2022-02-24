@@ -5,10 +5,11 @@ import com.blockchain.mcsblockchain.pojo.crypto.PKType;
 import com.blockchain.mcsblockchain.pojo.crypto.SKType;
 import com.blockchain.mcsblockchain.pojo.crypto.Signature;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.security.NoSuchAlgorithmException;
 
-public class Transaction {
+public class Transaction implements Serializable {
 
     private String transactionHash;  //交易哈希，此交易的摘要
     private Signature senderSign;          //付款人签名
@@ -20,7 +21,7 @@ public class Transaction {
     private String receiverAddr;    //收款人地址
     private BigDecimal amount;          //交易金额
     private int blockNum;               //所属区块高度
-    private int status;                 //交易状态 0：success  1：failed
+    private int status;                 //交易状态 0：success  1：failed   2: appending
 
     public int getStatus() {
         return status;

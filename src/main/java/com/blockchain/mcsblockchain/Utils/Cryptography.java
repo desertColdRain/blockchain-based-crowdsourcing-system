@@ -12,8 +12,11 @@ import java.util.Locale;
 
 import it.unisa.dia.gas.jpbc.*;
 import it.unisa.dia.gas.plaf.jpbc.pairing.PairingFactory;
+import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
 
+@Component
 public class Cryptography {
     public static int HashSize = 32;
 
@@ -34,6 +37,7 @@ public class Cryptography {
 
     }
     //加密工具初始化
+    @PostConstruct
     public static void init(){
         pairing = PairingFactory.getPairing("src\\main\\resources\\cryptoParams.properties");
         //System.out.println(pairing);

@@ -21,15 +21,14 @@ import org.tio.core.intf.Packet;
 import org.tio.server.intf.ServerAioHandler;
 
 import java.io.IOException;
+import java.io.Serializable;
 import java.util.List;
 
-/**
- * 服务端 AioHandler 实现
- */
+//服务端 AioHandler 实现
 @Component
 public class AppServerAioHandler extends BaseAioHandler implements ServerAioHandler {
 
-    private static Logger logger = LoggerFactory.getLogger(AppServerAioHandler.class);
+    private static final Logger logger = LoggerFactory.getLogger(AppServerAioHandler.class);
     @Autowired
     private DBAccess dbAccess;
     @Autowired
@@ -42,13 +41,10 @@ public class AppServerAioHandler extends BaseAioHandler implements ServerAioHand
     public AppServerAioHandler() {
     }
 
-    /**
-     * 处理消息
-     */
+    // 处理消息
     @Override
     public void handler(Packet packet, ChannelContext channelContext) throws Exception
     {
-
         MessagePacket messagePacket = (MessagePacket) packet;
         byte type = messagePacket.getType();
         byte[] body = messagePacket.getBody();
@@ -59,6 +55,7 @@ public class AppServerAioHandler extends BaseAioHandler implements ServerAioHand
                 MessagePacket resPacket = null;
                 switch (type) {
 
+                    //普通字符串消息
                     case MessagePacketType.STRING_MESSAGE:
                         resPacket = this.stringMessage(body);
                         break;
@@ -87,19 +84,18 @@ public class AppServerAioHandler extends BaseAioHandler implements ServerAioHand
                         resPacket = this.incBlockConfirmNum(body);
                         break;
 
-                } //end of switch
+                    case MessagePacketType.REQ_NODE_TRANSACTION_POOL:
+                        resPacket=this.getTransactionPool(body);
 
+                } //end of switch
                 //发送消息
                 Aio.send(channelContext, resPacket);
             }
         }
-        return;
     }
 
     /**
-     * 普通字符串
-     * @param body
-     * @return
+     普通字符串消息
      */
     public MessagePacket stringMessage(byte[] body) throws IOException, ClassNotFoundException {
 
@@ -183,7 +179,7 @@ public class AppServerAioHandler extends BaseAioHandler implements ServerAioHand
             dbAccess.putLastBlockIndex(newBlock.getHeader().getIndex());
             dbAccess.putBlock(newBlock);
             responseVo.setSuccess(true);
-            //执行区块中的交易，同步账户的余额
+            //执行区块中的交易 ，同步账户的余额
             executor.run(newBlock);
         } else {
             logger.error("区块确认失败：{}", newBlock);
@@ -221,6 +217,25 @@ public class AppServerAioHandler extends BaseAioHandler implements ServerAioHand
         return  resPacket;
     }
 
+    public MessagePacket getTransactionPool(byte[] body) throws IOException, ClassNotFoundException {
+        ServerResponseVo responseVo = new ServerResponseVo();
+        TransactionPool txPool = (TransactionPool) SerializeUtils.deserialize(body);
+        MessagePacket resPacket = new MessagePacket();
+        logger.info("收到获取节点交易池请求");
+        TransactionPool allTxs = dbAccess.getTxPool();
+        if(allTxs!=null) {
+            responseVo.setItem(allTxs);
+            responseVo.setSuccess(true);
+        }
+        else{
+            responseVo.setSuccess(false);
+            responseVo.setMessage("请求的交易池不存在");
+        }
+
+        resPacket.setType(MessagePacketType.RES_NODE_TRANSACTION_POOL);
+        resPacket.setBody(SerializeUtils.serialize(responseVo));
+        return resPacket;
+    }
     public MessagePacket incBlockConfirmNum(byte[] body) throws IOException, ClassNotFoundException {
         ServerResponseVo responseVo = new ServerResponseVo();
         MessagePacket resPacket = new MessagePacket();

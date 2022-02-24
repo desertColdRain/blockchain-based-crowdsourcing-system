@@ -3,6 +3,7 @@ package com.blockchain.mcsblockchain.net.client;
 import com.blockchain.mcsblockchain.Utils.SerializeUtils;
 import com.blockchain.mcsblockchain.conf.AppConfig;
 import com.blockchain.mcsblockchain.event.FetchNextBlockEvent;
+import com.blockchain.mcsblockchain.event.NewBlockEvent;
 import com.blockchain.mcsblockchain.net.ApplicationContextProvider;
 import com.blockchain.mcsblockchain.net.base.MessagePacket;
 import com.blockchain.mcsblockchain.net.base.MessagePacketType;
@@ -34,6 +35,7 @@ public class AppClient {
 
     @Autowired
     private TioProps tioProps;
+
 
     @Autowired
     private DBAccess dbAccess;
@@ -69,10 +71,10 @@ public class AppClient {
         if(nodes!=null){
             for (Node node : nodes) {
                 connectNode(node);
-                System.out.println("connect nodes");
+                System.out.println("连接到节点："+node);
             }
         }
-        //else System.out.println("did not connect nodes");
+        else System.out.println("did not connect nodes");
     }
 
     //发送消息到群组
@@ -96,6 +98,7 @@ public class AppClient {
         if (nodeList.isPresent() && nodeList.get().contains(node)) {
             return;
         }
+
         if (dbAccess.addNode(node)) {
             connectNode(node);
         }
@@ -109,8 +112,9 @@ public class AppClient {
 
     //向所有的连接的节点发起同步请求
     @EventListener(ApplicationReadyEvent.class)
-    public void fetchNextBlock(){
-        ApplicationContextProvider.publishEvent(new FetchNextBlockEvent(0));
+    public void fetchNextBlock() throws Exception {
+        //ApplicationContextProvider.publishEvent(new NewBlockEvent(rpcaConsensus.generateBlock()));
+       // ApplicationContextProvider.publishEvent(new FetchNextBlockEvent(0));
     }
 
     //开始获取节点列表

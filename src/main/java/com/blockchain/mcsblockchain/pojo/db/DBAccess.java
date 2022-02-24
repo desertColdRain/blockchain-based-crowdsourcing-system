@@ -21,15 +21,17 @@ public interface DBAccess {
     //挖矿账户
     String MINER_ACCOUNT = "miner_account";
     //交易池
-    String TX_POOL = "transaction_pool_";
+    String TX_POOL = "transaction_pool";
+    //用户User
+    String USER="user_";
     //最后一个区块的区块高度
     String LAST_BLOCK_INDEX = BLOCKS_BUCKET_PREFIX+"last_block";
     //客户端节点列表存储 key
     String CLIENT_NODES_LIST_KEY = "client-node-list";
     //向交易池中加入交易
-    boolean putTx(Transaction tx);
+    boolean putTxPool(TransactionPool txPool);
     //获取交易池中所有的交易
-    TransactionPool getAllTxs() throws IOException, ClassNotFoundException;
+    TransactionPool getTxPool() throws IOException, ClassNotFoundException;
     //根据交易的哈希值删除交易池中的某笔交易
     boolean deleteTransaction(String txHash);
 
@@ -53,7 +55,7 @@ public interface DBAccess {
     //添加一个账户钱包
     boolean putAccount(Account account);
     //获取指定的账户
-    Optional<Account> getAccount(String address) throws NoSuchAlgorithmException;
+    Optional<Account> getAccount(String userName) throws NoSuchAlgorithmException;
     //获取所有账户列表
     List<Account> getAllAccounts() throws IOException, ClassNotFoundException;
     //获取挖矿账户

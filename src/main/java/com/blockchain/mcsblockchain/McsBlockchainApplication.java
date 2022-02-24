@@ -9,11 +9,9 @@ import org.springframework.stereotype.Component;
 
 
 @SpringBootApplication
-
 public class McsBlockchainApplication {
 
-    @Autowired
-    AppClient appClient;
+
     public static void main(String[] args) {
 
         SpringApplication.run(McsBlockchainApplication.class, args);

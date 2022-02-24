@@ -28,13 +28,13 @@ import java.util.List;
 @Component
 public class RocksDBAccess implements DBAccess{
 
-    @Autowired
-    AppConfig appConfig;
 
     static Logger logger= LoggerFactory.getLogger(RocksDBAccess.class);
 
     private RocksDB rocksDB;
 
+    @Autowired
+    AppConfig appConfig;
     @Autowired
     private TioProps tioProps;
 
@@ -87,13 +87,13 @@ public class RocksDBAccess implements DBAccess{
 
     @Override
     public boolean putAccount(Account account) {
-        return this.put(WALLETS_BUCKET_PREFIX + account.getAccountAddr(), account);
+        return this.put(WALLETS_BUCKET_PREFIX + account.getUserName(), account);
     }
 
     @Override
-    public Optional<Account> getAccount(String address) throws NoSuchAlgorithmException {
+    public Optional<Account> getAccount(String userName) throws NoSuchAlgorithmException {
 
-        Optional<Object> object = this.get(WALLETS_BUCKET_PREFIX + address);
+        Optional<Object> object = this.get(WALLETS_BUCKET_PREFIX + userName);
         if (object.isPresent()) {
             return Optional.of((Account) object.get());
         }
@@ -101,8 +101,8 @@ public class RocksDBAccess implements DBAccess{
     }
 
     @Override
-    public boolean putTx(Transaction tx) {
-        return this.put(TX_POOL+tx.getTransactionHash(),tx);
+    public boolean putTxPool(TransactionPool txPool) {
+        return this.put(TX_POOL,txPool);
     }
 
     @Override
@@ -111,11 +111,11 @@ public class RocksDBAccess implements DBAccess{
     }
 
     @Override
-    public TransactionPool getAllTxs() throws IOException, ClassNotFoundException {
+    public TransactionPool getTxPool() throws IOException, ClassNotFoundException {
         TransactionPool txPool=new TransactionPool();
-        List<Object> objects=seekByKey(TX_POOL);
-        for(Object o:objects){
-            txPool.addTransaction((Transaction) o);
+        List<Transaction> objects=seekByKey(TX_POOL);
+        for(Transaction o:objects){
+            txPool.addTransaction( o);
         }
         return txPool;
     }
@@ -165,8 +165,8 @@ public class RocksDBAccess implements DBAccess{
 
         Optional<Object> object = get(MINER_ACCOUNT);
         if (object.isPresent()) {
-            String minerAddress = (String) object.get();
-            return getAccount(minerAddress);
+            String minerUsername = (String) object.get();
+            return getAccount(minerUsername);
         }
         return Optional.absent();
     }
@@ -175,7 +175,7 @@ public class RocksDBAccess implements DBAccess{
     public boolean setMinerAccount(Account account) {
 
         if (null != account) {
-            return put(MINER_ACCOUNT, account.getAccountAddr());
+            return put(MINER_ACCOUNT, account.getUserName() );
         } else {
             return false;
         }
@@ -219,12 +219,12 @@ public class RocksDBAccess implements DBAccess{
         Optional<List<Node>> nodeList = getNodeList();
         if (nodeList.isPresent()) {
             //已经存在的节点跳过
-            if (nodeList.get().contains(node)) {
+            /*if (nodeList.get().contains(node)) {
                 return false;
-            }
+            }*/
             //跳过自身节点
             Node self = new Node(tioProps.getServerIp(), tioProps.getListenPort());
-            if (self.equals(node)) {
+            if (self.getIp().equals(node.getIp())&&self.getPort()==node.getPort()) {
                 return false;
             }
             nodeList.get().add(node);
@@ -278,10 +278,13 @@ public class RocksDBAccess implements DBAccess{
     @Override
     public <T> List<T> seekByKey(String keyPrefix) throws IOException, ClassNotFoundException {
 
-        ArrayList<T> ts = new ArrayList<>();
+        List<T> ts = new ArrayList<>();
         RocksIterator iterator = rocksDB.newIterator(new ReadOptions());
         byte[] key = keyPrefix.getBytes();
         for (iterator.seek(key); iterator.isValid(); iterator.next()) {
+            String keys = new String(iterator.key());
+            if (!keys.startsWith(keyPrefix))
+                break;
             ts.add((T) SerializeUtils.deserialize(iterator.value()));
         }
 

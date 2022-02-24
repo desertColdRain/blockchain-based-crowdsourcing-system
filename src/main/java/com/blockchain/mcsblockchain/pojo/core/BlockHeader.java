@@ -4,6 +4,7 @@ import com.blockchain.mcsblockchain.Utils.Cryptography;
 import com.blockchain.mcsblockchain.Utils.Time;
 
 import java.io.*;
+import java.math.BigInteger;
 import java.security.NoSuchAlgorithmException;
 
 public class BlockHeader implements Serializable {
@@ -15,11 +16,25 @@ public class BlockHeader implements Serializable {
     private String hash;                            //区块头的哈希值
     private String preHash;                         //上一个区块的哈希值
     private String generatorAddress;                //区块创建这的账户地址，即公钥的哈希值
+    private BigInteger difficulty;                  //难度指标
+    private Long nonce;                             //pow问题的答案
+
+    public Long getNonce() {
+        return nonce;
+    }
+
+    public void setNonce(Long nonce) {
+        this.nonce = nonce;
+    }
 
     public BlockHeader() {
         this.timeStamp=new Time();
     }
-
+    public BlockHeader(Integer index, String previousHash) {
+        this.index = index;
+        this.timeStamp = new Time();
+        this.preHash = previousHash;
+    }
     public BlockHeader(int index, String preHash,String address) {
         this.index = index;
         this.preHash = preHash;
@@ -85,6 +100,14 @@ public class BlockHeader implements Serializable {
                 '}';
     }
 
+    public BigInteger getDifficulty() {
+        return difficulty;
+    }
+
+    public void setDifficulty(BigInteger difficulty) {
+        this.difficulty = difficulty;
+    }
+
     public BlockHeader deserialize(String str) throws IOException, ClassNotFoundException {
         ByteArrayInputStream byteIn = new ByteArrayInputStream(str.getBytes("ISO-8859-1"));
         ObjectInputStream objIn = new ObjectInputStream(byteIn);
@@ -94,8 +117,7 @@ public class BlockHeader implements Serializable {
     public String headerHash() throws NoSuchAlgorithmException {
         return Cryptography.myHash("BlockHeader{" +
                 "index=" + index +
-                ", timeStamp=" + timeStamp +
-                ", hash='" + hash + '\'' +
+                ", timeStamp=" + this.timeStamp +
                 ", preHash='" + preHash + '\'' +
                 ", generatorAddress='" + generatorAddress + '\'' +
                 '}');

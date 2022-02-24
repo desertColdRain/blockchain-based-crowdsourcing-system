@@ -43,5 +43,14 @@ public class TransactionPool implements Serializable {
                  i.remove();
              }
          }
+
      }
+
+    @Override
+    public String toString() {
+
+        return "TransactionPool{" +
+                "transactions=" + transactions +
+                '}';
+    }
 }

@@ -18,6 +18,19 @@ public class BlockBody implements Serializable {
     private List<String> MCSRelatedHash;     //the hashes of MCS related data
     private List<Transaction> transactionList;      //交易集合
 
+    @Override
+    public String toString() {
+        return "BlockBody{" +
+                "enclavePubKeyCS=" + enclavePubKeyCS +
+                ", keyListRevoke=" + keyListRevoke +
+                ", keyListAlter=" + keyListAlter +
+                ", keyListRegister=" + keyListRegister +
+                ", PIData='" + PIData + '\'' +
+                ", MCSRelatedHash=" + MCSRelatedHash +
+                ", transactionList=" + transactionList +
+                '}';
+    }
+
     public BlockBody() {
         this.enclavePubKeyCS=new ArrayList<>();
         this.keyListAlter=new ArrayList<>();

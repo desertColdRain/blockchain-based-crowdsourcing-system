@@ -4,6 +4,7 @@ import com.blockchain.mcsblockchain.Utils.Cryptography;
 import com.blockchain.mcsblockchain.pojo.account.Account;
 import com.blockchain.mcsblockchain.pojo.db.DBAccess;
 import com.google.common.base.Optional;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
@@ -12,8 +13,10 @@ import java.util.Iterator;
 @Component
 public class TransactionExecutor {
 
+    @Autowired
     private DBAccess dbAccess;
 
+    @Autowired
     private TransactionPool transactionPool;
 
     /**

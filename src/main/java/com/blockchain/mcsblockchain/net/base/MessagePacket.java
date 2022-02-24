@@ -14,6 +14,9 @@ public class MessagePacket extends Packet {
     //获取账户列表的消息信号
     public static final String FETCH_ACCOUNT_LIST_SYMBOL = "get_accounts_list";
 
+    //获取节点交易集
+    public static final String FETCH_NODE_TRANSACTION_POOL = "get_node_transaction_pool";
+
     // 获取节点列表的消息信号
     public static final String FETCH_NODE_LIST_SYMBOL = "get_nodes_list";
 

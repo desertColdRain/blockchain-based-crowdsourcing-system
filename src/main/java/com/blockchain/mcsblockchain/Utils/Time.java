@@ -8,7 +8,12 @@ public class Time implements Serializable {
         double value;
 
     public Time() {
-        this.value = System.currentTimeMillis();
+
+        this.value = System.currentTimeMillis()/1000.0;
+    }
+
+    public Time(double value) {
+        this.value = value;
     }
 
     public String serialize() throws IOException {
@@ -26,7 +31,15 @@ public class Time implements Serializable {
             return res;
         }
 
-        @Override
+    public double getValue() {
+        return value;
+    }
+
+    public void setValue(double value) {
+        this.value = value;
+    }
+
+    @Override
         public String toString() {
             return "Time{" +
                     "value=" + value +
