@@ -1,0 +1,176 @@
+2022/02/24-14:15:59.217545 abfc RocksDB version: 5.9.2
+2022/02/24-14:15:59.217639 abfc Git sha rocksdb_build_git_sha:@004237e62790320d8e630456cbeb6f4a1f3579c2@
+2022/02/24-14:15:59.217674 abfc Compile date Jan  3 2018
+2022/02/24-14:15:59.217710 abfc DB SUMMARY
+2022/02/24-14:15:59.217916 abfc SST files in block-data/node1 dir, Total Num: 0, files: 
+2022/02/24-14:15:59.217952 abfc Write Ahead Log file in block-data/node1: 
+2022/02/24-14:15:59.217978 abfc                         Options.error_if_exists: 0
+2022/02/24-14:15:59.218001 abfc                       Options.create_if_missing: 1
+2022/02/24-14:15:59.218022 abfc                         Options.paranoid_checks: 1
+2022/02/24-14:15:59.218043 abfc                                     Options.env: 000001C09D0D19B0
+2022/02/24-14:15:59.218345 abfc                                Options.info_log: 000001C09DBCC460
+2022/02/24-14:15:59.218361 abfc                Options.max_file_opening_threads: 16
+2022/02/24-14:15:59.218368 abfc                              Options.statistics: 0000000000000000
+2022/02/24-14:15:59.218376 abfc                               Options.use_fsync: 0
+2022/02/24-14:15:59.218382 abfc                       Options.max_log_file_size: 0
+2022/02/24-14:15:59.218389 abfc                  Options.max_manifest_file_size: 18446744073709551615
+2022/02/24-14:15:59.218396 abfc                   Options.log_file_time_to_roll: 0
+2022/02/24-14:15:59.218403 abfc                       Options.keep_log_file_num: 1000
+2022/02/24-14:15:59.218410 abfc                    Options.recycle_log_file_num: 0
+2022/02/24-14:15:59.218416 abfc                         Options.allow_fallocate: 1
+2022/02/24-14:15:59.218423 abfc                        Options.allow_mmap_reads: 0
+2022/02/24-14:15:59.218429 abfc                       Options.allow_mmap_writes: 0
+2022/02/24-14:15:59.218436 abfc                        Options.use_direct_reads: 0
+2022/02/24-14:15:59.218442 abfc                        Options.use_direct_io_for_flush_and_compaction: 0
+2022/02/24-14:15:59.218449 abfc          Options.create_missing_column_families: 0
+2022/02/24-14:15:59.218455 abfc                              Options.db_log_dir: 
+2022/02/24-14:15:59.218462 abfc                                 Options.wal_dir: block-data/node1
+2022/02/24-14:15:59.218469 abfc                Options.table_cache_numshardbits: 6
+2022/02/24-14:15:59.218475 abfc                      Options.max_subcompactions: 1
+2022/02/24-14:15:59.218482 abfc                  Options.max_background_flushes: -1
+2022/02/24-14:15:59.218489 abfc                         Options.WAL_ttl_seconds: 0
+2022/02/24-14:15:59.218495 abfc                       Options.WAL_size_limit_MB: 0
+2022/02/24-14:15:59.218502 abfc             Options.manifest_preallocation_size: 4194304
+2022/02/24-14:15:59.218508 abfc                     Options.is_fd_close_on_exec: 1
+2022/02/24-14:15:59.218515 abfc                   Options.advise_random_on_open: 1
+2022/02/24-14:15:59.218521 abfc                    Options.db_write_buffer_size: 0
+2022/02/24-14:15:59.218528 abfc                    Options.write_buffer_manager: 000001C09D4B94C0
+2022/02/24-14:15:59.218535 abfc         Options.access_hint_on_compaction_start: 1
+2022/02/24-14:15:59.218541 abfc  Options.new_table_reader_for_compaction_inputs: 0
+2022/02/24-14:15:59.218548 abfc               Options.compaction_readahead_size: 0
+2022/02/24-14:15:59.218554 abfc           Options.random_access_max_buffer_size: 1048576
+2022/02/24-14:15:59.218561 abfc                      Options.use_adaptive_mutex: 0
+2022/02/24-14:15:59.218567 abfc                            Options.rate_limiter: 0000000000000000
+2022/02/24-14:15:59.218574 abfc     Options.sst_file_manager.rate_bytes_per_sec: 0
+2022/02/24-14:15:59.218581 abfc                       Options.wal_recovery_mode: 2
+2022/02/24-14:15:59.218587 abfc                  Options.enable_thread_tracking: 0
+2022/02/24-14:15:59.218594 abfc                  Options.enable_pipelined_write: 0
+2022/02/24-14:15:59.218600 abfc         Options.allow_concurrent_memtable_write: 1
+2022/02/24-14:15:59.218607 abfc      Options.enable_write_thread_adaptive_yield: 1
+2022/02/24-14:15:59.218647 abfc             Options.write_thread_max_yield_usec: 100
+2022/02/24-14:15:59.218659 abfc            Options.write_thread_slow_yield_usec: 3
+2022/02/24-14:15:59.218666 abfc                               Options.row_cache: None
+2022/02/24-14:15:59.218673 abfc                              Options.wal_filter: None
+2022/02/24-14:15:59.218680 abfc             Options.avoid_flush_during_recovery: 0
+2022/02/24-14:15:59.218686 abfc             Options.allow_ingest_behind: 0
+2022/02/24-14:15:59.218693 abfc             Options.preserve_deletes: 0
+2022/02/24-14:15:59.218699 abfc             Options.concurrent_prepare: 0
+2022/02/24-14:15:59.218706 abfc             Options.manual_wal_flush: 0
+2022/02/24-14:15:59.218712 abfc             Options.seq_per_batch: 0
+2022/02/24-14:15:59.218734 abfc             Options.max_background_jobs: 2
+2022/02/24-14:15:59.218742 abfc             Options.max_background_compactions: -1
+2022/02/24-14:15:59.218749 abfc             Options.avoid_flush_during_shutdown: 0
+2022/02/24-14:15:59.218755 abfc           Options.writable_file_max_buffer_size: 1048576
+2022/02/24-14:15:59.218762 abfc             Options.delayed_write_rate : 16777216
+2022/02/24-14:15:59.218769 abfc             Options.max_total_wal_size: 0
+2022/02/24-14:15:59.218775 abfc             Options.delete_obsolete_files_period_micros: 21600000000
+2022/02/24-14:15:59.218782 abfc                   Options.stats_dump_period_sec: 600
+2022/02/24-14:15:59.218789 abfc                          Options.max_open_files: -1
+2022/02/24-14:15:59.218795 abfc                          Options.bytes_per_sync: 0
+2022/02/24-14:15:59.218802 abfc                      Options.wal_bytes_per_sync: 0
+2022/02/24-14:15:59.218808 abfc Compression algorithms supported:
+2022/02/24-14:15:59.218824 abfc 	Snappy supported: 0
+2022/02/24-14:15:59.218831 abfc 	Zlib supported: 0
+2022/02/24-14:15:59.218837 abfc 	Bzip supported: 0
+2022/02/24-14:15:59.218844 abfc 	LZ4 supported: 0
+2022/02/24-14:15:59.218850 abfc 	ZSTDNotFinal supported: 0
+2022/02/24-14:15:59.218856 abfc 	ZSTD supported: 0
+2022/02/24-14:15:59.218867 abfc Fast CRC32 supported: Supported on x86Not supported on x86
+2022/02/24-14:15:59.219153 abfc [c:\users\aretter\code\rocksdb\db\db_impl_open.cc:227] Creating manifest 1 
+2022/02/24-14:15:59.327356 abfc [c:\users\aretter\code\rocksdb\db\version_set.cc:2835] Recovering from manifest file: MANIFEST-000001
+2022/02/24-14:15:59.328223 abfc [c:\users\aretter\code\rocksdb\db\column_family.cc:413] --------------- Options for column family [default]:
+2022/02/24-14:15:59.328261 abfc               Options.comparator: leveldb.BytewiseComparator
+2022/02/24-14:15:59.328269 abfc           Options.merge_operator: None
+2022/02/24-14:15:59.328276 abfc        Options.compaction_filter: None
+2022/02/24-14:15:59.328287 abfc        Options.compaction_filter_factory: None
+2022/02/24-14:15:59.328294 abfc         Options.memtable_factory: SkipListFactory
+2022/02/24-14:15:59.328301 abfc            Options.table_factory: BlockBasedTable
+2022/02/24-14:15:59.328333 abfc            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (000001C09D424E30)
+  cache_index_and_filter_blocks: 0
+  cache_index_and_filter_blocks_with_high_priority: 0
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  index_type: 0
+  hash_index_allow_collision: 1
+  checksum: 1
+  no_block_cache: 0
+  block_cache: 000001C09D8F8410
+  block_cache_name: LRUCache
+  block_cache_options:
+    capacity : 8388608
+    num_shard_bits : 4
+    strict_capacity_limit : 0
+    high_pri_pool_ratio: 0.000
+  block_cache_compressed: 0000000000000000
+  persistent_cache: 0000000000000000
+  block_size: 4096
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  metadata_block_size: 4096
+  partition_filters: 0
+  use_delta_encoding: 1
+  filter_policy: nullptr
+  whole_key_filtering: 1
+  verify_compression: 0
+  read_amp_bytes_per_bit: 0
+  format_version: 2
+2022/02/24-14:15:59.328343 abfc        Options.write_buffer_size: 67108864
+2022/02/24-14:15:59.328382 abfc  Options.max_write_buffer_number: 2
+2022/02/24-14:15:59.328392 abfc          Options.compression: NoCompression
+2022/02/24-14:15:59.328398 abfc                  Options.bottommost_compression: Disabled
+2022/02/24-14:15:59.328404 abfc       Options.prefix_extractor: nullptr
+2022/02/24-14:15:59.328410 abfc   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+2022/02/24-14:15:59.328416 abfc             Options.num_levels: 7
+2022/02/24-14:15:59.328422 abfc        Options.min_write_buffer_number_to_merge: 1
+2022/02/24-14:15:59.328428 abfc     Options.max_write_buffer_number_to_maintain: 0
+2022/02/24-14:15:59.328435 abfc            Options.compression_opts.window_bits: -14
+2022/02/24-14:15:59.328441 abfc                  Options.compression_opts.level: -1
+2022/02/24-14:15:59.328447 abfc               Options.compression_opts.strategy: 0
+2022/02/24-14:15:59.328453 abfc         Options.compression_opts.max_dict_bytes: 0
+2022/02/24-14:15:59.328459 abfc      Options.level0_file_num_compaction_trigger: 4
+2022/02/24-14:15:59.328465 abfc          Options.level0_slowdown_writes_trigger: 20
+2022/02/24-14:15:59.328471 abfc              Options.level0_stop_writes_trigger: 36
+2022/02/24-14:15:59.328478 abfc                   Options.target_file_size_base: 67108864
+2022/02/24-14:15:59.328484 abfc             Options.target_file_size_multiplier: 1
+2022/02/24-14:15:59.328490 abfc                Options.max_bytes_for_level_base: 268435456
+2022/02/24-14:15:59.328496 abfc Options.level_compaction_dynamic_level_bytes: 0
+2022/02/24-14:15:59.328502 abfc          Options.max_bytes_for_level_multiplier: 10.000000
+2022/02/24-14:15:59.328510 abfc Options.max_bytes_for_level_multiplier_addtl[0]: 1
+2022/02/24-14:15:59.328516 abfc Options.max_bytes_for_level_multiplier_addtl[1]: 1
+2022/02/24-14:15:59.328523 abfc Options.max_bytes_for_level_multiplier_addtl[2]: 1
+2022/02/24-14:15:59.328529 abfc Options.max_bytes_for_level_multiplier_addtl[3]: 1
+2022/02/24-14:15:59.328535 abfc Options.max_bytes_for_level_multiplier_addtl[4]: 1
+2022/02/24-14:15:59.328541 abfc Options.max_bytes_for_level_multiplier_addtl[5]: 1
+2022/02/24-14:15:59.328547 abfc Options.max_bytes_for_level_multiplier_addtl[6]: 1
+2022/02/24-14:15:59.328553 abfc       Options.max_sequential_skip_in_iterations: 8
+2022/02/24-14:15:59.328559 abfc                    Options.max_compaction_bytes: 1677721600
+2022/02/24-14:15:59.328566 abfc                        Options.arena_block_size: 8388608
+2022/02/24-14:15:59.328572 abfc   Options.soft_pending_compaction_bytes_limit: 68719476736
+2022/02/24-14:15:59.328578 abfc   Options.hard_pending_compaction_bytes_limit: 274877906944
+2022/02/24-14:15:59.328584 abfc       Options.rate_limit_delay_max_milliseconds: 100
+2022/02/24-14:15:59.328591 abfc                Options.disable_auto_compactions: 0
+2022/02/24-14:15:59.328597 abfc                        Options.compaction_style: kCompactionStyleLevel
+2022/02/24-14:15:59.328605 abfc                          Options.compaction_pri: kByCompensatedSize
+2022/02/24-14:15:59.328611 abfc Options.compaction_options_universal.size_ratio: 1
+2022/02/24-14:15:59.328617 abfc Options.compaction_options_universal.min_merge_width: 2
+2022/02/24-14:15:59.328623 abfc Options.compaction_options_universal.max_merge_width: 4294967295
+2022/02/24-14:15:59.328630 abfc Options.compaction_options_universal.max_size_amplification_percent: 200
+2022/02/24-14:15:59.328636 abfc Options.compaction_options_universal.compression_size_percent: -1
+2022/02/24-14:15:59.328643 abfc Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+2022/02/24-14:15:59.328652 abfc Options.compaction_options_fifo.max_table_files_size: 1073741824
+2022/02/24-14:15:59.328659 abfc Options.compaction_options_fifo.allow_compaction: 0
+2022/02/24-14:15:59.328665 abfc Options.compaction_options_fifo.ttl: 0
+2022/02/24-14:15:59.328671 abfc                   Options.table_properties_collectors: 
+2022/02/24-14:15:59.328678 abfc                   Options.inplace_update_support: 0
+2022/02/24-14:15:59.328684 abfc                 Options.inplace_update_num_locks: 10000
+2022/02/24-14:15:59.328691 abfc               Options.memtable_prefix_bloom_size_ratio: 0.000000
+2022/02/24-14:15:59.328699 abfc   Options.memtable_huge_page_size: 0
+2022/02/24-14:15:59.328705 abfc                           Options.bloom_locality: 0
+2022/02/24-14:15:59.328711 abfc                    Options.max_successive_merges: 0
+2022/02/24-14:15:59.328717 abfc                Options.optimize_filters_for_hits: 0
+2022/02/24-14:15:59.328724 abfc                Options.paranoid_file_checks: 0
+2022/02/24-14:15:59.328730 abfc                Options.force_consistency_checks: 0
+2022/02/24-14:15:59.328736 abfc                Options.report_bg_io_stats: 0
+2022/02/24-14:15:59.329979 abfc [c:\users\aretter\code\rocksdb\db\version_set.cc:3100] Recovered from manifest file:block-data/node1/MANIFEST-000001 succeeded,manifest_file_number is 1, next_file_number is 3, last_sequence is 0, log_number is 0,prev_log_number is 0,max_column_family is 0
+2022/02/24-14:15:59.329994 abfc [c:\users\aretter\code\rocksdb\db\version_set.cc:3108] Column family [default] (ID 0), log number is 0
+2022/02/24-14:15:59.354680 abfc [c:\users\aretter\code\rocksdb\db\db_impl_open.cc:1150] DB pointer 000001C09D8C46D0

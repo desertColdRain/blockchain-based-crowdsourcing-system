@@ -11,4 +11,6 @@ public class Constants {
     public static final Account genesisAccount=null;                       //创世账户
     //区块共识需要达到的阈值
     public static final double blockConsensusThreshold=0.8;
+    //每个账号初始信任值
+    public static final double TRUST_VALUE=0.001;
 }

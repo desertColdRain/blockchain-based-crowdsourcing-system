@@ -44,8 +44,7 @@ public class Signature implements Serializable {
         ByteArrayOutputStream byteOut = new ByteArrayOutputStream();
         ObjectOutputStream objOut = new ObjectOutputStream(byteOut);
         objOut.writeObject(this);
-        String res = byteOut.toString("ISO-8859-1");
-        return res;
+        return byteOut.toString("ISO-8859-1");
     }
 
     public Signature deserialize(String str_input) throws IOException, ClassNotFoundException
@@ -53,7 +52,6 @@ public class Signature implements Serializable {
         ByteArrayInputStream byteIn = new ByteArrayInputStream(str_input.getBytes("ISO-8859-1"));
         ObjectInputStream objIn = new ObjectInputStream(byteIn);
 
-        Signature res =(Signature) objIn.readObject();
-        return res;
+        return (Signature) objIn.readObject();
     }
 }

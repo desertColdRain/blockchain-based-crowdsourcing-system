@@ -253,6 +253,19 @@ public class RocksDBAccess implements DBAccess{
     }
 
     @Override
+    public boolean putEnclave(String publicKey) {
+
+        return put(ENCLAVE_PUBLIC_KEY,publicKey);
+    }
+
+    @Override
+    public String getEnclavePublicKey(String ENCLAVE_PUBLIC_KEY) {
+        Optional<Object> pubKey = get(ENCLAVE_PUBLIC_KEY);
+        if(pubKey.isPresent()) return (String)pubKey.get();
+        else return null;
+    }
+
+    @Override
     public Optional<Object> get(String key) {
 
         try {

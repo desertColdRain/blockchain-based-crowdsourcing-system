@@ -1,0 +1,83 @@
+2022/03/26-20:17:59.990412 c370 RocksDB version: 5.9.2
+2022/03/26-20:17:59.990460 c370 Git sha rocksdb_build_git_sha:@004237e62790320d8e630456cbeb6f4a1f3579c2@
+2022/03/26-20:17:59.990476 c370 Compile date Jan  3 2018
+2022/03/26-20:17:59.990485 c370 DB SUMMARY
+2022/03/26-20:17:59.990664 c370 CURRENT file:  CURRENT
+2022/03/26-20:17:59.990676 c370 IDENTITY file:  IDENTITY
+2022/03/26-20:17:59.990695 c370 MANIFEST file:  MANIFEST-000041 size: 109 Bytes
+2022/03/26-20:17:59.990708 c370 SST files in block-data/node3 dir, Total Num: 1, files: 000004.sst 
+2022/03/26-20:17:59.990717 c370 Write Ahead Log file in block-data/node3: 000042.log size: 0 ; 
+2022/03/26-20:17:59.990728 c370                         Options.error_if_exists: 0
+2022/03/26-20:17:59.990737 c370                       Options.create_if_missing: 1
+2022/03/26-20:17:59.990882 c370                         Options.paranoid_checks: 1
+2022/03/26-20:17:59.990889 c370                                     Options.env: 00000256B94A6A30
+2022/03/26-20:17:59.990893 c370                                Options.info_log: 00000256B91BB230
+2022/03/26-20:17:59.990896 c370                Options.max_file_opening_threads: 16
+2022/03/26-20:17:59.990900 c370                              Options.statistics: 0000000000000000
+2022/03/26-20:17:59.990903 c370                               Options.use_fsync: 0
+2022/03/26-20:17:59.990907 c370                       Options.max_log_file_size: 0
+2022/03/26-20:17:59.990910 c370                  Options.max_manifest_file_size: 18446744073709551615
+2022/03/26-20:17:59.990914 c370                   Options.log_file_time_to_roll: 0
+2022/03/26-20:17:59.990917 c370                       Options.keep_log_file_num: 1000
+2022/03/26-20:17:59.990921 c370                    Options.recycle_log_file_num: 0
+2022/03/26-20:17:59.990924 c370                         Options.allow_fallocate: 1
+2022/03/26-20:17:59.990927 c370                        Options.allow_mmap_reads: 0
+2022/03/26-20:17:59.990931 c370                       Options.allow_mmap_writes: 0
+2022/03/26-20:17:59.990934 c370                        Options.use_direct_reads: 0
+2022/03/26-20:17:59.990938 c370                        Options.use_direct_io_for_flush_and_compaction: 0
+2022/03/26-20:17:59.990941 c370          Options.create_missing_column_families: 0
+2022/03/26-20:17:59.990944 c370                              Options.db_log_dir: 
+2022/03/26-20:17:59.990948 c370                                 Options.wal_dir: block-data/node3
+2022/03/26-20:17:59.990951 c370                Options.table_cache_numshardbits: 6
+2022/03/26-20:17:59.990955 c370                      Options.max_subcompactions: 1
+2022/03/26-20:17:59.990958 c370                  Options.max_background_flushes: -1
+2022/03/26-20:17:59.990962 c370                         Options.WAL_ttl_seconds: 0
+2022/03/26-20:17:59.990965 c370                       Options.WAL_size_limit_MB: 0
+2022/03/26-20:17:59.990968 c370             Options.manifest_preallocation_size: 4194304
+2022/03/26-20:17:59.990972 c370                     Options.is_fd_close_on_exec: 1
+2022/03/26-20:17:59.990975 c370                   Options.advise_random_on_open: 1
+2022/03/26-20:17:59.990979 c370                    Options.db_write_buffer_size: 0
+2022/03/26-20:17:59.990982 c370                    Options.write_buffer_manager: 00000256BA699D00
+2022/03/26-20:17:59.990986 c370         Options.access_hint_on_compaction_start: 1
+2022/03/26-20:17:59.990989 c370  Options.new_table_reader_for_compaction_inputs: 0
+2022/03/26-20:17:59.990992 c370               Options.compaction_readahead_size: 0
+2022/03/26-20:17:59.990996 c370           Options.random_access_max_buffer_size: 1048576
+2022/03/26-20:17:59.990999 c370                      Options.use_adaptive_mutex: 0
+2022/03/26-20:17:59.991003 c370                            Options.rate_limiter: 0000000000000000
+2022/03/26-20:17:59.991006 c370     Options.sst_file_manager.rate_bytes_per_sec: 0
+2022/03/26-20:17:59.991010 c370                       Options.wal_recovery_mode: 2
+2022/03/26-20:17:59.991013 c370                  Options.enable_thread_tracking: 0
+2022/03/26-20:17:59.991033 c370                  Options.enable_pipelined_write: 0
+2022/03/26-20:17:59.991039 c370         Options.allow_concurrent_memtable_write: 1
+2022/03/26-20:17:59.991042 c370      Options.enable_write_thread_adaptive_yield: 1
+2022/03/26-20:17:59.991046 c370             Options.write_thread_max_yield_usec: 100
+2022/03/26-20:17:59.991049 c370            Options.write_thread_slow_yield_usec: 3
+2022/03/26-20:17:59.991052 c370                               Options.row_cache: None
+2022/03/26-20:17:59.991056 c370                              Options.wal_filter: None
+2022/03/26-20:17:59.991059 c370             Options.avoid_flush_during_recovery: 0
+2022/03/26-20:17:59.991063 c370             Options.allow_ingest_behind: 0
+2022/03/26-20:17:59.991066 c370             Options.preserve_deletes: 0
+2022/03/26-20:17:59.991069 c370             Options.concurrent_prepare: 0
+2022/03/26-20:17:59.991073 c370             Options.manual_wal_flush: 0
+2022/03/26-20:17:59.991076 c370             Options.seq_per_batch: 0
+2022/03/26-20:17:59.991079 c370             Options.max_background_jobs: 2
+2022/03/26-20:17:59.991083 c370             Options.max_background_compactions: -1
+2022/03/26-20:17:59.991086 c370             Options.avoid_flush_during_shutdown: 0
+2022/03/26-20:17:59.991089 c370           Options.writable_file_max_buffer_size: 1048576
+2022/03/26-20:17:59.991093 c370             Options.delayed_write_rate : 16777216
+2022/03/26-20:17:59.991096 c370             Options.max_total_wal_size: 0
+2022/03/26-20:17:59.991100 c370             Options.delete_obsolete_files_period_micros: 21600000000
+2022/03/26-20:17:59.991103 c370                   Options.stats_dump_period_sec: 600
+2022/03/26-20:17:59.991107 c370                          Options.max_open_files: -1
+2022/03/26-20:17:59.991110 c370                          Options.bytes_per_sync: 0
+2022/03/26-20:17:59.991113 c370                      Options.wal_bytes_per_sync: 0
+2022/03/26-20:17:59.991117 c370 Compression algorithms supported:
+2022/03/26-20:17:59.991120 c370 	Snappy supported: 0
+2022/03/26-20:17:59.991124 c370 	Zlib supported: 0
+2022/03/26-20:17:59.991127 c370 	Bzip supported: 0
+2022/03/26-20:17:59.991130 c370 	LZ4 supported: 0
+2022/03/26-20:17:59.991133 c370 	ZSTDNotFinal supported: 0
+2022/03/26-20:17:59.991137 c370 	ZSTD supported: 0
+2022/03/26-20:17:59.991142 c370 Fast CRC32 supported: Supported on x86Not supported on x86
+2022/03/26-20:17:59.991251 c370 [c:\users\aretter\code\rocksdb\db\db_impl.cc:234] Shutdown: canceling all background work
+2022/03/26-20:17:59.991276 c370 [c:\users\aretter\code\rocksdb\db\db_impl.cc:364] Shutdown complete

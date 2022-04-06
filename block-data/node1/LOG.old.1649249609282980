@@ -1,0 +1,182 @@
+2022/04/06-20:50:10.514989 18dc RocksDB version: 5.9.2
+2022/04/06-20:50:10.515031 18dc Git sha rocksdb_build_git_sha:@004237e62790320d8e630456cbeb6f4a1f3579c2@
+2022/04/06-20:50:10.515046 18dc Compile date Jan  3 2018
+2022/04/06-20:50:10.515061 18dc DB SUMMARY
+2022/04/06-20:50:10.515789 18dc CURRENT file:  CURRENT
+2022/04/06-20:50:10.515803 18dc IDENTITY file:  IDENTITY
+2022/04/06-20:50:10.515834 18dc MANIFEST file:  MANIFEST-000337 size: 372 Bytes
+2022/04/06-20:50:10.515851 18dc SST files in block-data/node1 dir, Total Num: 6, files: 000007.sst 000024.sst 000318.sst 000323.sst 000325.sst 000328.sst 
+2022/04/06-20:50:10.515862 18dc Write Ahead Log file in block-data/node1: 000338.log size: 0 ; 
+2022/04/06-20:50:10.515876 18dc                         Options.error_if_exists: 0
+2022/04/06-20:50:10.516086 18dc                       Options.create_if_missing: 1
+2022/04/06-20:50:10.516094 18dc                         Options.paranoid_checks: 1
+2022/04/06-20:50:10.516098 18dc                                     Options.env: 0000022944F9FB30
+2022/04/06-20:50:10.516102 18dc                                Options.info_log: 00000229458E49D0
+2022/04/06-20:50:10.516106 18dc                Options.max_file_opening_threads: 16
+2022/04/06-20:50:10.516110 18dc                              Options.statistics: 0000000000000000
+2022/04/06-20:50:10.516113 18dc                               Options.use_fsync: 0
+2022/04/06-20:50:10.516117 18dc                       Options.max_log_file_size: 0
+2022/04/06-20:50:10.516120 18dc                  Options.max_manifest_file_size: 18446744073709551615
+2022/04/06-20:50:10.516124 18dc                   Options.log_file_time_to_roll: 0
+2022/04/06-20:50:10.516128 18dc                       Options.keep_log_file_num: 1000
+2022/04/06-20:50:10.516131 18dc                    Options.recycle_log_file_num: 0
+2022/04/06-20:50:10.516135 18dc                         Options.allow_fallocate: 1
+2022/04/06-20:50:10.516138 18dc                        Options.allow_mmap_reads: 0
+2022/04/06-20:50:10.516141 18dc                       Options.allow_mmap_writes: 0
+2022/04/06-20:50:10.516145 18dc                        Options.use_direct_reads: 0
+2022/04/06-20:50:10.516148 18dc                        Options.use_direct_io_for_flush_and_compaction: 0
+2022/04/06-20:50:10.516152 18dc          Options.create_missing_column_families: 0
+2022/04/06-20:50:10.516155 18dc                              Options.db_log_dir: 
+2022/04/06-20:50:10.516159 18dc                                 Options.wal_dir: block-data/node1
+2022/04/06-20:50:10.516162 18dc                Options.table_cache_numshardbits: 6
+2022/04/06-20:50:10.516166 18dc                      Options.max_subcompactions: 1
+2022/04/06-20:50:10.516169 18dc                  Options.max_background_flushes: -1
+2022/04/06-20:50:10.516173 18dc                         Options.WAL_ttl_seconds: 0
+2022/04/06-20:50:10.516176 18dc                       Options.WAL_size_limit_MB: 0
+2022/04/06-20:50:10.516180 18dc             Options.manifest_preallocation_size: 4194304
+2022/04/06-20:50:10.516183 18dc                     Options.is_fd_close_on_exec: 1
+2022/04/06-20:50:10.516187 18dc                   Options.advise_random_on_open: 1
+2022/04/06-20:50:10.516190 18dc                    Options.db_write_buffer_size: 0
+2022/04/06-20:50:10.516193 18dc                    Options.write_buffer_manager: 00000229458F2BC0
+2022/04/06-20:50:10.516197 18dc         Options.access_hint_on_compaction_start: 1
+2022/04/06-20:50:10.516200 18dc  Options.new_table_reader_for_compaction_inputs: 0
+2022/04/06-20:50:10.516204 18dc               Options.compaction_readahead_size: 0
+2022/04/06-20:50:10.516207 18dc           Options.random_access_max_buffer_size: 1048576
+2022/04/06-20:50:10.516211 18dc                      Options.use_adaptive_mutex: 0
+2022/04/06-20:50:10.516214 18dc                            Options.rate_limiter: 0000000000000000
+2022/04/06-20:50:10.516218 18dc     Options.sst_file_manager.rate_bytes_per_sec: 0
+2022/04/06-20:50:10.516221 18dc                       Options.wal_recovery_mode: 2
+2022/04/06-20:50:10.516225 18dc                  Options.enable_thread_tracking: 0
+2022/04/06-20:50:10.516248 18dc                  Options.enable_pipelined_write: 0
+2022/04/06-20:50:10.516254 18dc         Options.allow_concurrent_memtable_write: 1
+2022/04/06-20:50:10.516257 18dc      Options.enable_write_thread_adaptive_yield: 1
+2022/04/06-20:50:10.516261 18dc             Options.write_thread_max_yield_usec: 100
+2022/04/06-20:50:10.516264 18dc            Options.write_thread_slow_yield_usec: 3
+2022/04/06-20:50:10.516268 18dc                               Options.row_cache: None
+2022/04/06-20:50:10.516271 18dc                              Options.wal_filter: None
+2022/04/06-20:50:10.516275 18dc             Options.avoid_flush_during_recovery: 0
+2022/04/06-20:50:10.516278 18dc             Options.allow_ingest_behind: 0
+2022/04/06-20:50:10.516282 18dc             Options.preserve_deletes: 0
+2022/04/06-20:50:10.516285 18dc             Options.concurrent_prepare: 0
+2022/04/06-20:50:10.516288 18dc             Options.manual_wal_flush: 0
+2022/04/06-20:50:10.516292 18dc             Options.seq_per_batch: 0
+2022/04/06-20:50:10.516304 18dc             Options.max_background_jobs: 2
+2022/04/06-20:50:10.516308 18dc             Options.max_background_compactions: -1
+2022/04/06-20:50:10.516311 18dc             Options.avoid_flush_during_shutdown: 0
+2022/04/06-20:50:10.516315 18dc           Options.writable_file_max_buffer_size: 1048576
+2022/04/06-20:50:10.516318 18dc             Options.delayed_write_rate : 16777216
+2022/04/06-20:50:10.516322 18dc             Options.max_total_wal_size: 0
+2022/04/06-20:50:10.516325 18dc             Options.delete_obsolete_files_period_micros: 21600000000
+2022/04/06-20:50:10.516329 18dc                   Options.stats_dump_period_sec: 600
+2022/04/06-20:50:10.516332 18dc                          Options.max_open_files: -1
+2022/04/06-20:50:10.516336 18dc                          Options.bytes_per_sync: 0
+2022/04/06-20:50:10.516339 18dc                      Options.wal_bytes_per_sync: 0
+2022/04/06-20:50:10.516343 18dc Compression algorithms supported:
+2022/04/06-20:50:10.516352 18dc 	Snappy supported: 0
+2022/04/06-20:50:10.516355 18dc 	Zlib supported: 0
+2022/04/06-20:50:10.516359 18dc 	Bzip supported: 0
+2022/04/06-20:50:10.516362 18dc 	LZ4 supported: 0
+2022/04/06-20:50:10.516365 18dc 	ZSTDNotFinal supported: 0
+2022/04/06-20:50:10.516369 18dc 	ZSTD supported: 0
+2022/04/06-20:50:10.516374 18dc Fast CRC32 supported: Supported on x86Not supported on x86
+2022/04/06-20:50:10.516592 18dc [c:\users\aretter\code\rocksdb\db\version_set.cc:2835] Recovering from manifest file: MANIFEST-000337
+2022/04/06-20:50:10.516694 18dc [c:\users\aretter\code\rocksdb\db\column_family.cc:413] --------------- Options for column family [default]:
+2022/04/06-20:50:10.516701 18dc               Options.comparator: leveldb.BytewiseComparator
+2022/04/06-20:50:10.516705 18dc           Options.merge_operator: None
+2022/04/06-20:50:10.516708 18dc        Options.compaction_filter: None
+2022/04/06-20:50:10.516716 18dc        Options.compaction_filter_factory: None
+2022/04/06-20:50:10.516720 18dc         Options.memtable_factory: SkipListFactory
+2022/04/06-20:50:10.516724 18dc            Options.table_factory: BlockBasedTable
+2022/04/06-20:50:10.516757 18dc            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (00000229454E3500)
+  cache_index_and_filter_blocks: 0
+  cache_index_and_filter_blocks_with_high_priority: 0
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  index_type: 0
+  hash_index_allow_collision: 1
+  checksum: 1
+  no_block_cache: 0
+  block_cache: 0000022945536380
+  block_cache_name: LRUCache
+  block_cache_options:
+    capacity : 8388608
+    num_shard_bits : 4
+    strict_capacity_limit : 0
+    high_pri_pool_ratio: 0.000
+  block_cache_compressed: 0000000000000000
+  persistent_cache: 0000000000000000
+  block_size: 4096
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  metadata_block_size: 4096
+  partition_filters: 0
+  use_delta_encoding: 1
+  filter_policy: nullptr
+  whole_key_filtering: 1
+  verify_compression: 0
+  read_amp_bytes_per_bit: 0
+  format_version: 2
+2022/04/06-20:50:10.516781 18dc        Options.write_buffer_size: 67108864
+2022/04/06-20:50:10.516787 18dc  Options.max_write_buffer_number: 2
+2022/04/06-20:50:10.516791 18dc          Options.compression: NoCompression
+2022/04/06-20:50:10.516795 18dc                  Options.bottommost_compression: Disabled
+2022/04/06-20:50:10.516798 18dc       Options.prefix_extractor: nullptr
+2022/04/06-20:50:10.516802 18dc   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+2022/04/06-20:50:10.516805 18dc             Options.num_levels: 7
+2022/04/06-20:50:10.516809 18dc        Options.min_write_buffer_number_to_merge: 1
+2022/04/06-20:50:10.516812 18dc     Options.max_write_buffer_number_to_maintain: 0
+2022/04/06-20:50:10.516816 18dc            Options.compression_opts.window_bits: -14
+2022/04/06-20:50:10.516819 18dc                  Options.compression_opts.level: -1
+2022/04/06-20:50:10.516823 18dc               Options.compression_opts.strategy: 0
+2022/04/06-20:50:10.516826 18dc         Options.compression_opts.max_dict_bytes: 0
+2022/04/06-20:50:10.516830 18dc      Options.level0_file_num_compaction_trigger: 4
+2022/04/06-20:50:10.516833 18dc          Options.level0_slowdown_writes_trigger: 20
+2022/04/06-20:50:10.516837 18dc              Options.level0_stop_writes_trigger: 36
+2022/04/06-20:50:10.516840 18dc                   Options.target_file_size_base: 67108864
+2022/04/06-20:50:10.516844 18dc             Options.target_file_size_multiplier: 1
+2022/04/06-20:50:10.516847 18dc                Options.max_bytes_for_level_base: 268435456
+2022/04/06-20:50:10.516851 18dc Options.level_compaction_dynamic_level_bytes: 0
+2022/04/06-20:50:10.516854 18dc          Options.max_bytes_for_level_multiplier: 10.000000
+2022/04/06-20:50:10.516860 18dc Options.max_bytes_for_level_multiplier_addtl[0]: 1
+2022/04/06-20:50:10.516863 18dc Options.max_bytes_for_level_multiplier_addtl[1]: 1
+2022/04/06-20:50:10.516867 18dc Options.max_bytes_for_level_multiplier_addtl[2]: 1
+2022/04/06-20:50:10.516870 18dc Options.max_bytes_for_level_multiplier_addtl[3]: 1
+2022/04/06-20:50:10.516874 18dc Options.max_bytes_for_level_multiplier_addtl[4]: 1
+2022/04/06-20:50:10.516877 18dc Options.max_bytes_for_level_multiplier_addtl[5]: 1
+2022/04/06-20:50:10.516881 18dc Options.max_bytes_for_level_multiplier_addtl[6]: 1
+2022/04/06-20:50:10.516884 18dc       Options.max_sequential_skip_in_iterations: 8
+2022/04/06-20:50:10.516888 18dc                    Options.max_compaction_bytes: 1677721600
+2022/04/06-20:50:10.516892 18dc                        Options.arena_block_size: 8388608
+2022/04/06-20:50:10.516895 18dc   Options.soft_pending_compaction_bytes_limit: 68719476736
+2022/04/06-20:50:10.516899 18dc   Options.hard_pending_compaction_bytes_limit: 274877906944
+2022/04/06-20:50:10.516902 18dc       Options.rate_limit_delay_max_milliseconds: 100
+2022/04/06-20:50:10.516906 18dc                Options.disable_auto_compactions: 0
+2022/04/06-20:50:10.516910 18dc                        Options.compaction_style: kCompactionStyleLevel
+2022/04/06-20:50:10.516914 18dc                          Options.compaction_pri: kByCompensatedSize
+2022/04/06-20:50:10.516918 18dc Options.compaction_options_universal.size_ratio: 1
+2022/04/06-20:50:10.516921 18dc Options.compaction_options_universal.min_merge_width: 2
+2022/04/06-20:50:10.516925 18dc Options.compaction_options_universal.max_merge_width: 4294967295
+2022/04/06-20:50:10.516929 18dc Options.compaction_options_universal.max_size_amplification_percent: 200
+2022/04/06-20:50:10.516932 18dc Options.compaction_options_universal.compression_size_percent: -1
+2022/04/06-20:50:10.516937 18dc Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+2022/04/06-20:50:10.516940 18dc Options.compaction_options_fifo.max_table_files_size: 1073741824
+2022/04/06-20:50:10.516944 18dc Options.compaction_options_fifo.allow_compaction: 0
+2022/04/06-20:50:10.516947 18dc Options.compaction_options_fifo.ttl: 0
+2022/04/06-20:50:10.516951 18dc                   Options.table_properties_collectors: 
+2022/04/06-20:50:10.516955 18dc                   Options.inplace_update_support: 0
+2022/04/06-20:50:10.516959 18dc                 Options.inplace_update_num_locks: 10000
+2022/04/06-20:50:10.516963 18dc               Options.memtable_prefix_bloom_size_ratio: 0.000000
+2022/04/06-20:50:10.516967 18dc   Options.memtable_huge_page_size: 0
+2022/04/06-20:50:10.516970 18dc                           Options.bloom_locality: 0
+2022/04/06-20:50:10.516974 18dc                    Options.max_successive_merges: 0
+2022/04/06-20:50:10.516978 18dc                Options.optimize_filters_for_hits: 0
+2022/04/06-20:50:10.516981 18dc                Options.paranoid_file_checks: 0
+2022/04/06-20:50:10.516985 18dc                Options.force_consistency_checks: 0
+2022/04/06-20:50:10.516988 18dc                Options.report_bg_io_stats: 0
+2022/04/06-20:50:10.518644 18dc [c:\users\aretter\code\rocksdb\db\version_set.cc:3100] Recovered from manifest file:block-data/node1/MANIFEST-000337 succeeded,manifest_file_number is 337, next_file_number is 339, last_sequence is 29, log_number is 0,prev_log_number is 0,max_column_family is 0
+2022/04/06-20:50:10.518654 18dc [c:\users\aretter\code\rocksdb\db\version_set.cc:3108] Column family [default] (ID 0), log number is 336
+2022/04/06-20:50:10.519453 18dc EVENT_LOG_v1 {"time_micros": 1649249410519410, "job": 1, "event": "recovery_started", "log_files": [338]}
+2022/04/06-20:50:10.519466 18dc [c:\users\aretter\code\rocksdb\db\db_impl_open.cc:518] Recovering log #338 mode 2
+2022/04/06-20:50:10.519534 18dc [c:\users\aretter\code\rocksdb\db\version_set.cc:2608] Creating manifest 340
+2022/04/06-20:50:10.582137 18dc EVENT_LOG_v1 {"time_micros": 1649249410582127, "job": 1, "event": "recovery_finished"}
+2022/04/06-20:50:10.600231 18dc [c:\users\aretter\code\rocksdb\db\db_impl_open.cc:1150] DB pointer 0000022945911020

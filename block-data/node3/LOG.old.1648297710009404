@@ -1,0 +1,83 @@
+2022/03/26-20:28:05.544514 2bf8 RocksDB version: 5.9.2
+2022/03/26-20:28:05.544562 2bf8 Git sha rocksdb_build_git_sha:@004237e62790320d8e630456cbeb6f4a1f3579c2@
+2022/03/26-20:28:05.544578 2bf8 Compile date Jan  3 2018
+2022/03/26-20:28:05.544587 2bf8 DB SUMMARY
+2022/03/26-20:28:05.544812 2bf8 CURRENT file:  CURRENT
+2022/03/26-20:28:05.544825 2bf8 IDENTITY file:  IDENTITY
+2022/03/26-20:28:05.544845 2bf8 MANIFEST file:  MANIFEST-000047 size: 109 Bytes
+2022/03/26-20:28:05.544857 2bf8 SST files in block-data/node3 dir, Total Num: 1, files: 000004.sst 
+2022/03/26-20:28:05.544867 2bf8 Write Ahead Log file in block-data/node3: 000048.log size: 0 ; 
+2022/03/26-20:28:05.544877 2bf8                         Options.error_if_exists: 0
+2022/03/26-20:28:05.544886 2bf8                       Options.create_if_missing: 1
+2022/03/26-20:28:05.545066 2bf8                         Options.paranoid_checks: 1
+2022/03/26-20:28:05.545074 2bf8                                     Options.env: 000001FA9C859210
+2022/03/26-20:28:05.545077 2bf8                                Options.info_log: 000001FA9DC61640
+2022/03/26-20:28:05.545081 2bf8                Options.max_file_opening_threads: 16
+2022/03/26-20:28:05.545084 2bf8                              Options.statistics: 0000000000000000
+2022/03/26-20:28:05.545088 2bf8                               Options.use_fsync: 0
+2022/03/26-20:28:05.545091 2bf8                       Options.max_log_file_size: 0
+2022/03/26-20:28:05.545095 2bf8                  Options.max_manifest_file_size: 18446744073709551615
+2022/03/26-20:28:05.545098 2bf8                   Options.log_file_time_to_roll: 0
+2022/03/26-20:28:05.545102 2bf8                       Options.keep_log_file_num: 1000
+2022/03/26-20:28:05.545106 2bf8                    Options.recycle_log_file_num: 0
+2022/03/26-20:28:05.545110 2bf8                         Options.allow_fallocate: 1
+2022/03/26-20:28:05.545113 2bf8                        Options.allow_mmap_reads: 0
+2022/03/26-20:28:05.545116 2bf8                       Options.allow_mmap_writes: 0
+2022/03/26-20:28:05.545120 2bf8                        Options.use_direct_reads: 0
+2022/03/26-20:28:05.545123 2bf8                        Options.use_direct_io_for_flush_and_compaction: 0
+2022/03/26-20:28:05.545126 2bf8          Options.create_missing_column_families: 0
+2022/03/26-20:28:05.545130 2bf8                              Options.db_log_dir: 
+2022/03/26-20:28:05.545133 2bf8                                 Options.wal_dir: block-data/node3
+2022/03/26-20:28:05.545137 2bf8                Options.table_cache_numshardbits: 6
+2022/03/26-20:28:05.545140 2bf8                      Options.max_subcompactions: 1
+2022/03/26-20:28:05.545144 2bf8                  Options.max_background_flushes: -1
+2022/03/26-20:28:05.545147 2bf8                         Options.WAL_ttl_seconds: 0
+2022/03/26-20:28:05.545151 2bf8                       Options.WAL_size_limit_MB: 0
+2022/03/26-20:28:05.545154 2bf8             Options.manifest_preallocation_size: 4194304
+2022/03/26-20:28:05.545158 2bf8                     Options.is_fd_close_on_exec: 1
+2022/03/26-20:28:05.545161 2bf8                   Options.advise_random_on_open: 1
+2022/03/26-20:28:05.545164 2bf8                    Options.db_write_buffer_size: 0
+2022/03/26-20:28:05.545168 2bf8                    Options.write_buffer_manager: 000001FA9A5F9F90
+2022/03/26-20:28:05.545171 2bf8         Options.access_hint_on_compaction_start: 1
+2022/03/26-20:28:05.545174 2bf8  Options.new_table_reader_for_compaction_inputs: 0
+2022/03/26-20:28:05.545178 2bf8               Options.compaction_readahead_size: 0
+2022/03/26-20:28:05.545181 2bf8           Options.random_access_max_buffer_size: 1048576
+2022/03/26-20:28:05.545184 2bf8                      Options.use_adaptive_mutex: 0
+2022/03/26-20:28:05.545188 2bf8                            Options.rate_limiter: 0000000000000000
+2022/03/26-20:28:05.545191 2bf8     Options.sst_file_manager.rate_bytes_per_sec: 0
+2022/03/26-20:28:05.545195 2bf8                       Options.wal_recovery_mode: 2
+2022/03/26-20:28:05.545198 2bf8                  Options.enable_thread_tracking: 0
+2022/03/26-20:28:05.545219 2bf8                  Options.enable_pipelined_write: 0
+2022/03/26-20:28:05.545224 2bf8         Options.allow_concurrent_memtable_write: 1
+2022/03/26-20:28:05.545228 2bf8      Options.enable_write_thread_adaptive_yield: 1
+2022/03/26-20:28:05.545231 2bf8             Options.write_thread_max_yield_usec: 100
+2022/03/26-20:28:05.545235 2bf8            Options.write_thread_slow_yield_usec: 3
+2022/03/26-20:28:05.545238 2bf8                               Options.row_cache: None
+2022/03/26-20:28:05.545241 2bf8                              Options.wal_filter: None
+2022/03/26-20:28:05.545245 2bf8             Options.avoid_flush_during_recovery: 0
+2022/03/26-20:28:05.545248 2bf8             Options.allow_ingest_behind: 0
+2022/03/26-20:28:05.545252 2bf8             Options.preserve_deletes: 0
+2022/03/26-20:28:05.545255 2bf8             Options.concurrent_prepare: 0
+2022/03/26-20:28:05.545258 2bf8             Options.manual_wal_flush: 0
+2022/03/26-20:28:05.545261 2bf8             Options.seq_per_batch: 0
+2022/03/26-20:28:05.545265 2bf8             Options.max_background_jobs: 2
+2022/03/26-20:28:05.545268 2bf8             Options.max_background_compactions: -1
+2022/03/26-20:28:05.545271 2bf8             Options.avoid_flush_during_shutdown: 0
+2022/03/26-20:28:05.545275 2bf8           Options.writable_file_max_buffer_size: 1048576
+2022/03/26-20:28:05.545278 2bf8             Options.delayed_write_rate : 16777216
+2022/03/26-20:28:05.545282 2bf8             Options.max_total_wal_size: 0
+2022/03/26-20:28:05.545285 2bf8             Options.delete_obsolete_files_period_micros: 21600000000
+2022/03/26-20:28:05.545288 2bf8                   Options.stats_dump_period_sec: 600
+2022/03/26-20:28:05.545292 2bf8                          Options.max_open_files: -1
+2022/03/26-20:28:05.545295 2bf8                          Options.bytes_per_sync: 0
+2022/03/26-20:28:05.545299 2bf8                      Options.wal_bytes_per_sync: 0
+2022/03/26-20:28:05.545302 2bf8 Compression algorithms supported:
+2022/03/26-20:28:05.545305 2bf8 	Snappy supported: 0
+2022/03/26-20:28:05.545309 2bf8 	Zlib supported: 0
+2022/03/26-20:28:05.545312 2bf8 	Bzip supported: 0
+2022/03/26-20:28:05.545315 2bf8 	LZ4 supported: 0
+2022/03/26-20:28:05.545318 2bf8 	ZSTDNotFinal supported: 0
+2022/03/26-20:28:05.545321 2bf8 	ZSTD supported: 0
+2022/03/26-20:28:05.545327 2bf8 Fast CRC32 supported: Supported on x86Not supported on x86
+2022/03/26-20:28:05.545437 2bf8 [c:\users\aretter\code\rocksdb\db\db_impl.cc:234] Shutdown: canceling all background work
+2022/03/26-20:28:05.545458 2bf8 [c:\users\aretter\code\rocksdb\db\db_impl.cc:364] Shutdown complete

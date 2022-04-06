@@ -2,14 +2,15 @@ package com.blockchain.mcsblockchain.pojo.crypto;
 
 import com.blockchain.mcsblockchain.Utils.Cryptography;
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import it.unisa.dia.gas.jpbc.Element;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 //公钥类
 
 public class PKType implements Serializable {
     private static final long serialVersionUID = /*1528979184671053497L*/1L;
+
 
     public transient Element value;
     /*pk的值初始化步骤
@@ -51,12 +52,12 @@ public class PKType implements Serializable {
         ByteArrayOutputStream byteOut = new ByteArrayOutputStream();
         ObjectOutputStream objOut = new ObjectOutputStream(byteOut);
         objOut.writeObject(this);
-        String res = byteOut.toString("ISO-8859-1");
-        return res;
+        return byteOut.toString("ISO-8859-1");
     }
 
     @JsonBackReference
     public Element getValue() {
+
         return value;
     }
 
@@ -66,9 +67,9 @@ public class PKType implements Serializable {
 
     public PKType deserialize(String str_input) throws IOException, ClassNotFoundException
     {
-        ByteArrayInputStream byteIn = new ByteArrayInputStream(str_input.getBytes("ISO-8859-1"));
+        ByteArrayInputStream byteIn = new ByteArrayInputStream(str_input.getBytes(StandardCharsets.ISO_8859_1));
         ObjectInputStream objIn = new ObjectInputStream(byteIn);
-        PKType res =(PKType) objIn.readObject();
-        return res;
+        return (PKType) objIn.readObject();
     }
+
 }

@@ -1,0 +1,83 @@
+2022/03/26-20:06:25.391983 df04 RocksDB version: 5.9.2
+2022/03/26-20:06:25.392045 df04 Git sha rocksdb_build_git_sha:@004237e62790320d8e630456cbeb6f4a1f3579c2@
+2022/03/26-20:06:25.392062 df04 Compile date Jan  3 2018
+2022/03/26-20:06:25.392089 df04 DB SUMMARY
+2022/03/26-20:06:25.392310 df04 CURRENT file:  CURRENT
+2022/03/26-20:06:25.392349 df04 IDENTITY file:  IDENTITY
+2022/03/26-20:06:25.392377 df04 MANIFEST file:  MANIFEST-000029 size: 109 Bytes
+2022/03/26-20:06:25.392391 df04 SST files in block-data/node3 dir, Total Num: 1, files: 000004.sst 
+2022/03/26-20:06:25.392411 df04 Write Ahead Log file in block-data/node3: 000030.log size: 0 ; 
+2022/03/26-20:06:25.392433 df04                         Options.error_if_exists: 0
+2022/03/26-20:06:25.392463 df04                       Options.create_if_missing: 1
+2022/03/26-20:06:25.392659 df04                         Options.paranoid_checks: 1
+2022/03/26-20:06:25.392667 df04                                     Options.env: 000001EB0C8E3880
+2022/03/26-20:06:25.392672 df04                                Options.info_log: 000001EB0DE0AB30
+2022/03/26-20:06:25.392675 df04                Options.max_file_opening_threads: 16
+2022/03/26-20:06:25.392679 df04                              Options.statistics: 0000000000000000
+2022/03/26-20:06:25.392682 df04                               Options.use_fsync: 0
+2022/03/26-20:06:25.392686 df04                       Options.max_log_file_size: 0
+2022/03/26-20:06:25.392689 df04                  Options.max_manifest_file_size: 18446744073709551615
+2022/03/26-20:06:25.392693 df04                   Options.log_file_time_to_roll: 0
+2022/03/26-20:06:25.392696 df04                       Options.keep_log_file_num: 1000
+2022/03/26-20:06:25.392700 df04                    Options.recycle_log_file_num: 0
+2022/03/26-20:06:25.392703 df04                         Options.allow_fallocate: 1
+2022/03/26-20:06:25.392713 df04                        Options.allow_mmap_reads: 0
+2022/03/26-20:06:25.392720 df04                       Options.allow_mmap_writes: 0
+2022/03/26-20:06:25.392723 df04                        Options.use_direct_reads: 0
+2022/03/26-20:06:25.392727 df04                        Options.use_direct_io_for_flush_and_compaction: 0
+2022/03/26-20:06:25.392730 df04          Options.create_missing_column_families: 0
+2022/03/26-20:06:25.392734 df04                              Options.db_log_dir: 
+2022/03/26-20:06:25.392737 df04                                 Options.wal_dir: block-data/node3
+2022/03/26-20:06:25.392750 df04                Options.table_cache_numshardbits: 6
+2022/03/26-20:06:25.392757 df04                      Options.max_subcompactions: 1
+2022/03/26-20:06:25.392761 df04                  Options.max_background_flushes: -1
+2022/03/26-20:06:25.392764 df04                         Options.WAL_ttl_seconds: 0
+2022/03/26-20:06:25.392768 df04                       Options.WAL_size_limit_MB: 0
+2022/03/26-20:06:25.392771 df04             Options.manifest_preallocation_size: 4194304
+2022/03/26-20:06:25.392775 df04                     Options.is_fd_close_on_exec: 1
+2022/03/26-20:06:25.392778 df04                   Options.advise_random_on_open: 1
+2022/03/26-20:06:25.392782 df04                    Options.db_write_buffer_size: 0
+2022/03/26-20:06:25.392785 df04                    Options.write_buffer_manager: 000001EB0AC6E130
+2022/03/26-20:06:25.392789 df04         Options.access_hint_on_compaction_start: 1
+2022/03/26-20:06:25.392792 df04  Options.new_table_reader_for_compaction_inputs: 0
+2022/03/26-20:06:25.392806 df04               Options.compaction_readahead_size: 0
+2022/03/26-20:06:25.392822 df04           Options.random_access_max_buffer_size: 1048576
+2022/03/26-20:06:25.392841 df04                      Options.use_adaptive_mutex: 0
+2022/03/26-20:06:25.392847 df04                            Options.rate_limiter: 0000000000000000
+2022/03/26-20:06:25.392851 df04     Options.sst_file_manager.rate_bytes_per_sec: 0
+2022/03/26-20:06:25.392872 df04                       Options.wal_recovery_mode: 2
+2022/03/26-20:06:25.392877 df04                  Options.enable_thread_tracking: 0
+2022/03/26-20:06:25.392930 df04                  Options.enable_pipelined_write: 0
+2022/03/26-20:06:25.392938 df04         Options.allow_concurrent_memtable_write: 1
+2022/03/26-20:06:25.392942 df04      Options.enable_write_thread_adaptive_yield: 1
+2022/03/26-20:06:25.392945 df04             Options.write_thread_max_yield_usec: 100
+2022/03/26-20:06:25.392949 df04            Options.write_thread_slow_yield_usec: 3
+2022/03/26-20:06:25.392952 df04                               Options.row_cache: None
+2022/03/26-20:06:25.392955 df04                              Options.wal_filter: None
+2022/03/26-20:06:25.392959 df04             Options.avoid_flush_during_recovery: 0
+2022/03/26-20:06:25.392962 df04             Options.allow_ingest_behind: 0
+2022/03/26-20:06:25.392966 df04             Options.preserve_deletes: 0
+2022/03/26-20:06:25.392969 df04             Options.concurrent_prepare: 0
+2022/03/26-20:06:25.392972 df04             Options.manual_wal_flush: 0
+2022/03/26-20:06:25.392976 df04             Options.seq_per_batch: 0
+2022/03/26-20:06:25.392979 df04             Options.max_background_jobs: 2
+2022/03/26-20:06:25.392989 df04             Options.max_background_compactions: -1
+2022/03/26-20:06:25.393002 df04             Options.avoid_flush_during_shutdown: 0
+2022/03/26-20:06:25.393007 df04           Options.writable_file_max_buffer_size: 1048576
+2022/03/26-20:06:25.393011 df04             Options.delayed_write_rate : 16777216
+2022/03/26-20:06:25.393015 df04             Options.max_total_wal_size: 0
+2022/03/26-20:06:25.393019 df04             Options.delete_obsolete_files_period_micros: 21600000000
+2022/03/26-20:06:25.393043 df04                   Options.stats_dump_period_sec: 600
+2022/03/26-20:06:25.393052 df04                          Options.max_open_files: -1
+2022/03/26-20:06:25.393056 df04                          Options.bytes_per_sync: 0
+2022/03/26-20:06:25.393060 df04                      Options.wal_bytes_per_sync: 0
+2022/03/26-20:06:25.393063 df04 Compression algorithms supported:
+2022/03/26-20:06:25.393066 df04 	Snappy supported: 0
+2022/03/26-20:06:25.393070 df04 	Zlib supported: 0
+2022/03/26-20:06:25.393073 df04 	Bzip supported: 0
+2022/03/26-20:06:25.393090 df04 	LZ4 supported: 0
+2022/03/26-20:06:25.393094 df04 	ZSTDNotFinal supported: 0
+2022/03/26-20:06:25.393098 df04 	ZSTD supported: 0
+2022/03/26-20:06:25.393106 df04 Fast CRC32 supported: Supported on x86Not supported on x86
+2022/03/26-20:06:25.393276 df04 [c:\users\aretter\code\rocksdb\db\db_impl.cc:234] Shutdown: canceling all background work
+2022/03/26-20:06:25.393308 df04 [c:\users\aretter\code\rocksdb\db\db_impl.cc:364] Shutdown complete

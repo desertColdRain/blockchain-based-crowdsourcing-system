@@ -24,6 +24,8 @@ public interface DBAccess {
     String TX_POOL = "transaction_pool";
     //用户User
     String USER="user_";
+    //public key of enclave prefix
+    String ENCLAVE_PUBLIC_KEY = "enclave_public_key";
     //最后一个区块的区块高度
     String LAST_BLOCK_INDEX = BLOCKS_BUCKET_PREFIX+"last_block";
     //客户端节点列表存储 key
@@ -66,6 +68,10 @@ public interface DBAccess {
     Optional<List<Node>> getNodeList();
     //添加一个客户端节点
     boolean addNode(Node node);
+    //添加云服务器enclave的公钥
+    boolean putEnclave(String publicKey);
+    //读取 enclave 公钥
+    String getEnclavePublicKey(String ENCLAVE_PUBLIC_KEY);
     //往数据库添加一条数据
     boolean put(String key, Object value);
     //获取某一条指定的数据

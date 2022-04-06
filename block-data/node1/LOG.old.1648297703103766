@@ -1,0 +1,83 @@
+2022/03/26-20:28:05.702804 fb4c RocksDB version: 5.9.2
+2022/03/26-20:28:05.702850 fb4c Git sha rocksdb_build_git_sha:@004237e62790320d8e630456cbeb6f4a1f3579c2@
+2022/03/26-20:28:05.702865 fb4c Compile date Jan  3 2018
+2022/03/26-20:28:05.702875 fb4c DB SUMMARY
+2022/03/26-20:28:05.703208 fb4c CURRENT file:  CURRENT
+2022/03/26-20:28:05.703221 fb4c IDENTITY file:  IDENTITY
+2022/03/26-20:28:05.703245 fb4c MANIFEST file:  MANIFEST-000142 size: 221 Bytes
+2022/03/26-20:28:05.703256 fb4c SST files in block-data/node1 dir, Total Num: 3, files: 000007.sst 000024.sst 000056.sst 
+2022/03/26-20:28:05.703266 fb4c Write Ahead Log file in block-data/node1: 000143.log size: 0 ; 
+2022/03/26-20:28:05.703278 fb4c                         Options.error_if_exists: 0
+2022/03/26-20:28:05.703461 fb4c                       Options.create_if_missing: 1
+2022/03/26-20:28:05.703468 fb4c                         Options.paranoid_checks: 1
+2022/03/26-20:28:05.703471 fb4c                                     Options.env: 0000025B10FEA450
+2022/03/26-20:28:05.703475 fb4c                                Options.info_log: 0000025B12C16500
+2022/03/26-20:28:05.703479 fb4c                Options.max_file_opening_threads: 16
+2022/03/26-20:28:05.703482 fb4c                              Options.statistics: 0000000000000000
+2022/03/26-20:28:05.703486 fb4c                               Options.use_fsync: 0
+2022/03/26-20:28:05.703489 fb4c                       Options.max_log_file_size: 0
+2022/03/26-20:28:05.703493 fb4c                  Options.max_manifest_file_size: 18446744073709551615
+2022/03/26-20:28:05.703496 fb4c                   Options.log_file_time_to_roll: 0
+2022/03/26-20:28:05.703500 fb4c                       Options.keep_log_file_num: 1000
+2022/03/26-20:28:05.703503 fb4c                    Options.recycle_log_file_num: 0
+2022/03/26-20:28:05.703507 fb4c                         Options.allow_fallocate: 1
+2022/03/26-20:28:05.703510 fb4c                        Options.allow_mmap_reads: 0
+2022/03/26-20:28:05.703513 fb4c                       Options.allow_mmap_writes: 0
+2022/03/26-20:28:05.703517 fb4c                        Options.use_direct_reads: 0
+2022/03/26-20:28:05.703520 fb4c                        Options.use_direct_io_for_flush_and_compaction: 0
+2022/03/26-20:28:05.703524 fb4c          Options.create_missing_column_families: 0
+2022/03/26-20:28:05.703527 fb4c                              Options.db_log_dir: 
+2022/03/26-20:28:05.703530 fb4c                                 Options.wal_dir: block-data/node1
+2022/03/26-20:28:05.703534 fb4c                Options.table_cache_numshardbits: 6
+2022/03/26-20:28:05.703537 fb4c                      Options.max_subcompactions: 1
+2022/03/26-20:28:05.703541 fb4c                  Options.max_background_flushes: -1
+2022/03/26-20:28:05.703544 fb4c                         Options.WAL_ttl_seconds: 0
+2022/03/26-20:28:05.703548 fb4c                       Options.WAL_size_limit_MB: 0
+2022/03/26-20:28:05.703551 fb4c             Options.manifest_preallocation_size: 4194304
+2022/03/26-20:28:05.703554 fb4c                     Options.is_fd_close_on_exec: 1
+2022/03/26-20:28:05.703558 fb4c                   Options.advise_random_on_open: 1
+2022/03/26-20:28:05.703561 fb4c                    Options.db_write_buffer_size: 0
+2022/03/26-20:28:05.703565 fb4c                    Options.write_buffer_manager: 0000025B10DA2410
+2022/03/26-20:28:05.703568 fb4c         Options.access_hint_on_compaction_start: 1
+2022/03/26-20:28:05.703572 fb4c  Options.new_table_reader_for_compaction_inputs: 0
+2022/03/26-20:28:05.703575 fb4c               Options.compaction_readahead_size: 0
+2022/03/26-20:28:05.703578 fb4c           Options.random_access_max_buffer_size: 1048576
+2022/03/26-20:28:05.703582 fb4c                      Options.use_adaptive_mutex: 0
+2022/03/26-20:28:05.703585 fb4c                            Options.rate_limiter: 0000000000000000
+2022/03/26-20:28:05.703589 fb4c     Options.sst_file_manager.rate_bytes_per_sec: 0
+2022/03/26-20:28:05.703592 fb4c                       Options.wal_recovery_mode: 2
+2022/03/26-20:28:05.703595 fb4c                  Options.enable_thread_tracking: 0
+2022/03/26-20:28:05.703616 fb4c                  Options.enable_pipelined_write: 0
+2022/03/26-20:28:05.703622 fb4c         Options.allow_concurrent_memtable_write: 1
+2022/03/26-20:28:05.703625 fb4c      Options.enable_write_thread_adaptive_yield: 1
+2022/03/26-20:28:05.703629 fb4c             Options.write_thread_max_yield_usec: 100
+2022/03/26-20:28:05.703632 fb4c            Options.write_thread_slow_yield_usec: 3
+2022/03/26-20:28:05.703636 fb4c                               Options.row_cache: None
+2022/03/26-20:28:05.703639 fb4c                              Options.wal_filter: None
+2022/03/26-20:28:05.703643 fb4c             Options.avoid_flush_during_recovery: 0
+2022/03/26-20:28:05.703646 fb4c             Options.allow_ingest_behind: 0
+2022/03/26-20:28:05.703649 fb4c             Options.preserve_deletes: 0
+2022/03/26-20:28:05.703653 fb4c             Options.concurrent_prepare: 0
+2022/03/26-20:28:05.703656 fb4c             Options.manual_wal_flush: 0
+2022/03/26-20:28:05.703659 fb4c             Options.seq_per_batch: 0
+2022/03/26-20:28:05.703663 fb4c             Options.max_background_jobs: 2
+2022/03/26-20:28:05.703666 fb4c             Options.max_background_compactions: -1
+2022/03/26-20:28:05.703669 fb4c             Options.avoid_flush_during_shutdown: 0
+2022/03/26-20:28:05.703673 fb4c           Options.writable_file_max_buffer_size: 1048576
+2022/03/26-20:28:05.703676 fb4c             Options.delayed_write_rate : 16777216
+2022/03/26-20:28:05.703732 fb4c             Options.max_total_wal_size: 0
+2022/03/26-20:28:05.703784 fb4c             Options.delete_obsolete_files_period_micros: 21600000000
+2022/03/26-20:28:05.703789 fb4c                   Options.stats_dump_period_sec: 600
+2022/03/26-20:28:05.703793 fb4c                          Options.max_open_files: -1
+2022/03/26-20:28:05.703797 fb4c                          Options.bytes_per_sync: 0
+2022/03/26-20:28:05.703800 fb4c                      Options.wal_bytes_per_sync: 0
+2022/03/26-20:28:05.703807 fb4c Compression algorithms supported:
+2022/03/26-20:28:05.703811 fb4c 	Snappy supported: 0
+2022/03/26-20:28:05.703815 fb4c 	Zlib supported: 0
+2022/03/26-20:28:05.703818 fb4c 	Bzip supported: 0
+2022/03/26-20:28:05.703821 fb4c 	LZ4 supported: 0
+2022/03/26-20:28:05.703825 fb4c 	ZSTDNotFinal supported: 0
+2022/03/26-20:28:05.703828 fb4c 	ZSTD supported: 0
+2022/03/26-20:28:05.703842 fb4c Fast CRC32 supported: Supported on x86Not supported on x86
+2022/03/26-20:28:05.703968 fb4c [c:\users\aretter\code\rocksdb\db\db_impl.cc:234] Shutdown: canceling all background work
+2022/03/26-20:28:05.703992 fb4c [c:\users\aretter\code\rocksdb\db\db_impl.cc:364] Shutdown complete

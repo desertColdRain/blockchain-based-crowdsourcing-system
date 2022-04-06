@@ -1,0 +1,182 @@
+2022/03/31-16:25:54.305655 2fdc RocksDB version: 5.9.2
+2022/03/31-16:25:54.305708 2fdc Git sha rocksdb_build_git_sha:@004237e62790320d8e630456cbeb6f4a1f3579c2@
+2022/03/31-16:25:54.305727 2fdc Compile date Jan  3 2018
+2022/03/31-16:25:54.305745 2fdc DB SUMMARY
+2022/03/31-16:25:54.306509 2fdc CURRENT file:  CURRENT
+2022/03/31-16:25:54.306524 2fdc IDENTITY file:  IDENTITY
+2022/03/31-16:25:54.306558 2fdc MANIFEST file:  MANIFEST-000256 size: 221 Bytes
+2022/03/31-16:25:54.306577 2fdc SST files in block-data/node1 dir, Total Num: 3, files: 000007.sst 000024.sst 000056.sst 
+2022/03/31-16:25:54.306589 2fdc Write Ahead Log file in block-data/node1: 000257.log size: 0 ; 
+2022/03/31-16:25:54.306603 2fdc                         Options.error_if_exists: 0
+2022/03/31-16:25:54.306903 2fdc                       Options.create_if_missing: 1
+2022/03/31-16:25:54.306912 2fdc                         Options.paranoid_checks: 1
+2022/03/31-16:25:54.306916 2fdc                                     Options.env: 00000217B57F7D60
+2022/03/31-16:25:54.306921 2fdc                                Options.info_log: 00000217B6085E20
+2022/03/31-16:25:54.306925 2fdc                Options.max_file_opening_threads: 16
+2022/03/31-16:25:54.306929 2fdc                              Options.statistics: 0000000000000000
+2022/03/31-16:25:54.306933 2fdc                               Options.use_fsync: 0
+2022/03/31-16:25:54.306937 2fdc                       Options.max_log_file_size: 0
+2022/03/31-16:25:54.306941 2fdc                  Options.max_manifest_file_size: 18446744073709551615
+2022/03/31-16:25:54.306945 2fdc                   Options.log_file_time_to_roll: 0
+2022/03/31-16:25:54.306949 2fdc                       Options.keep_log_file_num: 1000
+2022/03/31-16:25:54.306953 2fdc                    Options.recycle_log_file_num: 0
+2022/03/31-16:25:54.306956 2fdc                         Options.allow_fallocate: 1
+2022/03/31-16:25:54.306960 2fdc                        Options.allow_mmap_reads: 0
+2022/03/31-16:25:54.306964 2fdc                       Options.allow_mmap_writes: 0
+2022/03/31-16:25:54.306968 2fdc                        Options.use_direct_reads: 0
+2022/03/31-16:25:54.306972 2fdc                        Options.use_direct_io_for_flush_and_compaction: 0
+2022/03/31-16:25:54.306976 2fdc          Options.create_missing_column_families: 0
+2022/03/31-16:25:54.306979 2fdc                              Options.db_log_dir: 
+2022/03/31-16:25:54.306983 2fdc                                 Options.wal_dir: block-data/node1
+2022/03/31-16:25:54.306987 2fdc                Options.table_cache_numshardbits: 6
+2022/03/31-16:25:54.306991 2fdc                      Options.max_subcompactions: 1
+2022/03/31-16:25:54.306995 2fdc                  Options.max_background_flushes: -1
+2022/03/31-16:25:54.306999 2fdc                         Options.WAL_ttl_seconds: 0
+2022/03/31-16:25:54.307003 2fdc                       Options.WAL_size_limit_MB: 0
+2022/03/31-16:25:54.307006 2fdc             Options.manifest_preallocation_size: 4194304
+2022/03/31-16:25:54.307010 2fdc                     Options.is_fd_close_on_exec: 1
+2022/03/31-16:25:54.307014 2fdc                   Options.advise_random_on_open: 1
+2022/03/31-16:25:54.307018 2fdc                    Options.db_write_buffer_size: 0
+2022/03/31-16:25:54.307022 2fdc                    Options.write_buffer_manager: 00000217B608F690
+2022/03/31-16:25:54.307026 2fdc         Options.access_hint_on_compaction_start: 1
+2022/03/31-16:25:54.307030 2fdc  Options.new_table_reader_for_compaction_inputs: 0
+2022/03/31-16:25:54.307034 2fdc               Options.compaction_readahead_size: 0
+2022/03/31-16:25:54.307037 2fdc           Options.random_access_max_buffer_size: 1048576
+2022/03/31-16:25:54.307041 2fdc                      Options.use_adaptive_mutex: 0
+2022/03/31-16:25:54.307045 2fdc                            Options.rate_limiter: 0000000000000000
+2022/03/31-16:25:54.307049 2fdc     Options.sst_file_manager.rate_bytes_per_sec: 0
+2022/03/31-16:25:54.307053 2fdc                       Options.wal_recovery_mode: 2
+2022/03/31-16:25:54.307057 2fdc                  Options.enable_thread_tracking: 0
+2022/03/31-16:25:54.307088 2fdc                  Options.enable_pipelined_write: 0
+2022/03/31-16:25:54.307095 2fdc         Options.allow_concurrent_memtable_write: 1
+2022/03/31-16:25:54.307103 2fdc      Options.enable_write_thread_adaptive_yield: 1
+2022/03/31-16:25:54.307107 2fdc             Options.write_thread_max_yield_usec: 100
+2022/03/31-16:25:54.307111 2fdc            Options.write_thread_slow_yield_usec: 3
+2022/03/31-16:25:54.307115 2fdc                               Options.row_cache: None
+2022/03/31-16:25:54.307119 2fdc                              Options.wal_filter: None
+2022/03/31-16:25:54.307123 2fdc             Options.avoid_flush_during_recovery: 0
+2022/03/31-16:25:54.307126 2fdc             Options.allow_ingest_behind: 0
+2022/03/31-16:25:54.307130 2fdc             Options.preserve_deletes: 0
+2022/03/31-16:25:54.307134 2fdc             Options.concurrent_prepare: 0
+2022/03/31-16:25:54.307137 2fdc             Options.manual_wal_flush: 0
+2022/03/31-16:25:54.307141 2fdc             Options.seq_per_batch: 0
+2022/03/31-16:25:54.307154 2fdc             Options.max_background_jobs: 2
+2022/03/31-16:25:54.307158 2fdc             Options.max_background_compactions: -1
+2022/03/31-16:25:54.307162 2fdc             Options.avoid_flush_during_shutdown: 0
+2022/03/31-16:25:54.307166 2fdc           Options.writable_file_max_buffer_size: 1048576
+2022/03/31-16:25:54.307170 2fdc             Options.delayed_write_rate : 16777216
+2022/03/31-16:25:54.307174 2fdc             Options.max_total_wal_size: 0
+2022/03/31-16:25:54.307178 2fdc             Options.delete_obsolete_files_period_micros: 21600000000
+2022/03/31-16:25:54.307182 2fdc                   Options.stats_dump_period_sec: 600
+2022/03/31-16:25:54.307186 2fdc                          Options.max_open_files: -1
+2022/03/31-16:25:54.307190 2fdc                          Options.bytes_per_sync: 0
+2022/03/31-16:25:54.307193 2fdc                      Options.wal_bytes_per_sync: 0
+2022/03/31-16:25:54.307197 2fdc Compression algorithms supported:
+2022/03/31-16:25:54.307207 2fdc 	Snappy supported: 0
+2022/03/31-16:25:54.307211 2fdc 	Zlib supported: 0
+2022/03/31-16:25:54.307214 2fdc 	Bzip supported: 0
+2022/03/31-16:25:54.307218 2fdc 	LZ4 supported: 0
+2022/03/31-16:25:54.307222 2fdc 	ZSTDNotFinal supported: 0
+2022/03/31-16:25:54.307225 2fdc 	ZSTD supported: 0
+2022/03/31-16:25:54.307232 2fdc Fast CRC32 supported: Supported on x86Not supported on x86
+2022/03/31-16:25:54.307460 2fdc [c:\users\aretter\code\rocksdb\db\version_set.cc:2835] Recovering from manifest file: MANIFEST-000256
+2022/03/31-16:25:54.307568 2fdc [c:\users\aretter\code\rocksdb\db\column_family.cc:413] --------------- Options for column family [default]:
+2022/03/31-16:25:54.307576 2fdc               Options.comparator: leveldb.BytewiseComparator
+2022/03/31-16:25:54.307580 2fdc           Options.merge_operator: None
+2022/03/31-16:25:54.307584 2fdc        Options.compaction_filter: None
+2022/03/31-16:25:54.307592 2fdc        Options.compaction_filter_factory: None
+2022/03/31-16:25:54.307596 2fdc         Options.memtable_factory: SkipListFactory
+2022/03/31-16:25:54.307600 2fdc            Options.table_factory: BlockBasedTable
+2022/03/31-16:25:54.307642 2fdc            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (00000217B5CAEA70)
+  cache_index_and_filter_blocks: 0
+  cache_index_and_filter_blocks_with_high_priority: 0
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  index_type: 0
+  hash_index_allow_collision: 1
+  checksum: 1
+  no_block_cache: 0
+  block_cache: 00000217B597E4D0
+  block_cache_name: LRUCache
+  block_cache_options:
+    capacity : 8388608
+    num_shard_bits : 4
+    strict_capacity_limit : 0
+    high_pri_pool_ratio: 0.000
+  block_cache_compressed: 0000000000000000
+  persistent_cache: 0000000000000000
+  block_size: 4096
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  metadata_block_size: 4096
+  partition_filters: 0
+  use_delta_encoding: 1
+  filter_policy: nullptr
+  whole_key_filtering: 1
+  verify_compression: 0
+  read_amp_bytes_per_bit: 0
+  format_version: 2
+2022/03/31-16:25:54.307672 2fdc        Options.write_buffer_size: 67108864
+2022/03/31-16:25:54.307678 2fdc  Options.max_write_buffer_number: 2
+2022/03/31-16:25:54.307682 2fdc          Options.compression: NoCompression
+2022/03/31-16:25:54.307686 2fdc                  Options.bottommost_compression: Disabled
+2022/03/31-16:25:54.307690 2fdc       Options.prefix_extractor: nullptr
+2022/03/31-16:25:54.307695 2fdc   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+2022/03/31-16:25:54.307699 2fdc             Options.num_levels: 7
+2022/03/31-16:25:54.307703 2fdc        Options.min_write_buffer_number_to_merge: 1
+2022/03/31-16:25:54.307707 2fdc     Options.max_write_buffer_number_to_maintain: 0
+2022/03/31-16:25:54.307711 2fdc            Options.compression_opts.window_bits: -14
+2022/03/31-16:25:54.307715 2fdc                  Options.compression_opts.level: -1
+2022/03/31-16:25:54.307719 2fdc               Options.compression_opts.strategy: 0
+2022/03/31-16:25:54.307723 2fdc         Options.compression_opts.max_dict_bytes: 0
+2022/03/31-16:25:54.307726 2fdc      Options.level0_file_num_compaction_trigger: 4
+2022/03/31-16:25:54.307730 2fdc          Options.level0_slowdown_writes_trigger: 20
+2022/03/31-16:25:54.307734 2fdc              Options.level0_stop_writes_trigger: 36
+2022/03/31-16:25:54.307738 2fdc                   Options.target_file_size_base: 67108864
+2022/03/31-16:25:54.307742 2fdc             Options.target_file_size_multiplier: 1
+2022/03/31-16:25:54.307746 2fdc                Options.max_bytes_for_level_base: 268435456
+2022/03/31-16:25:54.307750 2fdc Options.level_compaction_dynamic_level_bytes: 0
+2022/03/31-16:25:54.307754 2fdc          Options.max_bytes_for_level_multiplier: 10.000000
+2022/03/31-16:25:54.307762 2fdc Options.max_bytes_for_level_multiplier_addtl[0]: 1
+2022/03/31-16:25:54.307766 2fdc Options.max_bytes_for_level_multiplier_addtl[1]: 1
+2022/03/31-16:25:54.307770 2fdc Options.max_bytes_for_level_multiplier_addtl[2]: 1
+2022/03/31-16:25:54.307774 2fdc Options.max_bytes_for_level_multiplier_addtl[3]: 1
+2022/03/31-16:25:54.307778 2fdc Options.max_bytes_for_level_multiplier_addtl[4]: 1
+2022/03/31-16:25:54.307782 2fdc Options.max_bytes_for_level_multiplier_addtl[5]: 1
+2022/03/31-16:25:54.307786 2fdc Options.max_bytes_for_level_multiplier_addtl[6]: 1
+2022/03/31-16:25:54.307790 2fdc       Options.max_sequential_skip_in_iterations: 8
+2022/03/31-16:25:54.307793 2fdc                    Options.max_compaction_bytes: 1677721600
+2022/03/31-16:25:54.307797 2fdc                        Options.arena_block_size: 8388608
+2022/03/31-16:25:54.307801 2fdc   Options.soft_pending_compaction_bytes_limit: 68719476736
+2022/03/31-16:25:54.307805 2fdc   Options.hard_pending_compaction_bytes_limit: 274877906944
+2022/03/31-16:25:54.307809 2fdc       Options.rate_limit_delay_max_milliseconds: 100
+2022/03/31-16:25:54.307813 2fdc                Options.disable_auto_compactions: 0
+2022/03/31-16:25:54.307818 2fdc                        Options.compaction_style: kCompactionStyleLevel
+2022/03/31-16:25:54.307823 2fdc                          Options.compaction_pri: kByCompensatedSize
+2022/03/31-16:25:54.307827 2fdc Options.compaction_options_universal.size_ratio: 1
+2022/03/31-16:25:54.307831 2fdc Options.compaction_options_universal.min_merge_width: 2
+2022/03/31-16:25:54.307835 2fdc Options.compaction_options_universal.max_merge_width: 4294967295
+2022/03/31-16:25:54.307839 2fdc Options.compaction_options_universal.max_size_amplification_percent: 200
+2022/03/31-16:25:54.307843 2fdc Options.compaction_options_universal.compression_size_percent: -1
+2022/03/31-16:25:54.307847 2fdc Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+2022/03/31-16:25:54.307851 2fdc Options.compaction_options_fifo.max_table_files_size: 1073741824
+2022/03/31-16:25:54.307855 2fdc Options.compaction_options_fifo.allow_compaction: 0
+2022/03/31-16:25:54.307859 2fdc Options.compaction_options_fifo.ttl: 0
+2022/03/31-16:25:54.307863 2fdc                   Options.table_properties_collectors: 
+2022/03/31-16:25:54.307890 2fdc                   Options.inplace_update_support: 0
+2022/03/31-16:25:54.307895 2fdc                 Options.inplace_update_num_locks: 10000
+2022/03/31-16:25:54.307900 2fdc               Options.memtable_prefix_bloom_size_ratio: 0.000000
+2022/03/31-16:25:54.307904 2fdc   Options.memtable_huge_page_size: 0
+2022/03/31-16:25:54.307908 2fdc                           Options.bloom_locality: 0
+2022/03/31-16:25:54.307912 2fdc                    Options.max_successive_merges: 0
+2022/03/31-16:25:54.307916 2fdc                Options.optimize_filters_for_hits: 0
+2022/03/31-16:25:54.307920 2fdc                Options.paranoid_file_checks: 0
+2022/03/31-16:25:54.307923 2fdc                Options.force_consistency_checks: 0
+2022/03/31-16:25:54.307927 2fdc                Options.report_bg_io_stats: 0
+2022/03/31-16:25:54.309932 2fdc [c:\users\aretter\code\rocksdb\db\version_set.cc:3100] Recovered from manifest file:block-data/node1/MANIFEST-000256 succeeded,manifest_file_number is 256, next_file_number is 258, last_sequence is 21, log_number is 0,prev_log_number is 0,max_column_family is 0
+2022/03/31-16:25:54.309951 2fdc [c:\users\aretter\code\rocksdb\db\version_set.cc:3108] Column family [default] (ID 0), log number is 255
+2022/03/31-16:25:54.310735 2fdc EVENT_LOG_v1 {"time_micros": 1648715154310692, "job": 1, "event": "recovery_started", "log_files": [257]}
+2022/03/31-16:25:54.310750 2fdc [c:\users\aretter\code\rocksdb\db\db_impl_open.cc:518] Recovering log #257 mode 2
+2022/03/31-16:25:54.310835 2fdc [c:\users\aretter\code\rocksdb\db\version_set.cc:2608] Creating manifest 259
+2022/03/31-16:25:54.384388 2fdc EVENT_LOG_v1 {"time_micros": 1648715154384373, "job": 1, "event": "recovery_finished"}
+2022/03/31-16:25:54.414318 2fdc [c:\users\aretter\code\rocksdb\db\db_impl_open.cc:1150] DB pointer 00000217B60B9090

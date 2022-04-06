@@ -1,0 +1,182 @@
+2022/03/26-21:03:21.742678 3d8c RocksDB version: 5.9.2
+2022/03/26-21:03:21.742722 3d8c Git sha rocksdb_build_git_sha:@004237e62790320d8e630456cbeb6f4a1f3579c2@
+2022/03/26-21:03:21.742736 3d8c Compile date Jan  3 2018
+2022/03/26-21:03:21.742751 3d8c DB SUMMARY
+2022/03/26-21:03:21.743161 3d8c CURRENT file:  CURRENT
+2022/03/26-21:03:21.743175 3d8c IDENTITY file:  IDENTITY
+2022/03/26-21:03:21.743199 3d8c MANIFEST file:  MANIFEST-000163 size: 221 Bytes
+2022/03/26-21:03:21.743215 3d8c SST files in block-data/node1 dir, Total Num: 3, files: 000007.sst 000024.sst 000056.sst 
+2022/03/26-21:03:21.743226 3d8c Write Ahead Log file in block-data/node1: 000164.log size: 0 ; 
+2022/03/26-21:03:21.743238 3d8c                         Options.error_if_exists: 0
+2022/03/26-21:03:21.750460 3d8c                       Options.create_if_missing: 1
+2022/03/26-21:03:21.750473 3d8c                         Options.paranoid_checks: 1
+2022/03/26-21:03:21.750477 3d8c                                     Options.env: 000002062A009620
+2022/03/26-21:03:21.750480 3d8c                                Options.info_log: 000002062A93F390
+2022/03/26-21:03:21.750484 3d8c                Options.max_file_opening_threads: 16
+2022/03/26-21:03:21.750488 3d8c                              Options.statistics: 0000000000000000
+2022/03/26-21:03:21.750491 3d8c                               Options.use_fsync: 0
+2022/03/26-21:03:21.750495 3d8c                       Options.max_log_file_size: 0
+2022/03/26-21:03:21.750498 3d8c                  Options.max_manifest_file_size: 18446744073709551615
+2022/03/26-21:03:21.750502 3d8c                   Options.log_file_time_to_roll: 0
+2022/03/26-21:03:21.750505 3d8c                       Options.keep_log_file_num: 1000
+2022/03/26-21:03:21.750509 3d8c                    Options.recycle_log_file_num: 0
+2022/03/26-21:03:21.750512 3d8c                         Options.allow_fallocate: 1
+2022/03/26-21:03:21.750516 3d8c                        Options.allow_mmap_reads: 0
+2022/03/26-21:03:21.750519 3d8c                       Options.allow_mmap_writes: 0
+2022/03/26-21:03:21.750523 3d8c                        Options.use_direct_reads: 0
+2022/03/26-21:03:21.750552 3d8c                        Options.use_direct_io_for_flush_and_compaction: 0
+2022/03/26-21:03:21.750559 3d8c          Options.create_missing_column_families: 0
+2022/03/26-21:03:21.750566 3d8c                              Options.db_log_dir: 
+2022/03/26-21:03:21.750634 3d8c                                 Options.wal_dir: block-data/node1
+2022/03/26-21:03:21.750644 3d8c                Options.table_cache_numshardbits: 6
+2022/03/26-21:03:21.750651 3d8c                      Options.max_subcompactions: 1
+2022/03/26-21:03:21.750657 3d8c                  Options.max_background_flushes: -1
+2022/03/26-21:03:21.750663 3d8c                         Options.WAL_ttl_seconds: 0
+2022/03/26-21:03:21.750669 3d8c                       Options.WAL_size_limit_MB: 0
+2022/03/26-21:03:21.750675 3d8c             Options.manifest_preallocation_size: 4194304
+2022/03/26-21:03:21.750681 3d8c                     Options.is_fd_close_on_exec: 1
+2022/03/26-21:03:21.750687 3d8c                   Options.advise_random_on_open: 1
+2022/03/26-21:03:21.750693 3d8c                    Options.db_write_buffer_size: 0
+2022/03/26-21:03:21.750699 3d8c                    Options.write_buffer_manager: 000002062A9479F0
+2022/03/26-21:03:21.750705 3d8c         Options.access_hint_on_compaction_start: 1
+2022/03/26-21:03:21.750711 3d8c  Options.new_table_reader_for_compaction_inputs: 0
+2022/03/26-21:03:21.750717 3d8c               Options.compaction_readahead_size: 0
+2022/03/26-21:03:21.750723 3d8c           Options.random_access_max_buffer_size: 1048576
+2022/03/26-21:03:21.750729 3d8c                      Options.use_adaptive_mutex: 0
+2022/03/26-21:03:21.750734 3d8c                            Options.rate_limiter: 0000000000000000
+2022/03/26-21:03:21.750741 3d8c     Options.sst_file_manager.rate_bytes_per_sec: 0
+2022/03/26-21:03:21.750747 3d8c                       Options.wal_recovery_mode: 2
+2022/03/26-21:03:21.750753 3d8c                  Options.enable_thread_tracking: 0
+2022/03/26-21:03:21.750785 3d8c                  Options.enable_pipelined_write: 0
+2022/03/26-21:03:21.750795 3d8c         Options.allow_concurrent_memtable_write: 1
+2022/03/26-21:03:21.750801 3d8c      Options.enable_write_thread_adaptive_yield: 1
+2022/03/26-21:03:21.750807 3d8c             Options.write_thread_max_yield_usec: 100
+2022/03/26-21:03:21.750813 3d8c            Options.write_thread_slow_yield_usec: 3
+2022/03/26-21:03:21.750819 3d8c                               Options.row_cache: None
+2022/03/26-21:03:21.750825 3d8c                              Options.wal_filter: None
+2022/03/26-21:03:21.750831 3d8c             Options.avoid_flush_during_recovery: 0
+2022/03/26-21:03:21.750836 3d8c             Options.allow_ingest_behind: 0
+2022/03/26-21:03:21.750842 3d8c             Options.preserve_deletes: 0
+2022/03/26-21:03:21.750848 3d8c             Options.concurrent_prepare: 0
+2022/03/26-21:03:21.750854 3d8c             Options.manual_wal_flush: 0
+2022/03/26-21:03:21.750860 3d8c             Options.seq_per_batch: 0
+2022/03/26-21:03:21.750880 3d8c             Options.max_background_jobs: 2
+2022/03/26-21:03:21.750887 3d8c             Options.max_background_compactions: -1
+2022/03/26-21:03:21.750893 3d8c             Options.avoid_flush_during_shutdown: 0
+2022/03/26-21:03:21.750899 3d8c           Options.writable_file_max_buffer_size: 1048576
+2022/03/26-21:03:21.750905 3d8c             Options.delayed_write_rate : 16777216
+2022/03/26-21:03:21.750911 3d8c             Options.max_total_wal_size: 0
+2022/03/26-21:03:21.750917 3d8c             Options.delete_obsolete_files_period_micros: 21600000000
+2022/03/26-21:03:21.750923 3d8c                   Options.stats_dump_period_sec: 600
+2022/03/26-21:03:21.750929 3d8c                          Options.max_open_files: -1
+2022/03/26-21:03:21.750935 3d8c                          Options.bytes_per_sync: 0
+2022/03/26-21:03:21.750941 3d8c                      Options.wal_bytes_per_sync: 0
+2022/03/26-21:03:21.750947 3d8c Compression algorithms supported:
+2022/03/26-21:03:21.750959 3d8c 	Snappy supported: 0
+2022/03/26-21:03:21.750965 3d8c 	Zlib supported: 0
+2022/03/26-21:03:21.750971 3d8c 	Bzip supported: 0
+2022/03/26-21:03:21.750977 3d8c 	LZ4 supported: 0
+2022/03/26-21:03:21.750982 3d8c 	ZSTDNotFinal supported: 0
+2022/03/26-21:03:21.750988 3d8c 	ZSTD supported: 0
+2022/03/26-21:03:21.750998 3d8c Fast CRC32 supported: Supported on x86Not supported on x86
+2022/03/26-21:03:21.751227 3d8c [c:\users\aretter\code\rocksdb\db\version_set.cc:2835] Recovering from manifest file: MANIFEST-000163
+2022/03/26-21:03:21.751332 3d8c [c:\users\aretter\code\rocksdb\db\column_family.cc:413] --------------- Options for column family [default]:
+2022/03/26-21:03:21.751339 3d8c               Options.comparator: leveldb.BytewiseComparator
+2022/03/26-21:03:21.751343 3d8c           Options.merge_operator: None
+2022/03/26-21:03:21.751346 3d8c        Options.compaction_filter: None
+2022/03/26-21:03:21.751353 3d8c        Options.compaction_filter_factory: None
+2022/03/26-21:03:21.751357 3d8c         Options.memtable_factory: SkipListFactory
+2022/03/26-21:03:21.751360 3d8c            Options.table_factory: BlockBasedTable
+2022/03/26-21:03:21.751394 3d8c            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (000002062A56D6B0)
+  cache_index_and_filter_blocks: 0
+  cache_index_and_filter_blocks_with_high_priority: 0
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  index_type: 0
+  hash_index_allow_collision: 1
+  checksum: 1
+  no_block_cache: 0
+  block_cache: 000002062A24CA40
+  block_cache_name: LRUCache
+  block_cache_options:
+    capacity : 8388608
+    num_shard_bits : 4
+    strict_capacity_limit : 0
+    high_pri_pool_ratio: 0.000
+  block_cache_compressed: 0000000000000000
+  persistent_cache: 0000000000000000
+  block_size: 4096
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  metadata_block_size: 4096
+  partition_filters: 0
+  use_delta_encoding: 1
+  filter_policy: nullptr
+  whole_key_filtering: 1
+  verify_compression: 0
+  read_amp_bytes_per_bit: 0
+  format_version: 2
+2022/03/26-21:03:21.751421 3d8c        Options.write_buffer_size: 67108864
+2022/03/26-21:03:21.751427 3d8c  Options.max_write_buffer_number: 2
+2022/03/26-21:03:21.751430 3d8c          Options.compression: NoCompression
+2022/03/26-21:03:21.751434 3d8c                  Options.bottommost_compression: Disabled
+2022/03/26-21:03:21.751437 3d8c       Options.prefix_extractor: nullptr
+2022/03/26-21:03:21.751441 3d8c   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+2022/03/26-21:03:21.751444 3d8c             Options.num_levels: 7
+2022/03/26-21:03:21.751447 3d8c        Options.min_write_buffer_number_to_merge: 1
+2022/03/26-21:03:21.751451 3d8c     Options.max_write_buffer_number_to_maintain: 0
+2022/03/26-21:03:21.751454 3d8c            Options.compression_opts.window_bits: -14
+2022/03/26-21:03:21.751458 3d8c                  Options.compression_opts.level: -1
+2022/03/26-21:03:21.751461 3d8c               Options.compression_opts.strategy: 0
+2022/03/26-21:03:21.751464 3d8c         Options.compression_opts.max_dict_bytes: 0
+2022/03/26-21:03:21.751468 3d8c      Options.level0_file_num_compaction_trigger: 4
+2022/03/26-21:03:21.751471 3d8c          Options.level0_slowdown_writes_trigger: 20
+2022/03/26-21:03:21.751475 3d8c              Options.level0_stop_writes_trigger: 36
+2022/03/26-21:03:21.751478 3d8c                   Options.target_file_size_base: 67108864
+2022/03/26-21:03:21.751481 3d8c             Options.target_file_size_multiplier: 1
+2022/03/26-21:03:21.751485 3d8c                Options.max_bytes_for_level_base: 268435456
+2022/03/26-21:03:21.751488 3d8c Options.level_compaction_dynamic_level_bytes: 0
+2022/03/26-21:03:21.751492 3d8c          Options.max_bytes_for_level_multiplier: 10.000000
+2022/03/26-21:03:21.751497 3d8c Options.max_bytes_for_level_multiplier_addtl[0]: 1
+2022/03/26-21:03:21.751501 3d8c Options.max_bytes_for_level_multiplier_addtl[1]: 1
+2022/03/26-21:03:21.751504 3d8c Options.max_bytes_for_level_multiplier_addtl[2]: 1
+2022/03/26-21:03:21.751508 3d8c Options.max_bytes_for_level_multiplier_addtl[3]: 1
+2022/03/26-21:03:21.751511 3d8c Options.max_bytes_for_level_multiplier_addtl[4]: 1
+2022/03/26-21:03:21.751514 3d8c Options.max_bytes_for_level_multiplier_addtl[5]: 1
+2022/03/26-21:03:21.751518 3d8c Options.max_bytes_for_level_multiplier_addtl[6]: 1
+2022/03/26-21:03:21.751521 3d8c       Options.max_sequential_skip_in_iterations: 8
+2022/03/26-21:03:21.751525 3d8c                    Options.max_compaction_bytes: 1677721600
+2022/03/26-21:03:21.751528 3d8c                        Options.arena_block_size: 8388608
+2022/03/26-21:03:21.751532 3d8c   Options.soft_pending_compaction_bytes_limit: 68719476736
+2022/03/26-21:03:21.751535 3d8c   Options.hard_pending_compaction_bytes_limit: 274877906944
+2022/03/26-21:03:21.751539 3d8c       Options.rate_limit_delay_max_milliseconds: 100
+2022/03/26-21:03:21.751542 3d8c                Options.disable_auto_compactions: 0
+2022/03/26-21:03:21.751546 3d8c                        Options.compaction_style: kCompactionStyleLevel
+2022/03/26-21:03:21.751550 3d8c                          Options.compaction_pri: kByCompensatedSize
+2022/03/26-21:03:21.751554 3d8c Options.compaction_options_universal.size_ratio: 1
+2022/03/26-21:03:21.751557 3d8c Options.compaction_options_universal.min_merge_width: 2
+2022/03/26-21:03:21.751560 3d8c Options.compaction_options_universal.max_merge_width: 4294967295
+2022/03/26-21:03:21.751564 3d8c Options.compaction_options_universal.max_size_amplification_percent: 200
+2022/03/26-21:03:21.751567 3d8c Options.compaction_options_universal.compression_size_percent: -1
+2022/03/26-21:03:21.751571 3d8c Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+2022/03/26-21:03:21.751575 3d8c Options.compaction_options_fifo.max_table_files_size: 1073741824
+2022/03/26-21:03:21.751578 3d8c Options.compaction_options_fifo.allow_compaction: 0
+2022/03/26-21:03:21.751582 3d8c Options.compaction_options_fifo.ttl: 0
+2022/03/26-21:03:21.751585 3d8c                   Options.table_properties_collectors: 
+2022/03/26-21:03:21.751608 3d8c                   Options.inplace_update_support: 0
+2022/03/26-21:03:21.751613 3d8c                 Options.inplace_update_num_locks: 10000
+2022/03/26-21:03:21.751617 3d8c               Options.memtable_prefix_bloom_size_ratio: 0.000000
+2022/03/26-21:03:21.751620 3d8c   Options.memtable_huge_page_size: 0
+2022/03/26-21:03:21.751624 3d8c                           Options.bloom_locality: 0
+2022/03/26-21:03:21.751627 3d8c                    Options.max_successive_merges: 0
+2022/03/26-21:03:21.751631 3d8c                Options.optimize_filters_for_hits: 0
+2022/03/26-21:03:21.751634 3d8c                Options.paranoid_file_checks: 0
+2022/03/26-21:03:21.751637 3d8c                Options.force_consistency_checks: 0
+2022/03/26-21:03:21.751641 3d8c                Options.report_bg_io_stats: 0
+2022/03/26-21:03:21.753594 3d8c [c:\users\aretter\code\rocksdb\db\version_set.cc:3100] Recovered from manifest file:block-data/node1/MANIFEST-000163 succeeded,manifest_file_number is 163, next_file_number is 165, last_sequence is 21, log_number is 0,prev_log_number is 0,max_column_family is 0
+2022/03/26-21:03:21.753605 3d8c [c:\users\aretter\code\rocksdb\db\version_set.cc:3108] Column family [default] (ID 0), log number is 162
+2022/03/26-21:03:21.754086 3d8c EVENT_LOG_v1 {"time_micros": 1648299801754043, "job": 1, "event": "recovery_started", "log_files": [164]}
+2022/03/26-21:03:21.754100 3d8c [c:\users\aretter\code\rocksdb\db\db_impl_open.cc:518] Recovering log #164 mode 2
+2022/03/26-21:03:21.754169 3d8c [c:\users\aretter\code\rocksdb\db\version_set.cc:2608] Creating manifest 166
+2022/03/26-21:03:21.793675 3d8c EVENT_LOG_v1 {"time_micros": 1648299801793653, "job": 1, "event": "recovery_finished"}
+2022/03/26-21:03:21.836282 3d8c [c:\users\aretter\code\rocksdb\db\db_impl_open.cc:1150] DB pointer 000002062A7A83F0

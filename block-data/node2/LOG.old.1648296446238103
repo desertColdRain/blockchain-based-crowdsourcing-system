@@ -1,0 +1,83 @@
+2022/03/26-20:07:24.442169 accc RocksDB version: 5.9.2
+2022/03/26-20:07:24.442231 accc Git sha rocksdb_build_git_sha:@004237e62790320d8e630456cbeb6f4a1f3579c2@
+2022/03/26-20:07:24.442247 accc Compile date Jan  3 2018
+2022/03/26-20:07:24.442258 accc DB SUMMARY
+2022/03/26-20:07:24.442414 accc CURRENT file:  CURRENT
+2022/03/26-20:07:24.442428 accc IDENTITY file:  IDENTITY
+2022/03/26-20:07:24.442448 accc MANIFEST file:  MANIFEST-000029 size: 109 Bytes
+2022/03/26-20:07:24.442460 accc SST files in block-data/node2 dir, Total Num: 1, files: 000004.sst 
+2022/03/26-20:07:24.442470 accc Write Ahead Log file in block-data/node2: 000030.log size: 0 ; 
+2022/03/26-20:07:24.442480 accc                         Options.error_if_exists: 0
+2022/03/26-20:07:24.442491 accc                       Options.create_if_missing: 1
+2022/03/26-20:07:24.442688 accc                         Options.paranoid_checks: 1
+2022/03/26-20:07:24.442696 accc                                     Options.env: 00000147108A0A30
+2022/03/26-20:07:24.442701 accc                                Options.info_log: 0000014711D11040
+2022/03/26-20:07:24.442704 accc                Options.max_file_opening_threads: 16
+2022/03/26-20:07:24.442708 accc                              Options.statistics: 0000000000000000
+2022/03/26-20:07:24.442712 accc                               Options.use_fsync: 0
+2022/03/26-20:07:24.442715 accc                       Options.max_log_file_size: 0
+2022/03/26-20:07:24.442719 accc                  Options.max_manifest_file_size: 18446744073709551615
+2022/03/26-20:07:24.442722 accc                   Options.log_file_time_to_roll: 0
+2022/03/26-20:07:24.442726 accc                       Options.keep_log_file_num: 1000
+2022/03/26-20:07:24.442729 accc                    Options.recycle_log_file_num: 0
+2022/03/26-20:07:24.442733 accc                         Options.allow_fallocate: 1
+2022/03/26-20:07:24.442736 accc                        Options.allow_mmap_reads: 0
+2022/03/26-20:07:24.442740 accc                       Options.allow_mmap_writes: 0
+2022/03/26-20:07:24.442743 accc                        Options.use_direct_reads: 0
+2022/03/26-20:07:24.442746 accc                        Options.use_direct_io_for_flush_and_compaction: 0
+2022/03/26-20:07:24.442750 accc          Options.create_missing_column_families: 0
+2022/03/26-20:07:24.442754 accc                              Options.db_log_dir: 
+2022/03/26-20:07:24.442757 accc                                 Options.wal_dir: block-data/node2
+2022/03/26-20:07:24.442761 accc                Options.table_cache_numshardbits: 6
+2022/03/26-20:07:24.442764 accc                      Options.max_subcompactions: 1
+2022/03/26-20:07:24.442768 accc                  Options.max_background_flushes: -1
+2022/03/26-20:07:24.442771 accc                         Options.WAL_ttl_seconds: 0
+2022/03/26-20:07:24.442774 accc                       Options.WAL_size_limit_MB: 0
+2022/03/26-20:07:24.442778 accc             Options.manifest_preallocation_size: 4194304
+2022/03/26-20:07:24.442781 accc                     Options.is_fd_close_on_exec: 1
+2022/03/26-20:07:24.442785 accc                   Options.advise_random_on_open: 1
+2022/03/26-20:07:24.442788 accc                    Options.db_write_buffer_size: 0
+2022/03/26-20:07:24.442792 accc                    Options.write_buffer_manager: 0000014711D40BB0
+2022/03/26-20:07:24.442795 accc         Options.access_hint_on_compaction_start: 1
+2022/03/26-20:07:24.442799 accc  Options.new_table_reader_for_compaction_inputs: 0
+2022/03/26-20:07:24.442802 accc               Options.compaction_readahead_size: 0
+2022/03/26-20:07:24.442805 accc           Options.random_access_max_buffer_size: 1048576
+2022/03/26-20:07:24.442809 accc                      Options.use_adaptive_mutex: 0
+2022/03/26-20:07:24.442812 accc                            Options.rate_limiter: 0000000000000000
+2022/03/26-20:07:24.442816 accc     Options.sst_file_manager.rate_bytes_per_sec: 0
+2022/03/26-20:07:24.442819 accc                       Options.wal_recovery_mode: 2
+2022/03/26-20:07:24.442823 accc                  Options.enable_thread_tracking: 0
+2022/03/26-20:07:24.442863 accc                  Options.enable_pipelined_write: 0
+2022/03/26-20:07:24.442869 accc         Options.allow_concurrent_memtable_write: 1
+2022/03/26-20:07:24.442873 accc      Options.enable_write_thread_adaptive_yield: 1
+2022/03/26-20:07:24.442876 accc             Options.write_thread_max_yield_usec: 100
+2022/03/26-20:07:24.442880 accc            Options.write_thread_slow_yield_usec: 3
+2022/03/26-20:07:24.442883 accc                               Options.row_cache: None
+2022/03/26-20:07:24.442887 accc                              Options.wal_filter: None
+2022/03/26-20:07:24.442890 accc             Options.avoid_flush_during_recovery: 0
+2022/03/26-20:07:24.442894 accc             Options.allow_ingest_behind: 0
+2022/03/26-20:07:24.442897 accc             Options.preserve_deletes: 0
+2022/03/26-20:07:24.442900 accc             Options.concurrent_prepare: 0
+2022/03/26-20:07:24.442904 accc             Options.manual_wal_flush: 0
+2022/03/26-20:07:24.442907 accc             Options.seq_per_batch: 0
+2022/03/26-20:07:24.442910 accc             Options.max_background_jobs: 2
+2022/03/26-20:07:24.442914 accc             Options.max_background_compactions: -1
+2022/03/26-20:07:24.442917 accc             Options.avoid_flush_during_shutdown: 0
+2022/03/26-20:07:24.442920 accc           Options.writable_file_max_buffer_size: 1048576
+2022/03/26-20:07:24.442924 accc             Options.delayed_write_rate : 16777216
+2022/03/26-20:07:24.442927 accc             Options.max_total_wal_size: 0
+2022/03/26-20:07:24.442931 accc             Options.delete_obsolete_files_period_micros: 21600000000
+2022/03/26-20:07:24.442934 accc                   Options.stats_dump_period_sec: 600
+2022/03/26-20:07:24.442938 accc                          Options.max_open_files: -1
+2022/03/26-20:07:24.442941 accc                          Options.bytes_per_sync: 0
+2022/03/26-20:07:24.442944 accc                      Options.wal_bytes_per_sync: 0
+2022/03/26-20:07:24.442948 accc Compression algorithms supported:
+2022/03/26-20:07:24.442951 accc 	Snappy supported: 0
+2022/03/26-20:07:24.442955 accc 	Zlib supported: 0
+2022/03/26-20:07:24.442958 accc 	Bzip supported: 0
+2022/03/26-20:07:24.442961 accc 	LZ4 supported: 0
+2022/03/26-20:07:24.442965 accc 	ZSTDNotFinal supported: 0
+2022/03/26-20:07:24.442968 accc 	ZSTD supported: 0
+2022/03/26-20:07:24.442974 accc Fast CRC32 supported: Supported on x86Not supported on x86
+2022/03/26-20:07:24.443111 accc [c:\users\aretter\code\rocksdb\db\db_impl.cc:234] Shutdown: canceling all background work
+2022/03/26-20:07:24.443139 accc [c:\users\aretter\code\rocksdb\db\db_impl.cc:364] Shutdown complete

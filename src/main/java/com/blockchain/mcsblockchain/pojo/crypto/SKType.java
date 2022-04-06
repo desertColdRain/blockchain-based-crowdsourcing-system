@@ -1,11 +1,15 @@
 package com.blockchain.mcsblockchain.pojo.crypto;
 
 import com.blockchain.mcsblockchain.Utils.Cryptography;
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import it.unisa.dia.gas.jpbc.Element;
+import org.jetbrains.annotations.TestOnly;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
+
 //私钥类
+//@JsonIgnoreProperties({"hibernateLazyInitializer","handler"})
 public class SKType implements Serializable {
     private static final long serialVersionUID = /*4878039769420589901L;*/1L;
 
@@ -43,15 +47,15 @@ public class SKType implements Serializable {
         ByteArrayOutputStream byteOut = new ByteArrayOutputStream();
         ObjectOutputStream objOut = new ObjectOutputStream(byteOut);
         objOut.writeObject(this);
-        String res = byteOut.toString("ISO-8859-1");
-        return res;
+        return byteOut.toString("ISO-8859-1");
     }
 
     public SKType deserialize(String str_input) throws IOException, ClassNotFoundException
     {
-        ByteArrayInputStream byteIn = new ByteArrayInputStream(str_input.getBytes("ISO-8859-1"));
+        ByteArrayInputStream byteIn = new ByteArrayInputStream(str_input.getBytes(StandardCharsets.ISO_8859_1));
         ObjectInputStream objIn = new ObjectInputStream(byteIn);
-        SKType res =(SKType) objIn.readObject();
-        return res;
+        return (SKType) objIn.readObject();
     }
+
+
 }

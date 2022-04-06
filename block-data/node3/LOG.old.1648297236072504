@@ -1,0 +1,83 @@
+2022/03/26-20:20:22.804585 ef84 RocksDB version: 5.9.2
+2022/03/26-20:20:22.804671 ef84 Git sha rocksdb_build_git_sha:@004237e62790320d8e630456cbeb6f4a1f3579c2@
+2022/03/26-20:20:22.804688 ef84 Compile date Jan  3 2018
+2022/03/26-20:20:22.804698 ef84 DB SUMMARY
+2022/03/26-20:20:22.804957 ef84 CURRENT file:  CURRENT
+2022/03/26-20:20:22.804971 ef84 IDENTITY file:  IDENTITY
+2022/03/26-20:20:22.804993 ef84 MANIFEST file:  MANIFEST-000041 size: 109 Bytes
+2022/03/26-20:20:22.805005 ef84 SST files in block-data/node3 dir, Total Num: 1, files: 000004.sst 
+2022/03/26-20:20:22.805032 ef84 Write Ahead Log file in block-data/node3: 000042.log size: 0 ; 
+2022/03/26-20:20:22.805052 ef84                         Options.error_if_exists: 0
+2022/03/26-20:20:22.805062 ef84                       Options.create_if_missing: 1
+2022/03/26-20:20:22.805297 ef84                         Options.paranoid_checks: 1
+2022/03/26-20:20:22.805305 ef84                                     Options.env: 00000256B94A6A30
+2022/03/26-20:20:22.805309 ef84                                Options.info_log: 00000256BABB0FC0
+2022/03/26-20:20:22.805313 ef84                Options.max_file_opening_threads: 16
+2022/03/26-20:20:22.805317 ef84                              Options.statistics: 0000000000000000
+2022/03/26-20:20:22.805321 ef84                               Options.use_fsync: 0
+2022/03/26-20:20:22.805324 ef84                       Options.max_log_file_size: 0
+2022/03/26-20:20:22.805328 ef84                  Options.max_manifest_file_size: 18446744073709551615
+2022/03/26-20:20:22.805331 ef84                   Options.log_file_time_to_roll: 0
+2022/03/26-20:20:22.805335 ef84                       Options.keep_log_file_num: 1000
+2022/03/26-20:20:22.805339 ef84                    Options.recycle_log_file_num: 0
+2022/03/26-20:20:22.805342 ef84                         Options.allow_fallocate: 1
+2022/03/26-20:20:22.805345 ef84                        Options.allow_mmap_reads: 0
+2022/03/26-20:20:22.805349 ef84                       Options.allow_mmap_writes: 0
+2022/03/26-20:20:22.805353 ef84                        Options.use_direct_reads: 0
+2022/03/26-20:20:22.805356 ef84                        Options.use_direct_io_for_flush_and_compaction: 0
+2022/03/26-20:20:22.805360 ef84          Options.create_missing_column_families: 0
+2022/03/26-20:20:22.805363 ef84                              Options.db_log_dir: 
+2022/03/26-20:20:22.805367 ef84                                 Options.wal_dir: block-data/node3
+2022/03/26-20:20:22.805370 ef84                Options.table_cache_numshardbits: 6
+2022/03/26-20:20:22.805374 ef84                      Options.max_subcompactions: 1
+2022/03/26-20:20:22.805377 ef84                  Options.max_background_flushes: -1
+2022/03/26-20:20:22.805381 ef84                         Options.WAL_ttl_seconds: 0
+2022/03/26-20:20:22.805384 ef84                       Options.WAL_size_limit_MB: 0
+2022/03/26-20:20:22.805388 ef84             Options.manifest_preallocation_size: 4194304
+2022/03/26-20:20:22.805391 ef84                     Options.is_fd_close_on_exec: 1
+2022/03/26-20:20:22.805395 ef84                   Options.advise_random_on_open: 1
+2022/03/26-20:20:22.805398 ef84                    Options.db_write_buffer_size: 0
+2022/03/26-20:20:22.805402 ef84                    Options.write_buffer_manager: 00000256BADF1780
+2022/03/26-20:20:22.805405 ef84         Options.access_hint_on_compaction_start: 1
+2022/03/26-20:20:22.805409 ef84  Options.new_table_reader_for_compaction_inputs: 0
+2022/03/26-20:20:22.805412 ef84               Options.compaction_readahead_size: 0
+2022/03/26-20:20:22.805416 ef84           Options.random_access_max_buffer_size: 1048576
+2022/03/26-20:20:22.805419 ef84                      Options.use_adaptive_mutex: 0
+2022/03/26-20:20:22.805423 ef84                            Options.rate_limiter: 0000000000000000
+2022/03/26-20:20:22.805427 ef84     Options.sst_file_manager.rate_bytes_per_sec: 0
+2022/03/26-20:20:22.805430 ef84                       Options.wal_recovery_mode: 2
+2022/03/26-20:20:22.805434 ef84                  Options.enable_thread_tracking: 0
+2022/03/26-20:20:22.805465 ef84                  Options.enable_pipelined_write: 0
+2022/03/26-20:20:22.805472 ef84         Options.allow_concurrent_memtable_write: 1
+2022/03/26-20:20:22.805476 ef84      Options.enable_write_thread_adaptive_yield: 1
+2022/03/26-20:20:22.805479 ef84             Options.write_thread_max_yield_usec: 100
+2022/03/26-20:20:22.805483 ef84            Options.write_thread_slow_yield_usec: 3
+2022/03/26-20:20:22.805486 ef84                               Options.row_cache: None
+2022/03/26-20:20:22.805490 ef84                              Options.wal_filter: None
+2022/03/26-20:20:22.805494 ef84             Options.avoid_flush_during_recovery: 0
+2022/03/26-20:20:22.805497 ef84             Options.allow_ingest_behind: 0
+2022/03/26-20:20:22.805501 ef84             Options.preserve_deletes: 0
+2022/03/26-20:20:22.805504 ef84             Options.concurrent_prepare: 0
+2022/03/26-20:20:22.805508 ef84             Options.manual_wal_flush: 0
+2022/03/26-20:20:22.805511 ef84             Options.seq_per_batch: 0
+2022/03/26-20:20:22.805514 ef84             Options.max_background_jobs: 2
+2022/03/26-20:20:22.805518 ef84             Options.max_background_compactions: -1
+2022/03/26-20:20:22.805521 ef84             Options.avoid_flush_during_shutdown: 0
+2022/03/26-20:20:22.805525 ef84           Options.writable_file_max_buffer_size: 1048576
+2022/03/26-20:20:22.805529 ef84             Options.delayed_write_rate : 16777216
+2022/03/26-20:20:22.805532 ef84             Options.max_total_wal_size: 0
+2022/03/26-20:20:22.805536 ef84             Options.delete_obsolete_files_period_micros: 21600000000
+2022/03/26-20:20:22.805539 ef84                   Options.stats_dump_period_sec: 600
+2022/03/26-20:20:22.805543 ef84                          Options.max_open_files: -1
+2022/03/26-20:20:22.805546 ef84                          Options.bytes_per_sync: 0
+2022/03/26-20:20:22.805550 ef84                      Options.wal_bytes_per_sync: 0
+2022/03/26-20:20:22.805554 ef84 Compression algorithms supported:
+2022/03/26-20:20:22.805557 ef84 	Snappy supported: 0
+2022/03/26-20:20:22.805560 ef84 	Zlib supported: 0
+2022/03/26-20:20:22.805564 ef84 	Bzip supported: 0
+2022/03/26-20:20:22.805567 ef84 	LZ4 supported: 0
+2022/03/26-20:20:22.805570 ef84 	ZSTDNotFinal supported: 0
+2022/03/26-20:20:22.805574 ef84 	ZSTD supported: 0
+2022/03/26-20:20:22.805581 ef84 Fast CRC32 supported: Supported on x86Not supported on x86
+2022/03/26-20:20:22.805723 ef84 [c:\users\aretter\code\rocksdb\db\db_impl.cc:234] Shutdown: canceling all background work
+2022/03/26-20:20:22.805757 ef84 [c:\users\aretter\code\rocksdb\db\db_impl.cc:364] Shutdown complete

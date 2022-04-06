@@ -1,0 +1,83 @@
+2022/04/06-20:49:40.880444 1d20 RocksDB version: 5.9.2
+2022/04/06-20:49:40.880502 1d20 Git sha rocksdb_build_git_sha:@004237e62790320d8e630456cbeb6f4a1f3579c2@
+2022/04/06-20:49:40.880518 1d20 Compile date Jan  3 2018
+2022/04/06-20:49:40.880547 1d20 DB SUMMARY
+2022/04/06-20:49:40.881281 1d20 CURRENT file:  CURRENT
+2022/04/06-20:49:40.881298 1d20 IDENTITY file:  IDENTITY
+2022/04/06-20:49:40.881330 1d20 MANIFEST file:  MANIFEST-000337 size: 372 Bytes
+2022/04/06-20:49:40.881342 1d20 SST files in block-data/node1 dir, Total Num: 6, files: 000007.sst 000024.sst 000318.sst 000323.sst 000325.sst 000328.sst 
+2022/04/06-20:49:40.881352 1d20 Write Ahead Log file in block-data/node1: 000338.log size: 0 ; 
+2022/04/06-20:49:40.881366 1d20                         Options.error_if_exists: 0
+2022/04/06-20:49:40.884298 1d20                       Options.create_if_missing: 1
+2022/04/06-20:49:40.884321 1d20                         Options.paranoid_checks: 1
+2022/04/06-20:49:40.884325 1d20                                     Options.env: 000001B4EA47C1F0
+2022/04/06-20:49:40.884329 1d20                                Options.info_log: 000001B4E8048860
+2022/04/06-20:49:40.884332 1d20                Options.max_file_opening_threads: 16
+2022/04/06-20:49:40.884336 1d20                              Options.statistics: 0000000000000000
+2022/04/06-20:49:40.884340 1d20                               Options.use_fsync: 0
+2022/04/06-20:49:40.884343 1d20                       Options.max_log_file_size: 0
+2022/04/06-20:49:40.884347 1d20                  Options.max_manifest_file_size: 18446744073709551615
+2022/04/06-20:49:40.884351 1d20                   Options.log_file_time_to_roll: 0
+2022/04/06-20:49:40.884354 1d20                       Options.keep_log_file_num: 1000
+2022/04/06-20:49:40.884357 1d20                    Options.recycle_log_file_num: 0
+2022/04/06-20:49:40.884361 1d20                         Options.allow_fallocate: 1
+2022/04/06-20:49:40.884364 1d20                        Options.allow_mmap_reads: 0
+2022/04/06-20:49:40.884368 1d20                       Options.allow_mmap_writes: 0
+2022/04/06-20:49:40.884371 1d20                        Options.use_direct_reads: 0
+2022/04/06-20:49:40.884375 1d20                        Options.use_direct_io_for_flush_and_compaction: 0
+2022/04/06-20:49:40.884378 1d20          Options.create_missing_column_families: 0
+2022/04/06-20:49:40.884382 1d20                              Options.db_log_dir: 
+2022/04/06-20:49:40.884386 1d20                                 Options.wal_dir: block-data/node1
+2022/04/06-20:49:40.884390 1d20                Options.table_cache_numshardbits: 6
+2022/04/06-20:49:40.884393 1d20                      Options.max_subcompactions: 1
+2022/04/06-20:49:40.884397 1d20                  Options.max_background_flushes: -1
+2022/04/06-20:49:40.884400 1d20                         Options.WAL_ttl_seconds: 0
+2022/04/06-20:49:40.884404 1d20                       Options.WAL_size_limit_MB: 0
+2022/04/06-20:49:40.884407 1d20             Options.manifest_preallocation_size: 4194304
+2022/04/06-20:49:40.884411 1d20                     Options.is_fd_close_on_exec: 1
+2022/04/06-20:49:40.884415 1d20                   Options.advise_random_on_open: 1
+2022/04/06-20:49:40.884418 1d20                    Options.db_write_buffer_size: 0
+2022/04/06-20:49:40.884422 1d20                    Options.write_buffer_manager: 000001B4E8046780
+2022/04/06-20:49:40.884425 1d20         Options.access_hint_on_compaction_start: 1
+2022/04/06-20:49:40.884429 1d20  Options.new_table_reader_for_compaction_inputs: 0
+2022/04/06-20:49:40.884432 1d20               Options.compaction_readahead_size: 0
+2022/04/06-20:49:40.884436 1d20           Options.random_access_max_buffer_size: 1048576
+2022/04/06-20:49:40.884439 1d20                      Options.use_adaptive_mutex: 0
+2022/04/06-20:49:40.884442 1d20                            Options.rate_limiter: 0000000000000000
+2022/04/06-20:49:40.884446 1d20     Options.sst_file_manager.rate_bytes_per_sec: 0
+2022/04/06-20:49:40.884450 1d20                       Options.wal_recovery_mode: 2
+2022/04/06-20:49:40.884453 1d20                  Options.enable_thread_tracking: 0
+2022/04/06-20:49:40.884492 1d20                  Options.enable_pipelined_write: 0
+2022/04/06-20:49:40.884498 1d20         Options.allow_concurrent_memtable_write: 1
+2022/04/06-20:49:40.884502 1d20      Options.enable_write_thread_adaptive_yield: 1
+2022/04/06-20:49:40.884505 1d20             Options.write_thread_max_yield_usec: 100
+2022/04/06-20:49:40.884509 1d20            Options.write_thread_slow_yield_usec: 3
+2022/04/06-20:49:40.884512 1d20                               Options.row_cache: None
+2022/04/06-20:49:40.884516 1d20                              Options.wal_filter: None
+2022/04/06-20:49:40.884519 1d20             Options.avoid_flush_during_recovery: 0
+2022/04/06-20:49:40.884523 1d20             Options.allow_ingest_behind: 0
+2022/04/06-20:49:40.884526 1d20             Options.preserve_deletes: 0
+2022/04/06-20:49:40.884529 1d20             Options.concurrent_prepare: 0
+2022/04/06-20:49:40.884533 1d20             Options.manual_wal_flush: 0
+2022/04/06-20:49:40.884536 1d20             Options.seq_per_batch: 0
+2022/04/06-20:49:40.884540 1d20             Options.max_background_jobs: 2
+2022/04/06-20:49:40.884543 1d20             Options.max_background_compactions: -1
+2022/04/06-20:49:40.884547 1d20             Options.avoid_flush_during_shutdown: 0
+2022/04/06-20:49:40.884550 1d20           Options.writable_file_max_buffer_size: 1048576
+2022/04/06-20:49:40.884554 1d20             Options.delayed_write_rate : 16777216
+2022/04/06-20:49:40.884557 1d20             Options.max_total_wal_size: 0
+2022/04/06-20:49:40.884560 1d20             Options.delete_obsolete_files_period_micros: 21600000000
+2022/04/06-20:49:40.884564 1d20                   Options.stats_dump_period_sec: 600
+2022/04/06-20:49:40.884568 1d20                          Options.max_open_files: -1
+2022/04/06-20:49:40.884571 1d20                          Options.bytes_per_sync: 0
+2022/04/06-20:49:40.884575 1d20                      Options.wal_bytes_per_sync: 0
+2022/04/06-20:49:40.884579 1d20 Compression algorithms supported:
+2022/04/06-20:49:40.884582 1d20 	Snappy supported: 0
+2022/04/06-20:49:40.884586 1d20 	Zlib supported: 0
+2022/04/06-20:49:40.884589 1d20 	Bzip supported: 0
+2022/04/06-20:49:40.884592 1d20 	LZ4 supported: 0
+2022/04/06-20:49:40.884596 1d20 	ZSTDNotFinal supported: 0
+2022/04/06-20:49:40.884599 1d20 	ZSTD supported: 0
+2022/04/06-20:49:40.884611 1d20 Fast CRC32 supported: Supported on x86Not supported on x86
+2022/04/06-20:49:40.884789 1d20 [c:\users\aretter\code\rocksdb\db\db_impl.cc:234] Shutdown: canceling all background work
+2022/04/06-20:49:40.884818 1d20 [c:\users\aretter\code\rocksdb\db\db_impl.cc:364] Shutdown complete

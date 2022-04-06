@@ -34,9 +34,11 @@ public class TransactionExecutor {
             }*/
             //挖矿奖励
             if (null == transaction.getSenderPk()) {
-                recipient.get().setBalance(recipient.get().getBalance().add(transaction.getAmount()));
-                dbAccess.putAccount(recipient.get());
-                continue;
+                if(recipient.isPresent()) {
+                    recipient.get().setBalance(recipient.get().getBalance().add(transaction.getAmount()));
+                    dbAccess.putAccount(recipient.get());
+                    continue;
+                }
             }
             //账户转账
             Optional<Account> sender = dbAccess.getAccount(Cryptography.myHash(transaction.getSenderPk().value.toString()));

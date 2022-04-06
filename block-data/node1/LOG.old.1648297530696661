@@ -1,0 +1,83 @@
+2022/03/26-20:25:28.878822 cd4 RocksDB version: 5.9.2
+2022/03/26-20:25:28.878909 cd4 Git sha rocksdb_build_git_sha:@004237e62790320d8e630456cbeb6f4a1f3579c2@
+2022/03/26-20:25:28.878929 cd4 Compile date Jan  3 2018
+2022/03/26-20:25:28.878940 cd4 DB SUMMARY
+2022/03/26-20:25:28.879291 cd4 CURRENT file:  CURRENT
+2022/03/26-20:25:28.879307 cd4 IDENTITY file:  IDENTITY
+2022/03/26-20:25:28.879330 cd4 MANIFEST file:  MANIFEST-000139 size: 221 Bytes
+2022/03/26-20:25:28.879343 cd4 SST files in block-data/node1 dir, Total Num: 3, files: 000007.sst 000024.sst 000056.sst 
+2022/03/26-20:25:28.879353 cd4 Write Ahead Log file in block-data/node1: 000140.log size: 0 ; 
+2022/03/26-20:25:28.879382 cd4                         Options.error_if_exists: 0
+2022/03/26-20:25:28.879397 cd4                       Options.create_if_missing: 1
+2022/03/26-20:25:28.879591 cd4                         Options.paranoid_checks: 1
+2022/03/26-20:25:28.879599 cd4                                     Options.env: 000002CB84951CC0
+2022/03/26-20:25:28.879603 cd4                                Options.info_log: 000002CB82E77470
+2022/03/26-20:25:28.879606 cd4                Options.max_file_opening_threads: 16
+2022/03/26-20:25:28.879610 cd4                              Options.statistics: 0000000000000000
+2022/03/26-20:25:28.879613 cd4                               Options.use_fsync: 0
+2022/03/26-20:25:28.879617 cd4                       Options.max_log_file_size: 0
+2022/03/26-20:25:28.879620 cd4                  Options.max_manifest_file_size: 18446744073709551615
+2022/03/26-20:25:28.879624 cd4                   Options.log_file_time_to_roll: 0
+2022/03/26-20:25:28.879627 cd4                       Options.keep_log_file_num: 1000
+2022/03/26-20:25:28.879631 cd4                    Options.recycle_log_file_num: 0
+2022/03/26-20:25:28.879634 cd4                         Options.allow_fallocate: 1
+2022/03/26-20:25:28.879637 cd4                        Options.allow_mmap_reads: 0
+2022/03/26-20:25:28.879641 cd4                       Options.allow_mmap_writes: 0
+2022/03/26-20:25:28.879644 cd4                        Options.use_direct_reads: 0
+2022/03/26-20:25:28.879647 cd4                        Options.use_direct_io_for_flush_and_compaction: 0
+2022/03/26-20:25:28.879651 cd4          Options.create_missing_column_families: 0
+2022/03/26-20:25:28.879654 cd4                              Options.db_log_dir: 
+2022/03/26-20:25:28.879658 cd4                                 Options.wal_dir: block-data/node1
+2022/03/26-20:25:28.879661 cd4                Options.table_cache_numshardbits: 6
+2022/03/26-20:25:28.879664 cd4                      Options.max_subcompactions: 1
+2022/03/26-20:25:28.879668 cd4                  Options.max_background_flushes: -1
+2022/03/26-20:25:28.879671 cd4                         Options.WAL_ttl_seconds: 0
+2022/03/26-20:25:28.879674 cd4                       Options.WAL_size_limit_MB: 0
+2022/03/26-20:25:28.879678 cd4             Options.manifest_preallocation_size: 4194304
+2022/03/26-20:25:28.879681 cd4                     Options.is_fd_close_on_exec: 1
+2022/03/26-20:25:28.879685 cd4                   Options.advise_random_on_open: 1
+2022/03/26-20:25:28.879688 cd4                    Options.db_write_buffer_size: 0
+2022/03/26-20:25:28.879691 cd4                    Options.write_buffer_manager: 000002CB85EF9920
+2022/03/26-20:25:28.879695 cd4         Options.access_hint_on_compaction_start: 1
+2022/03/26-20:25:28.879698 cd4  Options.new_table_reader_for_compaction_inputs: 0
+2022/03/26-20:25:28.879701 cd4               Options.compaction_readahead_size: 0
+2022/03/26-20:25:28.879705 cd4           Options.random_access_max_buffer_size: 1048576
+2022/03/26-20:25:28.879708 cd4                      Options.use_adaptive_mutex: 0
+2022/03/26-20:25:28.879711 cd4                            Options.rate_limiter: 0000000000000000
+2022/03/26-20:25:28.879715 cd4     Options.sst_file_manager.rate_bytes_per_sec: 0
+2022/03/26-20:25:28.879718 cd4                       Options.wal_recovery_mode: 2
+2022/03/26-20:25:28.879722 cd4                  Options.enable_thread_tracking: 0
+2022/03/26-20:25:28.879725 cd4                  Options.enable_pipelined_write: 0
+2022/03/26-20:25:28.879754 cd4         Options.allow_concurrent_memtable_write: 1
+2022/03/26-20:25:28.879761 cd4      Options.enable_write_thread_adaptive_yield: 1
+2022/03/26-20:25:28.879764 cd4             Options.write_thread_max_yield_usec: 100
+2022/03/26-20:25:28.879767 cd4            Options.write_thread_slow_yield_usec: 3
+2022/03/26-20:25:28.879771 cd4                               Options.row_cache: None
+2022/03/26-20:25:28.879774 cd4                              Options.wal_filter: None
+2022/03/26-20:25:28.879778 cd4             Options.avoid_flush_during_recovery: 0
+2022/03/26-20:25:28.879781 cd4             Options.allow_ingest_behind: 0
+2022/03/26-20:25:28.879785 cd4             Options.preserve_deletes: 0
+2022/03/26-20:25:28.879788 cd4             Options.concurrent_prepare: 0
+2022/03/26-20:25:28.879791 cd4             Options.manual_wal_flush: 0
+2022/03/26-20:25:28.879795 cd4             Options.seq_per_batch: 0
+2022/03/26-20:25:28.879798 cd4             Options.max_background_jobs: 2
+2022/03/26-20:25:28.879801 cd4             Options.max_background_compactions: -1
+2022/03/26-20:25:28.879805 cd4             Options.avoid_flush_during_shutdown: 0
+2022/03/26-20:25:28.879808 cd4           Options.writable_file_max_buffer_size: 1048576
+2022/03/26-20:25:28.879812 cd4             Options.delayed_write_rate : 16777216
+2022/03/26-20:25:28.879815 cd4             Options.max_total_wal_size: 0
+2022/03/26-20:25:28.879818 cd4             Options.delete_obsolete_files_period_micros: 21600000000
+2022/03/26-20:25:28.879822 cd4                   Options.stats_dump_period_sec: 600
+2022/03/26-20:25:28.879825 cd4                          Options.max_open_files: -1
+2022/03/26-20:25:28.879829 cd4                          Options.bytes_per_sync: 0
+2022/03/26-20:25:28.879832 cd4                      Options.wal_bytes_per_sync: 0
+2022/03/26-20:25:28.879835 cd4 Compression algorithms supported:
+2022/03/26-20:25:28.879839 cd4 	Snappy supported: 0
+2022/03/26-20:25:28.879842 cd4 	Zlib supported: 0
+2022/03/26-20:25:28.879845 cd4 	Bzip supported: 0
+2022/03/26-20:25:28.879848 cd4 	LZ4 supported: 0
+2022/03/26-20:25:28.879851 cd4 	ZSTDNotFinal supported: 0
+2022/03/26-20:25:28.879855 cd4 	ZSTD supported: 0
+2022/03/26-20:25:28.879860 cd4 Fast CRC32 supported: Supported on x86Not supported on x86
+2022/03/26-20:25:28.879986 cd4 [c:\users\aretter\code\rocksdb\db\db_impl.cc:234] Shutdown: canceling all background work
+2022/03/26-20:25:28.880013 cd4 [c:\users\aretter\code\rocksdb\db\db_impl.cc:364] Shutdown complete

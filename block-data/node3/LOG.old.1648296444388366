@@ -1,0 +1,83 @@
+2022/03/26-20:06:27.206788 af5c RocksDB version: 5.9.2
+2022/03/26-20:06:27.206897 af5c Git sha rocksdb_build_git_sha:@004237e62790320d8e630456cbeb6f4a1f3579c2@
+2022/03/26-20:06:27.206919 af5c Compile date Jan  3 2018
+2022/03/26-20:06:27.206930 af5c DB SUMMARY
+2022/03/26-20:06:27.207167 af5c CURRENT file:  CURRENT
+2022/03/26-20:06:27.207180 af5c IDENTITY file:  IDENTITY
+2022/03/26-20:06:27.207199 af5c MANIFEST file:  MANIFEST-000029 size: 109 Bytes
+2022/03/26-20:06:27.207211 af5c SST files in block-data/node3 dir, Total Num: 1, files: 000004.sst 
+2022/03/26-20:06:27.207221 af5c Write Ahead Log file in block-data/node3: 000030.log size: 0 ; 
+2022/03/26-20:06:27.207232 af5c                         Options.error_if_exists: 0
+2022/03/26-20:06:27.207241 af5c                       Options.create_if_missing: 1
+2022/03/26-20:06:27.215894 af5c                         Options.paranoid_checks: 1
+2022/03/26-20:06:27.215922 af5c                                     Options.env: 000001EB0C8E3880
+2022/03/26-20:06:27.215926 af5c                                Options.info_log: 000001EB0DBC42C0
+2022/03/26-20:06:27.215930 af5c                Options.max_file_opening_threads: 16
+2022/03/26-20:06:27.215933 af5c                              Options.statistics: 0000000000000000
+2022/03/26-20:06:27.215937 af5c                               Options.use_fsync: 0
+2022/03/26-20:06:27.215941 af5c                       Options.max_log_file_size: 0
+2022/03/26-20:06:27.215944 af5c                  Options.max_manifest_file_size: 18446744073709551615
+2022/03/26-20:06:27.215948 af5c                   Options.log_file_time_to_roll: 0
+2022/03/26-20:06:27.215951 af5c                       Options.keep_log_file_num: 1000
+2022/03/26-20:06:27.215955 af5c                    Options.recycle_log_file_num: 0
+2022/03/26-20:06:27.215959 af5c                         Options.allow_fallocate: 1
+2022/03/26-20:06:27.215962 af5c                        Options.allow_mmap_reads: 0
+2022/03/26-20:06:27.215965 af5c                       Options.allow_mmap_writes: 0
+2022/03/26-20:06:27.215969 af5c                        Options.use_direct_reads: 0
+2022/03/26-20:06:27.215973 af5c                        Options.use_direct_io_for_flush_and_compaction: 0
+2022/03/26-20:06:27.215976 af5c          Options.create_missing_column_families: 0
+2022/03/26-20:06:27.215979 af5c                              Options.db_log_dir: 
+2022/03/26-20:06:27.215984 af5c                                 Options.wal_dir: block-data/node3
+2022/03/26-20:06:27.215988 af5c                Options.table_cache_numshardbits: 6
+2022/03/26-20:06:27.215991 af5c                      Options.max_subcompactions: 1
+2022/03/26-20:06:27.215994 af5c                  Options.max_background_flushes: -1
+2022/03/26-20:06:27.215998 af5c                         Options.WAL_ttl_seconds: 0
+2022/03/26-20:06:27.216002 af5c                       Options.WAL_size_limit_MB: 0
+2022/03/26-20:06:27.216005 af5c             Options.manifest_preallocation_size: 4194304
+2022/03/26-20:06:27.216009 af5c                     Options.is_fd_close_on_exec: 1
+2022/03/26-20:06:27.216012 af5c                   Options.advise_random_on_open: 1
+2022/03/26-20:06:27.216015 af5c                    Options.db_write_buffer_size: 0
+2022/03/26-20:06:27.216019 af5c                    Options.write_buffer_manager: 000001EB0DD2A680
+2022/03/26-20:06:27.216022 af5c         Options.access_hint_on_compaction_start: 1
+2022/03/26-20:06:27.216025 af5c  Options.new_table_reader_for_compaction_inputs: 0
+2022/03/26-20:06:27.216029 af5c               Options.compaction_readahead_size: 0
+2022/03/26-20:06:27.216032 af5c           Options.random_access_max_buffer_size: 1048576
+2022/03/26-20:06:27.216036 af5c                      Options.use_adaptive_mutex: 0
+2022/03/26-20:06:27.216039 af5c                            Options.rate_limiter: 0000000000000000
+2022/03/26-20:06:27.216043 af5c     Options.sst_file_manager.rate_bytes_per_sec: 0
+2022/03/26-20:06:27.216046 af5c                       Options.wal_recovery_mode: 2
+2022/03/26-20:06:27.216050 af5c                  Options.enable_thread_tracking: 0
+2022/03/26-20:06:27.216112 af5c                  Options.enable_pipelined_write: 0
+2022/03/26-20:06:27.216121 af5c         Options.allow_concurrent_memtable_write: 1
+2022/03/26-20:06:27.216125 af5c      Options.enable_write_thread_adaptive_yield: 1
+2022/03/26-20:06:27.216128 af5c             Options.write_thread_max_yield_usec: 100
+2022/03/26-20:06:27.216131 af5c            Options.write_thread_slow_yield_usec: 3
+2022/03/26-20:06:27.216135 af5c                               Options.row_cache: None
+2022/03/26-20:06:27.216138 af5c                              Options.wal_filter: None
+2022/03/26-20:06:27.216143 af5c             Options.avoid_flush_during_recovery: 0
+2022/03/26-20:06:27.216146 af5c             Options.allow_ingest_behind: 0
+2022/03/26-20:06:27.216149 af5c             Options.preserve_deletes: 0
+2022/03/26-20:06:27.216153 af5c             Options.concurrent_prepare: 0
+2022/03/26-20:06:27.216156 af5c             Options.manual_wal_flush: 0
+2022/03/26-20:06:27.216159 af5c             Options.seq_per_batch: 0
+2022/03/26-20:06:27.216163 af5c             Options.max_background_jobs: 2
+2022/03/26-20:06:27.216166 af5c             Options.max_background_compactions: -1
+2022/03/26-20:06:27.216170 af5c             Options.avoid_flush_during_shutdown: 0
+2022/03/26-20:06:27.216173 af5c           Options.writable_file_max_buffer_size: 1048576
+2022/03/26-20:06:27.216177 af5c             Options.delayed_write_rate : 16777216
+2022/03/26-20:06:27.216180 af5c             Options.max_total_wal_size: 0
+2022/03/26-20:06:27.216183 af5c             Options.delete_obsolete_files_period_micros: 21600000000
+2022/03/26-20:06:27.216187 af5c                   Options.stats_dump_period_sec: 600
+2022/03/26-20:06:27.216190 af5c                          Options.max_open_files: -1
+2022/03/26-20:06:27.216194 af5c                          Options.bytes_per_sync: 0
+2022/03/26-20:06:27.216197 af5c                      Options.wal_bytes_per_sync: 0
+2022/03/26-20:06:27.216201 af5c Compression algorithms supported:
+2022/03/26-20:06:27.216204 af5c 	Snappy supported: 0
+2022/03/26-20:06:27.216208 af5c 	Zlib supported: 0
+2022/03/26-20:06:27.216211 af5c 	Bzip supported: 0
+2022/03/26-20:06:27.216214 af5c 	LZ4 supported: 0
+2022/03/26-20:06:27.216218 af5c 	ZSTDNotFinal supported: 0
+2022/03/26-20:06:27.216221 af5c 	ZSTD supported: 0
+2022/03/26-20:06:27.216230 af5c Fast CRC32 supported: Supported on x86Not supported on x86
+2022/03/26-20:06:27.216405 af5c [c:\users\aretter\code\rocksdb\db\db_impl.cc:234] Shutdown: canceling all background work
+2022/03/26-20:06:27.216437 af5c [c:\users\aretter\code\rocksdb\db\db_impl.cc:364] Shutdown complete

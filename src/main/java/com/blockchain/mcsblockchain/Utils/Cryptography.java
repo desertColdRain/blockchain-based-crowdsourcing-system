@@ -71,34 +71,49 @@ public class Cryptography {
         MessageDigest sha=MessageDigest.getInstance("SHA-256");     //返回实现指定摘要算法的MessageDigest对象
         byte[] msgByte=msg.getBytes(StandardCharsets.UTF_8);
         sha.update(msgByte);                                        //使用指定的byte数组更新摘要
-        byte[] res=sha.digest();//通过执行诸如填充之类的最终操作完成哈希计算，在调用此方法之后，摘要被重置
-        return res;
+        return sha.digest();
     }
 
     //返回哈希之后的十六进制字符串
     public static String myHash(String msg) throws NoSuchAlgorithmException {
         byte[] res=Hash(msg);
-        String hs=" ";
+        StringBuilder hs= new StringBuilder(" ");
         String temp=" ";
-        for(int i=0;i<res.length;i++){
-            temp=Integer.toHexString(res[i]&0xFF);
-            if(temp.length()==1) hs=hs + "0"+temp;
-            else hs=hs+temp;
+        for (byte re : res) {
+            temp = Integer.toHexString(re & 0xFF);
+            if (temp.length() == 1) hs.append("0").append(temp);
+            else hs.append(temp);
         }
-        return hs.toUpperCase(Locale.ROOT);
+        return hs.toString().toUpperCase(Locale.ROOT);
     }
 
     public static Signature SignAlgorithm(String msg, SKType sk) throws NoSuchAlgorithmException {
         Signature sign=new Signature();
         Element temp=G1.newElement();
-        byte[] msghash = Hash(msg);
+        //byte[] msghash = Hash(msg);
         /*
         setFromHash():Sets this element deterministically
         from the length bytes stored in the source parameter starting from the passed offset.
         */
-        temp.setFromHash(msghash,  0,  HashSize);
-        sign.value.set(temp);
 
+        temp.setFromHash(msg.getBytes(StandardCharsets.UTF_8),  0, msg.getBytes(StandardCharsets.UTF_8).length);
+
+        sign.value.set(temp);
+        System.out.println("sign value:"+sign.value);
+        StringBuilder sb = new StringBuilder();
+        String tmp = null;
+        for (byte b : temp.toBytes())
+        {
+            // 将每个字节与0xFF进行与运算，然后转化为10进制，然后借助于Integer再转化为16进制
+            tmp = Integer.toHexString(0xFF & b);
+            if (tmp.length() == 1)// 每个字节8为，转为16进制标志，2个16进制位
+            {
+                tmp = "0" + tmp;
+            }
+            sb.append(tmp);
+        }
+
+        System.out.println("Binary hash result:"+sb.toString());
         sign.value.powZn(sk.value);
         return sign;
     }
@@ -109,8 +124,8 @@ public class Cryptography {
         Element temp2 = GT.newElement();
 
         Element temp3msg = G1.newElement();
-        byte[] msghash = Hash(msg);
-        temp3msg.setFromHash(msghash, 0, HashSize);
+        byte[] msgHash = msg.getBytes(StandardCharsets.UTF_8)  ;
+        temp3msg.setFromHash(msgHash, 0, msgHash.length);
         //pairing.pairing()  applied the bilinear map
         temp1 = pairing.pairing(temp3msg,  pk.value);
         temp2 = pairing.pairing(sig.value, P);

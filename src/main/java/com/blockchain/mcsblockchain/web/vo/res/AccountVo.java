@@ -1,14 +1,13 @@
 package com.blockchain.mcsblockchain.web.vo.res;
 
 import com.blockchain.mcsblockchain.pojo.account.Account;
-
 import java.security.NoSuchAlgorithmException;
 
 
 /**
  * account VO
- * @author yangjian
- * @since 18-7-14
+ * @author cang
+ * @since 22-3-14
  */
 public class AccountVo extends Account {
 
