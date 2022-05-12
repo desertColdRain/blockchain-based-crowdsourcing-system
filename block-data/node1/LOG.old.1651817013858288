@@ -1,0 +1,83 @@
+2022/05/06-14:03:14.746813 4d80 RocksDB version: 5.9.2
+2022/05/06-14:03:14.746922 4d80 Git sha rocksdb_build_git_sha:@004237e62790320d8e630456cbeb6f4a1f3579c2@
+2022/05/06-14:03:14.746944 4d80 Compile date Jan  3 2018
+2022/05/06-14:03:14.746955 4d80 DB SUMMARY
+2022/05/06-14:03:14.747525 4d80 CURRENT file:  CURRENT
+2022/05/06-14:03:14.747552 4d80 IDENTITY file:  IDENTITY
+2022/05/06-14:03:14.747593 4d80 MANIFEST file:  MANIFEST-000269 size: 276 Bytes
+2022/05/06-14:03:14.747607 4d80 SST files in block-data/node1 dir, Total Num: 4, files: 000230.sst 000232.sst 000235.sst 000268.sst 
+2022/05/06-14:03:14.747617 4d80 Write Ahead Log file in block-data/node1: 000270.log size: 3154 ; 
+2022/05/06-14:03:14.747631 4d80                         Options.error_if_exists: 0
+2022/05/06-14:03:14.750141 4d80                       Options.create_if_missing: 1
+2022/05/06-14:03:14.750151 4d80                         Options.paranoid_checks: 1
+2022/05/06-14:03:14.750155 4d80                                     Options.env: 000001AEA209A150
+2022/05/06-14:03:14.750159 4d80                                Options.info_log: 000001AEA29317B0
+2022/05/06-14:03:14.750162 4d80                Options.max_file_opening_threads: 16
+2022/05/06-14:03:14.750166 4d80                              Options.statistics: 0000000000000000
+2022/05/06-14:03:14.750169 4d80                               Options.use_fsync: 0
+2022/05/06-14:03:14.750173 4d80                       Options.max_log_file_size: 0
+2022/05/06-14:03:14.750176 4d80                  Options.max_manifest_file_size: 18446744073709551615
+2022/05/06-14:03:14.750180 4d80                   Options.log_file_time_to_roll: 0
+2022/05/06-14:03:14.750183 4d80                       Options.keep_log_file_num: 1000
+2022/05/06-14:03:14.750186 4d80                    Options.recycle_log_file_num: 0
+2022/05/06-14:03:14.750190 4d80                         Options.allow_fallocate: 1
+2022/05/06-14:03:14.750193 4d80                        Options.allow_mmap_reads: 0
+2022/05/06-14:03:14.750197 4d80                       Options.allow_mmap_writes: 0
+2022/05/06-14:03:14.750200 4d80                        Options.use_direct_reads: 0
+2022/05/06-14:03:14.750203 4d80                        Options.use_direct_io_for_flush_and_compaction: 0
+2022/05/06-14:03:14.750207 4d80          Options.create_missing_column_families: 0
+2022/05/06-14:03:14.750210 4d80                              Options.db_log_dir: 
+2022/05/06-14:03:14.750213 4d80                                 Options.wal_dir: block-data/node1
+2022/05/06-14:03:14.750217 4d80                Options.table_cache_numshardbits: 6
+2022/05/06-14:03:14.750220 4d80                      Options.max_subcompactions: 1
+2022/05/06-14:03:14.750224 4d80                  Options.max_background_flushes: -1
+2022/05/06-14:03:14.750227 4d80                         Options.WAL_ttl_seconds: 0
+2022/05/06-14:03:14.750230 4d80                       Options.WAL_size_limit_MB: 0
+2022/05/06-14:03:14.750234 4d80             Options.manifest_preallocation_size: 4194304
+2022/05/06-14:03:14.750237 4d80                     Options.is_fd_close_on_exec: 1
+2022/05/06-14:03:14.750241 4d80                   Options.advise_random_on_open: 1
+2022/05/06-14:03:14.750244 4d80                    Options.db_write_buffer_size: 0
+2022/05/06-14:03:14.750247 4d80                    Options.write_buffer_manager: 000001AEA38603E0
+2022/05/06-14:03:14.750251 4d80         Options.access_hint_on_compaction_start: 1
+2022/05/06-14:03:14.750254 4d80  Options.new_table_reader_for_compaction_inputs: 0
+2022/05/06-14:03:14.750257 4d80               Options.compaction_readahead_size: 0
+2022/05/06-14:03:14.750261 4d80           Options.random_access_max_buffer_size: 1048576
+2022/05/06-14:03:14.750264 4d80                      Options.use_adaptive_mutex: 0
+2022/05/06-14:03:14.750267 4d80                            Options.rate_limiter: 0000000000000000
+2022/05/06-14:03:14.750271 4d80     Options.sst_file_manager.rate_bytes_per_sec: 0
+2022/05/06-14:03:14.750274 4d80                       Options.wal_recovery_mode: 2
+2022/05/06-14:03:14.750278 4d80                  Options.enable_thread_tracking: 0
+2022/05/06-14:03:14.750314 4d80                  Options.enable_pipelined_write: 0
+2022/05/06-14:03:14.750320 4d80         Options.allow_concurrent_memtable_write: 1
+2022/05/06-14:03:14.750323 4d80      Options.enable_write_thread_adaptive_yield: 1
+2022/05/06-14:03:14.750327 4d80             Options.write_thread_max_yield_usec: 100
+2022/05/06-14:03:14.750330 4d80            Options.write_thread_slow_yield_usec: 3
+2022/05/06-14:03:14.750334 4d80                               Options.row_cache: None
+2022/05/06-14:03:14.750337 4d80                              Options.wal_filter: None
+2022/05/06-14:03:14.750341 4d80             Options.avoid_flush_during_recovery: 0
+2022/05/06-14:03:14.750344 4d80             Options.allow_ingest_behind: 0
+2022/05/06-14:03:14.750347 4d80             Options.preserve_deletes: 0
+2022/05/06-14:03:14.750350 4d80             Options.concurrent_prepare: 0
+2022/05/06-14:03:14.750354 4d80             Options.manual_wal_flush: 0
+2022/05/06-14:03:14.750357 4d80             Options.seq_per_batch: 0
+2022/05/06-14:03:14.750360 4d80             Options.max_background_jobs: 2
+2022/05/06-14:03:14.750364 4d80             Options.max_background_compactions: -1
+2022/05/06-14:03:14.750367 4d80             Options.avoid_flush_during_shutdown: 0
+2022/05/06-14:03:14.750370 4d80           Options.writable_file_max_buffer_size: 1048576
+2022/05/06-14:03:14.750374 4d80             Options.delayed_write_rate : 16777216
+2022/05/06-14:03:14.750377 4d80             Options.max_total_wal_size: 0
+2022/05/06-14:03:14.750380 4d80             Options.delete_obsolete_files_period_micros: 21600000000
+2022/05/06-14:03:14.750384 4d80                   Options.stats_dump_period_sec: 600
+2022/05/06-14:03:14.750387 4d80                          Options.max_open_files: -1
+2022/05/06-14:03:14.750391 4d80                          Options.bytes_per_sync: 0
+2022/05/06-14:03:14.750394 4d80                      Options.wal_bytes_per_sync: 0
+2022/05/06-14:03:14.750398 4d80 Compression algorithms supported:
+2022/05/06-14:03:14.750401 4d80 	Snappy supported: 0
+2022/05/06-14:03:14.750404 4d80 	Zlib supported: 0
+2022/05/06-14:03:14.750407 4d80 	Bzip supported: 0
+2022/05/06-14:03:14.750411 4d80 	LZ4 supported: 0
+2022/05/06-14:03:14.750414 4d80 	ZSTDNotFinal supported: 0
+2022/05/06-14:03:14.750417 4d80 	ZSTD supported: 0
+2022/05/06-14:03:14.750424 4d80 Fast CRC32 supported: Supported on x86Not supported on x86
+2022/05/06-14:03:14.750588 4d80 [c:\users\aretter\code\rocksdb\db\db_impl.cc:234] Shutdown: canceling all background work
+2022/05/06-14:03:14.750667 4d80 [c:\users\aretter\code\rocksdb\db\db_impl.cc:364] Shutdown complete

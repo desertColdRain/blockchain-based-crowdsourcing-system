@@ -27,6 +27,7 @@ public class TransactionExecutor {
 
         for (Transaction transaction : block.getBody().getTransactionList())
         {
+            System.out.println("transactionExecutor:"+transaction);
             Optional<Account> recipient = dbAccess.getAccount(transaction.getReceiverAddr());
             //如果收款地址账户不存在，则创建一个新账户
             /*if (!recipient.isPresent()) {
@@ -75,12 +76,12 @@ public class TransactionExecutor {
             dbAccess.put(transaction.getTransactionHash(), block.getHeader().getIndex());
 
             // 将待打包交易池中包含此交易的记录删除，防止交易重复打包( fix bug for #IWSPJ)
-            for (Iterator i = transactionPool.getTransactions().iterator(); i.hasNext();) {
+           /* for (Iterator i = transactionPool.getTransactions().iterator(); i.hasNext();) {
                 Transaction tx = (Transaction) i.next();
                 if (tx.getTransactionHash().equals(transaction.getTransactionHash())) {
                     i.remove();
                 }
-            }
+            }*/
 
             //执行转账操作,更新账户余额
             sender.get().setBalance(sender.get().getBalance().subtract(transaction.getAmount()));

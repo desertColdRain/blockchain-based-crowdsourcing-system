@@ -1,0 +1,83 @@
+2022/04/27-14:32:20.712913 2da4 RocksDB version: 5.9.2
+2022/04/27-14:32:20.712964 2da4 Git sha rocksdb_build_git_sha:@004237e62790320d8e630456cbeb6f4a1f3579c2@
+2022/04/27-14:32:20.712980 2da4 Compile date Jan  3 2018
+2022/04/27-14:32:20.712989 2da4 DB SUMMARY
+2022/04/27-14:32:20.713314 2da4 CURRENT file:  CURRENT
+2022/04/27-14:32:20.713327 2da4 IDENTITY file:  IDENTITY
+2022/04/27-14:32:20.713349 2da4 MANIFEST file:  MANIFEST-000162 size: 155 Bytes
+2022/04/27-14:32:20.713360 2da4 SST files in block-data/node1 dir, Total Num: 2, files: 000159.sst 000161.sst 
+2022/04/27-14:32:20.713370 2da4 Write Ahead Log file in block-data/node1: 000163.log size: 5584 ; 
+2022/04/27-14:32:20.713381 2da4                         Options.error_if_exists: 0
+2022/04/27-14:32:20.713591 2da4                       Options.create_if_missing: 1
+2022/04/27-14:32:20.713599 2da4                         Options.paranoid_checks: 1
+2022/04/27-14:32:20.713603 2da4                                     Options.env: 0000022338014A10
+2022/04/27-14:32:20.713607 2da4                                Options.info_log: 00000223396B9B50
+2022/04/27-14:32:20.713610 2da4                Options.max_file_opening_threads: 16
+2022/04/27-14:32:20.713614 2da4                              Options.statistics: 0000000000000000
+2022/04/27-14:32:20.713617 2da4                               Options.use_fsync: 0
+2022/04/27-14:32:20.713620 2da4                       Options.max_log_file_size: 0
+2022/04/27-14:32:20.713624 2da4                  Options.max_manifest_file_size: 18446744073709551615
+2022/04/27-14:32:20.713629 2da4                   Options.log_file_time_to_roll: 0
+2022/04/27-14:32:20.713632 2da4                       Options.keep_log_file_num: 1000
+2022/04/27-14:32:20.713636 2da4                    Options.recycle_log_file_num: 0
+2022/04/27-14:32:20.713639 2da4                         Options.allow_fallocate: 1
+2022/04/27-14:32:20.713642 2da4                        Options.allow_mmap_reads: 0
+2022/04/27-14:32:20.713646 2da4                       Options.allow_mmap_writes: 0
+2022/04/27-14:32:20.713649 2da4                        Options.use_direct_reads: 0
+2022/04/27-14:32:20.713652 2da4                        Options.use_direct_io_for_flush_and_compaction: 0
+2022/04/27-14:32:20.713656 2da4          Options.create_missing_column_families: 0
+2022/04/27-14:32:20.713659 2da4                              Options.db_log_dir: 
+2022/04/27-14:32:20.713663 2da4                                 Options.wal_dir: block-data/node1
+2022/04/27-14:32:20.713666 2da4                Options.table_cache_numshardbits: 6
+2022/04/27-14:32:20.713669 2da4                      Options.max_subcompactions: 1
+2022/04/27-14:32:20.713673 2da4                  Options.max_background_flushes: -1
+2022/04/27-14:32:20.713676 2da4                         Options.WAL_ttl_seconds: 0
+2022/04/27-14:32:20.713680 2da4                       Options.WAL_size_limit_MB: 0
+2022/04/27-14:32:20.713683 2da4             Options.manifest_preallocation_size: 4194304
+2022/04/27-14:32:20.713686 2da4                     Options.is_fd_close_on_exec: 1
+2022/04/27-14:32:20.713690 2da4                   Options.advise_random_on_open: 1
+2022/04/27-14:32:20.713693 2da4                    Options.db_write_buffer_size: 0
+2022/04/27-14:32:20.713696 2da4                    Options.write_buffer_manager: 0000022339C60810
+2022/04/27-14:32:20.713700 2da4         Options.access_hint_on_compaction_start: 1
+2022/04/27-14:32:20.713703 2da4  Options.new_table_reader_for_compaction_inputs: 0
+2022/04/27-14:32:20.713706 2da4               Options.compaction_readahead_size: 0
+2022/04/27-14:32:20.713710 2da4           Options.random_access_max_buffer_size: 1048576
+2022/04/27-14:32:20.713713 2da4                      Options.use_adaptive_mutex: 0
+2022/04/27-14:32:20.713717 2da4                            Options.rate_limiter: 0000000000000000
+2022/04/27-14:32:20.713720 2da4     Options.sst_file_manager.rate_bytes_per_sec: 0
+2022/04/27-14:32:20.713723 2da4                       Options.wal_recovery_mode: 2
+2022/04/27-14:32:20.713727 2da4                  Options.enable_thread_tracking: 0
+2022/04/27-14:32:20.713749 2da4                  Options.enable_pipelined_write: 0
+2022/04/27-14:32:20.713755 2da4         Options.allow_concurrent_memtable_write: 1
+2022/04/27-14:32:20.713758 2da4      Options.enable_write_thread_adaptive_yield: 1
+2022/04/27-14:32:20.713761 2da4             Options.write_thread_max_yield_usec: 100
+2022/04/27-14:32:20.713765 2da4            Options.write_thread_slow_yield_usec: 3
+2022/04/27-14:32:20.713768 2da4                               Options.row_cache: None
+2022/04/27-14:32:20.713771 2da4                              Options.wal_filter: None
+2022/04/27-14:32:20.713775 2da4             Options.avoid_flush_during_recovery: 0
+2022/04/27-14:32:20.713778 2da4             Options.allow_ingest_behind: 0
+2022/04/27-14:32:20.713781 2da4             Options.preserve_deletes: 0
+2022/04/27-14:32:20.713785 2da4             Options.concurrent_prepare: 0
+2022/04/27-14:32:20.713788 2da4             Options.manual_wal_flush: 0
+2022/04/27-14:32:20.713791 2da4             Options.seq_per_batch: 0
+2022/04/27-14:32:20.713794 2da4             Options.max_background_jobs: 2
+2022/04/27-14:32:20.713798 2da4             Options.max_background_compactions: -1
+2022/04/27-14:32:20.713801 2da4             Options.avoid_flush_during_shutdown: 0
+2022/04/27-14:32:20.713804 2da4           Options.writable_file_max_buffer_size: 1048576
+2022/04/27-14:32:20.713808 2da4             Options.delayed_write_rate : 16777216
+2022/04/27-14:32:20.713811 2da4             Options.max_total_wal_size: 0
+2022/04/27-14:32:20.713814 2da4             Options.delete_obsolete_files_period_micros: 21600000000
+2022/04/27-14:32:20.713818 2da4                   Options.stats_dump_period_sec: 600
+2022/04/27-14:32:20.713821 2da4                          Options.max_open_files: -1
+2022/04/27-14:32:20.713825 2da4                          Options.bytes_per_sync: 0
+2022/04/27-14:32:20.713828 2da4                      Options.wal_bytes_per_sync: 0
+2022/04/27-14:32:20.713831 2da4 Compression algorithms supported:
+2022/04/27-14:32:20.713835 2da4 	Snappy supported: 0
+2022/04/27-14:32:20.713838 2da4 	Zlib supported: 0
+2022/04/27-14:32:20.713841 2da4 	Bzip supported: 0
+2022/04/27-14:32:20.713844 2da4 	LZ4 supported: 0
+2022/04/27-14:32:20.713848 2da4 	ZSTDNotFinal supported: 0
+2022/04/27-14:32:20.713851 2da4 	ZSTD supported: 0
+2022/04/27-14:32:20.713857 2da4 Fast CRC32 supported: Supported on x86Not supported on x86
+2022/04/27-14:32:20.713966 2da4 [c:\users\aretter\code\rocksdb\db\db_impl.cc:234] Shutdown: canceling all background work
+2022/04/27-14:32:20.713986 2da4 [c:\users\aretter\code\rocksdb\db\db_impl.cc:364] Shutdown complete

@@ -1,0 +1,83 @@
+2022/05/06-15:55:48.445023 dc4 RocksDB version: 5.9.2
+2022/05/06-15:55:48.445073 dc4 Git sha rocksdb_build_git_sha:@004237e62790320d8e630456cbeb6f4a1f3579c2@
+2022/05/06-15:55:48.445088 dc4 Compile date Jan  3 2018
+2022/05/06-15:55:48.445097 dc4 DB SUMMARY
+2022/05/06-15:55:48.445663 dc4 CURRENT file:  CURRENT
+2022/05/06-15:55:48.445676 dc4 IDENTITY file:  IDENTITY
+2022/05/06-15:55:48.445705 dc4 MANIFEST file:  MANIFEST-000332 size: 169 Bytes
+2022/05/06-15:55:48.445715 dc4 SST files in block-data/node1 dir, Total Num: 2, files: 000329.sst 000331.sst 
+2022/05/06-15:55:48.445725 dc4 Write Ahead Log file in block-data/node1: 000333.log size: 235 ; 
+2022/05/06-15:55:48.445737 dc4                         Options.error_if_exists: 0
+2022/05/06-15:55:48.445746 dc4                       Options.create_if_missing: 1
+2022/05/06-15:55:48.445964 dc4                         Options.paranoid_checks: 1
+2022/05/06-15:55:48.445973 dc4                                     Options.env: 000001AEB40CED70
+2022/05/06-15:55:48.445977 dc4                                Options.info_log: 000001AEB1E5EA90
+2022/05/06-15:55:48.445981 dc4                Options.max_file_opening_threads: 16
+2022/05/06-15:55:48.445984 dc4                              Options.statistics: 0000000000000000
+2022/05/06-15:55:48.445988 dc4                               Options.use_fsync: 0
+2022/05/06-15:55:48.445991 dc4                       Options.max_log_file_size: 0
+2022/05/06-15:55:48.445995 dc4                  Options.max_manifest_file_size: 18446744073709551615
+2022/05/06-15:55:48.445998 dc4                   Options.log_file_time_to_roll: 0
+2022/05/06-15:55:48.446002 dc4                       Options.keep_log_file_num: 1000
+2022/05/06-15:55:48.446005 dc4                    Options.recycle_log_file_num: 0
+2022/05/06-15:55:48.446008 dc4                         Options.allow_fallocate: 1
+2022/05/06-15:55:48.446012 dc4                        Options.allow_mmap_reads: 0
+2022/05/06-15:55:48.446015 dc4                       Options.allow_mmap_writes: 0
+2022/05/06-15:55:48.446019 dc4                        Options.use_direct_reads: 0
+2022/05/06-15:55:48.446022 dc4                        Options.use_direct_io_for_flush_and_compaction: 0
+2022/05/06-15:55:48.446025 dc4          Options.create_missing_column_families: 0
+2022/05/06-15:55:48.446029 dc4                              Options.db_log_dir: 
+2022/05/06-15:55:48.446032 dc4                                 Options.wal_dir: block-data/node1
+2022/05/06-15:55:48.446036 dc4                Options.table_cache_numshardbits: 6
+2022/05/06-15:55:48.446039 dc4                      Options.max_subcompactions: 1
+2022/05/06-15:55:48.446043 dc4                  Options.max_background_flushes: -1
+2022/05/06-15:55:48.446046 dc4                         Options.WAL_ttl_seconds: 0
+2022/05/06-15:55:48.446049 dc4                       Options.WAL_size_limit_MB: 0
+2022/05/06-15:55:48.446053 dc4             Options.manifest_preallocation_size: 4194304
+2022/05/06-15:55:48.446056 dc4                     Options.is_fd_close_on_exec: 1
+2022/05/06-15:55:48.446060 dc4                   Options.advise_random_on_open: 1
+2022/05/06-15:55:48.446063 dc4                    Options.db_write_buffer_size: 0
+2022/05/06-15:55:48.446066 dc4                    Options.write_buffer_manager: 000001AEB58CEE30
+2022/05/06-15:55:48.446070 dc4         Options.access_hint_on_compaction_start: 1
+2022/05/06-15:55:48.446073 dc4  Options.new_table_reader_for_compaction_inputs: 0
+2022/05/06-15:55:48.446077 dc4               Options.compaction_readahead_size: 0
+2022/05/06-15:55:48.446080 dc4           Options.random_access_max_buffer_size: 1048576
+2022/05/06-15:55:48.446083 dc4                      Options.use_adaptive_mutex: 0
+2022/05/06-15:55:48.446087 dc4                            Options.rate_limiter: 0000000000000000
+2022/05/06-15:55:48.446090 dc4     Options.sst_file_manager.rate_bytes_per_sec: 0
+2022/05/06-15:55:48.446094 dc4                       Options.wal_recovery_mode: 2
+2022/05/06-15:55:48.446097 dc4                  Options.enable_thread_tracking: 0
+2022/05/06-15:55:48.446100 dc4                  Options.enable_pipelined_write: 0
+2022/05/06-15:55:48.446130 dc4         Options.allow_concurrent_memtable_write: 1
+2022/05/06-15:55:48.446136 dc4      Options.enable_write_thread_adaptive_yield: 1
+2022/05/06-15:55:48.446139 dc4             Options.write_thread_max_yield_usec: 100
+2022/05/06-15:55:48.446143 dc4            Options.write_thread_slow_yield_usec: 3
+2022/05/06-15:55:48.446146 dc4                               Options.row_cache: None
+2022/05/06-15:55:48.446149 dc4                              Options.wal_filter: None
+2022/05/06-15:55:48.446153 dc4             Options.avoid_flush_during_recovery: 0
+2022/05/06-15:55:48.446157 dc4             Options.allow_ingest_behind: 0
+2022/05/06-15:55:48.446160 dc4             Options.preserve_deletes: 0
+2022/05/06-15:55:48.446163 dc4             Options.concurrent_prepare: 0
+2022/05/06-15:55:48.446166 dc4             Options.manual_wal_flush: 0
+2022/05/06-15:55:48.446170 dc4             Options.seq_per_batch: 0
+2022/05/06-15:55:48.446173 dc4             Options.max_background_jobs: 2
+2022/05/06-15:55:48.446176 dc4             Options.max_background_compactions: -1
+2022/05/06-15:55:48.446180 dc4             Options.avoid_flush_during_shutdown: 0
+2022/05/06-15:55:48.446183 dc4           Options.writable_file_max_buffer_size: 1048576
+2022/05/06-15:55:48.446187 dc4             Options.delayed_write_rate : 16777216
+2022/05/06-15:55:48.446190 dc4             Options.max_total_wal_size: 0
+2022/05/06-15:55:48.446193 dc4             Options.delete_obsolete_files_period_micros: 21600000000
+2022/05/06-15:55:48.446197 dc4                   Options.stats_dump_period_sec: 600
+2022/05/06-15:55:48.446200 dc4                          Options.max_open_files: -1
+2022/05/06-15:55:48.446204 dc4                          Options.bytes_per_sync: 0
+2022/05/06-15:55:48.446207 dc4                      Options.wal_bytes_per_sync: 0
+2022/05/06-15:55:48.446210 dc4 Compression algorithms supported:
+2022/05/06-15:55:48.446214 dc4 	Snappy supported: 0
+2022/05/06-15:55:48.446217 dc4 	Zlib supported: 0
+2022/05/06-15:55:48.446220 dc4 	Bzip supported: 0
+2022/05/06-15:55:48.446224 dc4 	LZ4 supported: 0
+2022/05/06-15:55:48.446227 dc4 	ZSTDNotFinal supported: 0
+2022/05/06-15:55:48.446230 dc4 	ZSTD supported: 0
+2022/05/06-15:55:48.446235 dc4 Fast CRC32 supported: Supported on x86Not supported on x86
+2022/05/06-15:55:48.446348 dc4 [c:\users\aretter\code\rocksdb\db\db_impl.cc:234] Shutdown: canceling all background work
+2022/05/06-15:55:48.446368 dc4 [c:\users\aretter\code\rocksdb\db\db_impl.cc:364] Shutdown complete

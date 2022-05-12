@@ -2,13 +2,13 @@ package com.blockchain.mcsblockchain.pojo.core;
 
 import com.blockchain.mcsblockchain.Utils.Cryptography;
 import com.blockchain.mcsblockchain.conf.AppConfig;
-import com.blockchain.mcsblockchain.enums.TransactionStatusEnum;
 import com.blockchain.mcsblockchain.event.NewBlockEvent;
 import com.blockchain.mcsblockchain.event.NewTransactionEvent;
 import com.blockchain.mcsblockchain.net.ApplicationContextProvider;
 import com.blockchain.mcsblockchain.net.base.Node;
 import com.blockchain.mcsblockchain.net.client.AppClient;
 import com.blockchain.mcsblockchain.pojo.account.Account;
+import com.blockchain.mcsblockchain.pojo.crypto.PKType;
 import com.blockchain.mcsblockchain.pojo.crypto.Signature;
 import com.blockchain.mcsblockchain.pojo.db.DBAccess;
 import com.blockchain.mcsblockchain.pojo.mine.Miner;
@@ -28,36 +28,44 @@ public class Blockchain {
     private static Logger logger = LoggerFactory.getLogger(Blockchain.class);
 
     @Autowired
-    private DBAccess dbAccess;
+    DBAccess dbAccess;
 
     @Autowired
-    private AppClient appClient;
+    AppClient appClient;
 
     @Autowired
-    private Miner miner;
+    Miner miner;
 
     @Autowired
-    private TransactionPool transactionPool;
+    TransactionPool transactionPool;
+
     @Autowired
-    private TransactionExecutor transactionExecutor;
+    TransactionExecutor transactionExecutor;
+
     @Autowired
-    private AppConfig appConfig;
+    AppConfig appConfig;
 
     // 是否正在同步区块
     private boolean syncing = true;
 
-    /**
-     * 挖取一个区块
-     * @return
-     */
+
     public Block mining() throws Exception {
 
         Optional<Block> lastBlock = getLastBlock();
         Block block = miner.newBlock(lastBlock);
-        for (Iterator t = transactionPool.getTransactions().iterator(); t.hasNext();) {
+/*
+        for (Iterator<Transaction> t = transactionPool.getTransactions().iterator(); t.hasNext();) {
             block.getBody().addTransaction((Transaction) t.next());
             t.remove(); // 已打包的交易移出交易池
-        }
+        }*/
+        /*for(int i=0;i<transactionPool.getTransactions().size();i++){
+            System.out.println("打包交易池："+transactionPool.getTransactions().get(i));
+            block.getBody().addTransaction(transactionPool.getTransactions().get(i));
+            System.out.println(block.getBody().getTransactionList().size());
+            //transactionPool.removeTransaction(transactionPool.getTransactions().get(i).getTransactionHash());
+        }*/
+        System.out.println(block.getBody().getTransactionList().size());
+        System.out.println("打包交易池之后的交易池大小："+transactionPool.getTransactions().size());
         // 存储区块
         dbAccess.putLastBlockIndex(block.getHeader().getIndex());
         dbAccess.putBlock(block);
@@ -81,17 +89,17 @@ public class Blockchain {
      * @return
      * @throws Exception
      */
-    public Transaction sendTransaction(Account account, String to, BigDecimal amount, String data) throws
+    public Transaction sendTransaction(Account account, PKType to, BigDecimal amount, String data) throws
             Exception {
 
         //校验付款和收款地址
-        Preconditions.checkArgument(to.startsWith("0x"), "收款地址格式不正确");
+        //Preconditions.checkArgument(to.startsWith("0x"), "收款地址格式不正确");
         Preconditions.checkArgument(!account.getAccountAddr().equals(to), "收款地址不能和发送地址相同");
 
         //构建交易对象
         Transaction transaction = new Transaction();
         transaction.setAmount(amount);
-        transaction.setReceiverAddr(to);
+        transaction.setReceiverAddr(Cryptography.myHash(to.value.toString().trim()));
         transaction.setSenderPk(account.getPublicKey());
         transaction.setReceiverPk(account.getPublicKey());
         transaction.setStatus(2);
@@ -129,10 +137,10 @@ public class Blockchain {
      * @param port
      * @return
      */
-    public void addNode(String ip, int port) throws Exception {
+    public void addNode(String ip, int port,String createTime,String notes) throws Exception {
 
-        appClient.addNode(ip, port);
-        Node node = new Node(ip, port);
+        appClient.addNode(ip, port,createTime,notes);
+        Node node = new Node(ip, port,createTime,notes);
         dbAccess.addNode(node);
     }
 }

@@ -7,6 +7,7 @@ import com.blockchain.mcsblockchain.net.base.Node;
 import com.blockchain.mcsblockchain.net.conf.TioProps;
 import com.blockchain.mcsblockchain.pojo.account.Account;
 import com.blockchain.mcsblockchain.pojo.core.Block;
+import com.blockchain.mcsblockchain.pojo.core.Task;
 import com.blockchain.mcsblockchain.pojo.core.Transaction;
 import com.blockchain.mcsblockchain.pojo.core.TransactionPool;
 import com.google.common.base.Optional;
@@ -23,6 +24,8 @@ import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+import static com.google.common.base.Optional.absent;
 
 //RocksDB 操作封装
 @Component
@@ -82,7 +85,38 @@ public class RocksDBAccess implements DBAccess{
         if (blockIndex.isPresent()) {
             return this.getBlock(blockIndex.get().toString());
         }
+        return absent();
+    }
+
+    @Override
+    public boolean putTask(Task task) {
+        return this.put(Task_PREFIX+task.getTaskId(),task);
+    }
+
+    @Override
+    public boolean putTaskId(int id) {
+        Optional<Object> lastTaskId = this.getLastTaskId();
+        if(lastTaskId.isPresent()){
+            return put(LAST_TASK_ID,(int)lastTaskId.get()+1);
+        }
+        return put(LAST_TASK_ID,0);
+    }
+
+    @Override
+    public Optional<Object> getLastTaskId() {
+        Optional<Object> taskId = this.get(LAST_TASK_ID);
+        if(taskId.isPresent()){
+            return Optional.of(taskId.get());
+        }
         return Optional.absent();
+    }
+
+    @Override
+    public Optional<Task> getTask(int id) {
+        Optional<Object> task = this.get(Task_PREFIX + id);
+        if(task.isPresent())
+            return Optional.of((Task) task.get());
+        return Optional.<Task>absent();
     }
 
     @Override
@@ -97,7 +131,7 @@ public class RocksDBAccess implements DBAccess{
         if (object.isPresent()) {
             return Optional.of((Account) object.get());
         }
-        return Optional.absent();
+        return absent();
     }
 
     @Override
@@ -127,7 +161,7 @@ public class RocksDBAccess implements DBAccess{
         if(object.isPresent()){
             return Optional.of((Transaction) object.get());
         }
-        return Optional.absent();
+        return absent();
     }
 
     @Override
@@ -168,7 +202,7 @@ public class RocksDBAccess implements DBAccess{
             String minerUsername = (String) object.get();
             return getAccount(minerUsername);
         }
-        return Optional.absent();
+        return absent();
     }
 
     @Override
@@ -192,7 +226,7 @@ public class RocksDBAccess implements DBAccess{
             if (logger.isDebugEnabled()) {
                 logger.error("ERROR for RocksDB : {}", e);
             }
-            return Optional.absent();
+            return absent();
         }
 
     }
@@ -274,7 +308,7 @@ public class RocksDBAccess implements DBAccess{
             if (logger.isDebugEnabled()) {
                 logger.error("ERROR for RocksDB : {}", e);
             }
-            return Optional.absent();
+            return absent();
         }
     }
 

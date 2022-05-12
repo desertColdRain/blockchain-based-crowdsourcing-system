@@ -1,10 +1,7 @@
 package com.blockchain.mcsblockchain.pojo.mine.PoW;
 
 import com.blockchain.mcsblockchain.pojo.account.Account;
-import com.blockchain.mcsblockchain.pojo.core.Block;
-import com.blockchain.mcsblockchain.pojo.core.BlockBody;
-import com.blockchain.mcsblockchain.pojo.core.BlockHeader;
-import com.blockchain.mcsblockchain.pojo.core.Transaction;
+import com.blockchain.mcsblockchain.pojo.core.*;
 import com.blockchain.mcsblockchain.pojo.db.DBAccess;
 import com.blockchain.mcsblockchain.pojo.mine.Miner;
 import com.google.common.base.Optional;
@@ -17,6 +14,9 @@ import java.security.NoSuchAlgorithmException;
 public class PowMiner implements Miner {
     @Autowired
     private DBAccess dbAccess;
+
+    @Autowired
+    volatile TransactionPool  transactionPool;
 
     @Override
     public Block newBlock(Optional<Block> block) throws NoSuchAlgorithmException {
@@ -37,27 +37,47 @@ public class PowMiner implements Miner {
             //创建创世区块
             newBlock = createGenesisBlock();
         }
-        //创建挖矿奖励交易
-        Transaction transaction = new Transaction();
+        if(transactionPool.getTransactions().size()>0){
+            System.out.println("交易池大小"+transactionPool.getTransactions().size());
+            if (block.isPresent()) {
+                ProofOfWork proofOfWork = ProofOfWork.newProofOfWork(newBlock);
+                PowResult result = proofOfWork.run();
+                newBlock.getHeader().setDifficulty(result.getTarget());
+                newBlock.getHeader().setNonce(result.getNonce());
+                newBlock.getHeader().setHash(result.getHash());
+            }
+          newBlock.getBody().setTransactionList(transactionPool.getTransactions());
 
-        account = minerAccount.get();
-        transaction.setReceiverAddr(account.getAccountAddr());
-        transaction.setContent("Miner Reward.");
-        transaction.setTransactionHash(transaction.txHash());
-        transaction.setAmount(Miner.MINING_REWARD);
-
-        //如果不是创世区块，则使用工作量证明挖矿
-        if (block.isPresent()) {
-            ProofOfWork proofOfWork = ProofOfWork.newProofOfWork(newBlock);
-            PowResult result = proofOfWork.run();
-            newBlock.getHeader().setDifficulty(result.getTarget());
-            newBlock.getHeader().setNonce(result.getNonce());
-            newBlock.getHeader().setHash(result.getHash());
+           /* for(int i=0;i<transactionPool.getTransactions().size();i++){
+                transactionPool.removeTransaction(transactionPool.getTransactions().get(i).getTransactionHash());
+            }*/
+            //transactionPool.getTransactions().clear();
+            //更新最后一个区块索引
         }
-        newBlock.getBody().addTransaction(transaction);
+        else{
+            Transaction transaction = new Transaction();
+           // System.out.println("yoooooooooooooooooooooooooooooo");
+            account = minerAccount.get();
+            transaction.setReceiverAddr(account.getAccountAddr());
+            transaction.setContent("Miner Reward.");
+            transaction.setTransactionHash(transaction.txHash());
+            transaction.setAmount(Miner.MINING_REWARD);
 
-        //更新最后一个区块索引
+            //如果不是创世区块，则使用工作量证明挖矿
+            if (block.isPresent()) {
+                ProofOfWork proofOfWork = ProofOfWork.newProofOfWork(newBlock);
+                PowResult result = proofOfWork.run();
+                newBlock.getHeader().setDifficulty(result.getTarget());
+                newBlock.getHeader().setNonce(result.getNonce());
+                newBlock.getHeader().setHash(result.getHash());
+            }
+            newBlock.getBody().addTransaction(transaction);
+
+            //更新最后一个区块索引
+        }
         dbAccess.putLastBlockIndex(newBlock.getHeader().getIndex());
+        //创建挖矿奖励交易
+        System.out.println("new block:"+newBlock);
         return newBlock;
     }
 

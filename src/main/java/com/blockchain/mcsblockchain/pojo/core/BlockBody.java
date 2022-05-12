@@ -111,7 +111,7 @@ public class BlockBody implements Serializable {
         return res;
     }
     public void addTransaction(Transaction transaction){
-        transactionList.add(transaction);
+        this.transactionList.add(transaction);
     }
 
     public void addEnclavePk(PKType pk ){

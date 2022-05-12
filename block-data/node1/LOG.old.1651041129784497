@@ -1,0 +1,83 @@
+2022/04/27-14:31:40.997569 3d9c RocksDB version: 5.9.2
+2022/04/27-14:31:40.997621 3d9c Git sha rocksdb_build_git_sha:@004237e62790320d8e630456cbeb6f4a1f3579c2@
+2022/04/27-14:31:40.997638 3d9c Compile date Jan  3 2018
+2022/04/27-14:31:40.997647 3d9c DB SUMMARY
+2022/04/27-14:31:40.997978 3d9c CURRENT file:  CURRENT
+2022/04/27-14:31:40.997991 3d9c IDENTITY file:  IDENTITY
+2022/04/27-14:31:40.998013 3d9c MANIFEST file:  MANIFEST-000162 size: 155 Bytes
+2022/04/27-14:31:40.998025 3d9c SST files in block-data/node1 dir, Total Num: 2, files: 000159.sst 000161.sst 
+2022/04/27-14:31:40.998034 3d9c Write Ahead Log file in block-data/node1: 000163.log size: 5584 ; 
+2022/04/27-14:31:40.998044 3d9c                         Options.error_if_exists: 0
+2022/04/27-14:31:40.998250 3d9c                       Options.create_if_missing: 1
+2022/04/27-14:31:40.998259 3d9c                         Options.paranoid_checks: 1
+2022/04/27-14:31:40.998263 3d9c                                     Options.env: 0000022338014A10
+2022/04/27-14:31:40.998267 3d9c                                Options.info_log: 00000223396B2760
+2022/04/27-14:31:40.998270 3d9c                Options.max_file_opening_threads: 16
+2022/04/27-14:31:40.998274 3d9c                              Options.statistics: 0000000000000000
+2022/04/27-14:31:40.998277 3d9c                               Options.use_fsync: 0
+2022/04/27-14:31:40.998281 3d9c                       Options.max_log_file_size: 0
+2022/04/27-14:31:40.998284 3d9c                  Options.max_manifest_file_size: 18446744073709551615
+2022/04/27-14:31:40.998288 3d9c                   Options.log_file_time_to_roll: 0
+2022/04/27-14:31:40.998291 3d9c                       Options.keep_log_file_num: 1000
+2022/04/27-14:31:40.998295 3d9c                    Options.recycle_log_file_num: 0
+2022/04/27-14:31:40.998298 3d9c                         Options.allow_fallocate: 1
+2022/04/27-14:31:40.998301 3d9c                        Options.allow_mmap_reads: 0
+2022/04/27-14:31:40.998304 3d9c                       Options.allow_mmap_writes: 0
+2022/04/27-14:31:40.998308 3d9c                        Options.use_direct_reads: 0
+2022/04/27-14:31:40.998311 3d9c                        Options.use_direct_io_for_flush_and_compaction: 0
+2022/04/27-14:31:40.998314 3d9c          Options.create_missing_column_families: 0
+2022/04/27-14:31:40.998318 3d9c                              Options.db_log_dir: 
+2022/04/27-14:31:40.998321 3d9c                                 Options.wal_dir: block-data/node1
+2022/04/27-14:31:40.998325 3d9c                Options.table_cache_numshardbits: 6
+2022/04/27-14:31:40.998328 3d9c                      Options.max_subcompactions: 1
+2022/04/27-14:31:40.998331 3d9c                  Options.max_background_flushes: -1
+2022/04/27-14:31:40.998335 3d9c                         Options.WAL_ttl_seconds: 0
+2022/04/27-14:31:40.998338 3d9c                       Options.WAL_size_limit_MB: 0
+2022/04/27-14:31:40.998341 3d9c             Options.manifest_preallocation_size: 4194304
+2022/04/27-14:31:40.998345 3d9c                     Options.is_fd_close_on_exec: 1
+2022/04/27-14:31:40.998348 3d9c                   Options.advise_random_on_open: 1
+2022/04/27-14:31:40.998351 3d9c                    Options.db_write_buffer_size: 0
+2022/04/27-14:31:40.998355 3d9c                    Options.write_buffer_manager: 00000223361C5270
+2022/04/27-14:31:40.998358 3d9c         Options.access_hint_on_compaction_start: 1
+2022/04/27-14:31:40.998361 3d9c  Options.new_table_reader_for_compaction_inputs: 0
+2022/04/27-14:31:40.998365 3d9c               Options.compaction_readahead_size: 0
+2022/04/27-14:31:40.998368 3d9c           Options.random_access_max_buffer_size: 1048576
+2022/04/27-14:31:40.998371 3d9c                      Options.use_adaptive_mutex: 0
+2022/04/27-14:31:40.998375 3d9c                            Options.rate_limiter: 0000000000000000
+2022/04/27-14:31:40.998378 3d9c     Options.sst_file_manager.rate_bytes_per_sec: 0
+2022/04/27-14:31:40.998382 3d9c                       Options.wal_recovery_mode: 2
+2022/04/27-14:31:40.998385 3d9c                  Options.enable_thread_tracking: 0
+2022/04/27-14:31:40.998416 3d9c                  Options.enable_pipelined_write: 0
+2022/04/27-14:31:40.998423 3d9c         Options.allow_concurrent_memtable_write: 1
+2022/04/27-14:31:40.998427 3d9c      Options.enable_write_thread_adaptive_yield: 1
+2022/04/27-14:31:40.998430 3d9c             Options.write_thread_max_yield_usec: 100
+2022/04/27-14:31:40.998433 3d9c            Options.write_thread_slow_yield_usec: 3
+2022/04/27-14:31:40.998505 3d9c                               Options.row_cache: None
+2022/04/27-14:31:40.998517 3d9c                              Options.wal_filter: None
+2022/04/27-14:31:40.998521 3d9c             Options.avoid_flush_during_recovery: 0
+2022/04/27-14:31:40.998525 3d9c             Options.allow_ingest_behind: 0
+2022/04/27-14:31:40.998528 3d9c             Options.preserve_deletes: 0
+2022/04/27-14:31:40.998532 3d9c             Options.concurrent_prepare: 0
+2022/04/27-14:31:40.998535 3d9c             Options.manual_wal_flush: 0
+2022/04/27-14:31:40.998538 3d9c             Options.seq_per_batch: 0
+2022/04/27-14:31:40.998542 3d9c             Options.max_background_jobs: 2
+2022/04/27-14:31:40.998545 3d9c             Options.max_background_compactions: -1
+2022/04/27-14:31:40.998548 3d9c             Options.avoid_flush_during_shutdown: 0
+2022/04/27-14:31:40.998552 3d9c           Options.writable_file_max_buffer_size: 1048576
+2022/04/27-14:31:40.998555 3d9c             Options.delayed_write_rate : 16777216
+2022/04/27-14:31:40.998559 3d9c             Options.max_total_wal_size: 0
+2022/04/27-14:31:40.998562 3d9c             Options.delete_obsolete_files_period_micros: 21600000000
+2022/04/27-14:31:40.998565 3d9c                   Options.stats_dump_period_sec: 600
+2022/04/27-14:31:40.998569 3d9c                          Options.max_open_files: -1
+2022/04/27-14:31:40.998572 3d9c                          Options.bytes_per_sync: 0
+2022/04/27-14:31:40.998576 3d9c                      Options.wal_bytes_per_sync: 0
+2022/04/27-14:31:40.998579 3d9c Compression algorithms supported:
+2022/04/27-14:31:40.998582 3d9c 	Snappy supported: 0
+2022/04/27-14:31:40.998586 3d9c 	Zlib supported: 0
+2022/04/27-14:31:40.998589 3d9c 	Bzip supported: 0
+2022/04/27-14:31:40.998592 3d9c 	LZ4 supported: 0
+2022/04/27-14:31:40.998595 3d9c 	ZSTDNotFinal supported: 0
+2022/04/27-14:31:40.998598 3d9c 	ZSTD supported: 0
+2022/04/27-14:31:40.998605 3d9c Fast CRC32 supported: Supported on x86Not supported on x86
+2022/04/27-14:31:40.998742 3d9c [c:\users\aretter\code\rocksdb\db\db_impl.cc:234] Shutdown: canceling all background work
+2022/04/27-14:31:40.998770 3d9c [c:\users\aretter\code\rocksdb\db\db_impl.cc:364] Shutdown complete

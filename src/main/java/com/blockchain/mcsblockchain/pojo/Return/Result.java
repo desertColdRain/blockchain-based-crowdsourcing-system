@@ -1,20 +1,29 @@
 package com.blockchain.mcsblockchain.pojo.Return;
 
+import io.swagger.models.auth.In;
+
 public class Result {
     /**
      * 返回信息
      */
     private String msg;
 
+
+
     /**
      * 数据是否正常请求
      */
-    private boolean success;
+    private Integer code;
 
-    /**
-     * 具体返回的数据
-     */
-    private String detail;
+    private Object data;
+
+    public Result() {
+    }
+    public Result(String msg, Integer code, Object data) {
+        this.msg = msg;
+        this.code = code;
+        this.data = data;
+    }
 
     public String getMsg() {
         return msg;
@@ -24,19 +33,20 @@ public class Result {
         this.msg = msg;
     }
 
-    public boolean isSuccess() {
-        return success;
+    public Integer getCode() {
+        return code;
     }
 
-    public void setSuccess(boolean success) {
-        this.success = success;
+    public void setCode(Integer code) {
+        this.code = code;
     }
 
-    public String getDetail() {
-        return detail;
+    public Object getData() {
+        return data;
     }
 
-    public void setDetail(String detail) {
-        this.detail = detail;
+    public void setData(Object data) {
+        this.data = data;
     }
 }
+

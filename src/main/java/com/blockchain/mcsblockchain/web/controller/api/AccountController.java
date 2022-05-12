@@ -1,16 +1,12 @@
 package com.blockchain.mcsblockchain.web.controller.api;
 
-import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
-import com.alibaba.fastjson.JSONObject;
 import com.blockchain.mcsblockchain.Utils.Cryptography;
-import com.blockchain.mcsblockchain.Utils.FastJson;
 import com.blockchain.mcsblockchain.Utils.JsonVo;
 import com.blockchain.mcsblockchain.net.Socket.Client;
 import com.blockchain.mcsblockchain.pojo.account.Account;
 import com.blockchain.mcsblockchain.pojo.crypto.Signature;
 import com.blockchain.mcsblockchain.pojo.db.DBAccess;
-import com.blockchain.mcsblockchain.pojo.signal.KeyRegistrationSignal;
 import com.blockchain.mcsblockchain.web.vo.res.AccountVo;
 import com.google.common.base.Optional;
 import com.google.common.base.Preconditions;
@@ -18,20 +14,15 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
-
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Objects;
 
 /**
- * @author yangjian
- * @since 18-4-8
+ * @author desertColdRain
+ * @since 22-4-8
  */
 @RestController
 @Api(tags = "Account API", description = "账户相关的 API")
@@ -44,7 +35,7 @@ public class AccountController {
 	private DBAccess dbAccess;
 	@Autowired
 	private Client client;
-	private String serverIp = "192.168.244.132";
+	private String serverIp = "192.168.244.133";
 	private int port = 8888;
 
 	/**
@@ -119,10 +110,10 @@ public class AccountController {
 		Optional<Account> account = dbAccess.getAccount(username);
 		Account newAccount = Account.generateAccount();
 		if(!account.isPresent()){
-			return "The account you print is not present! Please check username and password";
+			return "账号和密码不正确，请检查您的输入";
 		}
 		else if(!account.get().getPassword().equals(password)){
-			return "Please enter the correct username or password";
+			return "账号和密码不正确，请检查您的输入";
 		}
 		else{
 			// key alteration signal generate

@@ -1,0 +1,183 @@
+2022/05/06-16:31:00.496252 9dc RocksDB version: 5.9.2
+2022/05/06-16:31:00.496297 9dc Git sha rocksdb_build_git_sha:@004237e62790320d8e630456cbeb6f4a1f3579c2@
+2022/05/06-16:31:00.496311 9dc Compile date Jan  3 2018
+2022/05/06-16:31:00.496327 9dc DB SUMMARY
+2022/05/06-16:31:00.497131 9dc CURRENT file:  CURRENT
+2022/05/06-16:31:00.497156 9dc IDENTITY file:  IDENTITY
+2022/05/06-16:31:00.497190 9dc MANIFEST file:  MANIFEST-000376 size: 372 Bytes
+2022/05/06-16:31:00.497208 9dc SST files in block-data/node1 dir, Total Num: 1, files: 000380.sst 
+2022/05/06-16:31:00.497218 9dc Write Ahead Log file in block-data/node1: 000377.log size: 9717 ; 
+2022/05/06-16:31:00.497232 9dc                         Options.error_if_exists: 0
+2022/05/06-16:31:00.497249 9dc                       Options.create_if_missing: 1
+2022/05/06-16:31:00.497501 9dc                         Options.paranoid_checks: 1
+2022/05/06-16:31:00.497510 9dc                                     Options.env: 000001D8250B5AE0
+2022/05/06-16:31:00.497514 9dc                                Options.info_log: 000001D825C693A0
+2022/05/06-16:31:00.497517 9dc                Options.max_file_opening_threads: 16
+2022/05/06-16:31:00.497521 9dc                              Options.statistics: 0000000000000000
+2022/05/06-16:31:00.497524 9dc                               Options.use_fsync: 0
+2022/05/06-16:31:00.497528 9dc                       Options.max_log_file_size: 0
+2022/05/06-16:31:00.497531 9dc                  Options.max_manifest_file_size: 18446744073709551615
+2022/05/06-16:31:00.497535 9dc                   Options.log_file_time_to_roll: 0
+2022/05/06-16:31:00.497538 9dc                       Options.keep_log_file_num: 1000
+2022/05/06-16:31:00.497542 9dc                    Options.recycle_log_file_num: 0
+2022/05/06-16:31:00.497545 9dc                         Options.allow_fallocate: 1
+2022/05/06-16:31:00.497548 9dc                        Options.allow_mmap_reads: 0
+2022/05/06-16:31:00.497552 9dc                       Options.allow_mmap_writes: 0
+2022/05/06-16:31:00.497555 9dc                        Options.use_direct_reads: 0
+2022/05/06-16:31:00.497558 9dc                        Options.use_direct_io_for_flush_and_compaction: 0
+2022/05/06-16:31:00.497562 9dc          Options.create_missing_column_families: 0
+2022/05/06-16:31:00.497565 9dc                              Options.db_log_dir: 
+2022/05/06-16:31:00.497569 9dc                                 Options.wal_dir: block-data/node1
+2022/05/06-16:31:00.497572 9dc                Options.table_cache_numshardbits: 6
+2022/05/06-16:31:00.497576 9dc                      Options.max_subcompactions: 1
+2022/05/06-16:31:00.497579 9dc                  Options.max_background_flushes: -1
+2022/05/06-16:31:00.497582 9dc                         Options.WAL_ttl_seconds: 0
+2022/05/06-16:31:00.497586 9dc                       Options.WAL_size_limit_MB: 0
+2022/05/06-16:31:00.497589 9dc             Options.manifest_preallocation_size: 4194304
+2022/05/06-16:31:00.497592 9dc                     Options.is_fd_close_on_exec: 1
+2022/05/06-16:31:00.497596 9dc                   Options.advise_random_on_open: 1
+2022/05/06-16:31:00.497599 9dc                    Options.db_write_buffer_size: 0
+2022/05/06-16:31:00.497602 9dc                    Options.write_buffer_manager: 000001D825CA6E50
+2022/05/06-16:31:00.497606 9dc         Options.access_hint_on_compaction_start: 1
+2022/05/06-16:31:00.497609 9dc  Options.new_table_reader_for_compaction_inputs: 0
+2022/05/06-16:31:00.497613 9dc               Options.compaction_readahead_size: 0
+2022/05/06-16:31:00.497616 9dc           Options.random_access_max_buffer_size: 1048576
+2022/05/06-16:31:00.497619 9dc                      Options.use_adaptive_mutex: 0
+2022/05/06-16:31:00.497623 9dc                            Options.rate_limiter: 0000000000000000
+2022/05/06-16:31:00.497626 9dc     Options.sst_file_manager.rate_bytes_per_sec: 0
+2022/05/06-16:31:00.497630 9dc                       Options.wal_recovery_mode: 2
+2022/05/06-16:31:00.497633 9dc                  Options.enable_thread_tracking: 0
+2022/05/06-16:31:00.497636 9dc                  Options.enable_pipelined_write: 0
+2022/05/06-16:31:00.497667 9dc         Options.allow_concurrent_memtable_write: 1
+2022/05/06-16:31:00.497674 9dc      Options.enable_write_thread_adaptive_yield: 1
+2022/05/06-16:31:00.497677 9dc             Options.write_thread_max_yield_usec: 100
+2022/05/06-16:31:00.497680 9dc            Options.write_thread_slow_yield_usec: 3
+2022/05/06-16:31:00.497684 9dc                               Options.row_cache: None
+2022/05/06-16:31:00.497687 9dc                              Options.wal_filter: None
+2022/05/06-16:31:00.497691 9dc             Options.avoid_flush_during_recovery: 0
+2022/05/06-16:31:00.497694 9dc             Options.allow_ingest_behind: 0
+2022/05/06-16:31:00.497697 9dc             Options.preserve_deletes: 0
+2022/05/06-16:31:00.497701 9dc             Options.concurrent_prepare: 0
+2022/05/06-16:31:00.497704 9dc             Options.manual_wal_flush: 0
+2022/05/06-16:31:00.497707 9dc             Options.seq_per_batch: 0
+2022/05/06-16:31:00.497719 9dc             Options.max_background_jobs: 2
+2022/05/06-16:31:00.497723 9dc             Options.max_background_compactions: -1
+2022/05/06-16:31:00.497727 9dc             Options.avoid_flush_during_shutdown: 0
+2022/05/06-16:31:00.497730 9dc           Options.writable_file_max_buffer_size: 1048576
+2022/05/06-16:31:00.497734 9dc             Options.delayed_write_rate : 16777216
+2022/05/06-16:31:00.497737 9dc             Options.max_total_wal_size: 0
+2022/05/06-16:31:00.497740 9dc             Options.delete_obsolete_files_period_micros: 21600000000
+2022/05/06-16:31:00.497744 9dc                   Options.stats_dump_period_sec: 600
+2022/05/06-16:31:00.497747 9dc                          Options.max_open_files: -1
+2022/05/06-16:31:00.497751 9dc                          Options.bytes_per_sync: 0
+2022/05/06-16:31:00.497754 9dc                      Options.wal_bytes_per_sync: 0
+2022/05/06-16:31:00.497758 9dc Compression algorithms supported:
+2022/05/06-16:31:00.497766 9dc 	Snappy supported: 0
+2022/05/06-16:31:00.497770 9dc 	Zlib supported: 0
+2022/05/06-16:31:00.497773 9dc 	Bzip supported: 0
+2022/05/06-16:31:00.497776 9dc 	LZ4 supported: 0
+2022/05/06-16:31:00.497779 9dc 	ZSTDNotFinal supported: 0
+2022/05/06-16:31:00.497783 9dc 	ZSTD supported: 0
+2022/05/06-16:31:00.497789 9dc Fast CRC32 supported: Supported on x86Not supported on x86
+2022/05/06-16:31:00.498020 9dc [c:\users\aretter\code\rocksdb\db\version_set.cc:2835] Recovering from manifest file: MANIFEST-000376
+2022/05/06-16:31:00.498125 9dc [c:\users\aretter\code\rocksdb\db\column_family.cc:413] --------------- Options for column family [default]:
+2022/05/06-16:31:00.498131 9dc               Options.comparator: leveldb.BytewiseComparator
+2022/05/06-16:31:00.498135 9dc           Options.merge_operator: None
+2022/05/06-16:31:00.498139 9dc        Options.compaction_filter: None
+2022/05/06-16:31:00.498146 9dc        Options.compaction_filter_factory: None
+2022/05/06-16:31:00.498149 9dc         Options.memtable_factory: SkipListFactory
+2022/05/06-16:31:00.498153 9dc            Options.table_factory: BlockBasedTable
+2022/05/06-16:31:00.498192 9dc            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (000001D824844430)
+  cache_index_and_filter_blocks: 0
+  cache_index_and_filter_blocks_with_high_priority: 0
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  index_type: 0
+  hash_index_allow_collision: 1
+  checksum: 1
+  no_block_cache: 0
+  block_cache: 000001D825CC5110
+  block_cache_name: LRUCache
+  block_cache_options:
+    capacity : 8388608
+    num_shard_bits : 4
+    strict_capacity_limit : 0
+    high_pri_pool_ratio: 0.000
+  block_cache_compressed: 0000000000000000
+  persistent_cache: 0000000000000000
+  block_size: 4096
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  metadata_block_size: 4096
+  partition_filters: 0
+  use_delta_encoding: 1
+  filter_policy: nullptr
+  whole_key_filtering: 1
+  verify_compression: 0
+  read_amp_bytes_per_bit: 0
+  format_version: 2
+2022/05/06-16:31:00.498197 9dc        Options.write_buffer_size: 67108864
+2022/05/06-16:31:00.498225 9dc  Options.max_write_buffer_number: 2
+2022/05/06-16:31:00.498231 9dc          Options.compression: NoCompression
+2022/05/06-16:31:00.498234 9dc                  Options.bottommost_compression: Disabled
+2022/05/06-16:31:00.498238 9dc       Options.prefix_extractor: nullptr
+2022/05/06-16:31:00.498241 9dc   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+2022/05/06-16:31:00.498245 9dc             Options.num_levels: 7
+2022/05/06-16:31:00.498248 9dc        Options.min_write_buffer_number_to_merge: 1
+2022/05/06-16:31:00.498251 9dc     Options.max_write_buffer_number_to_maintain: 0
+2022/05/06-16:31:00.498255 9dc            Options.compression_opts.window_bits: -14
+2022/05/06-16:31:00.498258 9dc                  Options.compression_opts.level: -1
+2022/05/06-16:31:00.498262 9dc               Options.compression_opts.strategy: 0
+2022/05/06-16:31:00.498265 9dc         Options.compression_opts.max_dict_bytes: 0
+2022/05/06-16:31:00.498268 9dc      Options.level0_file_num_compaction_trigger: 4
+2022/05/06-16:31:00.498272 9dc          Options.level0_slowdown_writes_trigger: 20
+2022/05/06-16:31:00.498275 9dc              Options.level0_stop_writes_trigger: 36
+2022/05/06-16:31:00.498279 9dc                   Options.target_file_size_base: 67108864
+2022/05/06-16:31:00.498282 9dc             Options.target_file_size_multiplier: 1
+2022/05/06-16:31:00.498285 9dc                Options.max_bytes_for_level_base: 268435456
+2022/05/06-16:31:00.498289 9dc Options.level_compaction_dynamic_level_bytes: 0
+2022/05/06-16:31:00.498292 9dc          Options.max_bytes_for_level_multiplier: 10.000000
+2022/05/06-16:31:00.498298 9dc Options.max_bytes_for_level_multiplier_addtl[0]: 1
+2022/05/06-16:31:00.498301 9dc Options.max_bytes_for_level_multiplier_addtl[1]: 1
+2022/05/06-16:31:00.498305 9dc Options.max_bytes_for_level_multiplier_addtl[2]: 1
+2022/05/06-16:31:00.498308 9dc Options.max_bytes_for_level_multiplier_addtl[3]: 1
+2022/05/06-16:31:00.498312 9dc Options.max_bytes_for_level_multiplier_addtl[4]: 1
+2022/05/06-16:31:00.498315 9dc Options.max_bytes_for_level_multiplier_addtl[5]: 1
+2022/05/06-16:31:00.498318 9dc Options.max_bytes_for_level_multiplier_addtl[6]: 1
+2022/05/06-16:31:00.498322 9dc       Options.max_sequential_skip_in_iterations: 8
+2022/05/06-16:31:00.498325 9dc                    Options.max_compaction_bytes: 1677721600
+2022/05/06-16:31:00.498329 9dc                        Options.arena_block_size: 8388608
+2022/05/06-16:31:00.498332 9dc   Options.soft_pending_compaction_bytes_limit: 68719476736
+2022/05/06-16:31:00.498336 9dc   Options.hard_pending_compaction_bytes_limit: 274877906944
+2022/05/06-16:31:00.498339 9dc       Options.rate_limit_delay_max_milliseconds: 100
+2022/05/06-16:31:00.498343 9dc                Options.disable_auto_compactions: 0
+2022/05/06-16:31:00.498347 9dc                        Options.compaction_style: kCompactionStyleLevel
+2022/05/06-16:31:00.498351 9dc                          Options.compaction_pri: kByCompensatedSize
+2022/05/06-16:31:00.498354 9dc Options.compaction_options_universal.size_ratio: 1
+2022/05/06-16:31:00.498358 9dc Options.compaction_options_universal.min_merge_width: 2
+2022/05/06-16:31:00.498361 9dc Options.compaction_options_universal.max_merge_width: 4294967295
+2022/05/06-16:31:00.498365 9dc Options.compaction_options_universal.max_size_amplification_percent: 200
+2022/05/06-16:31:00.498368 9dc Options.compaction_options_universal.compression_size_percent: -1
+2022/05/06-16:31:00.498372 9dc Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+2022/05/06-16:31:00.498376 9dc Options.compaction_options_fifo.max_table_files_size: 1073741824
+2022/05/06-16:31:00.498379 9dc Options.compaction_options_fifo.allow_compaction: 0
+2022/05/06-16:31:00.498383 9dc Options.compaction_options_fifo.ttl: 0
+2022/05/06-16:31:00.498386 9dc                   Options.table_properties_collectors: 
+2022/05/06-16:31:00.498390 9dc                   Options.inplace_update_support: 0
+2022/05/06-16:31:00.498393 9dc                 Options.inplace_update_num_locks: 10000
+2022/05/06-16:31:00.498399 9dc               Options.memtable_prefix_bloom_size_ratio: 0.000000
+2022/05/06-16:31:00.498404 9dc   Options.memtable_huge_page_size: 0
+2022/05/06-16:31:00.498407 9dc                           Options.bloom_locality: 0
+2022/05/06-16:31:00.498410 9dc                    Options.max_successive_merges: 0
+2022/05/06-16:31:00.498414 9dc                Options.optimize_filters_for_hits: 0
+2022/05/06-16:31:00.498417 9dc                Options.paranoid_file_checks: 0
+2022/05/06-16:31:00.498421 9dc                Options.force_consistency_checks: 0
+2022/05/06-16:31:00.498424 9dc                Options.report_bg_io_stats: 0
+2022/05/06-16:31:00.499888 9dc [c:\users\aretter\code\rocksdb\db\version_set.cc:3100] Recovered from manifest file:block-data/node1/MANIFEST-000376 succeeded,manifest_file_number is 376, next_file_number is 382, last_sequence is 433, log_number is 0,prev_log_number is 0,max_column_family is 0
+2022/05/06-16:31:00.499900 9dc [c:\users\aretter\code\rocksdb\db\version_set.cc:3108] Column family [default] (ID 0), log number is 375
+2022/05/06-16:31:00.500620 9dc EVENT_LOG_v1 {"time_micros": 1651825860500576, "job": 1, "event": "recovery_started", "log_files": [377]}
+2022/05/06-16:31:00.500634 9dc [c:\users\aretter\code\rocksdb\db\db_impl_open.cc:518] Recovering log #377 mode 2
+2022/05/06-16:31:00.518403 9dc EVENT_LOG_v1 {"time_micros": 1651825860518380, "cf_name": "default", "job": 1, "event": "table_file_creation", "file_number": 382, "file_size": 3674, "table_properties": {"data_size": 2739, "index_size": 28, "filter_size": 0, "raw_key_size": 77, "raw_average_key_size": 19, "raw_value_size": 2642, "raw_average_value_size": 660, "num_data_blocks": 1, "num_entries": 4, "filter_policy_name": "", "kDeletedKeys": "0", "kMergeOperands": "0"}}
+2022/05/06-16:31:00.518472 9dc [c:\users\aretter\code\rocksdb\db\version_set.cc:2608] Creating manifest 383
+2022/05/06-16:31:00.562023 9dc EVENT_LOG_v1 {"time_micros": 1651825860562013, "job": 1, "event": "recovery_finished"}
+2022/05/06-16:31:00.585724 9dc [c:\users\aretter\code\rocksdb\db\db_impl_open.cc:1150] DB pointer 000001D8253C7480

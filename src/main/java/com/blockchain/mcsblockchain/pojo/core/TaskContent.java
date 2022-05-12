@@ -7,9 +7,27 @@ public class TaskContent implements Serializable {
 
     private String requirements;        //任务要求
     private BigDecimal bonus;           //任务奖金
+    private String deadline;
+
+    public String getDeadline() {
+        return deadline;
+    }
+
+    public void setDeadline(String deadline) {
+        this.deadline = deadline;
+    }
 
     public String getRequirements() {
         return requirements;
+    }
+
+    public TaskContent() {
+    }
+
+    public TaskContent(String requirements, BigDecimal bonus, String deadline) {
+        this.requirements = requirements;
+        this.bonus = bonus;
+        this.deadline = deadline;
     }
 
     public void setRequirements(String requirements) {
@@ -38,5 +56,14 @@ public class TaskContent implements Serializable {
         ObjectInputStream objIn = new ObjectInputStream(byteIn);
         TaskContent res =(TaskContent) objIn.readObject();
         return res;
+    }
+
+    @Override
+    public String toString() {
+        return "TaskContent{" +
+                "requirements='" + requirements + '\'' +
+                ", bonus=" + bonus.toString() +
+                ", deadline='" + deadline + '\'' +
+                '}';
     }
 }

@@ -1,11 +1,13 @@
 package com.blockchain.mcsblockchain.pojo.crypto;
 
 import com.blockchain.mcsblockchain.Utils.Cryptography;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import it.unisa.dia.gas.jpbc.Element;
 
 import java.io.*;
 import java.security.NoSuchAlgorithmException;
 //签名类
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Signature implements Serializable {
     private static final long serialVersionUID = /*6296489857804803990L;*/1L;
     public transient Element value;
@@ -14,9 +16,6 @@ public class Signature implements Serializable {
         this.value = Cryptography.G1.newElement();
     }
 
-    public void setValue(PKType pk, SKType sk, String msg) throws NoSuchAlgorithmException {
-        this.value.set(Cryptography.SignAlgorithm(msg, sk).value);
-    }
     private void writeObject(ObjectOutputStream out) throws IOException
     {
         out.defaultWriteObject();

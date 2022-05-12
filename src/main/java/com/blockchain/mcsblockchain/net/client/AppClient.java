@@ -88,6 +88,22 @@ public class AppClient {
     }
 
     //添加节点
+    public void addNode(String ip,int port,String createTime,String notes) throws Exception {
+        if (appConfig.NodeDiscover()) {
+            return;
+        }
+        Node node = new Node(ip, port,createTime,notes);
+        // determine if the node is already exists
+        Optional<List<Node>> nodeList = dbAccess.getNodeList();
+        if (nodeList.isPresent() && nodeList.get().contains(node)) {
+            return;
+        }
+
+        if (dbAccess.addNode(node)) {
+            connectNode(node);
+        }
+    }
+    //重载
     public void addNode(String ip,int port) throws Exception {
         if (appConfig.NodeDiscover()) {
             return;
@@ -103,6 +119,7 @@ public class AppClient {
             connectNode(node);
         }
     }
+
     public void connectNode(Node node) throws Exception {
         ClientChannelContext channelContext = aioClient.connect(node);
         Aio.send(channelContext, new MessagePacket(SerializeUtils.serialize(MessagePacket.HELLO_MESSAGE)));

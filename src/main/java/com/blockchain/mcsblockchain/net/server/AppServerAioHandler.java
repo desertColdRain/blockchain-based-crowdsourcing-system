@@ -128,7 +128,7 @@ public class AppServerAioHandler extends BaseAioHandler implements ServerAioHand
                 ", amount=" + tx.getAmount() +
                 ", blockNum=" + tx.getBlockNum()+
                 '}';
-        if (Cryptography.SignatureVerify(msg, tx.getSenderPk(), tx.getSenderSign())) {
+        if (Cryptography.SignatureVerify(tx.toString(), tx.getSenderPk(), tx.getSenderSign())) {
             responseVo.setSuccess(true);
             //将交易放入交易池
             transactionPool.addTransaction(tx);

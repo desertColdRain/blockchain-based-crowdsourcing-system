@@ -1,0 +1,83 @@
+2022/04/24-19:31:23.404037 eb8 RocksDB version: 5.9.2
+2022/04/24-19:31:23.404086 eb8 Git sha rocksdb_build_git_sha:@004237e62790320d8e630456cbeb6f4a1f3579c2@
+2022/04/24-19:31:23.404100 eb8 Compile date Jan  3 2018
+2022/04/24-19:31:23.404110 eb8 DB SUMMARY
+2022/04/24-19:31:23.404343 eb8 CURRENT file:  CURRENT
+2022/04/24-19:31:23.404356 eb8 IDENTITY file:  IDENTITY
+2022/04/24-19:31:23.404376 eb8 MANIFEST file:  MANIFEST-000100 size: 275 Bytes
+2022/04/24-19:31:23.404388 eb8 SST files in block-data/node1 dir, Total Num: 4, files: 000010.sst 000091.sst 000093.sst 000096.sst 
+2022/04/24-19:31:23.404397 eb8 Write Ahead Log file in block-data/node1: 000101.log size: 0 ; 
+2022/04/24-19:31:23.404408 eb8                         Options.error_if_exists: 0
+2022/04/24-19:31:23.404652 eb8                       Options.create_if_missing: 1
+2022/04/24-19:31:23.404659 eb8                         Options.paranoid_checks: 1
+2022/04/24-19:31:23.404663 eb8                                     Options.env: 00000221D0140990
+2022/04/24-19:31:23.404667 eb8                                Options.info_log: 00000221D14FA280
+2022/04/24-19:31:23.404671 eb8                Options.max_file_opening_threads: 16
+2022/04/24-19:31:23.404674 eb8                              Options.statistics: 0000000000000000
+2022/04/24-19:31:23.404678 eb8                               Options.use_fsync: 0
+2022/04/24-19:31:23.404681 eb8                       Options.max_log_file_size: 0
+2022/04/24-19:31:23.404684 eb8                  Options.max_manifest_file_size: 18446744073709551615
+2022/04/24-19:31:23.404688 eb8                   Options.log_file_time_to_roll: 0
+2022/04/24-19:31:23.404691 eb8                       Options.keep_log_file_num: 1000
+2022/04/24-19:31:23.404695 eb8                    Options.recycle_log_file_num: 0
+2022/04/24-19:31:23.404698 eb8                         Options.allow_fallocate: 1
+2022/04/24-19:31:23.404702 eb8                        Options.allow_mmap_reads: 0
+2022/04/24-19:31:23.404705 eb8                       Options.allow_mmap_writes: 0
+2022/04/24-19:31:23.404708 eb8                        Options.use_direct_reads: 0
+2022/04/24-19:31:23.404711 eb8                        Options.use_direct_io_for_flush_and_compaction: 0
+2022/04/24-19:31:23.404715 eb8          Options.create_missing_column_families: 0
+2022/04/24-19:31:23.404718 eb8                              Options.db_log_dir: 
+2022/04/24-19:31:23.404722 eb8                                 Options.wal_dir: block-data/node1
+2022/04/24-19:31:23.404725 eb8                Options.table_cache_numshardbits: 6
+2022/04/24-19:31:23.404728 eb8                      Options.max_subcompactions: 1
+2022/04/24-19:31:23.404732 eb8                  Options.max_background_flushes: -1
+2022/04/24-19:31:23.404735 eb8                         Options.WAL_ttl_seconds: 0
+2022/04/24-19:31:23.404738 eb8                       Options.WAL_size_limit_MB: 0
+2022/04/24-19:31:23.404742 eb8             Options.manifest_preallocation_size: 4194304
+2022/04/24-19:31:23.404745 eb8                     Options.is_fd_close_on_exec: 1
+2022/04/24-19:31:23.404749 eb8                   Options.advise_random_on_open: 1
+2022/04/24-19:31:23.404752 eb8                    Options.db_write_buffer_size: 0
+2022/04/24-19:31:23.404755 eb8                    Options.write_buffer_manager: 00000221D14D3750
+2022/04/24-19:31:23.404759 eb8         Options.access_hint_on_compaction_start: 1
+2022/04/24-19:31:23.404762 eb8  Options.new_table_reader_for_compaction_inputs: 0
+2022/04/24-19:31:23.404766 eb8               Options.compaction_readahead_size: 0
+2022/04/24-19:31:23.404769 eb8           Options.random_access_max_buffer_size: 1048576
+2022/04/24-19:31:23.404772 eb8                      Options.use_adaptive_mutex: 0
+2022/04/24-19:31:23.404776 eb8                            Options.rate_limiter: 0000000000000000
+2022/04/24-19:31:23.404779 eb8     Options.sst_file_manager.rate_bytes_per_sec: 0
+2022/04/24-19:31:23.404783 eb8                       Options.wal_recovery_mode: 2
+2022/04/24-19:31:23.404786 eb8                  Options.enable_thread_tracking: 0
+2022/04/24-19:31:23.404811 eb8                  Options.enable_pipelined_write: 0
+2022/04/24-19:31:23.404817 eb8         Options.allow_concurrent_memtable_write: 1
+2022/04/24-19:31:23.404821 eb8      Options.enable_write_thread_adaptive_yield: 1
+2022/04/24-19:31:23.404824 eb8             Options.write_thread_max_yield_usec: 100
+2022/04/24-19:31:23.404827 eb8            Options.write_thread_slow_yield_usec: 3
+2022/04/24-19:31:23.404831 eb8                               Options.row_cache: None
+2022/04/24-19:31:23.404834 eb8                              Options.wal_filter: None
+2022/04/24-19:31:23.404837 eb8             Options.avoid_flush_during_recovery: 0
+2022/04/24-19:31:23.404841 eb8             Options.allow_ingest_behind: 0
+2022/04/24-19:31:23.404844 eb8             Options.preserve_deletes: 0
+2022/04/24-19:31:23.404847 eb8             Options.concurrent_prepare: 0
+2022/04/24-19:31:23.404850 eb8             Options.manual_wal_flush: 0
+2022/04/24-19:31:23.404854 eb8             Options.seq_per_batch: 0
+2022/04/24-19:31:23.404857 eb8             Options.max_background_jobs: 2
+2022/04/24-19:31:23.404860 eb8             Options.max_background_compactions: -1
+2022/04/24-19:31:23.404864 eb8             Options.avoid_flush_during_shutdown: 0
+2022/04/24-19:31:23.404867 eb8           Options.writable_file_max_buffer_size: 1048576
+2022/04/24-19:31:23.404870 eb8             Options.delayed_write_rate : 16777216
+2022/04/24-19:31:23.404874 eb8             Options.max_total_wal_size: 0
+2022/04/24-19:31:23.404877 eb8             Options.delete_obsolete_files_period_micros: 21600000000
+2022/04/24-19:31:23.404880 eb8                   Options.stats_dump_period_sec: 600
+2022/04/24-19:31:23.404884 eb8                          Options.max_open_files: -1
+2022/04/24-19:31:23.404887 eb8                          Options.bytes_per_sync: 0
+2022/04/24-19:31:23.404891 eb8                      Options.wal_bytes_per_sync: 0
+2022/04/24-19:31:23.404894 eb8 Compression algorithms supported:
+2022/04/24-19:31:23.404897 eb8 	Snappy supported: 0
+2022/04/24-19:31:23.404900 eb8 	Zlib supported: 0
+2022/04/24-19:31:23.404904 eb8 	Bzip supported: 0
+2022/04/24-19:31:23.404907 eb8 	LZ4 supported: 0
+2022/04/24-19:31:23.404910 eb8 	ZSTDNotFinal supported: 0
+2022/04/24-19:31:23.404913 eb8 	ZSTD supported: 0
+2022/04/24-19:31:23.404919 eb8 Fast CRC32 supported: Supported on x86Not supported on x86
+2022/04/24-19:31:23.405030 eb8 [c:\users\aretter\code\rocksdb\db\db_impl.cc:234] Shutdown: canceling all background work
+2022/04/24-19:31:23.405050 eb8 [c:\users\aretter\code\rocksdb\db\db_impl.cc:364] Shutdown complete

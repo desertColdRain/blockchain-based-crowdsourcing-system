@@ -14,7 +14,9 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpServletRequest;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -54,20 +56,21 @@ public class BlockController {
 	 */
 	@ApiOperation(value="浏览头区块信息", notes="获取最新的区块信息")
 	@PostMapping("/block/head")
-	public JsonVo blockHead(HttpServletRequest request)
+	//JsonVo
+	public String blockHead(HttpServletRequest request)
 	{
 		Optional<Block> block = dbAccess.getLastBlock();
 		JsonVo success = JsonVo.success();
 		if (block.isPresent()) {
 			success.setItem(block.get());
 		}
-		return success;
+		return block.get().toString();
 
 	}
 
 	@ApiOperation(value="查询整个区块链",notes = "获取区块链上的所有信息")
 	@PostMapping("block/blockchain")
-	public JsonVo blockchain(HttpServletRequest request){
+	public String blockchain(HttpServletRequest request){
 		JsonVo success = JsonVo.success();
 		List<Block> blocks = new ArrayList<>();
 		Optional<Object> lastBlockIndex = dbAccess.getLastBlockIndex();
@@ -80,14 +83,17 @@ public class BlockController {
 				}
 				index--;
 			}
-		success.setItem(blocks);
+			success.setItem(blocks);
+
+			return blocks.toString();
 		}
 
 		else{
 			success.setCode(JsonVo.CODE_FAIL);
 			success.setMessage("There is no block in the blockchain");
+			return null;
 		}
-		return success;
+		//return success;
 	}
 
 	/**
@@ -104,7 +110,11 @@ public class BlockController {
 		System.out.println("您输入的IP地址为： "+node.getIp());
 		Preconditions.checkNotNull(node.getIp(), "server ip is needed.");
 		Preconditions.checkNotNull(node.getPort(), "server port is need.");
-		blockChain.addNode(node.getIp(), node.getPort());
+		SimpleDateFormat sdf = new SimpleDateFormat();// 格式化时间
+		sdf.applyPattern("yyyy年MM月dd HH:mm:ss");// a为am/pm的标记
+		Date date = new Date();// 获取当前时间
+		System.out.println("现在时间：" + sdf.format(date));
+		blockChain.addNode(node.getIp(), node.getPort(),sdf.format(date),"");
 		return JsonVo.success();
 	}
 

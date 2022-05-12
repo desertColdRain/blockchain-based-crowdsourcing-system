@@ -1,0 +1,83 @@
+2022/05/08-15:02:45.378165 b24 RocksDB version: 5.9.2
+2022/05/08-15:02:45.378224 b24 Git sha rocksdb_build_git_sha:@004237e62790320d8e630456cbeb6f4a1f3579c2@
+2022/05/08-15:02:45.378240 b24 Compile date Jan  3 2018
+2022/05/08-15:02:45.378250 b24 DB SUMMARY
+2022/05/08-15:02:45.379080 b24 CURRENT file:  CURRENT
+2022/05/08-15:02:45.379100 b24 IDENTITY file:  IDENTITY
+2022/05/08-15:02:45.379136 b24 MANIFEST file:  MANIFEST-000516 size: 157 Bytes
+2022/05/08-15:02:45.379147 b24 SST files in block-data/node1 dir, Total Num: 2, files: 000504.sst 000506.sst 
+2022/05/08-15:02:45.379157 b24 Write Ahead Log file in block-data/node1: 000517.log size: 0 ; 
+2022/05/08-15:02:45.379172 b24                         Options.error_if_exists: 0
+2022/05/08-15:02:45.379181 b24                       Options.create_if_missing: 1
+2022/05/08-15:02:45.379365 b24                         Options.paranoid_checks: 1
+2022/05/08-15:02:45.379373 b24                                     Options.env: 000001504E860130
+2022/05/08-15:02:45.379377 b24                                Options.info_log: 000001504CD80D00
+2022/05/08-15:02:45.379380 b24                Options.max_file_opening_threads: 16
+2022/05/08-15:02:45.379384 b24                              Options.statistics: 0000000000000000
+2022/05/08-15:02:45.379387 b24                               Options.use_fsync: 0
+2022/05/08-15:02:45.379391 b24                       Options.max_log_file_size: 0
+2022/05/08-15:02:45.379394 b24                  Options.max_manifest_file_size: 18446744073709551615
+2022/05/08-15:02:45.379398 b24                   Options.log_file_time_to_roll: 0
+2022/05/08-15:02:45.379401 b24                       Options.keep_log_file_num: 1000
+2022/05/08-15:02:45.379405 b24                    Options.recycle_log_file_num: 0
+2022/05/08-15:02:45.379408 b24                         Options.allow_fallocate: 1
+2022/05/08-15:02:45.379411 b24                        Options.allow_mmap_reads: 0
+2022/05/08-15:02:45.379415 b24                       Options.allow_mmap_writes: 0
+2022/05/08-15:02:45.379418 b24                        Options.use_direct_reads: 0
+2022/05/08-15:02:45.379426 b24                        Options.use_direct_io_for_flush_and_compaction: 0
+2022/05/08-15:02:45.379429 b24          Options.create_missing_column_families: 0
+2022/05/08-15:02:45.379432 b24                              Options.db_log_dir: 
+2022/05/08-15:02:45.379436 b24                                 Options.wal_dir: block-data/node1
+2022/05/08-15:02:45.379439 b24                Options.table_cache_numshardbits: 6
+2022/05/08-15:02:45.379443 b24                      Options.max_subcompactions: 1
+2022/05/08-15:02:45.379446 b24                  Options.max_background_flushes: -1
+2022/05/08-15:02:45.379450 b24                         Options.WAL_ttl_seconds: 0
+2022/05/08-15:02:45.379453 b24                       Options.WAL_size_limit_MB: 0
+2022/05/08-15:02:45.379457 b24             Options.manifest_preallocation_size: 4194304
+2022/05/08-15:02:45.379460 b24                     Options.is_fd_close_on_exec: 1
+2022/05/08-15:02:45.379463 b24                   Options.advise_random_on_open: 1
+2022/05/08-15:02:45.379467 b24                    Options.db_write_buffer_size: 0
+2022/05/08-15:02:45.379470 b24                    Options.write_buffer_manager: 0000015050321530
+2022/05/08-15:02:45.379474 b24         Options.access_hint_on_compaction_start: 1
+2022/05/08-15:02:45.379477 b24  Options.new_table_reader_for_compaction_inputs: 0
+2022/05/08-15:02:45.379480 b24               Options.compaction_readahead_size: 0
+2022/05/08-15:02:45.379484 b24           Options.random_access_max_buffer_size: 1048576
+2022/05/08-15:02:45.379487 b24                      Options.use_adaptive_mutex: 0
+2022/05/08-15:02:45.379491 b24                            Options.rate_limiter: 0000000000000000
+2022/05/08-15:02:45.379494 b24     Options.sst_file_manager.rate_bytes_per_sec: 0
+2022/05/08-15:02:45.379498 b24                       Options.wal_recovery_mode: 2
+2022/05/08-15:02:45.379501 b24                  Options.enable_thread_tracking: 0
+2022/05/08-15:02:45.379504 b24                  Options.enable_pipelined_write: 0
+2022/05/08-15:02:45.379537 b24         Options.allow_concurrent_memtable_write: 1
+2022/05/08-15:02:45.379542 b24      Options.enable_write_thread_adaptive_yield: 1
+2022/05/08-15:02:45.379546 b24             Options.write_thread_max_yield_usec: 100
+2022/05/08-15:02:45.379549 b24            Options.write_thread_slow_yield_usec: 3
+2022/05/08-15:02:45.379553 b24                               Options.row_cache: None
+2022/05/08-15:02:45.379556 b24                              Options.wal_filter: None
+2022/05/08-15:02:45.379560 b24             Options.avoid_flush_during_recovery: 0
+2022/05/08-15:02:45.379563 b24             Options.allow_ingest_behind: 0
+2022/05/08-15:02:45.379566 b24             Options.preserve_deletes: 0
+2022/05/08-15:02:45.379570 b24             Options.concurrent_prepare: 0
+2022/05/08-15:02:45.379573 b24             Options.manual_wal_flush: 0
+2022/05/08-15:02:45.379576 b24             Options.seq_per_batch: 0
+2022/05/08-15:02:45.379580 b24             Options.max_background_jobs: 2
+2022/05/08-15:02:45.379583 b24             Options.max_background_compactions: -1
+2022/05/08-15:02:45.379587 b24             Options.avoid_flush_during_shutdown: 0
+2022/05/08-15:02:45.379590 b24           Options.writable_file_max_buffer_size: 1048576
+2022/05/08-15:02:45.379593 b24             Options.delayed_write_rate : 16777216
+2022/05/08-15:02:45.379597 b24             Options.max_total_wal_size: 0
+2022/05/08-15:02:45.379600 b24             Options.delete_obsolete_files_period_micros: 21600000000
+2022/05/08-15:02:45.379604 b24                   Options.stats_dump_period_sec: 600
+2022/05/08-15:02:45.379607 b24                          Options.max_open_files: -1
+2022/05/08-15:02:45.379611 b24                          Options.bytes_per_sync: 0
+2022/05/08-15:02:45.379614 b24                      Options.wal_bytes_per_sync: 0
+2022/05/08-15:02:45.379617 b24 Compression algorithms supported:
+2022/05/08-15:02:45.379621 b24 	Snappy supported: 0
+2022/05/08-15:02:45.379624 b24 	Zlib supported: 0
+2022/05/08-15:02:45.379627 b24 	Bzip supported: 0
+2022/05/08-15:02:45.379631 b24 	LZ4 supported: 0
+2022/05/08-15:02:45.379634 b24 	ZSTDNotFinal supported: 0
+2022/05/08-15:02:45.379637 b24 	ZSTD supported: 0
+2022/05/08-15:02:45.379644 b24 Fast CRC32 supported: Supported on x86Not supported on x86
+2022/05/08-15:02:45.379762 b24 [c:\users\aretter\code\rocksdb\db\db_impl.cc:234] Shutdown: canceling all background work
+2022/05/08-15:02:45.379789 b24 [c:\users\aretter\code\rocksdb\db\db_impl.cc:364] Shutdown complete

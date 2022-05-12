@@ -1,0 +1,183 @@
+2022/05/06-16:23:14.092676 3d98 RocksDB version: 5.9.2
+2022/05/06-16:23:14.092716 3d98 Git sha rocksdb_build_git_sha:@004237e62790320d8e630456cbeb6f4a1f3579c2@
+2022/05/06-16:23:14.092730 3d98 Compile date Jan  3 2018
+2022/05/06-16:23:14.092744 3d98 DB SUMMARY
+2022/05/06-16:23:14.093394 3d98 CURRENT file:  CURRENT
+2022/05/06-16:23:14.093407 3d98 IDENTITY file:  IDENTITY
+2022/05/06-16:23:14.093437 3d98 MANIFEST file:  MANIFEST-000370 size: 200 Bytes
+2022/05/06-16:23:14.093455 3d98 SST files in block-data/node1 dir, Total Num: 3, files: 000364.sst 000366.sst 000369.sst 
+2022/05/06-16:23:14.093466 3d98 Write Ahead Log file in block-data/node1: 000371.log size: 9715 ; 
+2022/05/06-16:23:14.093479 3d98                         Options.error_if_exists: 0
+2022/05/06-16:23:14.093691 3d98                       Options.create_if_missing: 1
+2022/05/06-16:23:14.093700 3d98                         Options.paranoid_checks: 1
+2022/05/06-16:23:14.093704 3d98                                     Options.env: 00000265739FADE0
+2022/05/06-16:23:14.093708 3d98                                Options.info_log: 0000026574C3BA50
+2022/05/06-16:23:14.093712 3d98                Options.max_file_opening_threads: 16
+2022/05/06-16:23:14.093715 3d98                              Options.statistics: 0000000000000000
+2022/05/06-16:23:14.093719 3d98                               Options.use_fsync: 0
+2022/05/06-16:23:14.093722 3d98                       Options.max_log_file_size: 0
+2022/05/06-16:23:14.093726 3d98                  Options.max_manifest_file_size: 18446744073709551615
+2022/05/06-16:23:14.093729 3d98                   Options.log_file_time_to_roll: 0
+2022/05/06-16:23:14.093733 3d98                       Options.keep_log_file_num: 1000
+2022/05/06-16:23:14.093736 3d98                    Options.recycle_log_file_num: 0
+2022/05/06-16:23:14.093740 3d98                         Options.allow_fallocate: 1
+2022/05/06-16:23:14.093743 3d98                        Options.allow_mmap_reads: 0
+2022/05/06-16:23:14.093746 3d98                       Options.allow_mmap_writes: 0
+2022/05/06-16:23:14.093750 3d98                        Options.use_direct_reads: 0
+2022/05/06-16:23:14.093759 3d98                        Options.use_direct_io_for_flush_and_compaction: 0
+2022/05/06-16:23:14.093763 3d98          Options.create_missing_column_families: 0
+2022/05/06-16:23:14.093766 3d98                              Options.db_log_dir: 
+2022/05/06-16:23:14.093770 3d98                                 Options.wal_dir: block-data/node1
+2022/05/06-16:23:14.093773 3d98                Options.table_cache_numshardbits: 6
+2022/05/06-16:23:14.093777 3d98                      Options.max_subcompactions: 1
+2022/05/06-16:23:14.093780 3d98                  Options.max_background_flushes: -1
+2022/05/06-16:23:14.093783 3d98                         Options.WAL_ttl_seconds: 0
+2022/05/06-16:23:14.093787 3d98                       Options.WAL_size_limit_MB: 0
+2022/05/06-16:23:14.093790 3d98             Options.manifest_preallocation_size: 4194304
+2022/05/06-16:23:14.093794 3d98                     Options.is_fd_close_on_exec: 1
+2022/05/06-16:23:14.093798 3d98                   Options.advise_random_on_open: 1
+2022/05/06-16:23:14.093802 3d98                    Options.db_write_buffer_size: 0
+2022/05/06-16:23:14.093805 3d98                    Options.write_buffer_manager: 0000026574C73420
+2022/05/06-16:23:14.093809 3d98         Options.access_hint_on_compaction_start: 1
+2022/05/06-16:23:14.093812 3d98  Options.new_table_reader_for_compaction_inputs: 0
+2022/05/06-16:23:14.093816 3d98               Options.compaction_readahead_size: 0
+2022/05/06-16:23:14.093819 3d98           Options.random_access_max_buffer_size: 1048576
+2022/05/06-16:23:14.093822 3d98                      Options.use_adaptive_mutex: 0
+2022/05/06-16:23:14.093826 3d98                            Options.rate_limiter: 0000000000000000
+2022/05/06-16:23:14.093829 3d98     Options.sst_file_manager.rate_bytes_per_sec: 0
+2022/05/06-16:23:14.093837 3d98                       Options.wal_recovery_mode: 2
+2022/05/06-16:23:14.093841 3d98                  Options.enable_thread_tracking: 0
+2022/05/06-16:23:14.093868 3d98                  Options.enable_pipelined_write: 0
+2022/05/06-16:23:14.093874 3d98         Options.allow_concurrent_memtable_write: 1
+2022/05/06-16:23:14.093878 3d98      Options.enable_write_thread_adaptive_yield: 1
+2022/05/06-16:23:14.093881 3d98             Options.write_thread_max_yield_usec: 100
+2022/05/06-16:23:14.093884 3d98            Options.write_thread_slow_yield_usec: 3
+2022/05/06-16:23:14.093888 3d98                               Options.row_cache: None
+2022/05/06-16:23:14.093891 3d98                              Options.wal_filter: None
+2022/05/06-16:23:14.093895 3d98             Options.avoid_flush_during_recovery: 0
+2022/05/06-16:23:14.093898 3d98             Options.allow_ingest_behind: 0
+2022/05/06-16:23:14.093902 3d98             Options.preserve_deletes: 0
+2022/05/06-16:23:14.093906 3d98             Options.concurrent_prepare: 0
+2022/05/06-16:23:14.093910 3d98             Options.manual_wal_flush: 0
+2022/05/06-16:23:14.093913 3d98             Options.seq_per_batch: 0
+2022/05/06-16:23:14.093924 3d98             Options.max_background_jobs: 2
+2022/05/06-16:23:14.093928 3d98             Options.max_background_compactions: -1
+2022/05/06-16:23:14.093931 3d98             Options.avoid_flush_during_shutdown: 0
+2022/05/06-16:23:14.093935 3d98           Options.writable_file_max_buffer_size: 1048576
+2022/05/06-16:23:14.093938 3d98             Options.delayed_write_rate : 16777216
+2022/05/06-16:23:14.093942 3d98             Options.max_total_wal_size: 0
+2022/05/06-16:23:14.093945 3d98             Options.delete_obsolete_files_period_micros: 21600000000
+2022/05/06-16:23:14.093954 3d98                   Options.stats_dump_period_sec: 600
+2022/05/06-16:23:14.093958 3d98                          Options.max_open_files: -1
+2022/05/06-16:23:14.093961 3d98                          Options.bytes_per_sync: 0
+2022/05/06-16:23:14.093965 3d98                      Options.wal_bytes_per_sync: 0
+2022/05/06-16:23:14.093968 3d98 Compression algorithms supported:
+2022/05/06-16:23:14.093977 3d98 	Snappy supported: 0
+2022/05/06-16:23:14.093980 3d98 	Zlib supported: 0
+2022/05/06-16:23:14.093983 3d98 	Bzip supported: 0
+2022/05/06-16:23:14.093987 3d98 	LZ4 supported: 0
+2022/05/06-16:23:14.093990 3d98 	ZSTDNotFinal supported: 0
+2022/05/06-16:23:14.093993 3d98 	ZSTD supported: 0
+2022/05/06-16:23:14.094000 3d98 Fast CRC32 supported: Supported on x86Not supported on x86
+2022/05/06-16:23:14.094215 3d98 [c:\users\aretter\code\rocksdb\db\version_set.cc:2835] Recovering from manifest file: MANIFEST-000370
+2022/05/06-16:23:14.094318 3d98 [c:\users\aretter\code\rocksdb\db\column_family.cc:413] --------------- Options for column family [default]:
+2022/05/06-16:23:14.094329 3d98               Options.comparator: leveldb.BytewiseComparator
+2022/05/06-16:23:14.094333 3d98           Options.merge_operator: None
+2022/05/06-16:23:14.094336 3d98        Options.compaction_filter: None
+2022/05/06-16:23:14.094344 3d98        Options.compaction_filter_factory: None
+2022/05/06-16:23:14.094347 3d98         Options.memtable_factory: SkipListFactory
+2022/05/06-16:23:14.094351 3d98            Options.table_factory: BlockBasedTable
+2022/05/06-16:23:14.094386 3d98            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (0000026573794DA0)
+  cache_index_and_filter_blocks: 0
+  cache_index_and_filter_blocks_with_high_priority: 0
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  index_type: 0
+  hash_index_allow_collision: 1
+  checksum: 1
+  no_block_cache: 0
+  block_cache: 0000026573FE46D0
+  block_cache_name: LRUCache
+  block_cache_options:
+    capacity : 8388608
+    num_shard_bits : 4
+    strict_capacity_limit : 0
+    high_pri_pool_ratio: 0.000
+  block_cache_compressed: 0000000000000000
+  persistent_cache: 0000000000000000
+  block_size: 4096
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  metadata_block_size: 4096
+  partition_filters: 0
+  use_delta_encoding: 1
+  filter_policy: nullptr
+  whole_key_filtering: 1
+  verify_compression: 0
+  read_amp_bytes_per_bit: 0
+  format_version: 2
+2022/05/06-16:23:14.094416 3d98        Options.write_buffer_size: 67108864
+2022/05/06-16:23:14.094421 3d98  Options.max_write_buffer_number: 2
+2022/05/06-16:23:14.094425 3d98          Options.compression: NoCompression
+2022/05/06-16:23:14.094429 3d98                  Options.bottommost_compression: Disabled
+2022/05/06-16:23:14.094432 3d98       Options.prefix_extractor: nullptr
+2022/05/06-16:23:14.094435 3d98   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+2022/05/06-16:23:14.094439 3d98             Options.num_levels: 7
+2022/05/06-16:23:14.094442 3d98        Options.min_write_buffer_number_to_merge: 1
+2022/05/06-16:23:14.094446 3d98     Options.max_write_buffer_number_to_maintain: 0
+2022/05/06-16:23:14.094455 3d98            Options.compression_opts.window_bits: -14
+2022/05/06-16:23:14.094459 3d98                  Options.compression_opts.level: -1
+2022/05/06-16:23:14.094462 3d98               Options.compression_opts.strategy: 0
+2022/05/06-16:23:14.094466 3d98         Options.compression_opts.max_dict_bytes: 0
+2022/05/06-16:23:14.094469 3d98      Options.level0_file_num_compaction_trigger: 4
+2022/05/06-16:23:14.094472 3d98          Options.level0_slowdown_writes_trigger: 20
+2022/05/06-16:23:14.094476 3d98              Options.level0_stop_writes_trigger: 36
+2022/05/06-16:23:14.094479 3d98                   Options.target_file_size_base: 67108864
+2022/05/06-16:23:14.094482 3d98             Options.target_file_size_multiplier: 1
+2022/05/06-16:23:14.094486 3d98                Options.max_bytes_for_level_base: 268435456
+2022/05/06-16:23:14.094489 3d98 Options.level_compaction_dynamic_level_bytes: 0
+2022/05/06-16:23:14.094493 3d98          Options.max_bytes_for_level_multiplier: 10.000000
+2022/05/06-16:23:14.094498 3d98 Options.max_bytes_for_level_multiplier_addtl[0]: 1
+2022/05/06-16:23:14.094502 3d98 Options.max_bytes_for_level_multiplier_addtl[1]: 1
+2022/05/06-16:23:14.094505 3d98 Options.max_bytes_for_level_multiplier_addtl[2]: 1
+2022/05/06-16:23:14.094509 3d98 Options.max_bytes_for_level_multiplier_addtl[3]: 1
+2022/05/06-16:23:14.094512 3d98 Options.max_bytes_for_level_multiplier_addtl[4]: 1
+2022/05/06-16:23:14.094515 3d98 Options.max_bytes_for_level_multiplier_addtl[5]: 1
+2022/05/06-16:23:14.094519 3d98 Options.max_bytes_for_level_multiplier_addtl[6]: 1
+2022/05/06-16:23:14.094522 3d98       Options.max_sequential_skip_in_iterations: 8
+2022/05/06-16:23:14.094526 3d98                    Options.max_compaction_bytes: 1677721600
+2022/05/06-16:23:14.094529 3d98                        Options.arena_block_size: 8388608
+2022/05/06-16:23:14.094533 3d98   Options.soft_pending_compaction_bytes_limit: 68719476736
+2022/05/06-16:23:14.094536 3d98   Options.hard_pending_compaction_bytes_limit: 274877906944
+2022/05/06-16:23:14.094544 3d98       Options.rate_limit_delay_max_milliseconds: 100
+2022/05/06-16:23:14.094548 3d98                Options.disable_auto_compactions: 0
+2022/05/06-16:23:14.094552 3d98                        Options.compaction_style: kCompactionStyleLevel
+2022/05/06-16:23:14.094556 3d98                          Options.compaction_pri: kByCompensatedSize
+2022/05/06-16:23:14.094560 3d98 Options.compaction_options_universal.size_ratio: 1
+2022/05/06-16:23:14.094563 3d98 Options.compaction_options_universal.min_merge_width: 2
+2022/05/06-16:23:14.094567 3d98 Options.compaction_options_universal.max_merge_width: 4294967295
+2022/05/06-16:23:14.094570 3d98 Options.compaction_options_universal.max_size_amplification_percent: 200
+2022/05/06-16:23:14.094574 3d98 Options.compaction_options_universal.compression_size_percent: -1
+2022/05/06-16:23:14.094577 3d98 Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+2022/05/06-16:23:14.094581 3d98 Options.compaction_options_fifo.max_table_files_size: 1073741824
+2022/05/06-16:23:14.094585 3d98 Options.compaction_options_fifo.allow_compaction: 0
+2022/05/06-16:23:14.094588 3d98 Options.compaction_options_fifo.ttl: 0
+2022/05/06-16:23:14.094591 3d98                   Options.table_properties_collectors: 
+2022/05/06-16:23:14.094621 3d98                   Options.inplace_update_support: 0
+2022/05/06-16:23:14.094626 3d98                 Options.inplace_update_num_locks: 10000
+2022/05/06-16:23:14.094630 3d98               Options.memtable_prefix_bloom_size_ratio: 0.000000
+2022/05/06-16:23:14.094634 3d98   Options.memtable_huge_page_size: 0
+2022/05/06-16:23:14.094637 3d98                           Options.bloom_locality: 0
+2022/05/06-16:23:14.094641 3d98                    Options.max_successive_merges: 0
+2022/05/06-16:23:14.094644 3d98                Options.optimize_filters_for_hits: 0
+2022/05/06-16:23:14.094648 3d98                Options.paranoid_file_checks: 0
+2022/05/06-16:23:14.094651 3d98                Options.force_consistency_checks: 0
+2022/05/06-16:23:14.094659 3d98                Options.report_bg_io_stats: 0
+2022/05/06-16:23:14.095750 3d98 [c:\users\aretter\code\rocksdb\db\version_set.cc:3100] Recovered from manifest file:block-data/node1/MANIFEST-000370 succeeded,manifest_file_number is 370, next_file_number is 372, last_sequence is 400, log_number is 0,prev_log_number is 0,max_column_family is 0
+2022/05/06-16:23:14.095761 3d98 [c:\users\aretter\code\rocksdb\db\version_set.cc:3108] Column family [default] (ID 0), log number is 369
+2022/05/06-16:23:14.096507 3d98 EVENT_LOG_v1 {"time_micros": 1651825394096466, "job": 1, "event": "recovery_started", "log_files": [371]}
+2022/05/06-16:23:14.096520 3d98 [c:\users\aretter\code\rocksdb\db\db_impl_open.cc:518] Recovering log #371 mode 2
+2022/05/06-16:23:14.168452 3d98 EVENT_LOG_v1 {"time_micros": 1651825394168428, "cf_name": "default", "job": 1, "event": "table_file_creation", "file_number": 372, "file_size": 3672, "table_properties": {"data_size": 2737, "index_size": 28, "filter_size": 0, "raw_key_size": 77, "raw_average_key_size": 19, "raw_value_size": 2640, "raw_average_value_size": 660, "num_data_blocks": 1, "num_entries": 4, "filter_policy_name": "", "kDeletedKeys": "0", "kMergeOperands": "0"}}
+2022/05/06-16:23:14.168519 3d98 [c:\users\aretter\code\rocksdb\db\version_set.cc:2608] Creating manifest 373
+2022/05/06-16:23:14.212203 3d98 EVENT_LOG_v1 {"time_micros": 1651825394212194, "job": 1, "event": "recovery_finished"}
+2022/05/06-16:23:14.228536 3d98 [c:\users\aretter\code\rocksdb\db\db_impl_open.cc:1150] DB pointer 000002657426D4F0

@@ -15,7 +15,7 @@ public class Transaction implements Serializable {
     private Signature senderSign;          //付款人签名
     private PKType senderPk;         //付款人公钥
     private PKType receiverPk;       //收款人公钥
-    private int transactionType;        //交易类型: 0代表创世区块    1代表普通交易
+    private int transactionType;        //交易类型: 0代表创世区块    1 发布任务交易  2 提交任务交易
    // public Signature receiveSign;   //收款人
     private String content;          //附加信息
     private String receiverAddr;    //收款人地址
@@ -133,20 +133,7 @@ public class Transaction implements Serializable {
         this.blockNum = blockNum;
     }
 
-    @Override
-    public String toString() {
-        return "Transaction{" +
-                "transactionHash='" + transactionHash + '\'' +
-                ", senderSignature=" + senderSign +
-                ", senderPk=" + senderPk +
-                ", receiverPk=" + receiverPk +
-                ", transactionType=" + transactionType +
-                ", content='" + content + '\'' +
-                ", receiverAddr='" + receiverAddr + '\'' +
-                ", amount=" + amount +
-                ", blockNum=" + blockNum +
-                '}';
-    }
+
     public String txHash() throws NoSuchAlgorithmException {
 
         return Cryptography.myHash("senderSignature=" + senderSign +
@@ -157,7 +144,22 @@ public class Transaction implements Serializable {
                 ", receiverAddr='" + receiverAddr + '\'' +
                 ", amount=" + amount +
                 ", blockNum=" + blockNum +
-                '}');
+                '}').trim();
+    }
+    @Override
+    public String toString() {
+
+        return "Transaction{" +
+                "transactionHash='" + transactionHash + '\'' +
+                ", senderSignature=" + (senderSign==null?null:senderSign.value) +
+                ", senderPk=" + (senderPk==null?null:senderPk.value) +
+                ", receiverPk=" + (receiverPk==null?null:receiverPk.value) +
+                ", transactionType=" + transactionType +
+                ", content='" + content + '\'' +
+                ", receiverAddr='" + receiverAddr + '\'' +
+                ", amount=" + amount +
+                ", blockNum=" + blockNum +
+                '}';
     }
 
 }

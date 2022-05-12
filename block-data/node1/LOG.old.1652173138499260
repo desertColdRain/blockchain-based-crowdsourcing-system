@@ -1,0 +1,83 @@
+2022/05/10-16:57:43.950346 4adc RocksDB version: 5.9.2
+2022/05/10-16:57:43.950394 4adc Git sha rocksdb_build_git_sha:@004237e62790320d8e630456cbeb6f4a1f3579c2@
+2022/05/10-16:57:43.950409 4adc Compile date Jan  3 2018
+2022/05/10-16:57:43.950418 4adc DB SUMMARY
+2022/05/10-16:57:43.951289 4adc CURRENT file:  CURRENT
+2022/05/10-16:57:43.951303 4adc IDENTITY file:  IDENTITY
+2022/05/10-16:57:43.951344 4adc MANIFEST file:  MANIFEST-000558 size: 203 Bytes
+2022/05/10-16:57:43.951356 4adc SST files in block-data/node1 dir, Total Num: 3, files: 000504.sst 000506.sst 000557.sst 
+2022/05/10-16:57:43.951366 4adc Write Ahead Log file in block-data/node1: 000559.log size: 16948 ; 
+2022/05/10-16:57:43.951380 4adc                         Options.error_if_exists: 0
+2022/05/10-16:57:43.951580 4adc                       Options.create_if_missing: 1
+2022/05/10-16:57:43.951589 4adc                         Options.paranoid_checks: 1
+2022/05/10-16:57:43.951593 4adc                                     Options.env: 000001C804CCE250
+2022/05/10-16:57:43.951597 4adc                                Options.info_log: 000001C8054BD890
+2022/05/10-16:57:43.951600 4adc                Options.max_file_opening_threads: 16
+2022/05/10-16:57:43.951604 4adc                              Options.statistics: 0000000000000000
+2022/05/10-16:57:43.951607 4adc                               Options.use_fsync: 0
+2022/05/10-16:57:43.951611 4adc                       Options.max_log_file_size: 0
+2022/05/10-16:57:43.951614 4adc                  Options.max_manifest_file_size: 18446744073709551615
+2022/05/10-16:57:43.951618 4adc                   Options.log_file_time_to_roll: 0
+2022/05/10-16:57:43.951621 4adc                       Options.keep_log_file_num: 1000
+2022/05/10-16:57:43.951625 4adc                    Options.recycle_log_file_num: 0
+2022/05/10-16:57:43.951628 4adc                         Options.allow_fallocate: 1
+2022/05/10-16:57:43.951631 4adc                        Options.allow_mmap_reads: 0
+2022/05/10-16:57:43.951635 4adc                       Options.allow_mmap_writes: 0
+2022/05/10-16:57:43.951638 4adc                        Options.use_direct_reads: 0
+2022/05/10-16:57:43.951641 4adc                        Options.use_direct_io_for_flush_and_compaction: 0
+2022/05/10-16:57:43.951645 4adc          Options.create_missing_column_families: 0
+2022/05/10-16:57:43.951648 4adc                              Options.db_log_dir: 
+2022/05/10-16:57:43.951652 4adc                                 Options.wal_dir: block-data/node1
+2022/05/10-16:57:43.951655 4adc                Options.table_cache_numshardbits: 6
+2022/05/10-16:57:43.951658 4adc                      Options.max_subcompactions: 1
+2022/05/10-16:57:43.951662 4adc                  Options.max_background_flushes: -1
+2022/05/10-16:57:43.951665 4adc                         Options.WAL_ttl_seconds: 0
+2022/05/10-16:57:43.951669 4adc                       Options.WAL_size_limit_MB: 0
+2022/05/10-16:57:43.951672 4adc             Options.manifest_preallocation_size: 4194304
+2022/05/10-16:57:43.951675 4adc                     Options.is_fd_close_on_exec: 1
+2022/05/10-16:57:43.951679 4adc                   Options.advise_random_on_open: 1
+2022/05/10-16:57:43.951682 4adc                    Options.db_write_buffer_size: 0
+2022/05/10-16:57:43.951685 4adc                    Options.write_buffer_manager: 000001C806E61BF0
+2022/05/10-16:57:43.951689 4adc         Options.access_hint_on_compaction_start: 1
+2022/05/10-16:57:43.951692 4adc  Options.new_table_reader_for_compaction_inputs: 0
+2022/05/10-16:57:43.951696 4adc               Options.compaction_readahead_size: 0
+2022/05/10-16:57:43.951699 4adc           Options.random_access_max_buffer_size: 1048576
+2022/05/10-16:57:43.951702 4adc                      Options.use_adaptive_mutex: 0
+2022/05/10-16:57:43.951706 4adc                            Options.rate_limiter: 0000000000000000
+2022/05/10-16:57:43.951709 4adc     Options.sst_file_manager.rate_bytes_per_sec: 0
+2022/05/10-16:57:43.951712 4adc                       Options.wal_recovery_mode: 2
+2022/05/10-16:57:43.951716 4adc                  Options.enable_thread_tracking: 0
+2022/05/10-16:57:43.951741 4adc                  Options.enable_pipelined_write: 0
+2022/05/10-16:57:43.951747 4adc         Options.allow_concurrent_memtable_write: 1
+2022/05/10-16:57:43.951750 4adc      Options.enable_write_thread_adaptive_yield: 1
+2022/05/10-16:57:43.951754 4adc             Options.write_thread_max_yield_usec: 100
+2022/05/10-16:57:43.951757 4adc            Options.write_thread_slow_yield_usec: 3
+2022/05/10-16:57:43.951761 4adc                               Options.row_cache: None
+2022/05/10-16:57:43.951764 4adc                              Options.wal_filter: None
+2022/05/10-16:57:43.951767 4adc             Options.avoid_flush_during_recovery: 0
+2022/05/10-16:57:43.951771 4adc             Options.allow_ingest_behind: 0
+2022/05/10-16:57:43.951774 4adc             Options.preserve_deletes: 0
+2022/05/10-16:57:43.951777 4adc             Options.concurrent_prepare: 0
+2022/05/10-16:57:43.951780 4adc             Options.manual_wal_flush: 0
+2022/05/10-16:57:43.951784 4adc             Options.seq_per_batch: 0
+2022/05/10-16:57:43.951787 4adc             Options.max_background_jobs: 2
+2022/05/10-16:57:43.951791 4adc             Options.max_background_compactions: -1
+2022/05/10-16:57:43.951794 4adc             Options.avoid_flush_during_shutdown: 0
+2022/05/10-16:57:43.951797 4adc           Options.writable_file_max_buffer_size: 1048576
+2022/05/10-16:57:43.951801 4adc             Options.delayed_write_rate : 16777216
+2022/05/10-16:57:43.951804 4adc             Options.max_total_wal_size: 0
+2022/05/10-16:57:43.951807 4adc             Options.delete_obsolete_files_period_micros: 21600000000
+2022/05/10-16:57:43.951811 4adc                   Options.stats_dump_period_sec: 600
+2022/05/10-16:57:43.951814 4adc                          Options.max_open_files: -1
+2022/05/10-16:57:43.951818 4adc                          Options.bytes_per_sync: 0
+2022/05/10-16:57:43.951821 4adc                      Options.wal_bytes_per_sync: 0
+2022/05/10-16:57:43.951824 4adc Compression algorithms supported:
+2022/05/10-16:57:43.951828 4adc 	Snappy supported: 0
+2022/05/10-16:57:43.951831 4adc 	Zlib supported: 0
+2022/05/10-16:57:43.951834 4adc 	Bzip supported: 0
+2022/05/10-16:57:43.951837 4adc 	LZ4 supported: 0
+2022/05/10-16:57:43.951841 4adc 	ZSTDNotFinal supported: 0
+2022/05/10-16:57:43.951844 4adc 	ZSTD supported: 0
+2022/05/10-16:57:43.951849 4adc Fast CRC32 supported: Supported on x86Not supported on x86
+2022/05/10-16:57:43.951963 4adc [c:\users\aretter\code\rocksdb\db\db_impl.cc:234] Shutdown: canceling all background work
+2022/05/10-16:57:43.951987 4adc [c:\users\aretter\code\rocksdb\db\db_impl.cc:364] Shutdown complete

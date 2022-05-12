@@ -9,7 +9,7 @@ import java.io.*;
 import java.nio.charset.StandardCharsets;
 
 //私钥类
-//@JsonIgnoreProperties({"hibernateLazyInitializer","handler"})
+@JsonIgnoreProperties({"hibernateLazyInitializer","handler"})
 public class SKType implements Serializable {
     private static final long serialVersionUID = /*4878039769420589901L;*/1L;
 

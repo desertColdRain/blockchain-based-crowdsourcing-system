@@ -7,7 +7,8 @@ public class JsonVo implements Serializable {
     public static final int CODE_FAIL = 400;
 
     /**
-     * 返回状态码
+     * 返回状态码 200 success
+     *
      */
     private int code;
     /**
@@ -26,6 +27,7 @@ public class JsonVo implements Serializable {
         this.message = message;
         this.item = item;
     }
+
 
     public static JsonVo instance(int code, String message) {
         return new JsonVo(code, message);

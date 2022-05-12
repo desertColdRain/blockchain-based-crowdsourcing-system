@@ -3,6 +3,7 @@ package com.blockchain.mcsblockchain.pojo.db;
 import com.blockchain.mcsblockchain.net.base.Node;
 import com.blockchain.mcsblockchain.pojo.account.Account;
 import com.blockchain.mcsblockchain.pojo.core.Block;
+import com.blockchain.mcsblockchain.pojo.core.Task;
 import com.blockchain.mcsblockchain.pojo.core.Transaction;
 import com.blockchain.mcsblockchain.pojo.core.TransactionPool;
 import com.google.common.base.Optional;
@@ -14,6 +15,11 @@ import java.util.List;
 
 
 public interface DBAccess {
+
+    //最新任务id
+    String LAST_TASK_ID = "last_task_id";
+     //任务数据task存储前缀
+    String Task_PREFIX = "task_";
     //区块数据存储 hash 桶前缀
     String BLOCKS_BUCKET_PREFIX = "blocks_";
    //钱包数据存储 hash 桶前缀
@@ -44,6 +50,14 @@ public interface DBAccess {
     boolean putNodeList(List<Node> nodes);
     //获取交易哈希值数据库的交易池中交易
     Optional<Transaction> getTx(String txHash) throws IOException, ClassNotFoundException;
+    //保存任务
+    boolean putTask(Task task);
+    //保存最新的任务id
+    boolean putTaskId(int id);
+    //查询最新的任务id
+    Optional<Object> getLastTaskId();
+    //根据任务id查询task
+    Optional<Task> getTask(int id);
     //更新最新一个区块的hash值
     boolean putLastBlockIndex(Object lastBlock);
     //获取最新区块的hash值

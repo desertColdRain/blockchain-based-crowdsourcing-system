@@ -1,0 +1,83 @@
+2022/05/10-20:39:27.139042 1dcc RocksDB version: 5.9.2
+2022/05/10-20:39:27.139087 1dcc Git sha rocksdb_build_git_sha:@004237e62790320d8e630456cbeb6f4a1f3579c2@
+2022/05/10-20:39:27.139103 1dcc Compile date Jan  3 2018
+2022/05/10-20:39:27.139112 1dcc DB SUMMARY
+2022/05/10-20:39:27.140012 1dcc CURRENT file:  CURRENT
+2022/05/10-20:39:27.140026 1dcc IDENTITY file:  IDENTITY
+2022/05/10-20:39:27.140061 1dcc MANIFEST file:  MANIFEST-000591 size: 199 Bytes
+2022/05/10-20:39:27.140073 1dcc SST files in block-data/node1 dir, Total Num: 3, files: 000557.sst 000568.sst 000578.sst 
+2022/05/10-20:39:27.140082 1dcc Write Ahead Log file in block-data/node1: 000592.log size: 0 ; 
+2022/05/10-20:39:27.140097 1dcc                         Options.error_if_exists: 0
+2022/05/10-20:39:27.140313 1dcc                       Options.create_if_missing: 1
+2022/05/10-20:39:27.140320 1dcc                         Options.paranoid_checks: 1
+2022/05/10-20:39:27.140324 1dcc                                     Options.env: 00000273F9CBB8C0
+2022/05/10-20:39:27.140328 1dcc                                Options.info_log: 00000273FB5F08C0
+2022/05/10-20:39:27.140331 1dcc                Options.max_file_opening_threads: 16
+2022/05/10-20:39:27.140335 1dcc                              Options.statistics: 0000000000000000
+2022/05/10-20:39:27.140338 1dcc                               Options.use_fsync: 0
+2022/05/10-20:39:27.140342 1dcc                       Options.max_log_file_size: 0
+2022/05/10-20:39:27.140345 1dcc                  Options.max_manifest_file_size: 18446744073709551615
+2022/05/10-20:39:27.140349 1dcc                   Options.log_file_time_to_roll: 0
+2022/05/10-20:39:27.140352 1dcc                       Options.keep_log_file_num: 1000
+2022/05/10-20:39:27.140356 1dcc                    Options.recycle_log_file_num: 0
+2022/05/10-20:39:27.140359 1dcc                         Options.allow_fallocate: 1
+2022/05/10-20:39:27.140363 1dcc                        Options.allow_mmap_reads: 0
+2022/05/10-20:39:27.140366 1dcc                       Options.allow_mmap_writes: 0
+2022/05/10-20:39:27.140369 1dcc                        Options.use_direct_reads: 0
+2022/05/10-20:39:27.140373 1dcc                        Options.use_direct_io_for_flush_and_compaction: 0
+2022/05/10-20:39:27.140376 1dcc          Options.create_missing_column_families: 0
+2022/05/10-20:39:27.140379 1dcc                              Options.db_log_dir: 
+2022/05/10-20:39:27.140383 1dcc                                 Options.wal_dir: block-data/node1
+2022/05/10-20:39:27.140386 1dcc                Options.table_cache_numshardbits: 6
+2022/05/10-20:39:27.140390 1dcc                      Options.max_subcompactions: 1
+2022/05/10-20:39:27.140393 1dcc                  Options.max_background_flushes: -1
+2022/05/10-20:39:27.140396 1dcc                         Options.WAL_ttl_seconds: 0
+2022/05/10-20:39:27.140400 1dcc                       Options.WAL_size_limit_MB: 0
+2022/05/10-20:39:27.140403 1dcc             Options.manifest_preallocation_size: 4194304
+2022/05/10-20:39:27.140407 1dcc                     Options.is_fd_close_on_exec: 1
+2022/05/10-20:39:27.140410 1dcc                   Options.advise_random_on_open: 1
+2022/05/10-20:39:27.140413 1dcc                    Options.db_write_buffer_size: 0
+2022/05/10-20:39:27.140417 1dcc                    Options.write_buffer_manager: 00000273FAFC3A70
+2022/05/10-20:39:27.140420 1dcc         Options.access_hint_on_compaction_start: 1
+2022/05/10-20:39:27.140424 1dcc  Options.new_table_reader_for_compaction_inputs: 0
+2022/05/10-20:39:27.140427 1dcc               Options.compaction_readahead_size: 0
+2022/05/10-20:39:27.140430 1dcc           Options.random_access_max_buffer_size: 1048576
+2022/05/10-20:39:27.140434 1dcc                      Options.use_adaptive_mutex: 0
+2022/05/10-20:39:27.140437 1dcc                            Options.rate_limiter: 0000000000000000
+2022/05/10-20:39:27.140440 1dcc     Options.sst_file_manager.rate_bytes_per_sec: 0
+2022/05/10-20:39:27.140444 1dcc                       Options.wal_recovery_mode: 2
+2022/05/10-20:39:27.140447 1dcc                  Options.enable_thread_tracking: 0
+2022/05/10-20:39:27.140469 1dcc                  Options.enable_pipelined_write: 0
+2022/05/10-20:39:27.140475 1dcc         Options.allow_concurrent_memtable_write: 1
+2022/05/10-20:39:27.140478 1dcc      Options.enable_write_thread_adaptive_yield: 1
+2022/05/10-20:39:27.140481 1dcc             Options.write_thread_max_yield_usec: 100
+2022/05/10-20:39:27.140485 1dcc            Options.write_thread_slow_yield_usec: 3
+2022/05/10-20:39:27.140488 1dcc                               Options.row_cache: None
+2022/05/10-20:39:27.140492 1dcc                              Options.wal_filter: None
+2022/05/10-20:39:27.140495 1dcc             Options.avoid_flush_during_recovery: 0
+2022/05/10-20:39:27.140498 1dcc             Options.allow_ingest_behind: 0
+2022/05/10-20:39:27.140502 1dcc             Options.preserve_deletes: 0
+2022/05/10-20:39:27.140505 1dcc             Options.concurrent_prepare: 0
+2022/05/10-20:39:27.140508 1dcc             Options.manual_wal_flush: 0
+2022/05/10-20:39:27.140512 1dcc             Options.seq_per_batch: 0
+2022/05/10-20:39:27.140515 1dcc             Options.max_background_jobs: 2
+2022/05/10-20:39:27.140518 1dcc             Options.max_background_compactions: -1
+2022/05/10-20:39:27.140522 1dcc             Options.avoid_flush_during_shutdown: 0
+2022/05/10-20:39:27.140525 1dcc           Options.writable_file_max_buffer_size: 1048576
+2022/05/10-20:39:27.140528 1dcc             Options.delayed_write_rate : 16777216
+2022/05/10-20:39:27.140532 1dcc             Options.max_total_wal_size: 0
+2022/05/10-20:39:27.140539 1dcc             Options.delete_obsolete_files_period_micros: 21600000000
+2022/05/10-20:39:27.140542 1dcc                   Options.stats_dump_period_sec: 600
+2022/05/10-20:39:27.140546 1dcc                          Options.max_open_files: -1
+2022/05/10-20:39:27.140549 1dcc                          Options.bytes_per_sync: 0
+2022/05/10-20:39:27.140553 1dcc                      Options.wal_bytes_per_sync: 0
+2022/05/10-20:39:27.140556 1dcc Compression algorithms supported:
+2022/05/10-20:39:27.140559 1dcc 	Snappy supported: 0
+2022/05/10-20:39:27.140563 1dcc 	Zlib supported: 0
+2022/05/10-20:39:27.140566 1dcc 	Bzip supported: 0
+2022/05/10-20:39:27.140569 1dcc 	LZ4 supported: 0
+2022/05/10-20:39:27.140572 1dcc 	ZSTDNotFinal supported: 0
+2022/05/10-20:39:27.140576 1dcc 	ZSTD supported: 0
+2022/05/10-20:39:27.140581 1dcc Fast CRC32 supported: Supported on x86Not supported on x86
+2022/05/10-20:39:27.140691 1dcc [c:\users\aretter\code\rocksdb\db\db_impl.cc:234] Shutdown: canceling all background work
+2022/05/10-20:39:27.140711 1dcc [c:\users\aretter\code\rocksdb\db\db_impl.cc:364] Shutdown complete

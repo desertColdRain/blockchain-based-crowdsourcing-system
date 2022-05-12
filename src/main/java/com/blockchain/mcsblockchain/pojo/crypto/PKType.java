@@ -2,12 +2,13 @@ package com.blockchain.mcsblockchain.pojo.crypto;
 
 import com.blockchain.mcsblockchain.Utils.Cryptography;
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import it.unisa.dia.gas.jpbc.Element;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 //公钥类
-
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class PKType implements Serializable {
     private static final long serialVersionUID = /*1528979184671053497L*/1L;
 
