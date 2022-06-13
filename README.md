@@ -1,2 +1,7 @@
-# mcsChain
-This is an Anonymous Authentication on Trust in Blockchain-Based Mobile Crowdsourcing system
+# 基于区块链的众包系统
+  这是一个基于区块链的匿名信任认证众包系统的后端部分。系统主要包含三部分
+  1. 基于Intel SGX的密钥管理系统
+  
+  2. 基于区块链的众包系统
+  
+  4. 匿名信任评估系统
