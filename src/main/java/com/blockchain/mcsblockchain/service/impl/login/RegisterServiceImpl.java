@@ -79,7 +79,7 @@ public class RegisterServiceImpl implements RegisterService {
             //System.out.println("sorry");
             client.closeClient();
             logger.info("账号创建失败，可能sgx检测到此公钥已被占用或者用户名已存在");
-            return new Result("账号创建失败，可能sgx检测到此公钥已被占用或者用户名已存在",Constants.CODE_SUCCESS,account.toString());
+            return new Result("账号创建失败，可能sgx检测到此公钥已被占用或者用户名已存在",Constants.CODE_FAIL_CLIENT,account.toString());
         }
 
     }

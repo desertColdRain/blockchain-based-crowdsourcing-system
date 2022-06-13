@@ -6,7 +6,7 @@ import java.nio.charset.StandardCharsets;
 
 public class ToHexUtils {
     public static String toHex(Element element){
-        String tmp = null;
+        String tmp;
         StringBuilder sb = new StringBuilder();
         for (byte b : element.toBytes())
         {

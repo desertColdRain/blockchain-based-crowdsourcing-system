@@ -24,8 +24,10 @@ public class BlockEventListener {
 
     @Autowired
     private DBAccess dbAccess;
+
     @Autowired
     AppClient appClient;
+
     private static Logger logger = LoggerFactory.getLogger(BlockEventListener.class);
 
     //新区块产生事件

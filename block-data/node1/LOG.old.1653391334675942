@@ -1,0 +1,83 @@
+2022/05/24-19:21:02.728719 2150 RocksDB version: 5.9.2
+2022/05/24-19:21:02.728770 2150 Git sha rocksdb_build_git_sha:@004237e62790320d8e630456cbeb6f4a1f3579c2@
+2022/05/24-19:21:02.728786 2150 Compile date Jan  3 2018
+2022/05/24-19:21:02.728795 2150 DB SUMMARY
+2022/05/24-19:21:02.729836 2150 CURRENT file:  CURRENT
+2022/05/24-19:21:02.729849 2150 IDENTITY file:  IDENTITY
+2022/05/24-19:21:02.729887 2150 MANIFEST file:  MANIFEST-000637 size: 366 Bytes
+2022/05/24-19:21:02.729898 2150 SST files in block-data/node1 dir, Total Num: 2, files: 000557.sst 000641.sst 
+2022/05/24-19:21:02.729907 2150 Write Ahead Log file in block-data/node1: 000638.log size: 1356 ; 
+2022/05/24-19:21:02.729921 2150                         Options.error_if_exists: 0
+2022/05/24-19:21:02.730235 2150                       Options.create_if_missing: 1
+2022/05/24-19:21:02.730242 2150                         Options.paranoid_checks: 1
+2022/05/24-19:21:02.730246 2150                                     Options.env: 0000020717A8FA10
+2022/05/24-19:21:02.730250 2150                                Options.info_log: 00000207175B3E50
+2022/05/24-19:21:02.730254 2150                Options.max_file_opening_threads: 16
+2022/05/24-19:21:02.730257 2150                              Options.statistics: 0000000000000000
+2022/05/24-19:21:02.730261 2150                               Options.use_fsync: 0
+2022/05/24-19:21:02.730264 2150                       Options.max_log_file_size: 0
+2022/05/24-19:21:02.730268 2150                  Options.max_manifest_file_size: 18446744073709551615
+2022/05/24-19:21:02.730271 2150                   Options.log_file_time_to_roll: 0
+2022/05/24-19:21:02.730275 2150                       Options.keep_log_file_num: 1000
+2022/05/24-19:21:02.730278 2150                    Options.recycle_log_file_num: 0
+2022/05/24-19:21:02.730281 2150                         Options.allow_fallocate: 1
+2022/05/24-19:21:02.730285 2150                        Options.allow_mmap_reads: 0
+2022/05/24-19:21:02.730288 2150                       Options.allow_mmap_writes: 0
+2022/05/24-19:21:02.730291 2150                        Options.use_direct_reads: 0
+2022/05/24-19:21:02.730294 2150                        Options.use_direct_io_for_flush_and_compaction: 0
+2022/05/24-19:21:02.730298 2150          Options.create_missing_column_families: 0
+2022/05/24-19:21:02.730301 2150                              Options.db_log_dir: 
+2022/05/24-19:21:02.730304 2150                                 Options.wal_dir: block-data/node1
+2022/05/24-19:21:02.730308 2150                Options.table_cache_numshardbits: 6
+2022/05/24-19:21:02.730311 2150                      Options.max_subcompactions: 1
+2022/05/24-19:21:02.730315 2150                  Options.max_background_flushes: -1
+2022/05/24-19:21:02.730318 2150                         Options.WAL_ttl_seconds: 0
+2022/05/24-19:21:02.730321 2150                       Options.WAL_size_limit_MB: 0
+2022/05/24-19:21:02.730325 2150             Options.manifest_preallocation_size: 4194304
+2022/05/24-19:21:02.730328 2150                     Options.is_fd_close_on_exec: 1
+2022/05/24-19:21:02.730331 2150                   Options.advise_random_on_open: 1
+2022/05/24-19:21:02.730335 2150                    Options.db_write_buffer_size: 0
+2022/05/24-19:21:02.730338 2150                    Options.write_buffer_manager: 000002071A8EA0A0
+2022/05/24-19:21:02.730341 2150         Options.access_hint_on_compaction_start: 1
+2022/05/24-19:21:02.730345 2150  Options.new_table_reader_for_compaction_inputs: 0
+2022/05/24-19:21:02.730348 2150               Options.compaction_readahead_size: 0
+2022/05/24-19:21:02.730351 2150           Options.random_access_max_buffer_size: 1048576
+2022/05/24-19:21:02.730355 2150                      Options.use_adaptive_mutex: 0
+2022/05/24-19:21:02.730358 2150                            Options.rate_limiter: 0000000000000000
+2022/05/24-19:21:02.730361 2150     Options.sst_file_manager.rate_bytes_per_sec: 0
+2022/05/24-19:21:02.730365 2150                       Options.wal_recovery_mode: 2
+2022/05/24-19:21:02.730368 2150                  Options.enable_thread_tracking: 0
+2022/05/24-19:21:02.730396 2150                  Options.enable_pipelined_write: 0
+2022/05/24-19:21:02.730401 2150         Options.allow_concurrent_memtable_write: 1
+2022/05/24-19:21:02.730405 2150      Options.enable_write_thread_adaptive_yield: 1
+2022/05/24-19:21:02.730408 2150             Options.write_thread_max_yield_usec: 100
+2022/05/24-19:21:02.730412 2150            Options.write_thread_slow_yield_usec: 3
+2022/05/24-19:21:02.730415 2150                               Options.row_cache: None
+2022/05/24-19:21:02.730418 2150                              Options.wal_filter: None
+2022/05/24-19:21:02.730422 2150             Options.avoid_flush_during_recovery: 0
+2022/05/24-19:21:02.730425 2150             Options.allow_ingest_behind: 0
+2022/05/24-19:21:02.730428 2150             Options.preserve_deletes: 0
+2022/05/24-19:21:02.730432 2150             Options.concurrent_prepare: 0
+2022/05/24-19:21:02.730435 2150             Options.manual_wal_flush: 0
+2022/05/24-19:21:02.730438 2150             Options.seq_per_batch: 0
+2022/05/24-19:21:02.730441 2150             Options.max_background_jobs: 2
+2022/05/24-19:21:02.730445 2150             Options.max_background_compactions: -1
+2022/05/24-19:21:02.730448 2150             Options.avoid_flush_during_shutdown: 0
+2022/05/24-19:21:02.730452 2150           Options.writable_file_max_buffer_size: 1048576
+2022/05/24-19:21:02.730455 2150             Options.delayed_write_rate : 16777216
+2022/05/24-19:21:02.730458 2150             Options.max_total_wal_size: 0
+2022/05/24-19:21:02.730462 2150             Options.delete_obsolete_files_period_micros: 21600000000
+2022/05/24-19:21:02.730465 2150                   Options.stats_dump_period_sec: 600
+2022/05/24-19:21:02.730469 2150                          Options.max_open_files: -1
+2022/05/24-19:21:02.730472 2150                          Options.bytes_per_sync: 0
+2022/05/24-19:21:02.730475 2150                      Options.wal_bytes_per_sync: 0
+2022/05/24-19:21:02.730479 2150 Compression algorithms supported:
+2022/05/24-19:21:02.730482 2150 	Snappy supported: 0
+2022/05/24-19:21:02.730485 2150 	Zlib supported: 0
+2022/05/24-19:21:02.730489 2150 	Bzip supported: 0
+2022/05/24-19:21:02.730492 2150 	LZ4 supported: 0
+2022/05/24-19:21:02.730495 2150 	ZSTDNotFinal supported: 0
+2022/05/24-19:21:02.730498 2150 	ZSTD supported: 0
+2022/05/24-19:21:02.730504 2150 Fast CRC32 supported: Supported on x86Not supported on x86
+2022/05/24-19:21:02.730618 2150 [c:\users\aretter\code\rocksdb\db\db_impl.cc:234] Shutdown: canceling all background work
+2022/05/24-19:21:02.730637 2150 [c:\users\aretter\code\rocksdb\db\db_impl.cc:364] Shutdown complete

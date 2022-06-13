@@ -1,0 +1,183 @@
+2022/05/12-14:56:35.212697 3fcc RocksDB version: 5.9.2
+2022/05/12-14:56:35.212752 3fcc Git sha rocksdb_build_git_sha:@004237e62790320d8e630456cbeb6f4a1f3579c2@
+2022/05/12-14:56:35.212766 3fcc Compile date Jan  3 2018
+2022/05/12-14:56:35.212782 3fcc DB SUMMARY
+2022/05/12-14:56:35.213768 3fcc CURRENT file:  CURRENT
+2022/05/12-14:56:35.213783 3fcc IDENTITY file:  IDENTITY
+2022/05/12-14:56:35.213821 3fcc MANIFEST file:  MANIFEST-000606 size: 199 Bytes
+2022/05/12-14:56:35.213838 3fcc SST files in block-data/node1 dir, Total Num: 3, files: 000557.sst 000568.sst 000578.sst 
+2022/05/12-14:56:35.213849 3fcc Write Ahead Log file in block-data/node1: 000607.log size: 2658 ; 
+2022/05/12-14:56:35.213864 3fcc                         Options.error_if_exists: 0
+2022/05/12-14:56:35.215236 3fcc                       Options.create_if_missing: 1
+2022/05/12-14:56:35.215246 3fcc                         Options.paranoid_checks: 1
+2022/05/12-14:56:35.215249 3fcc                                     Options.env: 0000021DD48F7B10
+2022/05/12-14:56:35.215253 3fcc                                Options.info_log: 0000021DD4CBBC80
+2022/05/12-14:56:35.215257 3fcc                Options.max_file_opening_threads: 16
+2022/05/12-14:56:35.215260 3fcc                              Options.statistics: 0000000000000000
+2022/05/12-14:56:35.215264 3fcc                               Options.use_fsync: 0
+2022/05/12-14:56:35.215267 3fcc                       Options.max_log_file_size: 0
+2022/05/12-14:56:35.215271 3fcc                  Options.max_manifest_file_size: 18446744073709551615
+2022/05/12-14:56:35.215274 3fcc                   Options.log_file_time_to_roll: 0
+2022/05/12-14:56:35.215278 3fcc                       Options.keep_log_file_num: 1000
+2022/05/12-14:56:35.215281 3fcc                    Options.recycle_log_file_num: 0
+2022/05/12-14:56:35.215285 3fcc                         Options.allow_fallocate: 1
+2022/05/12-14:56:35.215288 3fcc                        Options.allow_mmap_reads: 0
+2022/05/12-14:56:35.215291 3fcc                       Options.allow_mmap_writes: 0
+2022/05/12-14:56:35.215294 3fcc                        Options.use_direct_reads: 0
+2022/05/12-14:56:35.215298 3fcc                        Options.use_direct_io_for_flush_and_compaction: 0
+2022/05/12-14:56:35.215301 3fcc          Options.create_missing_column_families: 0
+2022/05/12-14:56:35.215305 3fcc                              Options.db_log_dir: 
+2022/05/12-14:56:35.215308 3fcc                                 Options.wal_dir: block-data/node1
+2022/05/12-14:56:35.215312 3fcc                Options.table_cache_numshardbits: 6
+2022/05/12-14:56:35.215315 3fcc                      Options.max_subcompactions: 1
+2022/05/12-14:56:35.215318 3fcc                  Options.max_background_flushes: -1
+2022/05/12-14:56:35.215322 3fcc                         Options.WAL_ttl_seconds: 0
+2022/05/12-14:56:35.215325 3fcc                       Options.WAL_size_limit_MB: 0
+2022/05/12-14:56:35.215328 3fcc             Options.manifest_preallocation_size: 4194304
+2022/05/12-14:56:35.215332 3fcc                     Options.is_fd_close_on_exec: 1
+2022/05/12-14:56:35.215335 3fcc                   Options.advise_random_on_open: 1
+2022/05/12-14:56:35.215339 3fcc                    Options.db_write_buffer_size: 0
+2022/05/12-14:56:35.215342 3fcc                    Options.write_buffer_manager: 0000021DD4CE8770
+2022/05/12-14:56:35.215346 3fcc         Options.access_hint_on_compaction_start: 1
+2022/05/12-14:56:35.215349 3fcc  Options.new_table_reader_for_compaction_inputs: 0
+2022/05/12-14:56:35.215352 3fcc               Options.compaction_readahead_size: 0
+2022/05/12-14:56:35.215356 3fcc           Options.random_access_max_buffer_size: 1048576
+2022/05/12-14:56:35.215359 3fcc                      Options.use_adaptive_mutex: 0
+2022/05/12-14:56:35.215362 3fcc                            Options.rate_limiter: 0000000000000000
+2022/05/12-14:56:35.215366 3fcc     Options.sst_file_manager.rate_bytes_per_sec: 0
+2022/05/12-14:56:35.215369 3fcc                       Options.wal_recovery_mode: 2
+2022/05/12-14:56:35.215372 3fcc                  Options.enable_thread_tracking: 0
+2022/05/12-14:56:35.215401 3fcc                  Options.enable_pipelined_write: 0
+2022/05/12-14:56:35.215407 3fcc         Options.allow_concurrent_memtable_write: 1
+2022/05/12-14:56:35.215411 3fcc      Options.enable_write_thread_adaptive_yield: 1
+2022/05/12-14:56:35.215414 3fcc             Options.write_thread_max_yield_usec: 100
+2022/05/12-14:56:35.215417 3fcc            Options.write_thread_slow_yield_usec: 3
+2022/05/12-14:56:35.215421 3fcc                               Options.row_cache: None
+2022/05/12-14:56:35.215424 3fcc                              Options.wal_filter: None
+2022/05/12-14:56:35.215428 3fcc             Options.avoid_flush_during_recovery: 0
+2022/05/12-14:56:35.215431 3fcc             Options.allow_ingest_behind: 0
+2022/05/12-14:56:35.215434 3fcc             Options.preserve_deletes: 0
+2022/05/12-14:56:35.215438 3fcc             Options.concurrent_prepare: 0
+2022/05/12-14:56:35.215441 3fcc             Options.manual_wal_flush: 0
+2022/05/12-14:56:35.215444 3fcc             Options.seq_per_batch: 0
+2022/05/12-14:56:35.215457 3fcc             Options.max_background_jobs: 2
+2022/05/12-14:56:35.215461 3fcc             Options.max_background_compactions: -1
+2022/05/12-14:56:35.215464 3fcc             Options.avoid_flush_during_shutdown: 0
+2022/05/12-14:56:35.215468 3fcc           Options.writable_file_max_buffer_size: 1048576
+2022/05/12-14:56:35.215471 3fcc             Options.delayed_write_rate : 16777216
+2022/05/12-14:56:35.215475 3fcc             Options.max_total_wal_size: 0
+2022/05/12-14:56:35.215478 3fcc             Options.delete_obsolete_files_period_micros: 21600000000
+2022/05/12-14:56:35.215481 3fcc                   Options.stats_dump_period_sec: 600
+2022/05/12-14:56:35.215485 3fcc                          Options.max_open_files: -1
+2022/05/12-14:56:35.215488 3fcc                          Options.bytes_per_sync: 0
+2022/05/12-14:56:35.215492 3fcc                      Options.wal_bytes_per_sync: 0
+2022/05/12-14:56:35.215495 3fcc Compression algorithms supported:
+2022/05/12-14:56:35.215504 3fcc 	Snappy supported: 0
+2022/05/12-14:56:35.215507 3fcc 	Zlib supported: 0
+2022/05/12-14:56:35.215510 3fcc 	Bzip supported: 0
+2022/05/12-14:56:35.215513 3fcc 	LZ4 supported: 0
+2022/05/12-14:56:35.215517 3fcc 	ZSTDNotFinal supported: 0
+2022/05/12-14:56:35.215520 3fcc 	ZSTD supported: 0
+2022/05/12-14:56:35.215526 3fcc Fast CRC32 supported: Supported on x86Not supported on x86
+2022/05/12-14:56:35.215778 3fcc [c:\users\aretter\code\rocksdb\db\version_set.cc:2835] Recovering from manifest file: MANIFEST-000606
+2022/05/12-14:56:35.215887 3fcc [c:\users\aretter\code\rocksdb\db\column_family.cc:413] --------------- Options for column family [default]:
+2022/05/12-14:56:35.215893 3fcc               Options.comparator: leveldb.BytewiseComparator
+2022/05/12-14:56:35.215897 3fcc           Options.merge_operator: None
+2022/05/12-14:56:35.215901 3fcc        Options.compaction_filter: None
+2022/05/12-14:56:35.215908 3fcc        Options.compaction_filter_factory: None
+2022/05/12-14:56:35.215911 3fcc         Options.memtable_factory: SkipListFactory
+2022/05/12-14:56:35.215915 3fcc            Options.table_factory: BlockBasedTable
+2022/05/12-14:56:35.215950 3fcc            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (0000021DD444F470)
+  cache_index_and_filter_blocks: 0
+  cache_index_and_filter_blocks_with_high_priority: 0
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  index_type: 0
+  hash_index_allow_collision: 1
+  checksum: 1
+  no_block_cache: 0
+  block_cache: 0000021DD4913B60
+  block_cache_name: LRUCache
+  block_cache_options:
+    capacity : 8388608
+    num_shard_bits : 4
+    strict_capacity_limit : 0
+    high_pri_pool_ratio: 0.000
+  block_cache_compressed: 0000000000000000
+  persistent_cache: 0000000000000000
+  block_size: 4096
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  metadata_block_size: 4096
+  partition_filters: 0
+  use_delta_encoding: 1
+  filter_policy: nullptr
+  whole_key_filtering: 1
+  verify_compression: 0
+  read_amp_bytes_per_bit: 0
+  format_version: 2
+2022/05/12-14:56:35.215985 3fcc        Options.write_buffer_size: 67108864
+2022/05/12-14:56:35.215991 3fcc  Options.max_write_buffer_number: 2
+2022/05/12-14:56:35.215994 3fcc          Options.compression: NoCompression
+2022/05/12-14:56:35.215998 3fcc                  Options.bottommost_compression: Disabled
+2022/05/12-14:56:35.216001 3fcc       Options.prefix_extractor: nullptr
+2022/05/12-14:56:35.216004 3fcc   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+2022/05/12-14:56:35.216008 3fcc             Options.num_levels: 7
+2022/05/12-14:56:35.216011 3fcc        Options.min_write_buffer_number_to_merge: 1
+2022/05/12-14:56:35.216014 3fcc     Options.max_write_buffer_number_to_maintain: 0
+2022/05/12-14:56:35.216018 3fcc            Options.compression_opts.window_bits: -14
+2022/05/12-14:56:35.216021 3fcc                  Options.compression_opts.level: -1
+2022/05/12-14:56:35.216025 3fcc               Options.compression_opts.strategy: 0
+2022/05/12-14:56:35.216028 3fcc         Options.compression_opts.max_dict_bytes: 0
+2022/05/12-14:56:35.216031 3fcc      Options.level0_file_num_compaction_trigger: 4
+2022/05/12-14:56:35.216035 3fcc          Options.level0_slowdown_writes_trigger: 20
+2022/05/12-14:56:35.216038 3fcc              Options.level0_stop_writes_trigger: 36
+2022/05/12-14:56:35.216042 3fcc                   Options.target_file_size_base: 67108864
+2022/05/12-14:56:35.216045 3fcc             Options.target_file_size_multiplier: 1
+2022/05/12-14:56:35.216048 3fcc                Options.max_bytes_for_level_base: 268435456
+2022/05/12-14:56:35.216052 3fcc Options.level_compaction_dynamic_level_bytes: 0
+2022/05/12-14:56:35.216055 3fcc          Options.max_bytes_for_level_multiplier: 10.000000
+2022/05/12-14:56:35.216060 3fcc Options.max_bytes_for_level_multiplier_addtl[0]: 1
+2022/05/12-14:56:35.216063 3fcc Options.max_bytes_for_level_multiplier_addtl[1]: 1
+2022/05/12-14:56:35.216067 3fcc Options.max_bytes_for_level_multiplier_addtl[2]: 1
+2022/05/12-14:56:35.216070 3fcc Options.max_bytes_for_level_multiplier_addtl[3]: 1
+2022/05/12-14:56:35.216074 3fcc Options.max_bytes_for_level_multiplier_addtl[4]: 1
+2022/05/12-14:56:35.216077 3fcc Options.max_bytes_for_level_multiplier_addtl[5]: 1
+2022/05/12-14:56:35.216080 3fcc Options.max_bytes_for_level_multiplier_addtl[6]: 1
+2022/05/12-14:56:35.216084 3fcc       Options.max_sequential_skip_in_iterations: 8
+2022/05/12-14:56:35.216087 3fcc                    Options.max_compaction_bytes: 1677721600
+2022/05/12-14:56:35.216091 3fcc                        Options.arena_block_size: 8388608
+2022/05/12-14:56:35.216094 3fcc   Options.soft_pending_compaction_bytes_limit: 68719476736
+2022/05/12-14:56:35.216098 3fcc   Options.hard_pending_compaction_bytes_limit: 274877906944
+2022/05/12-14:56:35.216101 3fcc       Options.rate_limit_delay_max_milliseconds: 100
+2022/05/12-14:56:35.216105 3fcc                Options.disable_auto_compactions: 0
+2022/05/12-14:56:35.216109 3fcc                        Options.compaction_style: kCompactionStyleLevel
+2022/05/12-14:56:35.216113 3fcc                          Options.compaction_pri: kByCompensatedSize
+2022/05/12-14:56:35.216116 3fcc Options.compaction_options_universal.size_ratio: 1
+2022/05/12-14:56:35.216120 3fcc Options.compaction_options_universal.min_merge_width: 2
+2022/05/12-14:56:35.216123 3fcc Options.compaction_options_universal.max_merge_width: 4294967295
+2022/05/12-14:56:35.216127 3fcc Options.compaction_options_universal.max_size_amplification_percent: 200
+2022/05/12-14:56:35.216130 3fcc Options.compaction_options_universal.compression_size_percent: -1
+2022/05/12-14:56:35.216134 3fcc Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+2022/05/12-14:56:35.216137 3fcc Options.compaction_options_fifo.max_table_files_size: 1073741824
+2022/05/12-14:56:35.216141 3fcc Options.compaction_options_fifo.allow_compaction: 0
+2022/05/12-14:56:35.216144 3fcc Options.compaction_options_fifo.ttl: 0
+2022/05/12-14:56:35.216148 3fcc                   Options.table_properties_collectors: 
+2022/05/12-14:56:35.216152 3fcc                   Options.inplace_update_support: 0
+2022/05/12-14:56:35.216156 3fcc                 Options.inplace_update_num_locks: 10000
+2022/05/12-14:56:35.216160 3fcc               Options.memtable_prefix_bloom_size_ratio: 0.000000
+2022/05/12-14:56:35.216163 3fcc   Options.memtable_huge_page_size: 0
+2022/05/12-14:56:35.216167 3fcc                           Options.bloom_locality: 0
+2022/05/12-14:56:35.216170 3fcc                    Options.max_successive_merges: 0
+2022/05/12-14:56:35.216174 3fcc                Options.optimize_filters_for_hits: 0
+2022/05/12-14:56:35.216177 3fcc                Options.paranoid_file_checks: 0
+2022/05/12-14:56:35.216180 3fcc                Options.force_consistency_checks: 0
+2022/05/12-14:56:35.216184 3fcc                Options.report_bg_io_stats: 0
+2022/05/12-14:56:35.217869 3fcc [c:\users\aretter\code\rocksdb\db\version_set.cc:3100] Recovered from manifest file:block-data/node1/MANIFEST-000606 succeeded,manifest_file_number is 606, next_file_number is 608, last_sequence is 952, log_number is 0,prev_log_number is 0,max_column_family is 0
+2022/05/12-14:56:35.217881 3fcc [c:\users\aretter\code\rocksdb\db\version_set.cc:3108] Column family [default] (ID 0), log number is 605
+2022/05/12-14:56:35.218948 3fcc EVENT_LOG_v1 {"time_micros": 1652338595218907, "job": 1, "event": "recovery_started", "log_files": [607]}
+2022/05/12-14:56:35.218962 3fcc [c:\users\aretter\code\rocksdb\db\db_impl_open.cc:518] Recovering log #607 mode 2
+2022/05/12-14:56:35.303918 3fcc EVENT_LOG_v1 {"time_micros": 1652338595303895, "cf_name": "default", "job": 1, "event": "table_file_creation", "file_number": 608, "file_size": 2268, "table_properties": {"data_size": 1333, "index_size": 28, "filter_size": 0, "raw_key_size": 16, "raw_average_key_size": 16, "raw_value_size": 1300, "raw_average_value_size": 1300, "num_data_blocks": 1, "num_entries": 1, "filter_policy_name": "", "kDeletedKeys": "0", "kMergeOperands": "0"}}
+2022/05/12-14:56:35.303988 3fcc [c:\users\aretter\code\rocksdb\db\version_set.cc:2608] Creating manifest 609
+2022/05/12-14:56:35.350064 3fcc EVENT_LOG_v1 {"time_micros": 1652338595350055, "job": 1, "event": "recovery_finished"}
+2022/05/12-14:56:35.399093 3fcc [c:\users\aretter\code\rocksdb\db\db_impl_open.cc:1150] DB pointer 0000021DD4B0C050

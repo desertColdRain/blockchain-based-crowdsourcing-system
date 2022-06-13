@@ -1,8 +1,8 @@
 package com.blockchain.mcsblockchain.pojo.core;
 
+import com.blockchain.mcsblockchain.common.dto.SubmitTaskDto;
 import com.blockchain.mcsblockchain.pojo.crypto.PKType;
 import com.blockchain.mcsblockchain.pojo.crypto.Signature;
-
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -14,10 +14,19 @@ public class Task implements Serializable {
     private String senderUsername;      //任务发出者的用户名
     private PKType senderPk;            //任务发出者的公钥
     private Signature senderSign;       //任务发送者的签名
-    //private String ipAddr;              //IP地址
     private TaskContent taskContent;    //任务内容
     private String trustRequirement;    //申请任务需要的信任值要求
     private List<String> user;          //申请过此任务的用户
+    private List<SubmitTaskDto> submitTask;    //针对此任务的提交
+
+
+    public List<SubmitTaskDto> getSubmitTask() {
+        return submitTask;
+    }
+
+    public void setSubmitTask(List<SubmitTaskDto> submitTask) {
+        this.submitTask = submitTask;
+    }
 
     public List<String> getUser() {
         return user;
@@ -26,9 +35,15 @@ public class Task implements Serializable {
     public void setUser(List<String> user) {
         this.user = user;
     }
+
     public void addUser(String username){
         user.add(username);
     }
+
+    public void addSubmit(SubmitTaskDto submit){
+        submitTask.add(submit);
+    }
+
     public String getTrustRequirement() {
         return trustRequirement;
     }
@@ -39,6 +54,7 @@ public class Task implements Serializable {
 
     public Task() {
         user = new ArrayList<>();
+        submitTask = new ArrayList<>();
     }
 
     public String getSenderUsername() {
@@ -106,6 +122,7 @@ public class Task implements Serializable {
                 ", senderSign=" + senderSign.value +
                 ", taskContent=" + taskContent +
                 ", trustRequirement='" + trustRequirement + '\'' +
+                ", user=" + user +
                 '}';
     }
 }

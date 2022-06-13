@@ -1,0 +1,83 @@
+2022/05/28-16:47:12.919075 b4c RocksDB version: 5.9.2
+2022/05/28-16:47:12.919162 b4c Git sha rocksdb_build_git_sha:@004237e62790320d8e630456cbeb6f4a1f3579c2@
+2022/05/28-16:47:12.919182 b4c Compile date Jan  3 2018
+2022/05/28-16:47:12.919191 b4c DB SUMMARY
+2022/05/28-16:47:12.920621 b4c CURRENT file:  CURRENT
+2022/05/28-16:47:12.920653 b4c IDENTITY file:  IDENTITY
+2022/05/28-16:47:12.920706 b4c MANIFEST file:  MANIFEST-000730 size: 199 Bytes
+2022/05/28-16:47:12.920718 b4c SST files in block-data/node1 dir, Total Num: 3, files: 000557.sst 000713.sst 000717.sst 
+2022/05/28-16:47:12.920728 b4c Write Ahead Log file in block-data/node1: 000731.log size: 0 ; 
+2022/05/28-16:47:12.920746 b4c                         Options.error_if_exists: 0
+2022/05/28-16:47:12.920755 b4c                       Options.create_if_missing: 1
+2022/05/28-16:47:12.920965 b4c                         Options.paranoid_checks: 1
+2022/05/28-16:47:12.920974 b4c                                     Options.env: 000001C4F38C0F20
+2022/05/28-16:47:12.920978 b4c                                Options.info_log: 000001C4F4ACC920
+2022/05/28-16:47:12.920982 b4c                Options.max_file_opening_threads: 16
+2022/05/28-16:47:12.920985 b4c                              Options.statistics: 0000000000000000
+2022/05/28-16:47:12.920989 b4c                               Options.use_fsync: 0
+2022/05/28-16:47:12.920992 b4c                       Options.max_log_file_size: 0
+2022/05/28-16:47:12.920996 b4c                  Options.max_manifest_file_size: 18446744073709551615
+2022/05/28-16:47:12.920999 b4c                   Options.log_file_time_to_roll: 0
+2022/05/28-16:47:12.921003 b4c                       Options.keep_log_file_num: 1000
+2022/05/28-16:47:12.921006 b4c                    Options.recycle_log_file_num: 0
+2022/05/28-16:47:12.921009 b4c                         Options.allow_fallocate: 1
+2022/05/28-16:47:12.921013 b4c                        Options.allow_mmap_reads: 0
+2022/05/28-16:47:12.921016 b4c                       Options.allow_mmap_writes: 0
+2022/05/28-16:47:12.921019 b4c                        Options.use_direct_reads: 0
+2022/05/28-16:47:12.921022 b4c                        Options.use_direct_io_for_flush_and_compaction: 0
+2022/05/28-16:47:12.921026 b4c          Options.create_missing_column_families: 0
+2022/05/28-16:47:12.921029 b4c                              Options.db_log_dir: 
+2022/05/28-16:47:12.921032 b4c                                 Options.wal_dir: block-data/node1
+2022/05/28-16:47:12.921036 b4c                Options.table_cache_numshardbits: 6
+2022/05/28-16:47:12.921039 b4c                      Options.max_subcompactions: 1
+2022/05/28-16:47:12.921042 b4c                  Options.max_background_flushes: -1
+2022/05/28-16:47:12.921046 b4c                         Options.WAL_ttl_seconds: 0
+2022/05/28-16:47:12.921049 b4c                       Options.WAL_size_limit_MB: 0
+2022/05/28-16:47:12.921052 b4c             Options.manifest_preallocation_size: 4194304
+2022/05/28-16:47:12.921056 b4c                     Options.is_fd_close_on_exec: 1
+2022/05/28-16:47:12.921060 b4c                   Options.advise_random_on_open: 1
+2022/05/28-16:47:12.921064 b4c                    Options.db_write_buffer_size: 0
+2022/05/28-16:47:12.921067 b4c                    Options.write_buffer_manager: 000001C4F1BE4E80
+2022/05/28-16:47:12.921071 b4c         Options.access_hint_on_compaction_start: 1
+2022/05/28-16:47:12.921074 b4c  Options.new_table_reader_for_compaction_inputs: 0
+2022/05/28-16:47:12.921078 b4c               Options.compaction_readahead_size: 0
+2022/05/28-16:47:12.921081 b4c           Options.random_access_max_buffer_size: 1048576
+2022/05/28-16:47:12.921085 b4c                      Options.use_adaptive_mutex: 0
+2022/05/28-16:47:12.921088 b4c                            Options.rate_limiter: 0000000000000000
+2022/05/28-16:47:12.921091 b4c     Options.sst_file_manager.rate_bytes_per_sec: 0
+2022/05/28-16:47:12.921095 b4c                       Options.wal_recovery_mode: 2
+2022/05/28-16:47:12.921098 b4c                  Options.enable_thread_tracking: 0
+2022/05/28-16:47:12.921101 b4c                  Options.enable_pipelined_write: 0
+2022/05/28-16:47:12.921172 b4c         Options.allow_concurrent_memtable_write: 1
+2022/05/28-16:47:12.921187 b4c      Options.enable_write_thread_adaptive_yield: 1
+2022/05/28-16:47:12.921191 b4c             Options.write_thread_max_yield_usec: 100
+2022/05/28-16:47:12.921194 b4c            Options.write_thread_slow_yield_usec: 3
+2022/05/28-16:47:12.921198 b4c                               Options.row_cache: None
+2022/05/28-16:47:12.921201 b4c                              Options.wal_filter: None
+2022/05/28-16:47:12.921205 b4c             Options.avoid_flush_during_recovery: 0
+2022/05/28-16:47:12.921209 b4c             Options.allow_ingest_behind: 0
+2022/05/28-16:47:12.921212 b4c             Options.preserve_deletes: 0
+2022/05/28-16:47:12.921216 b4c             Options.concurrent_prepare: 0
+2022/05/28-16:47:12.921220 b4c             Options.manual_wal_flush: 0
+2022/05/28-16:47:12.921224 b4c             Options.seq_per_batch: 0
+2022/05/28-16:47:12.921228 b4c             Options.max_background_jobs: 2
+2022/05/28-16:47:12.921231 b4c             Options.max_background_compactions: -1
+2022/05/28-16:47:12.921236 b4c             Options.avoid_flush_during_shutdown: 0
+2022/05/28-16:47:12.921240 b4c           Options.writable_file_max_buffer_size: 1048576
+2022/05/28-16:47:12.921244 b4c             Options.delayed_write_rate : 16777216
+2022/05/28-16:47:12.921248 b4c             Options.max_total_wal_size: 0
+2022/05/28-16:47:12.921251 b4c             Options.delete_obsolete_files_period_micros: 21600000000
+2022/05/28-16:47:12.921255 b4c                   Options.stats_dump_period_sec: 600
+2022/05/28-16:47:12.921259 b4c                          Options.max_open_files: -1
+2022/05/28-16:47:12.921263 b4c                          Options.bytes_per_sync: 0
+2022/05/28-16:47:12.921266 b4c                      Options.wal_bytes_per_sync: 0
+2022/05/28-16:47:12.921270 b4c Compression algorithms supported:
+2022/05/28-16:47:12.921274 b4c 	Snappy supported: 0
+2022/05/28-16:47:12.921277 b4c 	Zlib supported: 0
+2022/05/28-16:47:12.921281 b4c 	Bzip supported: 0
+2022/05/28-16:47:12.921285 b4c 	LZ4 supported: 0
+2022/05/28-16:47:12.921289 b4c 	ZSTDNotFinal supported: 0
+2022/05/28-16:47:12.921293 b4c 	ZSTD supported: 0
+2022/05/28-16:47:12.921307 b4c Fast CRC32 supported: Supported on x86Not supported on x86
+2022/05/28-16:47:12.921547 b4c [c:\users\aretter\code\rocksdb\db\db_impl.cc:234] Shutdown: canceling all background work
+2022/05/28-16:47:12.921620 b4c [c:\users\aretter\code\rocksdb\db\db_impl.cc:364] Shutdown complete

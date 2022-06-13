@@ -1,0 +1,83 @@
+2022/05/24-19:33:13.996158 15a4 RocksDB version: 5.9.2
+2022/05/24-19:33:13.996206 15a4 Git sha rocksdb_build_git_sha:@004237e62790320d8e630456cbeb6f4a1f3579c2@
+2022/05/24-19:33:13.996221 15a4 Compile date Jan  3 2018
+2022/05/24-19:33:13.996230 15a4 DB SUMMARY
+2022/05/24-19:33:13.997308 15a4 CURRENT file:  CURRENT
+2022/05/24-19:33:13.997322 15a4 IDENTITY file:  IDENTITY
+2022/05/24-19:33:13.997361 15a4 MANIFEST file:  MANIFEST-000656 size: 214 Bytes
+2022/05/24-19:33:13.997372 15a4 SST files in block-data/node1 dir, Total Num: 3, files: 000557.sst 000641.sst 000643.sst 
+2022/05/24-19:33:13.997382 15a4 Write Ahead Log file in block-data/node1: 000657.log size: 0 ; 
+2022/05/24-19:33:13.997397 15a4                         Options.error_if_exists: 0
+2022/05/24-19:33:13.997578 15a4                       Options.create_if_missing: 1
+2022/05/24-19:33:13.997586 15a4                         Options.paranoid_checks: 1
+2022/05/24-19:33:13.997590 15a4                                     Options.env: 000001C2FD510760
+2022/05/24-19:33:13.997594 15a4                                Options.info_log: 000001C2FD9B7B40
+2022/05/24-19:33:13.997598 15a4                Options.max_file_opening_threads: 16
+2022/05/24-19:33:13.997601 15a4                              Options.statistics: 0000000000000000
+2022/05/24-19:33:13.997604 15a4                               Options.use_fsync: 0
+2022/05/24-19:33:13.997608 15a4                       Options.max_log_file_size: 0
+2022/05/24-19:33:13.997611 15a4                  Options.max_manifest_file_size: 18446744073709551615
+2022/05/24-19:33:13.997615 15a4                   Options.log_file_time_to_roll: 0
+2022/05/24-19:33:13.997618 15a4                       Options.keep_log_file_num: 1000
+2022/05/24-19:33:13.997622 15a4                    Options.recycle_log_file_num: 0
+2022/05/24-19:33:13.997625 15a4                         Options.allow_fallocate: 1
+2022/05/24-19:33:13.997628 15a4                        Options.allow_mmap_reads: 0
+2022/05/24-19:33:13.997631 15a4                       Options.allow_mmap_writes: 0
+2022/05/24-19:33:13.997635 15a4                        Options.use_direct_reads: 0
+2022/05/24-19:33:13.997638 15a4                        Options.use_direct_io_for_flush_and_compaction: 0
+2022/05/24-19:33:13.997641 15a4          Options.create_missing_column_families: 0
+2022/05/24-19:33:13.997645 15a4                              Options.db_log_dir: 
+2022/05/24-19:33:13.997648 15a4                                 Options.wal_dir: block-data/node1
+2022/05/24-19:33:13.997652 15a4                Options.table_cache_numshardbits: 6
+2022/05/24-19:33:13.997655 15a4                      Options.max_subcompactions: 1
+2022/05/24-19:33:13.997658 15a4                  Options.max_background_flushes: -1
+2022/05/24-19:33:13.997662 15a4                         Options.WAL_ttl_seconds: 0
+2022/05/24-19:33:13.997665 15a4                       Options.WAL_size_limit_MB: 0
+2022/05/24-19:33:13.997668 15a4             Options.manifest_preallocation_size: 4194304
+2022/05/24-19:33:13.997672 15a4                     Options.is_fd_close_on_exec: 1
+2022/05/24-19:33:13.997675 15a4                   Options.advise_random_on_open: 1
+2022/05/24-19:33:13.997678 15a4                    Options.db_write_buffer_size: 0
+2022/05/24-19:33:13.997682 15a4                    Options.write_buffer_manager: 000001C2FEAC1D70
+2022/05/24-19:33:13.997685 15a4         Options.access_hint_on_compaction_start: 1
+2022/05/24-19:33:13.997688 15a4  Options.new_table_reader_for_compaction_inputs: 0
+2022/05/24-19:33:13.997692 15a4               Options.compaction_readahead_size: 0
+2022/05/24-19:33:13.997695 15a4           Options.random_access_max_buffer_size: 1048576
+2022/05/24-19:33:13.997698 15a4                      Options.use_adaptive_mutex: 0
+2022/05/24-19:33:13.997701 15a4                            Options.rate_limiter: 0000000000000000
+2022/05/24-19:33:13.997705 15a4     Options.sst_file_manager.rate_bytes_per_sec: 0
+2022/05/24-19:33:13.997708 15a4                       Options.wal_recovery_mode: 2
+2022/05/24-19:33:13.997712 15a4                  Options.enable_thread_tracking: 0
+2022/05/24-19:33:13.997735 15a4                  Options.enable_pipelined_write: 0
+2022/05/24-19:33:13.997741 15a4         Options.allow_concurrent_memtable_write: 1
+2022/05/24-19:33:13.997744 15a4      Options.enable_write_thread_adaptive_yield: 1
+2022/05/24-19:33:13.997748 15a4             Options.write_thread_max_yield_usec: 100
+2022/05/24-19:33:13.997751 15a4            Options.write_thread_slow_yield_usec: 3
+2022/05/24-19:33:13.997754 15a4                               Options.row_cache: None
+2022/05/24-19:33:13.997758 15a4                              Options.wal_filter: None
+2022/05/24-19:33:13.997761 15a4             Options.avoid_flush_during_recovery: 0
+2022/05/24-19:33:13.997764 15a4             Options.allow_ingest_behind: 0
+2022/05/24-19:33:13.997768 15a4             Options.preserve_deletes: 0
+2022/05/24-19:33:13.997771 15a4             Options.concurrent_prepare: 0
+2022/05/24-19:33:13.997774 15a4             Options.manual_wal_flush: 0
+2022/05/24-19:33:13.997777 15a4             Options.seq_per_batch: 0
+2022/05/24-19:33:13.997781 15a4             Options.max_background_jobs: 2
+2022/05/24-19:33:13.997784 15a4             Options.max_background_compactions: -1
+2022/05/24-19:33:13.997787 15a4             Options.avoid_flush_during_shutdown: 0
+2022/05/24-19:33:13.997791 15a4           Options.writable_file_max_buffer_size: 1048576
+2022/05/24-19:33:13.997794 15a4             Options.delayed_write_rate : 16777216
+2022/05/24-19:33:13.997798 15a4             Options.max_total_wal_size: 0
+2022/05/24-19:33:13.997801 15a4             Options.delete_obsolete_files_period_micros: 21600000000
+2022/05/24-19:33:13.997804 15a4                   Options.stats_dump_period_sec: 600
+2022/05/24-19:33:13.997808 15a4                          Options.max_open_files: -1
+2022/05/24-19:33:13.997811 15a4                          Options.bytes_per_sync: 0
+2022/05/24-19:33:13.997814 15a4                      Options.wal_bytes_per_sync: 0
+2022/05/24-19:33:13.997818 15a4 Compression algorithms supported:
+2022/05/24-19:33:13.997821 15a4 	Snappy supported: 0
+2022/05/24-19:33:13.997824 15a4 	Zlib supported: 0
+2022/05/24-19:33:13.997827 15a4 	Bzip supported: 0
+2022/05/24-19:33:13.997831 15a4 	LZ4 supported: 0
+2022/05/24-19:33:13.997834 15a4 	ZSTDNotFinal supported: 0
+2022/05/24-19:33:13.997837 15a4 	ZSTD supported: 0
+2022/05/24-19:33:13.997843 15a4 Fast CRC32 supported: Supported on x86Not supported on x86
+2022/05/24-19:33:13.997968 15a4 [c:\users\aretter\code\rocksdb\db\db_impl.cc:234] Shutdown: canceling all background work
+2022/05/24-19:33:13.997993 15a4 [c:\users\aretter\code\rocksdb\db\db_impl.cc:364] Shutdown complete
